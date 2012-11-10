@@ -1,23 +1,16 @@
-{% include _head.html %}
-{% include _meta_nav.html %}
+<header class="site_header site_header_landing">
 
-<header class="site_header">
-  <div class="container">
+  <nav class="meta_nav">
+    <div class="container">
 
-    <h1 class="ots_logo">
-      <a href="/">OpenTechSchool</a>
-    </h1>
+      <div class="meta_nav_logo">
+        <a href="/">OpenTechSchool</a> 
+        <select name="ots_city_select" id="ots_city_select" onchange="" size="1">
+          <option value="option1">Berlin</option>
+          <option value="option2">Stockholm</option>
+        </select>
+      </div>
 
-    <p>We organize tech workshops. The awesome kind, where you actually learn stuff.</p>
-
-    <nav>
-      <select name="ots_city_select" id="ots_city_select" onchange="" size="1">
-        <option value="option1">Berlin</option>
-        <option value="option2">Stockholm</option>
-      </select>
-    </nav>
-
-    <nav>
       <ul>
         <li>
           <a href="/#about">About</a>
@@ -32,9 +25,7 @@
           <a href="/#team">Press</a>
         </li>
       </ul>
-    </nav>
 
-    <nav>
       <ul>
         <li>
           <a href="http://blog.opentechschool.org/">Blog</a>
@@ -49,12 +40,18 @@
           <a href="http://blog.opentechschool.org/">Github</a>
         </li>
       </ul>
-    </nav>
+
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <h1 class="ots_logo">
+      <a href="/">OpenTechSchool</a>
+    </h1>
+
+    <p>We organize tech workshops. The awesome kind, where you actually learn stuff.</p>
 
   </div>
+  
 </header>
-
-
-{{ content }}
-
-{% include _footer.html %}
