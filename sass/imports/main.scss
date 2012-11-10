@@ -106,28 +106,10 @@ h2 span {
   outline: none;
 }
 
-
 .site_header_landing {
+  padding: 1em 0 3em;
   background: $ots_blue;
   color: #FFF;
-}
-
-
-.workshop_title {
-  width: 80%;
-  margin: 2em auto .5em auto;
-  font-size: 2em;
-  line-height: 1;
-  text-align: center;
-  color: #085987;
-}
-
-
-.schedule_details {
-  margin-bottom: .5em;
-  font-size: .8em;
-  color: #999;
-  font-style: italic;
 }
 
 
@@ -167,13 +149,13 @@ footer,
   color: #FFF;
 }
 
-.meta_nav iframe {
-  float: right;
-  margin-left: 6px;
-}
-
-.meta_nav_logo {
-  float: left;
+.meta_nav {
+  ul {
+    float: left;
+    li {
+      display: inline;
+    }
+  }
 }
 
 .meta_nav_logo a,
@@ -200,9 +182,6 @@ footer,
   filter: alpha(opacity=100); /* IE 5-7  */
 }
 
-.meta_nav_social {
-  float: right;
-}
 
 footer {
   text-align: center;
