@@ -1,0 +1,106 @@
+  <footer>
+    <div class="container">
+
+      <p>
+        © 2011-2012 by <a href="http://www.opentechschool.org">OpenTechSchool</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script>
+  if(window.__call_laters && window.__call_laters.length) {
+    $.each(window.__call_laters, function(idx, fun) {
+      $(fun);
+    });
+  }
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+
+{% if page.calendar %} 
+  <script src="https://raw.github.com/timrwood/moment/1.7.0/min/moment.min.js"></script>
+
+  <script>
+    $(function() {
+
+      var calendar_name = '{{page.calendar}}',
+          onlyFutureDates = {% if page.onlyFutureDates%}true{% else %}false{% endif %},
+          // see http://momentjs.com/docs/#/displaying/format/
+          date_format = "ddd, MMMM Do YYYY",
+          time_format = "HH:mm";
+
+      $.getJSON("http://www.google.com/calendar/feeds/"+ calendar_name + 
+        "/public/full?orderby=starttime&sortorder=ascending&futureevents="+ onlyFutureDates +"&alt=json&max-results=50", function(data) {
+          var former_date,
+              $target = $('#calendar');
+
+          $.each(data.feed.entry, function(idx, item) {
+            var when = moment(item.gd$when[0].startTime),
+                formatted_date = when.format("M-D-YY"),
+                where = item.gd$where[0].valueString,
+                title = item.title.$t;
+
+            if (title.indexOf("Keynote") === 0 ) {
+              // skip keynote entries pls
+              return;
+            }
+
+
+            if (formatted_date !== former_date) {
+              $target.append("<hr/> <h3>" + when.format(date_format) + "</h3> <br />");
+            }
+
+            $target.append('<h4><a href="' + item.link[0].href +'">' + item.title.$t + '</a></h4>' + 
+              "<p class='schedule_details'>" + when.format(time_format) + (where ? ' // ' + where : '')  + "</p>"
+            );
+            var wrap = $("<div>");
+            var content = $(item.content.$t);
+            if (content.children().length > 1) {
+              wrap.append(content.first());
+              content = $('<div>').html(content.slice(1));
+              content.hide();
+              wrap.append(content);
+              var more = $('<a class="showmore">more</a>');
+              more.toggle(function() {
+                content.slideDown();
+                $(this).html("less");
+              },function() {
+                content.slideUp();
+                $(this).html("more").show();
+              });
+              wrap.append(more);
+              wrap.append("<p></p>");
+              $target.append(wrap);
+            } else {
+              $target.append(content);
+            }
+            former_date = formatted_date;
+          });
+      })
+    });
+  </script>
+{% endif %}
+
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33344154-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</body>
+</html>
