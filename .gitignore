@@ -18,3 +18,5 @@ _site/
 .yardoc
 _yardoc
 doc/
+
+.sass-cache
