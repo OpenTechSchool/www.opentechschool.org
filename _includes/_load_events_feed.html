@@ -1,0 +1,25 @@
+{% if page.meetupcom_group %}
+  <script type="text/javascript">
+  $.getJSON('https://api.meetup.com/2/events?callback=?', {
+    key: '7032104be344e7f2024162246341821',
+    sign: true,
+    group_urlname: '{{page.meetupcom_group}}',
+    page: 4
+  }, function(data) {
+    var events = data.results
+    $.each(events, function(i, event) {
+      var name = event.name
+      var date = new Date(event.time)
+      var dateWrapper = moment(date)
+      var result = {
+        dayTime: dateWrapper.format('dddd HH:MM'),
+        month :dateWrapper.format('MMM'),
+        day: dateWrapper.format('D'),
+        venue: event.venue.name,
+        link: event.event_url
+      }
+      console.log(result)
+    })
+  })
+  </script>
+{% endif %}
