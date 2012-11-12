@@ -6,20 +6,23 @@
     group_urlname: '{{page.meetupcom_group}}',
     page: 4
   }, function(data) {
-    var events = data.results
+    var events = data.results;
+    var html = '';
     $.each(events, function(i, event) {
-      var name = event.name
-      var date = new Date(event.time)
-      var dateWrapper = moment(date)
-      var result = {
+      var name = event.name;
+      var date = new Date(event.time);
+      var dateWrapper = moment(date);
+      var templateData = {
+        name: name,
         dayTime: dateWrapper.format('dddd HH:MM'),
-        month :dateWrapper.format('MMM'),
+        month: dateWrapper.format('MMM'),
         day: dateWrapper.format('D'),
         venue: event.venue.name,
         link: event.event_url
-      }
-      console.log(result)
-    })
-  })
+      };
+      html += OTS.template('event', templateData);
+    });
+    $('#events-list').html(html);
+  });
   </script>
 {% endif %}
