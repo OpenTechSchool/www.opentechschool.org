@@ -8,7 +8,6 @@ body, button, input, select, textarea { font-family: "proxima-nova-alt", "Helvet
 ::-moz-selection { background: #fd4b22; color: #fff; text-shadow: none; }
 ::selection { background: #fd4b22; color: #fff; text-shadow: none; }
 
-
 a,
 a:link,
 a:visited {
@@ -117,6 +116,7 @@ h2 span {
   padding: 1em 0 3em;
   background: $ots_blue;
   color: #FFF;
+  text-align: center;
 }
 
 
