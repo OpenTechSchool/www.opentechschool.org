@@ -5,7 +5,7 @@ rss_feed: berlin
 meetupcom_group: opentechschool-berlin
 ---
 
-<a class="join-button" href="http://www.meetup.com/{{page.meetupcom_group}}/join"> Join now </a>
+<a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
 
 <section id="events">
   <h2>Upcoming events</h2>
@@ -15,7 +15,7 @@ meetupcom_group: opentechschool-berlin
     <div class="event">
       <h1>${name}</h1>
       <p>${venue}</p>
-	</div>
+  </div>
   </script>
 </section>
 
@@ -27,6 +27,6 @@ meetupcom_group: opentechschool-berlin
     <div class="blog-post">
       <h1><a href="${link}">${title}</a></h1>
       <p>${date}</p>
-	</div>
+  </div>
   </script>
 </section>
