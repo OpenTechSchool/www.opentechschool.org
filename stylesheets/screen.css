@@ -238,15 +238,20 @@ h2 span {
 }
 
 /* line 115, ../sass/imports/_main.scss */
-.site_header_landing {
+.site_header {
   padding: 1em 0 3em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* line 122, ../sass/imports/_main.scss */
+.site_header_landing {
   background: #085987;
   color: #FFF;
-  text-align: center;
 }
 
 /* Style for list with floated list items. Responds to screen-width. */
-/* line 125, ../sass/imports/_main.scss */
+/* line 130, ../sass/imports/_main.scss */
 .float_list {
   text-align: center;
   list-style: none;
@@ -254,12 +259,12 @@ h2 span {
   overflow: hidden;
 }
 
-/* line 132, ../sass/imports/_main.scss */
+/* line 137, ../sass/imports/_main.scss */
 .float_list h3 {
   margin-bottom: .5em;
 }
 
-/* line 136, ../sass/imports/_main.scss */
+/* line 141, ../sass/imports/_main.scss */
 .float_list > li {
   width: 21%;
   float: left;
@@ -268,13 +273,13 @@ h2 span {
 }
 
 /* List of OTS members, extends float list. Includes image and links. */
-/* line 144, ../sass/imports/_main.scss */
+/* line 149, ../sass/imports/_main.scss */
 .team_list .member_links {
   list-style: none;
   padding: 0;
 }
 
-/* line 151, ../sass/imports/_main.scss */
+/* line 156, ../sass/imports/_main.scss */
 footer,
 .meta_nav {
   height: 24px;
@@ -284,16 +289,16 @@ footer,
   color: #FFF;
 }
 
-/* line 160, ../sass/imports/_main.scss */
+/* line 165, ../sass/imports/_main.scss */
 .meta_nav ul {
   float: left;
 }
-/* line 162, ../sass/imports/_main.scss */
+/* line 167, ../sass/imports/_main.scss */
 .meta_nav ul li {
   display: inline;
 }
 
-/* line 170, ../sass/imports/_main.scss */
+/* line 175, ../sass/imports/_main.scss */
 .meta_nav_logo a,
 .meta_nav_logo a:link,
 .meta_nav_logo a:visited {
@@ -311,7 +316,7 @@ footer,
   /* IE 5-7  */
 }
 
-/* line 185, ../sass/imports/_main.scss */
+/* line 190, ../sass/imports/_main.scss */
 .meta_nav_logo a:hover,
 .meta_nav_logo a:active,
 .meta_nav_logo a:focus {
@@ -323,14 +328,14 @@ footer,
   /* IE 5-7  */
 }
 
-/* line 193, ../sass/imports/_main.scss */
+/* line 198, ../sass/imports/_main.scss */
 footer {
   text-align: center;
   padding: 3em 0;
   height: auto;
 }
 
-/* line 204, ../sass/imports/_main.scss */
+/* line 209, ../sass/imports/_main.scss */
 footer a,
 .meta_nav a,
 footer a:link,
@@ -341,7 +346,7 @@ footer a:visited,
   text-decoration: underline;
 }
 
-/* line 211, ../sass/imports/_main.scss */
+/* line 216, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
@@ -349,7 +354,7 @@ footer a:focus {
   text-decoration: underline;
 }
 
-/* line 217, ../sass/imports/_main.scss */
+/* line 222, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -357,13 +362,13 @@ footer a:focus {
 }
 
 /* Styleguide*/
-/* line 225, ../sass/imports/_main.scss */
+/* line 230, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding: 0;
 }
 
-/* line 230, ../sass/imports/_main.scss */
+/* line 235, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -371,7 +376,7 @@ footer a:focus {
   font-style: italic;
 }
 
-/* line 237, ../sass/imports/_main.scss */
+/* line 242, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -379,7 +384,7 @@ footer a:focus {
   color: transparent;
 }
 
-/* line 244, ../sass/imports/_main.scss */
+/* line 249, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -390,7 +395,7 @@ footer a:focus {
   border-radius: 4px;
 }
 
-/* line 254, ../sass/imports/_main.scss */
+/* line 259, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   color: #FFF;
@@ -401,7 +406,7 @@ footer a:focus {
   height: 400px;
 }
 
-/* line 264, ../sass/imports/_main.scss */
+/* line 269, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -410,7 +415,7 @@ footer a:focus {
   width: 25%;
 }
 
-/* line 272, ../sass/imports/_main.scss */
+/* line 277, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -423,7 +428,7 @@ footer a:focus {
 /* ! Layout for desktop version   */
 /* ============================== */
 @media handheld, only screen and (min-width: 768px) {
-  /* line 289, ../sass/imports/_main.scss */
+  /* line 294, ../sass/imports/_main.scss */
   .cols {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
@@ -433,12 +438,12 @@ footer a:focus {
     column-gap: 20px;
   }
 
-  /* line 298, ../sass/imports/_main.scss */
+  /* line 303, ../sass/imports/_main.scss */
   .container_small {
     padding: 0 25%;
   }
 
-  /* line 303, ../sass/imports/_main.scss */
+  /* line 308, ../sass/imports/_main.scss */
   section {
     padding: 1em 1em 4.5em 1em;
   }
@@ -447,12 +452,12 @@ footer a:focus {
 /* ! Layout for mobile version   */
 /* ============================= */
 @media handheld, only screen and (max-width: 767px) {
-  /* line 320, ../sass/imports/_main.scss */
+  /* line 325, ../sass/imports/_main.scss */
   section {
     padding: 1em 1em 1.5em 1em;
   }
 
-  /* line 323, ../sass/imports/_main.scss */
+  /* line 328, ../sass/imports/_main.scss */
   .float_list li.member {
     padding: 0 2%;
     width: 46%;
@@ -462,7 +467,7 @@ footer a:focus {
 /* ! Layout for mobile version   */
 /* ============================= */
 @media handheld, only screen and (max-width: 640px) {
-  /* line 342, ../sass/imports/_main.scss */
+  /* line 347, ../sass/imports/_main.scss */
   .nav_list li a {
     display: block;
     padding: 1em 0;
@@ -472,14 +477,14 @@ footer a:focus {
 /* ! Layout for smaller mobile version   */
 /* ============================= */
 @media handheld, only screen and (max-width: 440px) {
-  /* line 358, ../sass/imports/_main.scss */
+  /* line 363, ../sass/imports/_main.scss */
   .meta_nav_social,
   .meta_nav_logo,
   .float_list li.member {
     float: none;
   }
 
-  /* line 362, ../sass/imports/_main.scss */
+  /* line 367, ../sass/imports/_main.scss */
   .meta_nav {
     height: 4.5em;
   }
@@ -494,30 +499,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-/* line 386, ../sass/imports/_main.scss */
+/* line 391, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 387, ../sass/imports/_main.scss */
+/* line 392, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 388, ../sass/imports/_main.scss */
+/* line 393, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 389, ../sass/imports/_main.scss */
+/* line 394, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-  /* line 397, ../sass/imports/_main.scss */
+  /* line 402, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -526,43 +531,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-  /* line 398, ../sass/imports/_main.scss */
+  /* line 403, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 399, ../sass/imports/_main.scss */
+  /* line 404, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 400, ../sass/imports/_main.scss */
+  /* line 405, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 401, ../sass/imports/_main.scss */
+  /* line 406, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 402, ../sass/imports/_main.scss */
+  /* line 407, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 403, ../sass/imports/_main.scss */
+  /* line 408, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 404, ../sass/imports/_main.scss */
+  /* line 409, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 405, ../sass/imports/_main.scss */
+  /* line 410, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -571,13 +576,13 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-  /* line 407, ../sass/imports/_main.scss */
+  /* line 412, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 408, ../sass/imports/_main.scss */
+  /* line 413, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }

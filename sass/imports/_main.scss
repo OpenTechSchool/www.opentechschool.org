@@ -112,11 +112,16 @@ h2 span {
   outline: none;
 }
 
-.site_header_landing {
+.site_header {
   padding: 1em 0 3em;
+  
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.site_header_landing {
   background: $ots_blue;
   color: #FFF;
-  text-align: center;
 }
 
 
