@@ -7,7 +7,7 @@
       
       posts.push(OTS.template('blog-post', item));
   	});
-  	$('#blog-posts-list').html(posts.join("\n"));
+  	$('#js-blog-posts-list').html(posts.join("\n"));
   }
   $.getJSON("http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.js?callback=?");
   </script>
