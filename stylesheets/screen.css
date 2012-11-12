@@ -106,7 +106,7 @@ body {
 
 /* line 6, ../sass/imports/_main.scss */
 body, button, input, select, textarea {
-  font-family: "proxima-nova-alt", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #222222;
 }
 
