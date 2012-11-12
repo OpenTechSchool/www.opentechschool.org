@@ -3,10 +3,13 @@
 
     <div class="logo_top_bar">
       <a href="/">OpenTechSchool</a> 
-      <select name="ots_city_select" id="ots_city_select" onchange="" size="1">
-        <option value="option1">Berlin</option>
-        <option value="option2">Stockholm</option>
-      </select>
+      <div class="dropdown">
+        <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+        <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
+          <li><a tabindex="-1" href="/berlin/">Berlin</a></li>
+          <li><a tabindex="-1" href="/stockholm/">Stockholm</a></li>
+        </ul>
+      </div>
     </div>
 
     <ul class="nav nav_internal">
