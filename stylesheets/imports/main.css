@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$ots_blue".
-        on line 111 of /Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss
+        on line 118 of /Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss
 
 Backtrace:
-/Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss:111
+/Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss:118
 /Users/kristinaschneider/Projects/debtapp/ext/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/script/variable.rb:49:in `_perform'
 /Users/kristinaschneider/Projects/debtapp/ext/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
 /Users/kristinaschneider/Projects/debtapp/ext/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$ots_blue\".\A         on line 111 of /Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss"; }
+  content: "Syntax error: Undefined variable: \"$ots_blue\".\A         on line 118 of /Users/kristinaschneider/Projects/www2.opentechschool.org/sass/imports/main.scss"; }

@@ -2,6 +2,13 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
+body { margin: 0; font-size: 18px; line-height: 1.5; }
+body, button, input, select, textarea { font-family: "proxima-nova-alt", "Helvetica Neue", Arial, Helvetica, sans-serif; color: #222; }
+
+::-moz-selection { background: #fd4b22; color: #fff; text-shadow: none; }
+::selection { background: #fd4b22; color: #fff; text-shadow: none; }
+
+
 a,
 a:link,
 a:visited {
