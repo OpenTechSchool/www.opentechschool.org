@@ -3,9 +3,9 @@ layout: local_group
 title: Berlin
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin
+about: "lorem ipsum berlin is awesome"
 ---
 
-<a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
 
 <section id="events">
   <h2>Upcoming events</h2>
@@ -18,6 +18,8 @@ meetupcom_group: opentechschool-berlin
   </div>
   </script>
 </section>
+
+{{page.about}}
 
 <section id="blog-posts">
   <h2>Latest news</h2>

@@ -114,7 +114,6 @@ h2 span {
 
 .site_header {
   padding: 1em 0 3em;
-  
   text-align: center;
   font-size: 1.5em;
 }
@@ -122,6 +121,11 @@ h2 span {
 .site_header_landing {
   background: $ots_blue;
   color: #FFF;
+}
+
+.site_header_city {
+  color: $ots_blue;
+  text-align: left;
 }
 
 
