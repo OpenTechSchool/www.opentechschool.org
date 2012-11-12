@@ -11,8 +11,8 @@ meetupcom_group: opentechschool-berlin
   <div id="events-list"></div>
   <script type="text/x-template" data-template="event">
     <div class="event">
-	  <h1>${name}</h1>
-	  <p>${venue}</p>
-	</div>
+    <h1>${name}</h1>
+    <p>${venue}</p>
+  </div>
   </script>
 </section>
