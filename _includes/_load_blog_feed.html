@@ -1,11 +1,13 @@
 {% if page.rss_feed %}
   <script type="text/javascript">
   window.blog_feed_loaded = function(res) {
+  	var posts = [];
   	$.each(res, function(idx, item) {
   		if (!item) return
-
-  		console.log(item);
+      
+      posts.push(OTS.template('blog-post', item));
   	});
+  	$('#blog-posts-list').html(posts.join("\n"));
   }
   $.getJSON("http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.js?callback=?");
   </script>

@@ -16,3 +16,15 @@ meetupcom_group: opentechschool-berlin
   </div>
   </script>
 </section>
+
+<section id="blog-posts">
+  <h2>Latest news</h2>
+  <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+  <div id="blog-posts-list"></div>
+  <script type="text/x-template" data-template="blog-post">
+    <div class="blog-post">
+	  <h1><a href="${link}">${title}</a></h1>
+	  <p>${date}</p>
+	</div>
+  </script>
+</section>

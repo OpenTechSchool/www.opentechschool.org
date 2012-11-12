@@ -8,17 +8,17 @@
   }, function(data) {
     var events = data.results;
     var html = '';
-    $.each(events, function(i, event) {
-      var name = event.name;
-      var date = new Date(event.time);
+    $.each(events, function(i, cal_event) {
+      var name = cal_event.name;
+      var date = new Date(cal_event.time);
       var dateWrapper = moment(date);
       var templateData = {
         name: name,
         dayTime: dateWrapper.format('dddd HH:MM'),
         month: dateWrapper.format('MMM'),
         day: dateWrapper.format('D'),
-        venue: event.venue.name,
-        link: event.event_url
+        venue: cal_event.venue.name,
+        link: cal_event.event_url
       };
       html += OTS.template('event', templateData);
     });
