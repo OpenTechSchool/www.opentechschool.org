@@ -107,7 +107,7 @@ body {
 /* line 6, ../sass/imports/_main.scss */
 body, button, input, select, textarea {
   font-family: "proxima-nova-alt", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #222;
+  color: #222222;
 }
 
 /* line 8, ../sass/imports/_main.scss */
@@ -128,7 +128,7 @@ body, button, input, select, textarea {
 a,
 a:link,
 a:visited {
-  color: #1F8AB6;
+  color: #1f8ab6;
   text-decoration: none;
 }
 
@@ -136,14 +136,14 @@ a:visited {
 a:hover,
 a:active,
 a:focus {
-  color: #2fb0d5;
+  color: #1f8ab6;
   text-decoration: underline;
 }
 
 /* buttons */
 /* line 26, ../sass/imports/_main.scss */
 .ots_action {
-  background: #1F8AB6;
+  background: #1f8ab6;
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -163,21 +163,21 @@ a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
-  background: #2FB0D5;
+  background: #1f8ab6;
 }
 
 /* line 50, ../sass/imports/_main.scss */
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
-  background: #E04C3E;
+  background: #e04c3e;
 }
 
 /* line 56, ../sass/imports/_main.scss */
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
-  background: #FD4B22;
+  background: #fd4b22;
 }
 
 /* line 60, ../sass/imports/_main.scss */

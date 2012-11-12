@@ -3,28 +3,28 @@
 /* ========================================== */
 
 body { margin: 0; font-size: 18px; line-height: 1.5; }
-body, button, input, select, textarea { font-family: "proxima-nova-alt", "Helvetica Neue", Arial, Helvetica, sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: "proxima-nova-alt", "Helvetica Neue", Arial, Helvetica, sans-serif; color: $ots_text; }
 
-::-moz-selection { background: #fd4b22; color: #fff; text-shadow: none; }
-::selection { background: #fd4b22; color: #fff; text-shadow: none; }
+::-moz-selection { background: $ots_red_h; color: #fff; text-shadow: none; }
+::selection { background: $ots_red_h; color: #fff; text-shadow: none; }
 
 a,
 a:link,
 a:visited {
-  color: #1F8AB6;
+  color: $ots_blue_l;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #2fb0d5;
+  color: $ots_blue_l;
   text-decoration: underline;
 }
 
 /* buttons */
 .ots_action {
-  background: #1F8AB6;
+  background: $ots_blue_l;
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -42,19 +42,19 @@ a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
-  background: #2FB0D5;
+  background: $ots_blue_l;
 }
 
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
-  background: #E04C3E;
+  background: $ots_red_l;
 }
 
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
-  background: #FD4B22;
+  background: $ots_red_h;
 }
 
 body {
@@ -92,7 +92,7 @@ h2 span {
 .ots_logo {
   width: 304px;
   margin: 2em auto .5em auto;
-  color: #085987;
+  color: $ots_blue;
 }
 
 .ots_logo a {
@@ -186,7 +186,7 @@ footer {
   height: 24px;
   padding: 8px 0 4px 0;
   font-size: 12px;
-  background: #085987;
+  background: $ots_blue;
   color: #FFF;
 }
 
