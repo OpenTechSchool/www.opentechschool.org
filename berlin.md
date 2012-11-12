@@ -5,6 +5,8 @@ rss_feed: berlin
 meetupcom_group: opentechschool-berlin
 ---
 
+<a class="join-button" href="http://www.meetup.com/{{page.meetupcom_group}}/join"> Join now </a>
+
 <section id="events">
   <h2>Upcoming events</h2>
   <a href="">cal</a>
