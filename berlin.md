@@ -1,5 +1,5 @@
 ---
-layout: local_group
+layout: city
 title: Berlin
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin
