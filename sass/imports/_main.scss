@@ -67,7 +67,10 @@ p {
 
 
 .bg_full {
-  margin: 0;
+  width: 96%;
+  margin: 0 2%;
+  padding: 5% 0;
+  background: beige;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,7 +94,7 @@ h2 span {
 
 .ots_logo {
   width: 304px;
-  margin: 2em auto .5em auto;
+  margin: 0 auto 2em auto;
   color: $ots_blue;
 }
 
@@ -112,8 +115,10 @@ h2 span {
   outline: none;
 }
 
+
 .site_header {
-  padding: 1em 0 3em;
+  margin: 0 2%;
+  padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
 }
@@ -129,6 +134,7 @@ h2 span {
 }
 
 
+
 /* Style for list with floated list items. Responds to screen-width. */
 
 .float_list {
@@ -138,24 +144,30 @@ h2 span {
   overflow: hidden;
 }
 
-.float_list h3 {
-  margin-bottom: .5em;
+.float_list > li {
+  float: left;
+  margin: 0 2% 1.5em 2%;
 }
 
-.float_list > li {
+.float_list_4 > li {
   width: 21%;
-  float: left;
-  margin: 0 auto 1.5em auto;
-  padding: 0 2%;
+}
+
+.float_list_3 > li {
+  width: 29%;
 }
 
 /* List of OTS members, extends float list. Includes image and links. */
-.team_list .member_links {
-  list-style: none;
-  padding: 0;
+.team_list > li {
+  min-height: 8em;
+  height:auto !important;
+  height: 8em;
 }
 
 .top_bar {
+  z-index: 100;
+  width: 96%;
+  margin: 2% 2% 0;
   background: $ots_blue;
   color: #FFF;
 }
@@ -183,8 +195,8 @@ h2 span {
 
 
 footer {
-  height: 24px;
-  padding: 8px 0 4px 0;
+  width: 96%;
+  margin: 0 2% 2% 2%;
   font-size: 12px;
   background: $ots_blue;
   color: #FFF;
@@ -197,7 +209,7 @@ footer {
     display: block;
     float: left;
     width: 192px;
-    margin: .5em;
+    margin: .75em 0 .25em 0;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
