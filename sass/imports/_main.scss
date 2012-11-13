@@ -171,6 +171,9 @@ h2 span {
   background: $ots_blue;
   color: #FFF;
   font-size: .6666em;
+  .container {
+    overflow: visible;
+  }
 }
 
 .nav {
