@@ -1,0 +1,22 @@
+.dropdown {
+  position: relative;
+  float: left;
+
+  .dropdown_menu {
+    display: none;
+  }
+
+  &.open {
+    .dropdown_menu {
+      display: block;
+      position: absolute;
+      top: 2em;
+      left: 0;
+    }
+
+    :hover,
+    :focus {
+      color: red;
+    }
+  }
+}

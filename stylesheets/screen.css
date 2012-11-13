@@ -333,12 +333,12 @@ footer {
   color: #FFF;
 }
 
-/* line 206, ../sass/imports/_main.scss */
+/* line 205, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
 }
 /* line 208, ../sass/imports/_main.scss */
-.logo_top_bar a {
+.logo_top_bar > a {
   display: block;
   float: left;
   width: 192px;
@@ -348,9 +348,9 @@ footer {
   overflow: hidden;
 }
 /* line 219, ../sass/imports/_main.scss */
-.logo_top_bar a,
-.logo_top_bar a:link,
-.logo_top_bar a:visited {
+.logo_top_bar > a,
+.logo_top_bar > a:link,
+.logo_top_bar > a:visited {
   background: transparent url("../images/ots_logo_meta.png") no-repeat 0 0;
   color: #FFF;
   opacity: 0.8;
@@ -360,9 +360,9 @@ footer {
   /* IE 5-7  */
 }
 /* line 228, ../sass/imports/_main.scss */
-.logo_top_bar a:hover,
-.logo_top_bar a:active,
-.logo_top_bar a:focus {
+.logo_top_bar > a:hover,
+.logo_top_bar > a:active,
+.logo_top_bar > a:focus {
   color: #FFF;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -565,4 +565,25 @@ footer a:focus {
   h2, h3 {
     page-break-after: avoid;
   }
+}
+/* line 1, ../sass/imports/_dropdown.scss */
+.dropdown {
+  position: relative;
+  float: left;
+}
+/* line 5, ../sass/imports/_dropdown.scss */
+.dropdown .dropdown_menu {
+  display: none;
+}
+/* line 10, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu {
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 0;
+}
+/* line 18, ../sass/imports/_dropdown.scss */
+.dropdown.open :hover,
+.dropdown.open :focus {
+  color: red;
 }

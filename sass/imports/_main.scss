@@ -202,10 +202,10 @@ footer {
   color: #FFF;
 }
 
-
 .logo_top_bar {
   float: left;
-  a {
+
+  > a {
     display: block;
     float: left;
     width: 192px;
@@ -214,18 +214,18 @@ footer {
     white-space: nowrap;
     overflow: hidden;
   }
-  a,
-  a:link,
-  a:visited {
+  > a,
+  > a:link,
+  > a:visited {
     background: transparent url("../images/ots_logo_meta.png") no-repeat 0 0;
     color: #FFF;
     opacity:0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  /* IE8 */
     filter: alpha(opacity=80); /* IE 5-7  */
   }
-  a:hover,
-  a:active,
-  a:focus {
+  > a:hover,
+  > a:active,
+  > a:focus {
     color: #FFF;
     opacity:1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  /* IE8 */
