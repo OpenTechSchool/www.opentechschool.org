@@ -79,17 +79,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .container {
   width: 100%;
   max-width: 1020px;
-  min-width: 755px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* line 10, ../sass/imports/_grid.scss */
+/* line 9, ../sass/imports/_grid.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 14, ../sass/imports/_grid.scss */
+/* line 13, ../sass/imports/_grid.scss */
 img {
   height: auto;
 }
