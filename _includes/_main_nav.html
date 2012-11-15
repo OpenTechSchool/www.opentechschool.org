@@ -1,30 +1,18 @@
-<nav class="meta_nav">
+<nav class="top_bar">
   <div class="container">
 
-    <div class="meta_nav_logo">
+    <div class="logo_top_bar">
       <a href="/">OpenTechSchool</a> 
-      <select name="ots_city_select" id="ots_city_select" onchange="" size="1">
-        <option value="option1">Berlin</option>
-        <option value="option2">Stockholm</option>
-      </select>
+      <div class="dropdown">
+        <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+        <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
+          <li><a tabindex="-1" href="/berlin/">Berlin</a></li>
+          <li><a tabindex="-1" href="/stockholm/">Stockholm</a></li>
+        </ul>
+      </div>
     </div>
 
-    <ul>
-      <li>
-        <a href="/about">About</a>
-      </li>
-      <li>
-        <a href="/team">Team</a>
-      </li>
-      <li>
-        <a href="/testimonials">Testimonials</a>
-      </li>
-      <li>
-        <a href="/press">Press</a>
-      </li>
-    </ul>
-
-    <ul>
+    <ul class="nav nav_external">
       <li>
         <a href="http://blog.opentechschool.org/">Blog</a>
       </li>
@@ -38,6 +26,25 @@
         <a href="https://github.com/OpenTechSchool">Github</a>
       </li>
     </ul>
+
+    <ul class="nav nav_internal">
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+      <li>
+        <a href="/team.html">Team</a>
+      </li>
+      <li>
+        <a href="/testimonials.html">Testimonials</a>
+      </li>
+      <li>
+        <a href="/press.html">Press</a>
+      </li>
+    </ul>
+    
+    <div class="clearfix">
+      
+    </div>
 
   </div>
 </nav>

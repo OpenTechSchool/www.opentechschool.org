@@ -1,0 +1,26 @@
+{% include _head.html %}
+{% include _main_nav.html %}
+
+<header class="site_header site_header_city">
+  <div class="container">
+    
+    <h1>
+      <a href="/">{{page.title}}</a>
+    </h1>
+    <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
+  
+  </div>
+</header>
+
+
+<section class="bg_full">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+{% include _footer.html %}
+{% include _scripts.html %}
+{% include _load_blog_feed.html %}
+{% include _load_events_feed.html %}
+{% include _end.html %}

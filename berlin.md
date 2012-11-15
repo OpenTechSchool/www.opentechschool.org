@@ -1,11 +1,11 @@
 ---
-layout: local_group
+layout: city
 title: Berlin
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin
+about: "lorem ipsum berlin is awesome"
 ---
 
-<a class="join-button" href="http://www.meetup.com/{{page.meetupcom_group}}/join"> Join now </a>
 
 <section id="events">
   <h2>Upcoming events</h2>
@@ -15,9 +15,11 @@ meetupcom_group: opentechschool-berlin
     <div class="event">
       <h1>${name}</h1>
       <p>${venue}</p>
-	</div>
+  </div>
   </script>
 </section>
+
+{{page.about}}
 
 <section id="blog-posts">
   <h2>Latest news</h2>
@@ -27,6 +29,6 @@ meetupcom_group: opentechschool-berlin
     <div class="blog-post">
       <h1><a href="${link}">${title}</a></h1>
       <p>${date}</p>
-	</div>
+  </div>
   </script>
 </section>
