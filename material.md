@@ -17,8 +17,10 @@ All OpenTechSchool Material is open sourced under the [Creative Commons ShareAli
  * [4h Introduction Workshop with turtle](http://opentechschool.github.com/python-beginners/en/index.html)
  * [Twitter Client]()
  * Django101: [English](http://opentechschool.github.com/django-101/en/index.html), [Deutsch](http://opentechschool.github.com/django-101/de/index.html)
- * BioPython: ???
+ * BioPython: [Help Material](https://github.com/OpenTechSchool/biopython/tree/material) for [Rosalind challenges](http://rosalind.info)
  * [Material Discussion Page](https://github.com/OpenTechSchool/python/wiki)
+
+Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
 ### Javascript
  * Weekend Workshop
@@ -28,12 +30,15 @@ All OpenTechSchool Material is open sourced under the [Creative Commons ShareAli
 
 ### Git
  * [Social-Coding with GitHub](http://opentechschool.github.com/social-coding/)
-
-## Coaching Material
- * [Coaching Guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
- * 
+ * Coming up: Advanced Git
 
 
-## Organisational Material
- * [The OTS Styleguide](/styleguide.html)
- * [How Mailinglists are organised and handled](/mailinglists.html)
+### Math-3D
+  * Coming up
+
+### Arduino
+  * Coming up
+
+### Design
+  * Coming up
+  
