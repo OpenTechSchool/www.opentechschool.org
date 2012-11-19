@@ -50,3 +50,11 @@ Event:
 
 I think as soon as we are done with brainstorming we should meet and create something all together. 
 It will be easier
+
+by Bea:
+
+
+Offering examples of standard written communication (to be taken as reference, not as a bible of course), like:
+- what OTS is: slightly different versions for venues / coaches / universities / women-related events and organizations / conferences etc.
+- Meetup.com-friendly copy and event related mailing (as suggested by Giorgia as well)
+- examples and guidelines for social media and blog (as partly already suggested by Kristina in relation to "guidelines on how to pick the right pictures")
