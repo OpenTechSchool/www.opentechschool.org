@@ -189,14 +189,31 @@ h2 span {
 }
 
 .dropdown {
-  
+
 }
 .nav_internal {
-  
+
 }
 
 .nav_external {
-  
+  .ots_nav_icon {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
+  }
+  .github {
+    background-position: 50% 0;
+  }
+  .twitter {
+    background-position: 50% -28px;
+  }
+  .facebook {
+    background-position: 50% -56px;
+  }
 }
 
 
@@ -211,7 +228,7 @@ footer {
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
-  
+
   > a {
     display: block;
     float: left;
