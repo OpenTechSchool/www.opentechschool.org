@@ -7,6 +7,11 @@
     <h1>
       <a href="/">{{page.title}}</a>
     </h1>
+    {% if page.tagline %}
+	    <h2 class="tagline">
+	    	{{page.tagline}}
+	    </h2>
+    {% endif %}
     <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
     <span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span>
   
