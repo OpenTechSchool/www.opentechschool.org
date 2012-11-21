@@ -1,7 +1,8 @@
 {% if page.meetupcom_group %}
   <script type="text/javascript">
+  var meetupcom_key = '7032104be344e7f2024162246341821';
   $.getJSON('https://api.meetup.com/2/events?callback=?', {
-    key: '7032104be344e7f2024162246341821',
+    key: meetupcom_key,
     sign: true,
     group_urlname: '{{page.meetupcom_group}}',
     page: 4
@@ -16,7 +17,7 @@
         name: name,
         dayTime: dateWrapper.format('dddd HH:MM'),
         month: dateWrapper.format('MMM'),
-        day: dateWrapper.format('D'),
+        day: dateWrapper.format('Do'),
         venue: cal_event.venue.name,
         link: cal_event.event_url
       };

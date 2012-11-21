@@ -12,6 +12,50 @@
   </div>
 </header>
 
+<section id="about">
+
+  {{page.about}}
+
+</section>
+
+<section id="events">
+  <h2>Upcoming events</h2>
+  <a href="">cal</a>
+  <div id="js-events-list"></div>
+  <script type="text/x-template" data-template="event">
+    <div class="event">
+      <h1>${name}</h1>
+      <p>${month}</p> <!-- 3-Letter-Word -->
+      <p>${day}</p> <!-- Day of month in 1st/ 12th -->
+      <p>${venue}</p> <!-- Venue as text -->
+      <p>${dayTime}</p> <!-- weekday + time of the day -->
+  </div>
+  </script>
+</section>
+
+<section id="blog-posts">
+  <h2>Latest news</h2>
+  <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+  <div id="js-blog-posts-list"></div>
+  <script type="text/x-template" data-template="blog-post">
+    <div class="blog-post">
+      <h1><a href="${link}">${title}</a></h1>
+      <p>${date}</p>
+  </div>
+  </script>
+</section>
+
+<section id="latest-discussions">
+  <h2>Latest discussions</h2>
+  <a id="js-discussions-link" href="http://www.meetup.com/{{meetupcom_group}}/messages/archive/rss/OpenTechSchool-{{page.title}}+Meetup+Mailing+List/">rss</a>
+  <div id="js-latest-discussions"></div>
+  <script type="text/x-template" data-template="ml-discussion">
+    <div class="ml-discussion">
+      <h1><a href="${link}">${title}</a></h1>
+      <p>${date}</p>
+  </div>
+  </script>
+</section>
 
 <section class="bg_full">
   <div class="container">
