@@ -4,6 +4,7 @@
   	var posts = [];
   	$.each(res, function(idx, item) {
   		if (!item) return
+      if (idx === 5) return false; // max 5 items pls
       
       posts.push(OTS.template('blog-post', item));
   	});
