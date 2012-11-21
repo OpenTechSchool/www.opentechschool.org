@@ -3,11 +3,11 @@ layout: simple
 title: How to start OpenTechSchool in my city?
 ---
 
-First things first: I won't be lying to you - starting something is always hard. And this might not only be hard but also very frustrating at times. Please do not give up, it is very important to us, so please do contact us in such a case and we see how we can help you.
+We won't lie to you: starting something is always hard. This might not only be hard, but also very frustrating at times. Please don't give up! It is very important to us, so please contact us when you get stuck and we see how we can help you.
 
-This is a guide, a blueprint so to say, on how to make it easier to get the OpenTechSchool started at your city. Though we've done this before, it might be subject to change and there a might different things required for your place. If you have any notes, ideas or remarks - please let us know (or even better: create a pull request).
+This is a handbook -- or a blueprint, so to say -- on how to make it easier to get an OpenTechSchool started in your city. Although this documents how we did it, it might be subject to change and you may find that your city has different requirements. If you have any notes, ideas or remarks, please let us know (even better: create a pull request).
 
-Alright. You are still reading this, this means you really seems to be interested in getting something started. Well the first thing for that, would be to **let us know about it**. There might already be people around you or we know about efforts and have contacts that can help you. So this is crucial: let us know!
+Alright. You're still reading this, so that means you are really interested in getting something started. Way to go! The first thing to do is **let us know about it**. There might already be people getting started in/near your city whose efforts we know about, so we may have contacts who can help you. This is crucial: get in touch with us!
 
 # FIXME: write this out:
 

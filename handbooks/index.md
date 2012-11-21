@@ -1,19 +1,17 @@
 ---
 layout: simple
-title: Guidelines
+title: Handbook
 ---
 
-Over the time certain practices became the common way of how we do things. These documents are trying to capture best practices which have been proven to work. But don't understand any of that as written in stone: not only do we constantly improve on the way we do things, we might also be wrong here and there or our approaches don't work for the given problem. Please do not hestitate to raise any question you have about them via our [global dicsussions mailinglist](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global).
+Over time, certain practices became the way we usually do things. These texts are the result of our effort to document the best practices which have been proven to work. Please take into account that none of this is written in stone: not only do we constantly improve/tweak/adapt the way we do things, we might also be wrong here and there, or our approaches may not work for the given problem. Please do not hestitate to raise any questions you have about them via our [global dicsussions mailinglist](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global)!
 
-## Organisational Guidelines and Policies
- * [Coaching Guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
- * [What do we help promoting](/guidelines/promotion.html)
+## Organisational guidelines and policies
+ * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
+ * [Promoting](/guidelines/promotion.html)
  * [How we decide on (strategic) stuff]()
  * [How to organisation a new workshop](/guidelines/new_workshop.html)
  * [How to start OTS in my city? - a blueprint](/guidelines/city-blueprint.html)
  
-
-
 ## References
  * [Branding and Styleguide](/guidelines/styles.html)
- * [How Mailinglists are organised and handled](/guidelines/mailinglists.html)
+ * [How mailing lists are organised and handled](/guidelines/mailinglists.html)
