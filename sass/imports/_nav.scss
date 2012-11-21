@@ -1,0 +1,48 @@
+
+.nav {
+  text-transform: uppercase;
+  a {
+    display: block;
+    padding: .5em .75em;
+  }
+}
+
+.nav_internal {
+  clear: left;
+}
+
+.nav_external {
+  .ots_nav_icon {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
+  }
+  .github {
+    background-position: 50% 0;
+  }
+  .twitter {
+    background-position: 50% -28px;
+  }
+  .facebook {
+    background-position: 50% -56px;
+  }  
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.collapse {
+  display: none;
+
+  &.in {
+    display: block;
+  }
+}
+
