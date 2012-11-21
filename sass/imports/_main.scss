@@ -2,8 +2,29 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
-body { margin: 0; font-size: 18px; line-height: 1.5; }
+body { margin: 0; font-size: 87.5%; line-height: 1.5; } /*base font size: 14px, line-height: 21px*/
 body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: $ots_text; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5, h6 {
+  font-size: 1em;
+}
 
 ::-moz-selection { background: $ots_red_h; color: #fff; text-shadow: none; }
 ::selection { background: $ots_red_h; color: #fff; text-shadow: none; }
@@ -73,12 +94,6 @@ p {
   background: beige;
 }
 
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
@@ -117,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .site_header_city {
   color: $ots_blue;
-  text-align: left;
 }
 
 
@@ -132,8 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .float_list > li {
-  float: left;
   margin: 0 2% 1.5em 2%;
+}
+
+/* START move to media query */
+.float_list > li {
+  float: left;
 }
 
 .float_list_4 > li {
@@ -143,6 +161,9 @@ h1, h2, h3, h4, h5, h6 {
 .float_list_3 > li {
   width: 29%;
 }
+
+
+/* END move to media query */
 
 /* List of OTS members, extends float list. Includes image and links. */
 .team_list > li {
