@@ -327,7 +327,30 @@ h2 span {
   padding: .5em .75em;
 }
 
-/* line 203, ../sass/imports/_main.scss */
+/* line 199, ../sass/imports/_main.scss */
+.nav_external .ots_nav_icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
+}
+/* line 208, ../sass/imports/_main.scss */
+.nav_external .github {
+  background-position: 50% 0;
+}
+/* line 211, ../sass/imports/_main.scss */
+.nav_external .twitter {
+  background-position: 50% -28px;
+}
+/* line 214, ../sass/imports/_main.scss */
+.nav_external .facebook {
+  background-position: 50% -56px;
+}
+
+/* line 220, ../sass/imports/_main.scss */
 footer {
   width: 96%;
   margin: 0 2% 2% 2%;
@@ -336,12 +359,12 @@ footer {
   color: #FFF;
 }
 
-/* line 211, ../sass/imports/_main.scss */
+/* line 228, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
 }
-/* line 215, ../sass/imports/_main.scss */
+/* line 232, ../sass/imports/_main.scss */
 .logo_top_bar > a {
   display: block;
   float: left;
@@ -351,7 +374,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 226, ../sass/imports/_main.scss */
+/* line 243, ../sass/imports/_main.scss */
 .logo_top_bar > a,
 .logo_top_bar > a:link,
 .logo_top_bar > a:visited {
@@ -363,7 +386,7 @@ footer {
   filter: alpha(opacity=80);
   /* IE 5-7  */
 }
-/* line 235, ../sass/imports/_main.scss */
+/* line 252, ../sass/imports/_main.scss */
 .logo_top_bar > a:hover,
 .logo_top_bar > a:active,
 .logo_top_bar > a:focus {
@@ -375,14 +398,14 @@ footer {
   /* IE 5-7  */
 }
 
-/* line 243, ../sass/imports/_main.scss */
+/* line 260, ../sass/imports/_main.scss */
 footer {
   text-align: center;
   padding: 3em 0;
   height: auto;
 }
 
-/* line 254, ../sass/imports/_main.scss */
+/* line 271, ../sass/imports/_main.scss */
 footer a,
 .meta_nav a,
 footer a:link,
@@ -393,7 +416,7 @@ footer a:visited,
   text-decoration: underline;
 }
 
-/* line 261, ../sass/imports/_main.scss */
+/* line 278, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
@@ -401,7 +424,7 @@ footer a:focus {
   text-decoration: underline;
 }
 
-/* line 267, ../sass/imports/_main.scss */
+/* line 284, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -409,13 +432,13 @@ footer a:focus {
 }
 
 /* Styleguide*/
-/* line 275, ../sass/imports/_main.scss */
+/* line 292, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding: 0;
 }
 
-/* line 280, ../sass/imports/_main.scss */
+/* line 297, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -423,7 +446,7 @@ footer a:focus {
   font-style: italic;
 }
 
-/* line 287, ../sass/imports/_main.scss */
+/* line 304, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -431,7 +454,7 @@ footer a:focus {
   color: transparent;
 }
 
-/* line 294, ../sass/imports/_main.scss */
+/* line 311, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -443,7 +466,7 @@ footer a:focus {
 }
 
 /* Testimonials */
-/* line 306, ../sass/imports/_main.scss */
+/* line 323, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   color: #FFF;
@@ -454,7 +477,7 @@ footer a:focus {
   height: 400px;
 }
 
-/* line 316, ../sass/imports/_main.scss */
+/* line 333, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -463,7 +486,7 @@ footer a:focus {
   width: 25%;
 }
 
-/* line 324, ../sass/imports/_main.scss */
+/* line 341, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -482,30 +505,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-/* line 350, ../sass/imports/_main.scss */
+/* line 367, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 351, ../sass/imports/_main.scss */
+/* line 368, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 352, ../sass/imports/_main.scss */
+/* line 369, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 353, ../sass/imports/_main.scss */
+/* line 370, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-  /* line 361, ../sass/imports/_main.scss */
+  /* line 378, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -514,43 +537,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-  /* line 362, ../sass/imports/_main.scss */
+  /* line 379, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 363, ../sass/imports/_main.scss */
+  /* line 380, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 364, ../sass/imports/_main.scss */
+  /* line 381, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 365, ../sass/imports/_main.scss */
+  /* line 382, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 366, ../sass/imports/_main.scss */
+  /* line 383, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 367, ../sass/imports/_main.scss */
+  /* line 384, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 368, ../sass/imports/_main.scss */
+  /* line 385, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 369, ../sass/imports/_main.scss */
+  /* line 386, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -559,13 +582,13 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-  /* line 371, ../sass/imports/_main.scss */
+  /* line 388, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 372, ../sass/imports/_main.scss */
+  /* line 389, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
