@@ -16,7 +16,26 @@
       </div>
     </div>
 
+<<<<<<< HEAD
+    <ul class="nav nav_external">
+      <li>
+        <a href="http://blog.opentechschool.org/">Blog</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/OpenTechSchool" class="ots_nav_icon twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/OpenTechSchool" class="ots_nav_icon facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="https://github.com/OpenTechSchool" class="ots_nav_icon github">Github</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav_internal">
+=======
     <ul class="nav nav_internal collapse">
+>>>>>>> Make main navigation responsive & collapsable.
       <li>
         <a href="/about.html">About</a>
       </li>
@@ -47,12 +66,15 @@
       </li>
     </ul>
 
+<<<<<<< HEAD
+=======
     <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
     
+>>>>>>> Make main navigation responsive & collapsable.
     <div class="clearfix">
 
     </div>
