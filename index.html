@@ -9,21 +9,28 @@ rss_feed: full
   <div class="container">
 
     <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>OpenTechSchool is a community initiative to provide programming and other tech-related workshops to women and their friends. We take care of the organizational side of things (venues, press, finding participants) and let our volunteer coaches to create the curriculum according to their vision. Our main goal is to create a friendly and safe learning environment where no one feels shy about asking any question. Everyone, no matter what their gender, skill level or experience, is invited to participate, whether as a coach or a learner. OTS is an idea we would be very happy to see spread across the globe!</p>
 
     <h2>Latest News</h2>
-    <article>
-      <h3>Blogpost title</h3>
-      <p>Dec 12, 2012</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid &hellip;</p>
-    </article>
+      <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+    <section id="blog-posts">
+      <div id="js-blog-posts-list"></div>
+    </section>
+    <script type="text/x-template" data-template="blog-post">
+      <article>
+        <h1><a href="${link}">${title}</a></h1>
+        <p>${date}</p>
+      </article>
+    </script>
 
 
-    <h2>Material Directory</h2>
+
+    <h2><a href="/handbooks">Material Directory</a></h2>
     <ul>
-      <li><a href="#">Link to something</a></li>
-      <li><a href="#">Link to something</a></li>
-      <li><a href="#">Link to something</a></li>
+      <li><a href="http://opentechschool.github.com/slides/presentations/coaching/">Coaching Guidelines</a></li>
+      <li><a href="/handbooks/new-workshop.html" >How to start a new Workshop</a></li>
+      <li><a href="/handbooks/city-blueprint.html">How to start OTS in your city?</a></li>
+      
     </ul>
 
 
