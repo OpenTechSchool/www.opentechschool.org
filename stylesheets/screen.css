@@ -702,4 +702,9 @@ footer a:focus {
   .collapse {
     display: block;
   }
+
+  /* line 19, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  .top_bar.affix {
+    position: fixed;
+  }
 }
