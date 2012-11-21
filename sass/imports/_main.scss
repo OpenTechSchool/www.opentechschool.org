@@ -73,23 +73,10 @@ p {
   background: beige;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-}
-
-h2 {
-  text-align: center;
-  border-bottom: 1px solid #EEE;
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: 1.5em;
-}
-
-h2 span {
-  background: #FFF;
-  padding: .5em 1em;
-  position: relative;
-  bottom: -.75em;
 }
 
 .ots_logo {
@@ -286,6 +273,17 @@ footer a:focus {
   height: 24em;
   overflow: hidden;
 }
+
+
+/* News blocks, events */
+
+.date {
+  font-size: .75em;
+  font-style: italic;
+  color: grey;
+}
+
+
 
 /* Styleguide*/
 

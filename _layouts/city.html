@@ -3,64 +3,84 @@
 
 <header class="site_header site_header_city">
   <div class="container">
-    
-    <h1>
-      <a href="/">{{page.title}}</a>
-    </h1>
-    {% if page.tagline %}
-	    <h2 class="tagline">
-	    	{{page.tagline}}
-	    </h2>
-    {% endif %}
-    <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
-    <span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span>
-  
+
+    <div class="city_title">
+      <h1>
+        <a href="/">{{page.title}}</a>
+      </h1>
+      {% if page.tagline %}
+        <h2 class="tagline">
+          {{page.tagline}}
+        </h2>
+      {% endif %}
+    </div>
+
+    <div class="city_cta">
+      <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
+      <span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span>
+    </div>
+
+
   </div>
 </header>
 
-<section id="about">
-
-  {{page.about}}
-
+<section id="about" class="bg_full">
+  <div class="container">
+    <h2>About</h2>
+    {{page.about}}
+  </div>
 </section>
 
-<section id="events">
-  <h2>Upcoming events</h2>
-  <a href="">cal</a>
-  <div id="js-events-list"></div>
-  <script type="text/x-template" data-template="event">
-    <div class="event">
-      <h1>${name}</h1>
-      <p>${month}</p> <!-- 3-Letter-Word -->
-      <p>${day}</p> <!-- Day of month in 1st/ 12th -->
-      <p>${venue}</p> <!-- Venue as text -->
-      <p>${dayTime}</p> <!-- weekday + time of the day -->
+<section id="events" class="bg_full">
+  <div class="container">
+    <h2>Upcoming events</h2>
+    <a href="">cal</a>
+    <div id="js-events-list"></div>
+    <script type="text/x-template" data-template="event">
+      <div class="event">
+        <h1>${name}</h1>
+        <p class="date">
+          <span>${month}</span> <span>${day}</span>,
+          <br>
+          <span>${dayTime}</span>
+        </p>
+        <p>${venue}</p> <!-- Venue as text -->
+
+    </div>
+    </script>
   </div>
-  </script>
 </section>
 
-<section id="blog-posts">
-  <h2>Latest news</h2>
-  <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
-  <div id="js-blog-posts-list"></div>
-  <script type="text/x-template" data-template="blog-post">
-    <div class="blog-post">
-      <h1><a href="${link}">${title}</a></h1>
-      <p>${date}</p>
+<section id="blog-posts" class="bg_full">
+  <div class="container">
+    <h2>Latest news</h2>
+    <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+    <div id="js-blog-posts-list"></div>
+    <script type="text/x-template" data-template="blog-post">
+      <div class="blog-post">
+        <h1><a href="${link}">${title}</a></h1>
+        <p class="date">
+          ${date}
+        </p>
+    </div>
+    </script>
   </div>
-  </script>
 </section>
 
-<section id="latest-discussions">
-  <h2>Latest discussions</h2>
-  <a id="js-discussions-link" href="http://www.meetup.com/{{meetupcom_group}}/messages/archive/rss/OpenTechSchool-{{page.title}}+Meetup+Mailing+List/">rss</a>
-  <div id="js-latest-discussions"></div>
-  <script type="text/x-template" data-template="ml-discussion">
-    <div class="ml-discussion">
-      <h1><a href="${link}">${title}</a></h1>
-      <p>${date}</p>
+<section id="latest-discussions" class="bg_full">
+  <div class="container">
+    <h2>Latest discussions</h2>
+    <a id="js-discussions-link" href="http://www.meetup.com/{{meetupcom_group}}/messages/archive/rss/OpenTechSchool-{{page.title}}+Meetup+Mailing+List/">rss</a>
+    <div id="js-latest-discussions"></div>
+    <script type="text/x-template" data-template="ml-discussion">
+      <div class="ml-discussion">
+        <h1><a href="${link}">${title}</a></h1>
+        <p class="date">
+          ${date}
+        </p>
+    </div>
+    </script>
   </div>
-  </script>
 </section>
 
 <section class="bg_full">
