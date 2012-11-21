@@ -691,20 +691,27 @@ footer a:focus {
   /* line 6, ../sass/imports/_mediaqueries.scss */
   .nav li {
     float: left;
+    border: none;
   }
 
-  /* line 11, ../sass/imports/_mediaqueries.scss */
+  /* line 12, ../sass/imports/_mediaqueries.scss */
   .btn_navbar {
     display: none;
   }
 
-  /* line 15, ../sass/imports/_mediaqueries.scss */
+  /* line 16, ../sass/imports/_mediaqueries.scss */
   .collapse {
     display: block;
   }
 
-  /* line 19, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 20, ../sass/imports/_mediaqueries.scss */
+  .top_bar {
+    height: 40px;
+  }
+
+  /* line 24, ../sass/imports/_mediaqueries.scss */
   .top_bar.affix {
     position: fixed;
+    box-shadow: 0px 5px 5px #222222;
   }
 }
