@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Default text color*/
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
-/* line 1, /Users/simon/Projekte/ots/www2/sass/imports/_grid.scss */
+/* line 1, ../sass/imports/_grid.scss */
 .container {
   width: 100%;
   max-width: 1020px;
@@ -83,12 +83,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow: hidden;
 }
 
-/* line 9, /Users/simon/Projekte/ots/www2/sass/imports/_grid.scss */
+/* line 9, ../sass/imports/_grid.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 13, /Users/simon/Projekte/ots/www2/sass/imports/_grid.scss */
+/* line 13, ../sass/imports/_grid.scss */
 img {
   height: auto;
 }
@@ -96,25 +96,20 @@ img {
 /* ========================================== */
 /* ! Shared styles, OTS branding */
 /* ========================================== */
-/* line 5, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
+/* line 5, ../sass/imports/_main.scss */
 body {
   margin: 0;
   font-size: 87.5%;
   line-height: 1.5;
 }
 
-<<<<<<< HEAD
 /*base font size: 14px, line-height: 21px*/
 /* line 6, ../sass/imports/_main.scss */
-=======
-/* line 6, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 body, button, input, select, textarea {
   font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #222222;
 }
 
-<<<<<<< HEAD
 /* line 8, ../sass/imports/_main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -147,31 +142,20 @@ h5, h6 {
 }
 
 /* line 29, ../sass/imports/_main.scss */
-=======
-/* line 8, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 ::-moz-selection {
   background: #fd4b22;
   color: #fff;
   text-shadow: none;
 }
 
-<<<<<<< HEAD
 /* line 30, ../sass/imports/_main.scss */
-=======
-/* line 9, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 ::selection {
   background: #fd4b22;
   color: #fff;
   text-shadow: none;
 }
 
-<<<<<<< HEAD
 /* line 34, ../sass/imports/_main.scss */
-=======
-/* line 13, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a,
 a:link,
 a:visited {
@@ -179,11 +163,7 @@ a:visited {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* line 41, ../sass/imports/_main.scss */
-=======
-/* line 20, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a:hover,
 a:active,
 a:focus {
@@ -192,11 +172,7 @@ a:focus {
 }
 
 /* buttons */
-<<<<<<< HEAD
 /* line 47, ../sass/imports/_main.scss */
-=======
-/* line 26, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .ots_action {
   background: #1f8ab6;
   display: inline-block;
@@ -205,11 +181,7 @@ a:focus {
   padding: .25em 1em;
 }
 
-<<<<<<< HEAD
 /* line 57, ../sass/imports/_main.scss */
-=======
-/* line 36, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a.ots_action,
 a.ots_action:link,
 a.ots_action:visited {
@@ -217,11 +189,7 @@ a.ots_action:visited {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* line 64, ../sass/imports/_main.scss */
-=======
-/* line 43, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
@@ -229,51 +197,31 @@ a.ots_action:focus {
   background: #1f8ab6;
 }
 
-<<<<<<< HEAD
 /* line 71, ../sass/imports/_main.scss */
-=======
-/* line 50, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
   background: #e04c3e;
 }
 
-<<<<<<< HEAD
 /* line 77, ../sass/imports/_main.scss */
-=======
-/* line 56, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
   background: #fd4b22;
 }
 
-<<<<<<< HEAD
 /* line 81, ../sass/imports/_main.scss */
-=======
-/* line 60, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 body {
   line-height: 1.5em;
 }
 
-<<<<<<< HEAD
 /* line 85, ../sass/imports/_main.scss */
-=======
-/* line 64, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 p {
   margin-bottom: 1.5em;
 }
 
-<<<<<<< HEAD
 /* line 90, ../sass/imports/_main.scss */
-=======
-/* line 69, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .bg_full {
   width: 96%;
   margin: 0 2%;
@@ -281,44 +229,14 @@ p {
   background: beige;
 }
 
-<<<<<<< HEAD
 /* line 97, ../sass/imports/_main.scss */
-=======
-/* line 76, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-/* line 80, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
-h2 {
-  text-align: center;
-  border-bottom: 1px solid #EEE;
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: 1.5em;
-}
-
-/* line 88, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
-h2 span {
-  background: #FFF;
-  padding: .5em 1em;
-  position: relative;
-  bottom: -0.75em;
-}
-
-/* line 95, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
   color: #085987;
 }
 
-<<<<<<< HEAD
 /* line 103, ../sass/imports/_main.scss */
-=======
-/* line 101, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .ots_logo a {
   width: 304px;
   height: 100px;
@@ -330,22 +248,14 @@ h2 span {
   background: transparent url("../images/ots_logo_v.png") no-repeat 0 0;
 }
 
-<<<<<<< HEAD
 /* line 114, ../sass/imports/_main.scss */
-=======
-/* line 112, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {
   outline: none;
   background-position: 0 -140px;
   outline: none;
 }
 
-<<<<<<< HEAD
 /* line 121, ../sass/imports/_main.scss */
-=======
-/* line 119, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .site_header {
   margin: 0 2%;
   padding: 4.5em 0 3em 0;
@@ -353,31 +263,19 @@ h2 span {
   font-size: 1.5em;
 }
 
-<<<<<<< HEAD
 /* line 128, ../sass/imports/_main.scss */
-=======
-/* line 126, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .site_header_landing {
   background: #085987;
   color: #FFF;
 }
 
-<<<<<<< HEAD
 /* line 133, ../sass/imports/_main.scss */
-=======
-/* line 131, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
 .site_header_city {
   color: #085987;
 }
 
 /* Style for list with floated list items. Responds to screen-width. */
-<<<<<<< HEAD
-/* line 141, ../sass/imports/_main.scss */
-=======
-/* line 140, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 140, ../sass/imports/_main.scss */
 .float_list {
   text-align: center;
   list-style: none;
@@ -385,57 +283,37 @@ h2 span {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-/* line 148, ../sass/imports/_main.scss */
-=======
-/* line 147, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 147, ../sass/imports/_main.scss */
 .float_list > li {
   margin: 0 2% 1.5em 2%;
 }
 
-<<<<<<< HEAD
 /* START move to media query */
-/* line 153, ../sass/imports/_main.scss */
+/* line 152, ../sass/imports/_main.scss */
 .float_list > li {
   float: left;
 }
 
-/* line 157, ../sass/imports/_main.scss */
-=======
-/* line 152, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 156, ../sass/imports/_main.scss */
 .float_list_4 > li {
   width: 21%;
 }
 
-<<<<<<< HEAD
-/* line 161, ../sass/imports/_main.scss */
-=======
-/* line 156, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 160, ../sass/imports/_main.scss */
 .float_list_3 > li {
   width: 29%;
 }
 
 /* END move to media query */
 /* List of OTS members, extends float list. Includes image and links. */
-<<<<<<< HEAD
-/* line 169, ../sass/imports/_main.scss */
-=======
-/* line 161, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 168, ../sass/imports/_main.scss */
 .team_list > li {
   min-height: 8em;
   height: auto !important;
   height: 8em;
 }
 
-<<<<<<< HEAD
-/* line 175, ../sass/imports/_main.scss */
-=======
-/* line 167, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 174, ../sass/imports/_main.scss */
 .top_bar {
   z-index: 100;
   width: 96%;
@@ -444,58 +322,12 @@ h2 span {
   color: #FFF;
   font-size: .6666em;
 }
-<<<<<<< HEAD
-/* line 182, ../sass/imports/_main.scss */
-=======
-/* line 174, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 181, ../sass/imports/_main.scss */
 .top_bar .container {
   overflow: visible;
 }
 
-<<<<<<< HEAD
-/* line 187, ../sass/imports/_main.scss */
-.nav {
-  text-transform: uppercase;
-  float: right;
-}
-/* line 190, ../sass/imports/_main.scss */
-.nav li {
-  float: left;
-}
-/* line 193, ../sass/imports/_main.scss */
-.nav a {
-  display: block;
-  padding: .5em .75em;
-}
-
-/* line 207, ../sass/imports/_main.scss */
-.nav_external .ots_nav_icon {
-  width: 28px;
-  height: 28px;
-  padding: 0;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
-}
-/* line 216, ../sass/imports/_main.scss */
-.nav_external .github {
-  background-position: 50% 0;
-}
-/* line 219, ../sass/imports/_main.scss */
-.nav_external .twitter {
-  background-position: 50% -28px;
-}
-/* line 222, ../sass/imports/_main.scss */
-.nav_external .facebook {
-  background-position: 50% -56px;
-}
-
-/* line 228, ../sass/imports/_main.scss */
-=======
-/* line 179, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 186, ../sass/imports/_main.scss */
 footer {
   width: 96%;
   margin: 0 2% 2% 2%;
@@ -504,34 +336,23 @@ footer {
   color: #FFF;
 }
 
-<<<<<<< HEAD
-/* line 236, ../sass/imports/_main.scss */
-=======
-/* line 187, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 194, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
 }
-<<<<<<< HEAD
-/* line 240, ../sass/imports/_main.scss */
-=======
-/* line 191, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 198, ../sass/imports/_main.scss */
 .logo_top_bar > a {
   display: block;
   float: left;
   width: 192px;
+  height: 24px;
   margin-right: 1em;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
-<<<<<<< HEAD
-/* line 251, ../sass/imports/_main.scss */
-=======
-/* line 202, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 210, ../sass/imports/_main.scss */
 .logo_top_bar > a,
 .logo_top_bar > a:link,
 .logo_top_bar > a:visited {
@@ -543,11 +364,7 @@ footer {
   filter: alpha(opacity=80);
   /* IE 5-7  */
 }
-<<<<<<< HEAD
-/* line 260, ../sass/imports/_main.scss */
-=======
-/* line 211, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 219, ../sass/imports/_main.scss */
 .logo_top_bar > a:hover,
 .logo_top_bar > a:active,
 .logo_top_bar > a:focus {
@@ -559,22 +376,14 @@ footer {
   /* IE 5-7  */
 }
 
-<<<<<<< HEAD
-/* line 268, ../sass/imports/_main.scss */
-=======
-/* line 219, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 227, ../sass/imports/_main.scss */
 footer {
   text-align: center;
   padding: 3em 0;
   height: auto;
 }
 
-<<<<<<< HEAD
-/* line 279, ../sass/imports/_main.scss */
-=======
-/* line 230, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 238, ../sass/imports/_main.scss */
 footer a,
 .meta_nav a,
 footer a:link,
@@ -585,11 +394,7 @@ footer a:visited,
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
-/* line 286, ../sass/imports/_main.scss */
-=======
-/* line 237, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 245, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
@@ -597,11 +402,7 @@ footer a:focus {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
-/* line 292, ../sass/imports/_main.scss */
-=======
-/* line 243, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 251, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -609,7 +410,7 @@ footer a:focus {
 }
 
 /* News blocks, events */
-/* line 301, ../sass/imports/_main.scss */
+/* line 260, ../sass/imports/_main.scss */
 .date {
   font-size: .75em;
   font-style: italic;
@@ -617,21 +418,13 @@ footer a:focus {
 }
 
 /* Styleguide*/
-<<<<<<< HEAD
-/* line 311, ../sass/imports/_main.scss */
-=======
-/* line 251, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 270, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding: 0;
 }
 
-<<<<<<< HEAD
-/* line 316, ../sass/imports/_main.scss */
-=======
-/* line 256, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 275, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -639,11 +432,7 @@ footer a:focus {
   font-style: italic;
 }
 
-<<<<<<< HEAD
-/* line 323, ../sass/imports/_main.scss */
-=======
-/* line 263, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 282, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -651,11 +440,7 @@ footer a:focus {
   color: transparent;
 }
 
-<<<<<<< HEAD
-/* line 330, ../sass/imports/_main.scss */
-=======
-/* line 270, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 289, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -667,11 +452,7 @@ footer a:focus {
 }
 
 /* Testimonials */
-<<<<<<< HEAD
-/* line 342, ../sass/imports/_main.scss */
-=======
-/* line 282, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 301, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   color: #FFF;
@@ -682,11 +463,7 @@ footer a:focus {
   height: 400px;
 }
 
-<<<<<<< HEAD
-/* line 352, ../sass/imports/_main.scss */
-=======
-/* line 292, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 311, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -695,11 +472,7 @@ footer a:focus {
   width: 25%;
 }
 
-<<<<<<< HEAD
-/* line 360, ../sass/imports/_main.scss */
-=======
-/* line 300, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 319, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -718,50 +491,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-<<<<<<< HEAD
-/* line 386, ../sass/imports/_main.scss */
-=======
-/* line 326, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 345, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-<<<<<<< HEAD
-/* line 387, ../sass/imports/_main.scss */
-=======
-/* line 327, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 346, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-<<<<<<< HEAD
-/* line 388, ../sass/imports/_main.scss */
-=======
-/* line 328, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 347, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-<<<<<<< HEAD
-/* line 389, ../sass/imports/_main.scss */
-=======
-/* line 329, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+/* line 348, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-<<<<<<< HEAD
-  /* line 397, ../sass/imports/_main.scss */
-=======
-  /* line 337, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 356, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -770,75 +523,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-<<<<<<< HEAD
-  /* line 398, ../sass/imports/_main.scss */
-=======
-  /* line 338, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 357, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-<<<<<<< HEAD
-  /* line 399, ../sass/imports/_main.scss */
-=======
-  /* line 339, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 358, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-<<<<<<< HEAD
-  /* line 400, ../sass/imports/_main.scss */
-=======
-  /* line 340, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 359, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-<<<<<<< HEAD
-  /* line 401, ../sass/imports/_main.scss */
-=======
-  /* line 341, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 360, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-<<<<<<< HEAD
-  /* line 402, ../sass/imports/_main.scss */
-=======
-  /* line 342, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 361, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-<<<<<<< HEAD
-  /* line 403, ../sass/imports/_main.scss */
-=======
-  /* line 343, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 362, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-<<<<<<< HEAD
-  /* line 404, ../sass/imports/_main.scss */
-=======
-  /* line 344, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 363, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-<<<<<<< HEAD
-  /* line 405, ../sass/imports/_main.scss */
-=======
-  /* line 345, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 364, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -847,66 +568,64 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-<<<<<<< HEAD
-  /* line 407, ../sass/imports/_main.scss */
-=======
-  /* line 347, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 366, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-<<<<<<< HEAD
-  /* line 408, ../sass/imports/_main.scss */
-=======
-  /* line 348, /Users/simon/Projekte/ots/www2/sass/imports/_main.scss */
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25
+  /* line 367, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
 }
-/* line 1, /Users/simon/Projekte/ots/www2/sass/imports/_dropdown.scss */
+/* line 1, ../sass/imports/_dropdown.scss */
 .dropdown {
   position: relative;
   float: left;
 }
-/* line 5, /Users/simon/Projekte/ots/www2/sass/imports/_dropdown.scss */
+/* line 5, ../sass/imports/_dropdown.scss */
 .dropdown .dropdown_menu {
   display: none;
 }
-/* line 10, /Users/simon/Projekte/ots/www2/sass/imports/_dropdown.scss */
+/* line 10, ../sass/imports/_dropdown.scss */
 .dropdown.open .dropdown_menu {
   display: block;
   position: absolute;
   top: 2em;
   left: 0;
 }
-/* line 18, /Users/simon/Projekte/ots/www2/sass/imports/_dropdown.scss */
+/* line 18, ../sass/imports/_dropdown.scss */
 .dropdown.open :hover,
 .dropdown.open :focus {
   color: red;
 }
 
-<<<<<<< HEAD
 /* Styles specific for city template */
-=======
-/* line 2, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 2, ../sass/imports/_nav.scss */
 .nav {
   text-transform: uppercase;
 }
-/* line 4, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 5, ../sass/imports/_nav.scss */
+.nav li {
+  border-top: 1px solid #1f8ab6;
+}
+/* line 9, ../sass/imports/_nav.scss */
 .nav a {
   display: block;
   padding: .5em .75em;
 }
 
-/* line 10, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
-.nav_internal {
-  clear: left;
+/* line 17, ../sass/imports/_nav.scss */
+.nav_external li {
+  margin: 0 .5em;
+  border-top: none;
 }
-
-/* line 15, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 21, ../sass/imports/_nav.scss */
+.nav_external a {
+  border: 0;
+}
+/* line 24, ../sass/imports/_nav.scss */
 .nav_external .ots_nav_icon {
   width: 28px;
   height: 28px;
@@ -916,53 +635,71 @@ footer a:focus {
   overflow: hidden;
   background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
 }
-/* line 24, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 33, ../sass/imports/_nav.scss */
 .nav_external .github {
   background-position: 50% 0;
 }
-/* line 27, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 36, ../sass/imports/_nav.scss */
 .nav_external .twitter {
   background-position: 50% -28px;
 }
-/* line 30, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 39, ../sass/imports/_nav.scss */
 .nav_external .facebook {
   background-position: 50% -56px;
 }
 
-/* line 35, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+/* line 44, ../sass/imports/_nav.scss */
+.btn_navbar {
+  float: right;
+  margin-left: .25em;
+  margin-right: .25em;
+  padding: .25em;
+  border: 2px solid #1f8ab6;
+  border-radius: .25em;
+  background: transparent;
+  cursor: pointer;
 }
 
-/* line 41, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 54, ../sass/imports/_nav.scss */
+.btn_navbar .icon_bar {
+  display: block;
+  width: 1.5em;
+  height: 2px;
+  margin-top: 3px;
+  background-color: #1f8ab6;
+}
+
+/* line 61, ../sass/imports/_nav.scss */
+.btn_navbar .icon_bar_last {
+  margin-bottom: 2px;
+}
+
+/* line 65, ../sass/imports/_nav.scss */
 .collapse {
   display: none;
 }
-/* line 44, /Users/simon/Projekte/ots/www2/sass/imports/_nav.scss */
+/* line 68, ../sass/imports/_nav.scss */
 .collapse.in {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 3, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 3, ../sass/imports/_mediaqueries.scss */
   .nav {
     float: right;
   }
-  /* line 6, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 6, ../sass/imports/_mediaqueries.scss */
   .nav li {
     float: left;
   }
 
-  /* line 11, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 11, ../sass/imports/_mediaqueries.scss */
   .btn_navbar {
     display: none;
   }
 
-  /* line 15, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 15, ../sass/imports/_mediaqueries.scss */
   .collapse {
     display: block;
   }
 }
->>>>>>> 6b136191d356fa956aa27ceb1b1a7f2d9d55ba25

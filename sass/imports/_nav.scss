@@ -1,17 +1,26 @@
 
 .nav {
   text-transform: uppercase;
+  
+  li  {
+    border-top: 1px solid $ots_blue_l;
+  }
+  
   a {
     display: block;
     padding: .5em .75em;
   }
 }
 
-.nav_internal {
-  clear: left;
-}
 
 .nav_external {
+  li {
+    margin: 0 .5em;
+    border-top: none;
+  }
+  a {
+    border: 0;
+  }
   .ots_nav_icon {
     width: 28px;
     height: 28px;
@@ -29,13 +38,28 @@
   }
   .facebook {
     background-position: 50% -56px;
-  }  
+  }
 }
 
-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+.btn_navbar {
+  float: right;
+  margin-left: .25em;
+  margin-right: .25em;
+  padding: .25em;
+  border: 2px solid $ots_blue_l;
+  border-radius: .25em;
+  background: transparent;
+  cursor: pointer;
+}
+.btn_navbar .icon_bar {
+  display: block;
+  width: 1.5em;
+  height: 2px;
+  margin-top: 3px;
+  background-color: $ots_blue_l;
+}
+.btn_navbar .icon_bar_last {
+  margin-bottom: 2px;
 }
 
 .collapse {
