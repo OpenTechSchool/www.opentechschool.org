@@ -25,5 +25,16 @@
     });
     $('#js-events-list').html(html);
   });
+  $.getJSON("http://api.meetup.com/2/groups?callback=?",{
+    key: meetupcom_key,
+    sign: true,
+    group_urlname: '{{page.meetupcom_group}}',
+    page: 4
+  }, function(data) {
+    var group = data.results[0];
+    $('#js-meetup-members').html(group.members);
+    $('#js-meetup-who').html(group.who);
+  });
+
   </script>
 {% endif %}
