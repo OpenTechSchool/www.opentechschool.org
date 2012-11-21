@@ -32,22 +32,22 @@ Even if you already have a pretty clear idea of what you want to do and may even
 
 But we also need to you to spread the word and convince people to join - after all, it is your cause!
 
-## scheduling first meeting
-Once there are enough people in the mailinglist (we usually wait until there are 25-30), we try to set up a first meeting in order to get to know each other as well as figure out how to actually get things done.
+## Scheduling the first meeting
+Once there are enough people in the mailing list (we usually wait until there are 15+), we try to set up a first meeting in order to get to know each other as well as figure out how to actually get things done.
 
- * We create a doodle poll to find a good time within the next 2-4 weeks
- * Sent this to the coaches list and ask everyone to put their availabilities
- * Reshare this via the Social Media Channels
- * Once there are enough coaches available for a date (8-10 at least), this is set and sent to the mailinglist.
+ * We create a [Doodle poll](http://www.doodle.com/) with potential dates in the next 2-4 weeks
+ * The poll is sent to the coaches list, asking everyone to mark their availability
+ * The poll is also shared on social media channels to find more coaches
+ * Once there are enough coaches available for a date (8-10 at least), the meeting is set and a notice about it is sent to the mailinglist.
 
-_Note_: We recommend meeting on a weekday evening after work hours, monday to thursday work best in our experience.
+_Note_: We recommend meeting on a weekday evening after work hours. Monday to Thursday work best in our experience.
 
-## at the meeting
+## At the meeting
 
- * The meeting is moderated by the lead coach and the cohost
- * Making a short introduction round to get the names and occupations as well as the motivation to be there straigent out, helps a lot
- * then start discussing.
+ * The meeting is moderated by the lead coach and the cohost. This means you make sure the conversation does not get off track or lose productivity. You can ask for suggestions for the agenda at the beginning of the meeting to give it structure. Asking participants to raise their hands and wait for you to call on them before talking will help with maintaing order, too.
+ * Start with a short introduction round to hear everyone's name and interests/skills, as well as the motivation to be a coach. You will find the information about this last point useful when trying to hammer out the goal/learning materials of the workshop.
+ * Start discussing!
 
-Common goals for a first meeting usually are:
- * Getting to know the ground, goals and availabilities of the coaches
- * Setting a milestone on what to achieve next - this could be anything from a next meeting to talk more up to the date and time for the first time the workshop takes place.
+The usual goals for the first meeting are:
+ * Getting to know the interests, motivation, goals, and availability of the coaches
+ * Creating a plan for the next steps - this could be anything from a second meeting to talk more, setting up plans for creating/assembling learning materials, to the date and time for the workshop to take place.
