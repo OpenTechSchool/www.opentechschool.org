@@ -7,11 +7,11 @@ Over time, certain practices became the way we usually do things. These texts ar
 
 ## Organisational guidelines and policies
  * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
- * [Promoting](/guidelines/promotion.html)
+ * [Promoting](/handbooks/promotion.html)
  * [How we decide on (strategic) stuff]()
- * [How to organisation a new workshop](/guidelines/new_workshop.html)
- * [How to start OTS in my city? - a blueprint](/guidelines/city-blueprint.html)
+ * [How to organisation a new workshop](/handbooks/new_workshop.html)
+ * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
  
 ## References
- * [Branding and Styleguide](/guidelines/styles.html)
- * [How mailing lists are organised and handled](/guidelines/mailinglists.html)
+ * [Branding and Styleguide](/handbooks/styles.html)
+ * [How mailing lists are organised and handled](/handbooks/mailinglists.html)
