@@ -4,7 +4,11 @@
     <div class="logo_top_bar">
       <a href="/">OpenTechSchool</a> 
       <div class="dropdown">
-        <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+        {% if page.layout == "city" %}
+          <a class="dropdown_toggle" data-toggle="dropdown" href="#">{{page.title}}</a>
+        {% else %}
+          <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+        {% endif %}
         <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
           <li><a tabindex="-1" href="/berlin/">Berlin</a></li>
           <li><a tabindex="-1" href="/stockholm/">Stockholm</a></li>
