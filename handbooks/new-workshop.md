@@ -9,7 +9,7 @@ Do you have a topic you're passionate about? Do you have the skills and maybe ev
 Before we can get started, there are a few things we need to ensure first. Those are:
 
  1. Make sure the workshop and its idea is in agreement with our [values](/values.html). In particular:
-  * even though your workshop may be targeting a certain group of people and could have some prequisites (like certain skills/hardware/software), it needs to be as open and inclusive as possible
+  * even though your workshop may be targeting a certain group of people and could have some perquisites (like certain skills/hardware/software), it needs to be as open and inclusive as possible
   * it needs to be hands-on
   * you are responsible for creating a safe learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory"
   * FIXME: anything else?
@@ -27,7 +27,7 @@ In order to make organisation easier, once you've contacted the OpenTechSchool t
 Even if you already have a pretty clear idea of what you want to do and may even have some learning material ready, we strongly believe that more people working together yield bigger results. In any case, you want to have some other people helping you coach, so the next things OTS is going to do are:
 
  * Create a mailing list for this topic
- * Promote that mailinglist via our social media channels, spread it in our mailinglist, user groups and communinities
+ * Promote that mailinglist via our social media channels, spread it in our mailinglist, user groups and communities
  * Make a public call for coaches on our blog - the more clearly your idea is described there, the better
 
 But we also need to you to spread the word and convince people to join - after all, it is your cause!
@@ -44,7 +44,7 @@ _Note_: We recommend meeting on a weekday evening after work hours. Monday to Th
 
 ## At the meeting
 
- * The meeting is moderated by the lead coach and the cohost. This means you make sure the conversation does not get off track or lose productivity. You can ask for suggestions for the agenda at the beginning of the meeting to give it structure. Asking participants to raise their hands and wait for you to call on them before talking will help with maintaing order, too.
+ * The meeting is moderated by the lead coach and the cohost. This means you make sure the conversation does not get off track or lose productivity. You can ask for suggestions for the agenda at the beginning of the meeting to give it structure. Asking participants to raise their hands and wait for you to call on them before talking will help with maintain order, too.
  * Start with a short introduction round to hear everyone's name and interests/skills, as well as the motivation to be a coach. You will find the information about this last point useful when trying to hammer out the goal/learning materials of the workshop.
  * Start discussing!
 

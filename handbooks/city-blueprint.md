@@ -44,7 +44,7 @@ For example:
 7 ...
 
 Event:
-11.00 partecipants arrive
+11.00 participants arrive
 11.30 introduction and installation 
 12.00 .......
 
