@@ -300,7 +300,7 @@ footer a:focus {
 
 .testimonial {
   overflow: hidden;
-  color: #FFF;
+  // color: #FFF;
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -324,6 +324,17 @@ footer a:focus {
   display: block;
 }
 
+.testimonial img.close-up {
+  width: 350px;
+  position: relative;
+  display: block;
+  margin: 15px;
+  float: left;
+}
+
+.testimonial img.close-up.right {
+  float: right;
+}
 
 
 /* ========================================== */
