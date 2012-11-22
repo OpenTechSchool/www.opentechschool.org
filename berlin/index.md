@@ -8,3 +8,18 @@ about: "Berlin is the hometown where everything got started. As such it is also 
 ---
 
 
+<ul class="float_list float_list_4 team_list">
+
+  <li class="member">
+    <img src="/images/team/Aleks.jpg">
+    <h3>Aleks</h3>
+    <p>Ask Alex for the key to co.up</a>
+    <ul class="member_links">
+      <li>
+      <li>
+        <a href="mailto:aleks[at]opentechschool dot org">Aleks @ opentechschool.org</a>
+      </li>
+    </ul>
+  </li>
+
+</ul>
