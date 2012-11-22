@@ -3,52 +3,71 @@
 
 <header class="site_header site_header_city">
   <div class="container">
-    
-    <h1>
-      <a href="/">{{page.title}}</a>
-    </h1>
-    {% if page.tagline %}
-	    <h2 class="tagline">
-	    	{{page.tagline}}
-	    </h2>
-    {% endif %}
-    <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
-    <span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span>
-  
+
+    <div class="city_title">
+      <h1>
+        <a href="/">{{page.title}}</a>
+      </h1>
+      {% if page.tagline %}
+        <h2 class="tagline">
+          {{page.tagline}}
+        </h2>
+      {% endif %}
+    </div>
+
+    <div class="city_cta">
+      <a class="ots_action ots_action ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">Join now</a>
+      <p>
+        <span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span>
+      </p>
+    </div>
+
+
   </div>
 </header>
 
-<section id="about">
-
-  {{page.about}}
-
-</section>
-
-<section id="events">
-  <h2>Upcoming events</h2>
-  <a href="">cal</a>
-  <div id="js-events-list"></div>
-  <script type="text/x-template" data-template="event">
-    <div class="event">
-      <h1>${name}</h1>
-      <p>${month}</p> <!-- 3-Letter-Word -->
-      <p>${day}</p> <!-- Day of month in 1st/ 12th -->
-      <p>${venue}</p> <!-- Venue as text -->
-      <p>${dayTime}</p> <!-- weekday + time of the day -->
+<section id="about" class="bg_full">
+  <div class="container">
+    <h2>About</h2>
+    {{page.about}}
   </div>
-  </script>
 </section>
 
-<section id="blog-posts">
-  <h2>Latest news</h2>
-  <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
-  <div id="js-blog-posts-list"></div>
-  <script type="text/x-template" data-template="blog-post">
-    <article class="blog-post">
-      <h1><a href="${link}">${title}</a></h1>
-      <p>${date}</p>
-    </article>
-  </script>
+<section id="events" class="bg_full">
+  <div class="container">
+    <h2>Upcoming events</h2>
+    <a href="">cal</a>
+    <div id="js-events-list"></div>
+    <script type="text/x-template" data-template="event">
+      <div class="event">
+        <h3>${name}</h3>
+        <p class="date">
+          <span>${month}</span> <span>${day}</span>,
+          <br>
+          <span>${dayTime}</span>
+        </p>
+        <p>${venue}</p> <!-- Venue as text -->
+
+    </div>
+    </script>
+  </div>
+</section>
+
+
+<section id="blog-posts" class="bg_full">
+  <div class="container">
+    <h2>Latest news</h2>
+    <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+    <div id="js-blog-posts-list"></div>
+    <script type="text/x-template" data-template="blog-post">
+      <article class="blog-post">
+        <h3><a href="${link}">${title}</a></h3>
+        <p class="date">
+          ${date}
+        </p>
+      </article>
+    </script>
+  </div>
 </section>
 
 
