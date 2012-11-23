@@ -4,4 +4,55 @@ title: Press
 ---
 
 
-Press
+<section id="about">
+	<h2>About the OpenTechSchool</h2>
+	<span>(free to copy)</span>
+	<p>Read in:
+		<!-- FIXME: make this inline -->
+		<ul id="js-lang-selector">
+			<li><a href="#js-about-eng" class="active">english</a></li>
+			<li><a href="#js-about-de">german</a></li>
+			<li><a href="#js-about-it">italian</a></li>
+			<li><a href="#js-about-fr">french</a></li>
+			<li><a href="#js-about-es">spanish</a></li>
+			<li><a href="#js-about-po">portugese</a></li>
+		</ul>
+	</p>
+	<div class="carousel">
+		<div class="carousel-inner">
+			<div class="item active" id="js-about-eng">
+				About in english
+			</div>
+			<div class="item" id="js-about-de">
+				Über in Deutsch
+			</div>
+			<div class="item" id="js-about-it">
+				Italiano
+			</div>
+			<div class="item" id="js-about-fr">
+				Français
+			</div>
+			<div class="item" id="js-about-es">
+				español
+			</div>
+			<div class="item" id="js-about-po">
+				portugese
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(function() {
+		$('#js-lang-selector li a').click(function() {
+			var $me = $(this),
+					href = $me.attr("href"),
+					$target = $(href);
+			$me.parent().siblings().removeClass("active");
+			$me.parent().addClass("active");
+
+			$target.addClass("active").siblings().removeClass("active");
+			return false;
+		});
+	});
+</script>
