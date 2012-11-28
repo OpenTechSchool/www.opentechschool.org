@@ -174,9 +174,15 @@ p, ul, ol {
   height: 8em;
   text-align: center;
   img {
+    width: 100%;
     max-width: 200px;
     height: auto;
     border-radius: 100%;
+  }
+  p {
+    min-height: 6em;
+    height:auto !important;
+    height: 6em;
   }
 }
 
@@ -323,15 +329,14 @@ footer a:focus {
 }
 
 .testimonial img.close-up {
-  width: 350px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 100%;
   position: relative;
   display: block;
-  margin: 15px;
+  margin: 0 2em 1.5em 0;
   float: left;
-}
-
-.testimonial img.close-up.right {
-  float: right;
 }
 
 
