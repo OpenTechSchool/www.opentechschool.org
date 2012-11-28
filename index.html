@@ -8,42 +8,51 @@ rss_feed: full
   <div class="container container_narrow">
 
     <h2>About</h2>
-<p>OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS' main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.</p>
+    <p>OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS' main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.</p>
     <a href="/about.html">Learn more about OpenTechSchool</a>
 
-    <h2>Latest News</h2>
+  </div>
+</div>
+
+<div class="bg_full">
+  <div class="container container_narrow">
+
+    <div class="col_left">
+      <h2>Latest News</h2>
       <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
-    <section id="blog-posts">
-      <div id="js-blog-posts-list"></div>
-    </section>
-    <script type="text/x-template" data-template="blog-post">
-      <article>
-        <h1><a href="${link}">${title}</a></h1>
-        <p>${date}</p>
-      </article>
-    </script>
+      <section id="blog-posts">
+        <div id="js-blog-posts-list"></div>
+      </section>
+      <script type="text/x-template" data-template="blog-post">
+        <article>
+          <h3><a href="${link}">${title}</a></h3>
+          <p>${date}</p>
+        </article>
+      </script>
+    </div>
 
 
+    <div class="col_right">
+      <h2><a href="/handbooks">Material Directory</a></h2>
+      <ul>
+        <li><a href="http://opentechschool.github.com/slides/presentations/coaching/">Coaching Guidelines</a></li>
+        <li><a href="/handbooks/new-workshop.html" >How to start a new Workshop</a></li>
+        <li><a href="/handbooks/city-blueprint.html">How to start OTS in your city?</a></li>
+      </ul>
 
-    <h2><a href="/handbooks">Material Directory</a></h2>
-    <ul>
-      <li><a href="http://opentechschool.github.com/slides/presentations/coaching/">Coaching Guidelines</a></li>
-      <li><a href="/handbooks/new-workshop.html" >How to start a new Workshop</a></li>
-      <li><a href="/handbooks/city-blueprint.html">How to start OTS in your city?</a></li>
-      
-    </ul>
+      <h2>Testimonials</h2>
+      <figure>
+        <img src="images/placeholder_duana.jpg" width="300" height="201" alt="Placeholder Duana">
+      </figure>
+      <blockquote>
+        <p>OpenTech School is awesome</p>
+      </blockquote>
+      <p>
+        <a href="/testimonials.html">More Testimonials</a>
+      </p>
+
+    </div>
 
 
-    <h2>Testimonials</h2>
-    <figure>
-      <img src="images/placeholder_duana.jpg" width="300" height="201" alt="Placeholder Duana">
-    </figure>
-    <blockquote>
-      <p>OpenTech School is awesome</p>
-    </blockquote>
-    <p>
-      <a href="/testimonials.html">More Testimonials</a>
-    </p>
-
-
-</section>
+  </div>
+</div>

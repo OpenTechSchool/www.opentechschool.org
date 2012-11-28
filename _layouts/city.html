@@ -27,52 +27,61 @@
 </header>
 
 <section id="about" class="bg_full">
-  <div class="container">
+  <div class="container container_narrow">
     <h2>About</h2>
     {{page.about}}
   </div>
 </section>
 
-<section id="events" class="bg_full">
-  <div class="container">
-    <h2>Upcoming events</h2>
-    <a href="">cal</a>
-    <div id="js-events-list"></div>
-    <script type="text/x-template" data-template="event">
-      <div class="event">
-        <h3>${name}</h3>
-        <p class="date">
-          <span>${month}</span> <span>${day}</span>,
-          <br>
-          <span>${dayTime}</span>
-        </p>
-        <p>${venue}</p> <!-- Venue as text -->
 
+<div class="bg_full">
+
+  <div class="container container_narrow">
+    <div class="col_left">
+      <section id="events" class="bg_full">
+        <h2>Upcoming events</h2>
+        <a href="">cal</a>
+        <div id="js-events-list"></div>
+        <script type="text/x-template" data-template="event">
+          <div class="event">
+            <h3>${name}</h3>
+            <p class="date">
+              <span>${month}</span> <span>${day}</span>,
+              <br>
+              <span>${dayTime}</span>
+            </p>
+            <p>${venue}</p> <!-- Venue as text -->
+
+        </div>
+        </script>
+      </section>
     </div>
-    </script>
+
+    <div class="col_right">
+      <section id="blog-posts" class="bg_full">
+        <h2>Latest news</h2>
+        <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
+        <div id="js-blog-posts-list"></div>
+        <script type="text/x-template" data-template="blog-post">
+          <article class="blog-post">
+            <h3><a href="${link}">${title}</a></h3>
+            <p class="date">
+              ${date}
+            </p>
+          </article>
+        </script>
+      </section>
+    </div>
+
   </div>
-</section>
+
+</div>
 
 
-<section id="blog-posts" class="bg_full">
-  <div class="container">
-    <h2>Latest news</h2>
-    <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml">rss</a>
-    <div id="js-blog-posts-list"></div>
-    <script type="text/x-template" data-template="blog-post">
-      <article class="blog-post">
-        <h3><a href="${link}">${title}</a></h3>
-        <p class="date">
-          ${date}
-        </p>
-      </article>
-    </script>
-  </div>
-</section>
 
 
-<section class="bg_full">
-  <div class="container">
+<section class="bg_full bg_full_white">
+  <div class="container container_wide">
     {{ page.content }}
   </div>
 </section>
