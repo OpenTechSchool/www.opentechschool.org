@@ -1,10 +1,10 @@
 ---
 layout: city
 title: Berlin
-tagline: "The mother of them all"
+tagline: "Where everything started – and where can take a ride on a rotating TV tower"
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin
-about: "Berlin is the hometown where everything got started. As such it is also the prototype and the sandbox for upcoming events and new workshop styles."
+about: "We are the very first OpenTechSchool local team – the early birds! The venue that supported us from the very beginning and where we're hosting our events is the fantastic co-working space co.up. This is also where we have our bi-weekly breakfast meeting – the best way to meet us and talk together about new ideas and projects!"
 ---
 
 
@@ -13,11 +13,11 @@ about: "Berlin is the hometown where everything got started. As such it is also 
   <li class="member">
     <img src="/images/team/Aleks.jpg">
     <h3>Aleks</h3>
-    <p>Ask Alex for the key to co.up</a>
+    <p>the right person for anything co.up related, from keys to booking rooms</a>
     <ul class="member_links">
       <li>
       <li>
-        <a href="mailto:aleks[at]opentechschool dot org">Aleks @ opentechschool.org</a>
+        <a href="mailto:aleks[at]opentechschool dot org">aleks @ opentechschool.org</a>
       </li>
     </ul>
   </li>
