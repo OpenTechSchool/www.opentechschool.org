@@ -96,6 +96,10 @@ p, ul, ol {
   background: #f4f4f4;
 }
 
+.bg_full_white {
+  background: #fff;
+}
+
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
@@ -168,6 +172,12 @@ p, ul, ol {
   min-height: 8em;
   height:auto !important;
   height: 8em;
+  text-align: center;
+  img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+  }
 }
 
 .top_bar {
