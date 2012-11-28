@@ -1,5 +1,5 @@
 <nav class="top_bar" data-spy="affix" data-offset-top="20">
-  <div class="container">
+  <div class="container container_wide">
 
     <div class="logo_top_bar">
       <a href="/">OpenTechSchool</a>
@@ -7,7 +7,7 @@
         {% if page.layout == "city" %}
           <a class="dropdown_toggle" data-toggle="dropdown" href="#">{{page.title}}</a>
         {% else %}
-          <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+          <a class="dropdown_toggle" data-toggle="dropdown" href="#">Location &hellip;</a>
         {% endif %}
         <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
           <li><a tabindex="-1" href="/berlin/">Berlin</a></li>

@@ -2,7 +2,7 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
-body { margin: 0; font-size: 87.5%; line-height: 1.5; } /*base font size: 14px, line-height: 21px*/
+body { margin: 0; font-size: 75%; line-height: 1.5; } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: $ots_text; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,14 +17,12 @@ h2 {
   font-size: 2em;
 }
 h3 {
-  font-size: 1.5em;
-}
-h4 {
   font-size: 1.25em;
 }
-h5, h6 {
+h4, h5, h6 {
   font-size: 1em;
 }
+
 
 ::-moz-selection { background: $ots_red_h; color: #fff; text-shadow: none; }
 ::selection { background: $ots_red_h; color: #fff; text-shadow: none; }
@@ -39,13 +37,14 @@ a:visited {
 a:hover,
 a:active,
 a:focus {
-  color: $ots_blue_l;
-  text-decoration: underline;
+  color: $ots_blue_h;
+  text-decoration: none;
+  outline: none;
 }
 
 /* buttons */
 .ots_action {
-  background: $ots_blue_l;
+  background-color: $ots_blue_l;
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -63,7 +62,7 @@ a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
-  background: $ots_blue_l;
+  background: $ots_blue_h;
 }
 
 a.ots_action_highlight,
@@ -78,20 +77,23 @@ a.ots_action_highlight:focus {
   background: $ots_red_h;
 }
 
+a.ots_action_city {
+  padding: .75em 1.25em;
+}
+
 body {
   line-height: 1.5em;
 }
 
-p {
+p, ul, ol {
   margin-bottom: 1.5em;
 }
 
 
 .bg_full {
-  width: 96%;
-  margin: 0 2%;
+  width: 100%;
   padding: 5% 0;
-  background: beige;
+  background: #f4f4f4;
 }
 
 .ots_logo {
@@ -119,7 +121,6 @@ p {
 
 
 .site_header {
-  margin: 0 2%;
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
@@ -138,7 +139,6 @@ p {
 /* Style for list with floated list items. Responds to screen-width. */
 
 .float_list {
-  text-align: center;
   list-style: none;
   padding: 0;
   overflow: hidden;
@@ -161,7 +161,6 @@ p {
   width: 29%;
 }
 
-
 /* END move to media query */
 
 /* List of OTS members, extends float list. Includes image and links. */
@@ -172,23 +171,13 @@ p {
 }
 
 .top_bar {
+  width: 100%;
   z-index: 100;
-  width: 96%;
-  margin: 2% 2% 0;
-  background: $ots_blue;
+  background: #FFF;
   color: #FFF;
-  font-size: .6666em;
   .container {
     overflow: visible;
   }
-}
-
-footer {
-  width: 96%;
-  margin: 0 2% 2% 2%;
-  font-size: 12px;
-  background: $ots_blue;
-  color: #FFF;
 }
 
 .logo_top_bar {
@@ -225,28 +214,27 @@ footer {
 }
 
 footer {
-  text-align: center;
+  font-size: .8571em;
+  background: $ots_blue;
+  color: #84acc3;
   padding: 3em 0;
   height: auto;
+  p {
+    text-align: center;
+  }
 }
 
 footer a,
-.meta_nav a,
 footer a:link,
-.meta_nav a:link,
-footer a:visited,
-.meta_nav a:visited {
-  color: #FFF;
-  text-decoration: underline;
+footer a:visited {
+  color: #c1d5e1;
 }
 
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
-  text-decoration: underline;
 }
-
 
 .main_img {
   text-align: center;
