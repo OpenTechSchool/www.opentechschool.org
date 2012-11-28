@@ -1,14 +1,13 @@
-
 .nav {
   text-transform: uppercase;
-
+  clear: both;
   li  {
     border-top: 1px solid $ots_blue_l;
   }
-
   a {
     display: block;
     padding: .5em .75em;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -43,9 +42,8 @@
 
 .btn_navbar {
   float: right;
-  margin-left: .25em;
-  margin-right: .25em;
-  padding: .25em;
+  margin: 0.5em 0.75em;
+  padding: 0;
   border: 2px solid $ots_blue_l;
   border-radius: .25em;
   background: transparent;
@@ -53,7 +51,7 @@
 }
 .btn_navbar .icon_bar {
   display: block;
-  width: 1.5em;
+  width: 1.25em;
   height: 2px;
   margin-top: 3px;
   background-color: $ots_blue_l;
