@@ -13,9 +13,8 @@ about: "We are the very first OpenTechSchool local team – the early birds! The
   <li class="member">
     <img src="/images/team/Aleks.jpg">
     <h3>Aleks</h3>
-    <p>the right person for anything co.up related, from keys to booking rooms</a>
+    <p>the right person for anything co.up related, from keys to booking rooms</p>
     <ul class="member_links">
-      <li>
       <li>
         <a href="mailto:aleks[at]opentechschool dot org">aleks @ opentechschool.org</a>
       </li>
