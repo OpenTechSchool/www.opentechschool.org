@@ -1,16 +1,12 @@
 .nav {
   text-transform: uppercase;
   clear: both;
-  li  {
-    border-top: 1px solid $ots_blue_l;
-  }
   a {
     display: block;
     padding: .5em .75em;
     letter-spacing: 0.05em;
   }
 }
-
 
 .nav_external {
   li {

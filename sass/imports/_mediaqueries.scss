@@ -26,19 +26,19 @@
 
   .top_bar.affix {
     position: fixed;
-    border-bottom: 3px solid $ots_blue;
+    border-bottom: 1px solid $ots_blue;
   }
-  
+
   .col_left {
-    width: 47%;
+    width: 46%;
     float: left;
-    margin: 0 3% 1.5em 0;
+    margin: 0 4% 1.5em 0;
   }
-  
+
   .col_right {
-    width: 47%;
+    width: 46%;
     float: right;
-    margin: 0 0 1.5em 3%;
+    margin: 0 0 1.5em 4%;
   }
 
 }

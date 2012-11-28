@@ -37,14 +37,14 @@ a:visited {
 a:hover,
 a:active,
 a:focus {
-  color: $ots_blue_l;
-  text-decoration: underline;
+  color: $ots_blue_h;
+  text-decoration: none;
   outline: none;
 }
 
 /* buttons */
 .ots_action {
-  background: $ots_blue_l;
+  background-color: $ots_blue_l;
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -62,7 +62,7 @@ a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
-  background: $ots_blue_l;
+  background: $ots_blue_h;
 }
 
 a.ots_action_highlight,
@@ -85,7 +85,7 @@ body {
   line-height: 1.5em;
 }
 
-p {
+p, ul, ol {
   margin-bottom: 1.5em;
 }
 
@@ -214,9 +214,9 @@ p {
 }
 
 footer {
-  font-size: .666em;
+  font-size: .8571em;
   background: $ots_blue;
-  color: #FFF;
+  color: #84acc3;
   padding: 3em 0;
   height: auto;
   p {
@@ -225,22 +225,16 @@ footer {
 }
 
 footer a,
-.meta_nav a,
 footer a:link,
-.meta_nav a:link,
-footer a:visited,
-.meta_nav a:visited {
-  color: #FFF;
-  text-decoration: underline;
+footer a:visited {
+  color: #c1d5e1;
 }
 
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
-  text-decoration: underline;
 }
-
 
 .main_img {
   text-align: center;
