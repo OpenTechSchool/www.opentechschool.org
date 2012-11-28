@@ -71,7 +71,7 @@ These mailing-lists are for @ots members only. They will filter, curate and/or a
 
       * membership = only \*@ots for easier management (docs get shared automatically, etc.)
       * posting = team decision whether external mails can get in or if the list is limited to members (before this decision is made, the default should be set to members and \*@ots only)
-      * visibility = team decision if content should be publicly viewable (before this decision is made, default should be set to members and *@ots only)
+      * visibility = team decision if content should be publicly viewable (before this decision is made, default should be set to members and \*@ots only)
 
    * discuss.* :
 
