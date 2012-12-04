@@ -10,18 +10,19 @@ This is at the same an event that can help building the community around OTS and
 # How does a Learners Meetup work?
 
 It's a 2-hour event, in three parts: two talks, a break and a Learn'n'Tell session.
- 
+
+
 1. Talks
 Talks shouldn't last longer than 25 minutes, including the last 5 minutes dedicated to questions.
 The topics covered should relate to programming and/ or technology and should be suitable for beginners, explaining even the most complex matter in a clear and engaging way.
 In order to assure the talk's convenience we suggest to ask the speakers to review their slides and presentation structure together in advance. We're aware that it's quite an effort timewise, but it can really make the difference for your meetup (and, most important, your attendees).
- 
+
 2. Break
 It should last around 5-10 minutes and will give everybody the chance to meet, discuss, socialize, relax.
 Plus, a couple of things should be on the wall during the breaK:
- * a white board. It doesn't need to be a real board, a big paper sheet would do the job. Anyone can use it to ask for or offer help for a project, or propose a skill exchange (no money involved, please). A very good way to start a conversation.
- * a white sheet entitled "Learn'n'Tell": this is the list of available slots (not more than five) to talk at the upcoming Learn'n'Tell session. Anyone interested in doing so should write down her/ his name and topic of the intervention.
- 
+    * a white board. It doesn't need to be a real board, a big paper sheet would do the job. Anyone can use it to ask for or offer help for a project, or propose a skill exchange (no money involved, please). A very good way to start a conversation.
+    * a white sheet entitled "Learn'n'Tell": this is the list of available slots (not more than five) to talk at the upcoming Learn'n'Tell session. Anyone interested in doing so should write down her/ his name and topic of the intervention.
+
 3. Learn'n'Tell session
 Learn'n'Tell is inspired to Hack'n'Tell (happening in New York and Berlin), an event for hackers presenting their projects and getting a feedback from the audience. During our Learn'n'Tell session, beginners have 5 minutes to ask for a techie questions or show code they're working on (live coding is more than welcome!) and 5 minutes to receive a feedback from the audience (experienced developers are always joining the night also with the purpose to support the discussion). Important: have someone moderating the session and keeping an eye on the time!
 
