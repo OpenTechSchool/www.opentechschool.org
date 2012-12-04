@@ -73,6 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Blue links */
 /* Blue hover states */
 /* Default text color*/
+/* Text color on dark blue backgrounds */
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
 /* line 1, ../sass/imports/_grid.scss */
@@ -233,25 +234,44 @@ p, ul, ol {
 }
 
 /* line 93, ../sass/imports/_main.scss */
+.bg_full ul {
+  margin: 0.75em 0;
+  padding: 0 1em 1.5em 2em;
+  list-style: none;
+}
+/* line 98, ../sass/imports/_main.scss */
+.bg_full li:before {
+  content: "";
+  display: block;
+  height: .3em;
+  width: 1em;
+  left: -2em;
+  top: 0.9em;
+  position: relative;
+  background-color: #84acc3;
+  border-radius: 1em;
+}
+
+/* line 113, ../sass/imports/_main.scss */
 .bg_full {
   width: 100%;
   padding: 5% 0;
   background: #f4f4f4;
 }
 
-/* line 99, ../sass/imports/_main.scss */
+/* line 119, ../sass/imports/_main.scss */
 .bg_full_white {
   background: #fff;
 }
 
-/* line 103, ../sass/imports/_main.scss */
+/* line 123, ../sass/imports/_main.scss */
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
   color: #085987;
 }
 
-/* line 109, ../sass/imports/_main.scss */
+/* line 129, ../sass/imports/_main.scss */
 .ots_logo a {
   width: 304px;
   height: 100px;
@@ -263,101 +283,93 @@ p, ul, ol {
   background: transparent url("../images/ots_logo_v.png") no-repeat 0 0;
 }
 
-/* line 120, ../sass/imports/_main.scss */
+/* line 140, ../sass/imports/_main.scss */
 .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {
   outline: none;
   background-position: 0 -140px;
   outline: none;
 }
 
-/* line 127, ../sass/imports/_main.scss */
+/* line 147, ../sass/imports/_main.scss */
 .site_header {
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 133, ../sass/imports/_main.scss */
+/* line 153, ../sass/imports/_main.scss */
 .site_header_landing {
   background: #085987;
   color: #FFF;
 }
 
-/* line 138, ../sass/imports/_main.scss */
+/* line 158, ../sass/imports/_main.scss */
 .site_header_city {
   color: #085987;
 }
 
 /* Style for list with floated list items. Responds to screen-width. */
-/* line 145, ../sass/imports/_main.scss */
+/* line 165, ../sass/imports/_main.scss */
 .float_list {
   list-style: none;
   padding: 0;
   overflow: hidden;
 }
 
-/* line 151, ../sass/imports/_main.scss */
+/* line 171, ../sass/imports/_main.scss */
 .float_list > li {
   margin: 0 2% 1.5em 2%;
 }
 
-/* START move to media query */
-/* line 156, ../sass/imports/_main.scss */
-.float_list > li {
-  float: left;
-}
-
-/* line 160, ../sass/imports/_main.scss */
-.float_list_4 > li {
-  width: 21%;
-}
-
-/* line 164, ../sass/imports/_main.scss */
-.float_list_3 > li {
-  width: 29%;
-}
-
-/* END move to media query */
 /* List of OTS members, extends float list. Includes image and links. */
-/* line 174, ../sass/imports/_main.scss */
+/* line 178, ../sass/imports/_main.scss */
 .team_list > li {
   min-height: 8em;
   height: auto !important;
   height: 8em;
   text-align: center;
 }
-/* line 179, ../sass/imports/_main.scss */
+/* line 183, ../sass/imports/_main.scss */
+.team_list > li:before {
+  display: none;
+}
+/* line 186, ../sass/imports/_main.scss */
 .team_list > li img {
   width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 100%;
 }
-/* line 185, ../sass/imports/_main.scss */
+/* line 192, ../sass/imports/_main.scss */
+.team_list > li h3 {
+  font-size: 1em;
+}
+/* line 195, ../sass/imports/_main.scss */
 .team_list > li p {
+  font-size: .714em;
   min-height: 6em;
   height: auto !important;
   height: 6em;
 }
 
-/* line 192, ../sass/imports/_main.scss */
+/* line 203, ../sass/imports/_main.scss */
 .top_bar {
   width: 100%;
   z-index: 100;
   background: #FFF;
   color: #FFF;
 }
-/* line 197, ../sass/imports/_main.scss */
+/* line 208, ../sass/imports/_main.scss */
 .top_bar .container {
   overflow: visible;
 }
 
-/* line 202, ../sass/imports/_main.scss */
+/* line 213, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
 }
-/* line 206, ../sass/imports/_main.scss */
+/* line 217, ../sass/imports/_main.scss */
 .logo_top_bar > a {
   display: block;
   float: left;
@@ -368,7 +380,7 @@ p, ul, ol {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 218, ../sass/imports/_main.scss */
+/* line 229, ../sass/imports/_main.scss */
 .logo_top_bar > a,
 .logo_top_bar > a:link,
 .logo_top_bar > a:visited {
@@ -380,7 +392,7 @@ p, ul, ol {
   filter: alpha(opacity=80);
   /* IE 5-7  */
 }
-/* line 227, ../sass/imports/_main.scss */
+/* line 238, ../sass/imports/_main.scss */
 .logo_top_bar > a:hover,
 .logo_top_bar > a:active,
 .logo_top_bar > a:focus {
@@ -392,7 +404,7 @@ p, ul, ol {
   /* IE 5-7  */
 }
 
-/* line 235, ../sass/imports/_main.scss */
+/* line 246, ../sass/imports/_main.scss */
 footer {
   font-size: .8571em;
   background: #085987;
@@ -400,26 +412,26 @@ footer {
   padding: 3em 0;
   height: auto;
 }
-/* line 241, ../sass/imports/_main.scss */
+/* line 252, ../sass/imports/_main.scss */
 footer p {
   text-align: center;
 }
 
-/* line 248, ../sass/imports/_main.scss */
+/* line 259, ../sass/imports/_main.scss */
 footer a,
 footer a:link,
 footer a:visited {
   color: #c1d5e1;
 }
 
-/* line 254, ../sass/imports/_main.scss */
+/* line 265, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
 }
 
-/* line 258, ../sass/imports/_main.scss */
+/* line 269, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -427,7 +439,7 @@ footer a:focus {
 }
 
 /* News blocks, events */
-/* line 267, ../sass/imports/_main.scss */
+/* line 278, ../sass/imports/_main.scss */
 .date {
   font-size: .75em;
   font-style: italic;
@@ -435,13 +447,13 @@ footer a:focus {
 }
 
 /* Styleguide*/
-/* line 277, ../sass/imports/_main.scss */
+/* line 288, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding: 0;
 }
 
-/* line 282, ../sass/imports/_main.scss */
+/* line 293, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -449,7 +461,7 @@ footer a:focus {
   font-style: italic;
 }
 
-/* line 289, ../sass/imports/_main.scss */
+/* line 300, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -457,7 +469,7 @@ footer a:focus {
   color: transparent;
 }
 
-/* line 296, ../sass/imports/_main.scss */
+/* line 307, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -470,7 +482,7 @@ footer a:focus {
 
 /* Testimonials */
 /* testimonials */
-/* line 309, ../sass/imports/_main.scss */
+/* line 320, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   position: relative;
@@ -479,17 +491,17 @@ footer a:focus {
   height: auto !important;
   height: 400px;
 }
-/* line 317, ../sass/imports/_main.scss */
+/* line 328, ../sass/imports/_main.scss */
 .testimonial header {
   overflow: hidden;
 }
 
-/* line 322, ../sass/imports/_main.scss */
+/* line 333, ../sass/imports/_main.scss */
 .testimonial_about {
   font-style: italic;
 }
 
-/* line 327, ../sass/imports/_main.scss */
+/* line 338, ../sass/imports/_main.scss */
 .name b {
   color: #666;
   display: block;
@@ -497,7 +509,7 @@ footer a:focus {
   margin-bottom: 1em;
 }
 
-/* line 335, ../sass/imports/_main.scss */
+/* line 346, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -506,7 +518,7 @@ footer a:focus {
   width: 25%;
 }
 
-/* line 343, ../sass/imports/_main.scss */
+/* line 354, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -515,7 +527,7 @@ footer a:focus {
   display: block;
 }
 
-/* line 351, ../sass/imports/_main.scss */
+/* line 362, ../sass/imports/_main.scss */
 .testimonial img.close-up {
   width: 100%;
   max-width: 240px;
@@ -527,7 +539,7 @@ footer a:focus {
   float: left;
 }
 
-/* line 362, ../sass/imports/_main.scss */
+/* line 373, ../sass/imports/_main.scss */
 .question {
   color: #085987;
 }
@@ -542,30 +554,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-/* line 384, ../sass/imports/_main.scss */
+/* line 395, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 385, ../sass/imports/_main.scss */
+/* line 396, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 386, ../sass/imports/_main.scss */
+/* line 397, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 387, ../sass/imports/_main.scss */
+/* line 398, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-  /* line 395, ../sass/imports/_main.scss */
+  /* line 406, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -574,43 +586,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-  /* line 396, ../sass/imports/_main.scss */
+  /* line 407, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 397, ../sass/imports/_main.scss */
+  /* line 408, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 398, ../sass/imports/_main.scss */
+  /* line 409, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 399, ../sass/imports/_main.scss */
+  /* line 410, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 400, ../sass/imports/_main.scss */
+  /* line 411, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 401, ../sass/imports/_main.scss */
+  /* line 412, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 402, ../sass/imports/_main.scss */
+  /* line 413, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 403, ../sass/imports/_main.scss */
+  /* line 414, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -619,13 +631,13 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-  /* line 405, ../sass/imports/_main.scss */
+  /* line 416, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 406, ../sass/imports/_main.scss */
+  /* line 417, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
@@ -657,6 +669,13 @@ footer a:focus {
 .member_count {
   font-size: .666em;
   color: #666;
+}
+
+/* line 15, ../sass/imports/_city.scss */
+.tagline {
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 1em;
 }
 
 /* line 1, ../sass/imports/_nav.scss */
@@ -864,34 +883,45 @@ footer a:focus {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 440px) {
   /* line 2, ../sass/imports/_mediaqueries.scss */
+  .float_list > li {
+    float: left;
+  }
+
+  /* line 5, ../sass/imports/_mediaqueries.scss */
+  .float_list_4 > li {
+    width: 46%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 12, ../sass/imports/_mediaqueries.scss */
   body {
     font-size: 87.5%;
   }
 
-  /* line 5, ../sass/imports/_mediaqueries.scss */
+  /* line 15, ../sass/imports/_mediaqueries.scss */
   .nav {
     float: right;
     clear: none;
   }
-  /* line 8, ../sass/imports/_mediaqueries.scss */
+  /* line 18, ../sass/imports/_mediaqueries.scss */
   .nav li {
     float: left;
     border: none;
   }
 
-  /* line 14, ../sass/imports/_mediaqueries.scss */
+  /* line 24, ../sass/imports/_mediaqueries.scss */
   .btn_navbar {
     display: none;
   }
 
-  /* line 18, ../sass/imports/_mediaqueries.scss */
+  /* line 28, ../sass/imports/_mediaqueries.scss */
   .collapse {
     display: block;
   }
 
-  /* line 22, ../sass/imports/_mediaqueries.scss */
+  /* line 32, ../sass/imports/_mediaqueries.scss */
   .top_bar {
     height: 2.5em;
     padding: 30px 0;
@@ -901,24 +931,29 @@ footer a:focus {
     transition: padding-bottom .25s ease-in;
   }
 
-  /* line 31, ../sass/imports/_mediaqueries.scss */
+  /* line 41, ../sass/imports/_mediaqueries.scss */
   .top_bar.affix {
     position: fixed;
     border-bottom: 1px solid #085987;
     padding: 10px 0;
   }
 
-  /* line 37, ../sass/imports/_mediaqueries.scss */
+  /* line 47, ../sass/imports/_mediaqueries.scss */
   .col_left {
     width: 46%;
     float: left;
     margin: 0 4% 1.5em 0;
   }
 
-  /* line 43, ../sass/imports/_mediaqueries.scss */
+  /* line 53, ../sass/imports/_mediaqueries.scss */
   .col_right {
     width: 46%;
     float: right;
     margin: 0 0 1.5em 4%;
+  }
+
+  /* line 59, ../sass/imports/_mediaqueries.scss */
+  .float_list_4 > li {
+    width: 21%;
   }
 }
