@@ -172,22 +172,6 @@ p, ul, ol {
   margin: 0 2% 1.5em 2%;
 }
 
-/* START move to media query */
-.float_list > li {
-  float: left;
-}
-
-.float_list_4 > li {
-  width: 21%;
-}
-
-.float_list_3 > li {
-  width: 29%;
-}
-
-/* END move to media query */
-
-
 
 
 /* List of OTS members, extends float list. Includes image and links. */
@@ -196,13 +180,20 @@ p, ul, ol {
   height:auto !important;
   height: 8em;
   text-align: center;
+  &:before {
+    display: none;
+  }
   img {
     width: 100%;
     max-width: 200px;
     height: auto;
     border-radius: 100%;
   }
+  h3 {
+    font-size: 1em;
+  }
   p {
+    font-size: .714em;
     min-height: 6em;
     height:auto !important;
     height: 6em;

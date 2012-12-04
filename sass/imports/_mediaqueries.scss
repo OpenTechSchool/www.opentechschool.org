@@ -1,3 +1,13 @@
+@media screen and (min-width: 440px) {
+  .float_list > li {
+    float: left;
+  }
+  .float_list_4 > li {
+    width: 46%;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 87.5%;
@@ -44,6 +54,10 @@
     width: 46%;
     float: right;
     margin: 0 0 1.5em 4%;
+  }
+
+  .float_list_4 > li {
+    width: 21%;
   }
 
 }
