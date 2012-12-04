@@ -6,7 +6,7 @@ title: Contributing to the blog
 So you want to contribute to the blog? That is great! So without further ado let's dive right into how you can do this.
 
 ## Introduction
-Our blog is hosted on [Github Pages](http://pages.github.com), a static HTML hosting provider from github. We use the normal Github Tools, like Issues, Markdown and Pull-Request to manage our blog as well. So the process is as usual: either via Fork, Write, Pull-Request (for git/github users) or via the Wiki, Issues and emails. If you do not know what Forking means, you probably want to skip right to the [second way of doing it](#via-wiki-and-issues)
+Our blog is hosted on [Github Pages](http://pages.github.com), a static HTML hosting provider from github. We use the normal Github Tools, like Issues, Markdown and Pull-Request to manage our blog as well. So the process is as usual: either via Fork, Write, Pull-Request (for git/github users) or via the Wiki, Issues and emails. If you do not know what Forking means, you probably want to skip right to the [second way of doing it](#via_wiki_and_issues)
 
 ## Fork &raquo; Write &raquo; Pull-Reqest
 The Source of the blog can found in the [blog.opentechschool.org repository](https://github.com/OpenTechSchool/blog.opentechschool.org) of the OpenTechSchool account. Simply fork the repository by clicking on the "Fork" on the top right.
@@ -39,7 +39,7 @@ Once you opened that newly created file, you'll find that there is a header sect
 
 This top part is metadata information in the [YAML](http://en.wikipedia.org/wiki/YAML)-Format. We generally do not use the description and category so feel free to removes those lines. Instead you can add an author (with your name as the value), an image (if you provide a nice teaser picture with your post) and a teaser, which would be shown on the index-page instead of the whole content. On top, we have build-in support for google-groups-signup forms.
 
-A great example on how to use all of those is in the blog post ``_posts/2012-09-26-stockholm-calling.md". Take a peak there if you are unsure on whether you are doing it right.
+A great example on how to use all of those is in the blog post ``_posts/2012-09-26-stockholm-calling.md``. Take a peak there if you are unsure on whether you are doing it right.
 
 ### The content
 
@@ -52,5 +52,15 @@ Once you are done and happy with the rendered result of your blog post, add it t
 You'll get notified about that by an update on your pull-request.
 
 ## Via Wiki and Issues
-Now, if you are not too familiar with git and github but still want to write a blog post, there is a second not that complex but also less powerfull way of doing it (for e.g. you can't really attach any pictures easily).
+Now, if you are not too familiar with git and github but still want to write a blog post, there is a second not that complex but also less powerful way of doing it (for e.g. you can't really attach any pictures easily): via the wiki and issues.
 
+### Create a new wiki page
+
+Simply go to [https://github.com/OpenTechSchool/blog.opentechschool.org/wiki](https://github.com/OpenTechSchool/blog.opentechschool.org/wiki) and click on "New Page". Now it is useful to prefix the title of the page with _BlogPost:_ and then give it the title of the post you want to do. This brings you to the Editor.
+
+Make sure the editor is set to "markdown" (on the right above the text-field). Now write your blog-post there and click "save".
+
+### Submit for review
+Once you are done with your blog post, copy the link of it, go to "Issues" and create a new issue by clicking on "New Issue". As a title give the title of your blog post again and then post the URL to the wiki-page into the comment field. This will now be submitted to Team Content, who will review, copy-edit and publish the blog post for you.
+
+Once published you'll receive a notification about your issue being closed. The Wiki-page might get removed by the Team during the process as well.
