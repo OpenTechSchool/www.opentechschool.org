@@ -1044,6 +1044,7 @@ footer a:focus {
 
   /* line 32, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .top_bar {
+    position: absolute;
     height: 2.5em;
     padding: 30px 0;
     -webkit-transition: padding-bottom .25s ease-in;
@@ -1052,33 +1053,38 @@ footer a:focus {
     transition: padding-bottom .25s ease-in;
   }
 
-  /* line 41, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 42, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .top_bar.affix {
     position: fixed;
     border-bottom: 1px solid #085987;
     padding: 10px 0;
   }
 
-  /* line 47, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 48, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .col_left {
     width: 46%;
     float: left;
     margin: 0 4% 1.5em 0;
   }
 
-  /* line 53, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 54, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .col_right {
     width: 46%;
     float: right;
     margin: 0 0 1.5em 4%;
   }
 
-  /* line 59, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 60, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
     width: 21%;
   }
 
-  /* line 62, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  /* line 64, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
+  .site_header {
+    padding-top: 8.5em;
+  }
+
+  /* line 68, /Users/simon/Projekte/ots/www2/sass/imports/_mediaqueries.scss */
   .site_header_city {
     background-size: 100%;
   }
