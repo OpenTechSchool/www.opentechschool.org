@@ -57,44 +57,31 @@ title: Press
 	});
 </script>
 
+## In the press
+
+### In English
+
+ * [OpenTechSchool in Stockholm – GeekGirls wanted!](http://geekgirlmeetup.com/stockholm/opentechschool-in-stockholm-geekgirls-wanted/
+) at [GeekGirlMeetup.com](http://www.geekgirlmeetup.com). November 8th, 2012.
+
+ * [Berlin Geekettes: Building A Collective Strength In Germany
+ women 2.0](http://www.women2.com/berlin-geekettes-building-a-collective-strength-in-germany/
+), October 23rd, 2012.
+
+* [The Big Berlin Breakdown: August 27- 31](http://siliconallee.com/events/2012/08/27/the-big-berlin-breakdown-august-27-31) on [Silicon Allee](http://siliconallee.com/), August 27th, 2012.
+
+* [Berlin Geekette of the Week – Amélie Anglade](http://berlingeekettes.com/post/30090123718/berlin-geekette-of-the-week) on [Berlin Geekettes](http://www.berlingeekettes.com), August 24th, 2012.
+
+* [Berlin Geekettes of the Week: the Women Behind OpenTechSchool](http://berlingeekettes.com/post/29112914602/berlin-geekettes-of-the-week-the-women-behind)
+on [Berlin Geekettes](http://www.berlingeekettes.com) August 10th, 2012.
+
+
+### In German
+
+* [Python OpenTechSchool](http://python-verband.org/news/python-opentechschool) by [Python Software Verband](http://python-verband.org), November 23rd, 2012.
 
 
 
+#### In Swedish
 
-What they say about us
-
-
-In English
-
-OpenTechSchool in Stockholm – GeekGirls wanted!
-GeekGirlMeetup.com. November 8th, 2012.
-http://geekgirlmeetup.com/stockholm/opentechschool-in-stockholm-geekgirls-wanted/
-
-Berlin Geekettes: Building A Collective Strength In Germany
-women 2.0. October 23rd, 2012.
-http://www.women2.com/berlin-geekettes-building-a-collective-strength-in-germany/
-
-The Big Berlin Breakdown: August 27- 31
-Silicon Allee. August 27th, 2012.
-http://siliconallee.com/events/2012/08/27/the-big-berlin-breakdown-august-27-31
-
-Berlin Geekette of the Week – Amélie Anglade
-Berlin Geekettes. August 24th, 2012.
-http://berlingeekettes.com/post/30090123718/berlin-geekette-of-the-week
-
-Berlin Geekettes of the Week: the Women Behind OpenTechSchool
-Berlin Geekettes. August 10th, 2012.
-
-
-In German
-
-Python OpenTechSchool
-Python Software Verband. November 23rd, 2012.
-http://python-verband.org/news/python-opentechschool
-
-
-In Swedish
-
-OpenTechSchool På Export
-Hallo Welt! September 26th, 2012.
-https://camfia.wordpress.com/2012/09/26/open-tech-school-pa-export/
+* [OpenTechSchool På Export](https://camfia.wordpress.com/2012/09/26/open-tech-school-pa-export/) on [Hallo Welt!](https://camfia.wordpress.com/), September 26th, 2012.
