@@ -8,7 +8,7 @@ So you want to contribute to the blog? That is great! So without further ado let
 ## Introduction
 Our blog is hosted on [Github Pages](http://pages.github.com), a static HTML hosting provider from github. We use the normal Github Tools, like Issues, Markdown and Pull-Request to manage our blog as well. So the process is as usual: either via Fork, Write, Pull-Request (for git/github users) or via the Wiki, Issues and emails. If you do not know what Forking means, you probably want to skip right to the [second way of doing it](#via_wiki_and_issues)
 
-## Fork -> Write -> Pull-Reqest
+## Fork &raquo; Write &raquo; Pull-Reqest
 The Source of the blog can found in the [blog.opentechschool.org repository](https://github.com/OpenTechSchool/blog.opentechschool.org) of the OpenTechSchool account. Simply fork the repository by clicking on the "Fork" on the top right.
 
 ### Starting Jekyll
