@@ -7,15 +7,16 @@ Over time, certain practices became the way we usually do things. These texts ar
 
 
 ## How Tos
- * [How to organisation a new workshop](/handbooks/new_workshop.html)
+ * [How to organisation a new workshop](/handbooks/new-workshop.html)
  * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
- * [How to contribute to the learners material](/handbooks/learners_meetup.html)
+ * [How to organise a learners meetup](/handbooks/learners_meetup.html)
+ * [How to contribute to the learners material](/handbooks/contribute.html)
  * [How to write a Blog Post](/handbooks/blog-posts.html)
 
 ## Organisational guidelines and policies
  * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
  * [Promoting](/handbooks/promotion.html)
- * [How we decide on (strategic) stuff](/handbooks/decision_making.html)
+ * [How we decide on (strategic) stuff](/handbooks/decision-making.html)
  
 ## References
  * [Branding and Styleguide](/handbooks/styles.html)
