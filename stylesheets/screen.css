@@ -354,48 +354,43 @@ pre code {
   color: #FFF;
 }
 
-/* line 190, ../sass/imports/_main.scss */
-.site_header_city {
-  color: #085987;
-}
-
 /* Style for list with floated list items. Responds to screen-width. */
-/* line 197, ../sass/imports/_main.scss */
+/* line 193, ../sass/imports/_main.scss */
 .float_list {
   list-style: none;
   padding: 0;
   overflow: hidden;
 }
 
-/* line 203, ../sass/imports/_main.scss */
+/* line 199, ../sass/imports/_main.scss */
 .float_list > li {
   margin: 0 2% 1.5em 2%;
 }
 
 /* List of OTS members, extends float list. Includes image and links. */
-/* line 210, ../sass/imports/_main.scss */
+/* line 206, ../sass/imports/_main.scss */
 .team_list > li {
   min-height: 8em;
   height: auto !important;
   height: 8em;
   text-align: center;
 }
-/* line 215, ../sass/imports/_main.scss */
+/* line 211, ../sass/imports/_main.scss */
 .team_list > li:before {
   display: none;
 }
-/* line 218, ../sass/imports/_main.scss */
+/* line 214, ../sass/imports/_main.scss */
 .team_list > li img {
   width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 100%;
 }
-/* line 224, ../sass/imports/_main.scss */
+/* line 220, ../sass/imports/_main.scss */
 .team_list > li h3 {
   font-size: 1em;
 }
-/* line 227, ../sass/imports/_main.scss */
+/* line 223, ../sass/imports/_main.scss */
 .team_list > li p {
   font-size: .714em;
   min-height: 6em;
@@ -403,24 +398,24 @@ pre code {
   height: 6em;
 }
 
-/* line 235, ../sass/imports/_main.scss */
+/* line 231, ../sass/imports/_main.scss */
 .top_bar {
   width: 100%;
   z-index: 100;
   background: #FFF;
   color: #FFF;
 }
-/* line 240, ../sass/imports/_main.scss */
+/* line 236, ../sass/imports/_main.scss */
 .top_bar .container {
   overflow: visible;
 }
 
-/* line 245, ../sass/imports/_main.scss */
+/* line 241, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
 }
-/* line 249, ../sass/imports/_main.scss */
+/* line 245, ../sass/imports/_main.scss */
 .logo_top_bar > a {
   display: block;
   float: left;
@@ -431,7 +426,7 @@ pre code {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 261, ../sass/imports/_main.scss */
+/* line 257, ../sass/imports/_main.scss */
 .logo_top_bar > a,
 .logo_top_bar > a:link,
 .logo_top_bar > a:visited {
@@ -443,7 +438,7 @@ pre code {
   filter: alpha(opacity=80);
   /* IE 5-7  */
 }
-/* line 270, ../sass/imports/_main.scss */
+/* line 266, ../sass/imports/_main.scss */
 .logo_top_bar > a:hover,
 .logo_top_bar > a:active,
 .logo_top_bar > a:focus {
@@ -455,7 +450,7 @@ pre code {
   /* IE 5-7  */
 }
 
-/* line 278, ../sass/imports/_main.scss */
+/* line 274, ../sass/imports/_main.scss */
 footer {
   font-size: .8571em;
   background: #085987;
@@ -463,26 +458,26 @@ footer {
   padding: 3em 0;
   height: auto;
 }
-/* line 284, ../sass/imports/_main.scss */
+/* line 280, ../sass/imports/_main.scss */
 footer p {
   text-align: center;
 }
 
-/* line 291, ../sass/imports/_main.scss */
+/* line 287, ../sass/imports/_main.scss */
 footer a,
 footer a:link,
 footer a:visited {
   color: #c1d5e1;
 }
 
-/* line 297, ../sass/imports/_main.scss */
+/* line 293, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
 }
 
-/* line 301, ../sass/imports/_main.scss */
+/* line 297, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -490,7 +485,7 @@ footer a:focus {
 }
 
 /* News blocks, events */
-/* line 310, ../sass/imports/_main.scss */
+/* line 306, ../sass/imports/_main.scss */
 .date {
   font-size: .75em;
   font-style: italic;
@@ -498,17 +493,17 @@ footer a:focus {
 }
 
 /* Styleguide*/
-/* line 320, ../sass/imports/_main.scss */
+/* line 316, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding-left: 0 !important;
 }
-/* line 323, ../sass/imports/_main.scss */
+/* line 319, ../sass/imports/_main.scss */
 .sg_list > li:before {
   display: none;
 }
 
-/* line 328, ../sass/imports/_main.scss */
+/* line 324, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -516,7 +511,7 @@ footer a:focus {
   font-style: italic;
 }
 
-/* line 335, ../sass/imports/_main.scss */
+/* line 331, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -524,7 +519,7 @@ footer a:focus {
   color: transparent;
 }
 
-/* line 342, ../sass/imports/_main.scss */
+/* line 338, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -537,7 +532,7 @@ footer a:focus {
 
 /* Testimonials */
 /* testimonials */
-/* line 355, ../sass/imports/_main.scss */
+/* line 351, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   position: relative;
@@ -546,17 +541,17 @@ footer a:focus {
   height: auto !important;
   height: 400px;
 }
-/* line 363, ../sass/imports/_main.scss */
+/* line 359, ../sass/imports/_main.scss */
 .testimonial header {
   overflow: hidden;
 }
 
-/* line 368, ../sass/imports/_main.scss */
+/* line 364, ../sass/imports/_main.scss */
 .testimonial_about {
   font-style: italic;
 }
 
-/* line 373, ../sass/imports/_main.scss */
+/* line 369, ../sass/imports/_main.scss */
 .name b {
   color: #666;
   display: block;
@@ -564,7 +559,7 @@ footer a:focus {
   margin-bottom: 1em;
 }
 
-/* line 381, ../sass/imports/_main.scss */
+/* line 377, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -573,7 +568,7 @@ footer a:focus {
   width: 25%;
 }
 
-/* line 389, ../sass/imports/_main.scss */
+/* line 385, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -582,7 +577,7 @@ footer a:focus {
   display: block;
 }
 
-/* line 397, ../sass/imports/_main.scss */
+/* line 393, ../sass/imports/_main.scss */
 .testimonial img.close-up {
   width: 100%;
   max-width: 240px;
@@ -594,7 +589,7 @@ footer a:focus {
   float: left;
 }
 
-/* line 408, ../sass/imports/_main.scss */
+/* line 404, ../sass/imports/_main.scss */
 .question {
   color: #085987;
 }
@@ -609,30 +604,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-/* line 430, ../sass/imports/_main.scss */
+/* line 426, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 431, ../sass/imports/_main.scss */
+/* line 427, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 432, ../sass/imports/_main.scss */
+/* line 428, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 433, ../sass/imports/_main.scss */
+/* line 429, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-  /* line 441, ../sass/imports/_main.scss */
+  /* line 437, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -641,43 +636,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-  /* line 442, ../sass/imports/_main.scss */
+  /* line 438, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 443, ../sass/imports/_main.scss */
+  /* line 439, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 444, ../sass/imports/_main.scss */
+  /* line 440, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 445, ../sass/imports/_main.scss */
+  /* line 441, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 446, ../sass/imports/_main.scss */
+  /* line 442, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 447, ../sass/imports/_main.scss */
+  /* line 443, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 448, ../sass/imports/_main.scss */
+  /* line 444, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 449, ../sass/imports/_main.scss */
+  /* line 445, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -686,13 +681,13 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-  /* line 451, ../sass/imports/_main.scss */
+  /* line 447, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 452, ../sass/imports/_main.scss */
+  /* line 448, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
@@ -720,17 +715,24 @@ footer a:focus {
 }
 
 /* Styles specific for city template */
-/* line 10, ../sass/imports/_city.scss */
+/* line 9, ../sass/imports/_city.scss */
 .member_count {
+  display: block;
   font-size: .666em;
-  color: #666;
 }
 
-/* line 15, ../sass/imports/_city.scss */
+/* line 14, ../sass/imports/_city.scss */
 .tagline {
   font-size: 35px;
   line-height: 1.2;
   margin-bottom: 1em;
+}
+
+/* line 20, ../sass/imports/_city.scss */
+.site_header_city {
+  color: #085987;
+  background-position: 0 50%;
+  background-size: 768px;
 }
 
 /* line 1, ../sass/imports/_nav.scss */
@@ -1020,5 +1022,10 @@ footer a:focus {
   /* line 59, ../sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
     width: 21%;
+  }
+
+  /* line 62, ../sass/imports/_mediaqueries.scss */
+  .site_header_city {
+    background-size: 100%;
   }
 }

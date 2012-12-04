@@ -3,17 +3,22 @@
 .city_title {
 }
 
-
 .city_cta {
 }
 
 .member_count {
+  display: block;
   font-size: .666em;
-  color: #666;
 }
 
 .tagline {
   font-size: 35px;
   line-height: 1.2;
   margin-bottom: 1em;
+}
+
+.site_header_city {
+  color: $ots_blue;
+  background-position: 0 50%;
+  background-size: 768px;
 }
