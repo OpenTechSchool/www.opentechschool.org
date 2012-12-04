@@ -22,6 +22,7 @@
   .city {
     padding-right: 5px;
     border-right: 1px solid $ots_blue;
+    width: 100px;
   }
 
   .caret {
@@ -40,7 +41,7 @@
   &.open {
 
     .dropdown_toggle {
-      background: $ots_blue;
+      background: $ots_blue_l;
       color: white; 
     }
 
@@ -51,20 +52,23 @@
     .dropdown_menu {
       display: block;
       position: absolute;
-      top: 2em;
+      top: 25px;
       left: 0;
-      background: #f4f4f4;
+      background: white;
+      border: 1px solid #dadada;
+      border-radius: 5px;
 
       a {
+        border-top: 1px solid #dadada;
         display: block;
-        padding: 5px;
-        width: 100%;
+        padding: 2px 5px;
+        line-height: 2em;
+        width: 118px;
       }
-    }
 
-    :hover,
-    :focus {
-      color: white;
+      li:first-child a {
+        border: none;
+      }
     }
   }
 }
