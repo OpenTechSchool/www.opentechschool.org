@@ -66,20 +66,3 @@ about: "We are the very first OpenTechSchool local team – the early birds! The
   </li>
 
 </ul>
-
-
-Aleks: the right person for anything co.up related, from keys to booking rooms
-
-Bea: co-organizing the Beginners Meetup and curating the OTS Library
-
-Duana: co-organizing the Beginners Meetup
-
-Giorgia: design related events and part of the Beginners Meetup team
-
-Martin: co-organizing Javascript workshops
-
-Rachel: everything iOS and UX / UI, plus video production
-
-Simon: co-organizing JavaScript workshops and curating the OTS Library
-
-Stephan: member of the Beginners Meetup team
