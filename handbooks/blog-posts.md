@@ -39,7 +39,7 @@ Once you opened that newly created file, you'll find that there is a header sect
 
 This top part is metadata information in the [YAML](http://en.wikipedia.org/wiki/YAML)-Format. We generally do not use the description and category so feel free to removes those lines. Instead you can add an author (with your name as the value), an image (if you provide a nice teaser picture with your post) and a teaser, which would be shown on the index-page instead of the whole content. On top, we have build-in support for google-groups-signup forms.
 
-A great example on how to use all of those is in the blog post ``_posts/2012-09-26-stockholm-calling.md`. Take a peak there if you are unsure on whether you are doing it right.
+A great example on how to use all of those is in the blog post ``_posts/2012-09-26-stockholm-calling.md``. Take a peak there if you are unsure on whether you are doing it right.
 
 ### The content
 
