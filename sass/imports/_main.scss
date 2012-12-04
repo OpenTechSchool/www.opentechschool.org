@@ -74,7 +74,6 @@ a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
   background: $ots_red_l;
   @include background-image(linear-gradient(top, $ots_red_l 0%,$ots_red_l 50%,#D40000 51%,$ots_red_l 100%));
-  
 }
 
 a.ots_action_highlight:hover,
@@ -82,7 +81,7 @@ a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
   background: $ots_red_h;
   @include background-image(linear-gradient(top, $ots_red_h 0%,$ots_red_h 50%,$ots_red_l 51%,$ots_red_h 100%));
-  
+
 }
 
 a.ots_action_city {
@@ -124,8 +123,8 @@ pre {
 
 .bg_full {
   ul {
-    margin: 0.75em 0;
-    padding: 0 1em 1.5em 2em;
+    margin-bottom: 1.5em;
+    padding-left: 2em;
     list-style: none;
   }
   li:before {
@@ -320,7 +319,10 @@ footer a:focus {
 
 .sg_list {
   list-style: none;
-  padding: 0;
+  padding-left: 0 !important;
+  > li:before {
+    display: none;
+  }
 }
 
 .sg_list small {
