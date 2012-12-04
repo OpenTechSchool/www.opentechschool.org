@@ -44,7 +44,10 @@ a:focus {
 
 /* buttons */
 .ots_action {
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
   background-color: $ots_blue_l;
+  @include background-image(linear-gradient(top, $ots_blue_l 0%,$ots_blue_l 50%,$ots_blue 51%,$ots_blue_l 100%));
+
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -63,18 +66,23 @@ a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
   background: $ots_blue_h;
+  @include background-image(linear-gradient(top, $ots_blue_h 0%,$ots_blue_h 50%,$ots_blue_l 51%,$ots_blue_h 100%));
 }
 
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
   background: $ots_red_l;
+  @include background-image(linear-gradient(top, $ots_red_l 0%,$ots_red_l 50%,#D40000 51%,$ots_red_l 100%));
+  
 }
 
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
   background: $ots_red_h;
+  @include background-image(linear-gradient(top, $ots_red_h 0%,$ots_red_h 50%,$ots_red_l 51%,$ots_red_h 100%));
+  
 }
 
 a.ots_action_city {
