@@ -89,6 +89,26 @@ p, ul, ol {
   margin-bottom: 1.5em;
 }
 
+.bg_full {
+  ul {
+    margin: 0.75em 0;
+    padding: 0 1em 1.5em 2em;
+    list-style: none;
+  }
+  li:before { 
+    content: "";
+    display: block;
+    height: .3em;
+    width: 1em;
+    left: -2em;
+    top: 0.9em;
+    position: relative;
+    background-color: $ots_text_l;
+    border-radius: 1em;
+  }
+  
+}
+
 
 .bg_full {
   width: 100%;
@@ -235,7 +255,7 @@ p, ul, ol {
 footer {
   font-size: .8571em;
   background: $ots_blue;
-  color: #84acc3;
+  color: $ots_text_l;
   padding: 3em 0;
   height: auto;
   p {
