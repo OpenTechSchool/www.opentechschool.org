@@ -1,0 +1,53 @@
+{% include _head.html %}
+{% include _main_nav.html %}
+
+<header class="site_header">
+  <div class="container container_wide">
+    <h1>
+      {{page.title}}
+    </h1>
+
+    <div id="testimonial-carousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img src="/images/testimonials/slide_anne.jpg" alt="anna">
+          <div class="carousel-caption testimonial-caption">
+            <p class="quote">A new dose of inspiration and motivation. I learned a lot of new things, met awesome people, and got even more excited about JS! I want to keep on learning. It’s just much more fun to learn how to code together with other like-minded people</p>
+            <a class="author" href="#annegret-spranger">Annegret, Learner</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/testimonials/slide_duana.jpg" alt="duana">
+          <div class="carousel-caption testimonial-caption">
+            <p class="quote">Just seeing how people view programming with fresh eyes is fun. Programming is magical, we shouldn’t forget that.</p>
+            <a class="author" href="#duana-stanley">Duana, Coach</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/testimonials/slide_frank.jpg" alt="frank">
+          <div class="carousel-caption testimonial-caption">
+            <p class="quote">I was really excited to hear something like this was being organized. It’s always been hard for me to know how to make first steps into this world as a relative beginner without getting a degree in Computer Science or Design.</p>
+            <a class="author" href="#frank-cifarelli">Frank, Attendee</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#testimonial-carousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#testimonial-carousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+  </div>
+
+</header>
+
+
+<section class="bg_full">
+  <div class="container container_narrow">
+    {{ content }}
+  </div>
+</section>
+
+{% include _footer.html %}
+{% include _scripts.html %}
+{% include _end.html %}

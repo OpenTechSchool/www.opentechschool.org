@@ -1,0 +1,100 @@
+---
+layout: simple
+title: Press
+---
+
+
+<section id="about">
+	<h2>About OpenTechSchool</h2>
+	<span>(free to copy)</span>
+	<p>Read in:
+		<!-- FIXME: make this inline -->
+		<ul id="js-lang-selector">
+			<li><a href="#js-about-eng" class="active">english</a></li>
+			<li><a href="#js-about-de">German</a></li>
+			<li><a href="#js-about-it">Italian</a></li>
+			<li><a href="#js-about-fr">French</a></li>
+			<li><a href="#js-about-es">Spanish</a></li>
+			<li><a href="#js-about-po">Portugese</a></li>
+		</ul>
+	</p>
+	<div class="carousel">
+		<div class="carousel-inner">
+			<div class="item active" id="js-about-eng">
+				About in english
+			</div>
+			<div class="item" id="js-about-de">
+				Über in Deutsch
+			</div>
+			<div class="item" id="js-about-it">
+				Italiano
+			</div>
+			<div class="item" id="js-about-fr">
+				Français
+			</div>
+			<div class="item" id="js-about-es">
+				español
+			</div>
+			<div class="item" id="js-about-po">
+				portugese
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(function() {
+		$('#js-lang-selector li a').click(function() {
+			var $me = $(this),
+					href = $me.attr("href"),
+					$target = $(href);
+			$me.parent().siblings().removeClass("active");
+			$me.parent().addClass("active");
+
+			$target.addClass("active").siblings().removeClass("active");
+			return false;
+		});
+	});
+</script>
+
+
+
+
+
+What they say about us
+
+
+In English
+
+OpenTechSchool in Stockholm – GeekGirls wanted!
+GeekGirlMeetup.com. November 8th, 2012.
+http://geekgirlmeetup.com/stockholm/opentechschool-in-stockholm-geekgirls-wanted/
+
+Berlin Geekettes: Building A Collective Strength In Germany
+women 2.0. October 23rd, 2012.
+http://www.women2.com/berlin-geekettes-building-a-collective-strength-in-germany/
+
+The Big Berlin Breakdown: August 27- 31
+Silicon Allee. August 27th, 2012.
+http://siliconallee.com/events/2012/08/27/the-big-berlin-breakdown-august-27-31
+
+Berlin Geekette of the Week – Amélie Anglade
+Berlin Geekettes. August 24th, 2012.
+http://berlingeekettes.com/post/30090123718/berlin-geekette-of-the-week
+
+Berlin Geekettes of the Week: the Women Behind OpenTechSchool
+Berlin Geekettes. August 10th, 2012.
+
+
+In German
+
+Python OpenTechSchool
+Python Software Verband. November 23rd, 2012.
+http://python-verband.org/news/python-opentechschool
+
+
+In Swedish
+
+OpenTechSchool På Export
+Hallo Welt! September 26th, 2012.
+https://camfia.wordpress.com/2012/09/26/open-tech-school-pa-export/

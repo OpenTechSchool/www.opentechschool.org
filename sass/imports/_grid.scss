@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container_narrow {
+  max-width: 740px;
+}
+
+.container_wide {
+  max-width: 1300px;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+

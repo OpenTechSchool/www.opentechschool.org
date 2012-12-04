@@ -1,0 +1,40 @@
+{% if page.meetupcom_group %}
+  <script type="text/javascript">
+  var meetupcom_key = '38406b383fa43605b6b234269316';
+  $.getJSON('https://api.meetup.com/2/events?callback=?', {
+    key: meetupcom_key,
+    sign: true,
+    group_urlname: '{{page.meetupcom_group}}',
+    page: 4
+  }, function(data) {
+    var events = data.results;
+    var html = '';
+    $.each(events, function(i, cal_event) {
+      var name = cal_event.name;
+      var date = new Date(cal_event.time);
+      var dateWrapper = moment(date);
+      var templateData = {
+        name: name,
+        dayTime: dateWrapper.format('dddd HH:MM'),
+        month: dateWrapper.format('MMM'),
+        day: dateWrapper.format('Do'),
+        venue: cal_event.venue.name,
+        link: cal_event.event_url
+      };
+      html += OTS.template('event', templateData);
+    });
+    $('#js-events-list').html(html);
+  });
+  $.getJSON("http://api.meetup.com/2/groups?callback=?",{
+    key: meetupcom_key,
+    sign: true,
+    group_urlname: '{{page.meetupcom_group}}',
+    page: 4
+  }, function(data) {
+    var group = data.results[0];
+    $('#js-meetup-members').html(group.members);
+    $('#js-meetup-who').html(group.who);
+  });
+
+  </script>
+{% endif %}
