@@ -89,13 +89,38 @@ p, ul, ol {
   margin-bottom: 1.5em;
 }
 
+pre,
+code  {
+  font-family: consolas, courier, monospace;
+  font-size: 1em;
+  white-space: pre;
+  border-radius: .25em;
+}
+
+code {
+  background-color: #F4FBFD;
+  padding: 0 .25em;
+}
+
+pre {
+  line-height: 1.2em;
+  padding: 1em;
+  margin: 1.5em 0;
+  background-color: $ots_blue;
+  color: $ots_text_i_l;
+  code {
+    color: inherit;
+    background-color: inherit;
+  }
+}
+
 .bg_full {
   ul {
     margin: 0.75em 0;
     padding: 0 1em 1.5em 2em;
     list-style: none;
   }
-  li:before { 
+  li:before {
     content: "";
     display: block;
     height: .3em;
@@ -103,10 +128,10 @@ p, ul, ol {
     left: -2em;
     top: 0.9em;
     position: relative;
-    background-color: $ots_text_l;
+    background-color: $ots_text_i;
     border-radius: 1em;
   }
-  
+
 }
 
 
@@ -246,7 +271,7 @@ p, ul, ol {
 footer {
   font-size: .8571em;
   background: $ots_blue;
-  color: $ots_text_l;
+  color: $ots_text_i;
   padding: 3em 0;
   height: auto;
   p {
@@ -257,7 +282,7 @@ footer {
 footer a,
 footer a:link,
 footer a:visited {
-  color: #c1d5e1;
+  color: $ots_text_i_l;
 }
 
 footer a:hover,
