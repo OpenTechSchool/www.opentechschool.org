@@ -19,7 +19,7 @@ Those lists are:
 
  * [Team Communications](mailto:team.communications[at]opentechschool.org) takes care of all online and offline communications of OTS. Either you have something you think OTS would like to tweet or facebook or you are interested of us speaking at your event/conference, send your emails here.
 
- * [Team Blueprint](team.blueprint[at]opentechschool.org) is in charge of the [handboosk](/handbooks/). If you find any mistake, have feedback or want more information about a specific part, send your email here.
+ * [Team Blueprint](team.blueprint[at]opentechschool.org) is in charge of the [handbooks](/handbooks/). If you find any mistake, have feedback or want more information about a specific part, send your email here.
 
  * [Team Tech](mailto:team.tech[at]opentechschool.org) organises the tech parts of OTS, for example the github accounts, email-adresses and domains and stuff. So if you need a mailinglist or something of the former mentioned, send your email here.
 
@@ -34,5 +34,5 @@ We also have our own gossip channel on freenode:
 
 ## In persona
 
-Always feel free to come to us after any Beginners Meetup, the bi-weekly OpenTechSchool-Breakfast we do at co.up or any other workshop and event and speak with us. And if you unsure who to talk to, just ask a random person that exact question :) .
+Always feel free to come to us after any Beginners Meetup, the bi-weekly OpenTechSchool-Breakfast we do at [co.up](http://co-up.de) or any other workshop and event and speak with us. And if you unsure who to talk to, just ask a random person that exact question :) .
 
