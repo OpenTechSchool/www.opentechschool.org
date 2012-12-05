@@ -67,3 +67,8 @@ about: "We are the group of people who created the first chapter of OpenTechScho
   </li>
 
 </ul>
+
+<div style="display: block; margin: 15px auto; width:522px">
+  <a class="twitter-timeline" href="https://twitter.com/OTS_BLN" data-widget-id="276335676528672768">Tweets by @OTS_BLN</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>

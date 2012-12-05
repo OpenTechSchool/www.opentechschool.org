@@ -38,3 +38,8 @@ about: "We're the first OpenTechSchool team outside of Germany! We are developin
   </li>
 
 </ul>
+  
+<div style="display: block; margin: 15px auto; width:522px">
+  <a class="twitter-timeline" href="https://twitter.com/OTS_STHLM" data-widget-id="276335914828046338">Tweets by @OTS_STHLM</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
