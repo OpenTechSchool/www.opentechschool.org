@@ -16,9 +16,9 @@ Before we can get started, there are a few things we need to ensure first. Those
 
  2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global).)
 
- 3. Have an idea of what you want to workshop/learning material to include - the clearer the idea, the easier it becomes to recruit coaches
+ 3. Have an idea of what you want to workshop/learning material to include &mdash; the clearer the idea, the easier it becomes to recruit coaches
 
- * Get in touch with OpenTechSchool people (which you might have already done via the mailinglist) and discuss your idea. Someone may already be working on something similar, so it makes sense to join forces.
+ 4. Get in touch with OpenTechSchool people (which you might have already done via the mailinglist) and discuss your idea. Someone may already be working on something similar, so it makes sense to join forces.
 
 In order to make organisation easier, once you've contacted the OpenTechSchool team, find someone who is passionate about helping you organise the workshop from within OpenTechSchool or who has at least done such a thing before. We call this person "the co-host" and you are referred to as the "lead coach". As this co-host might not have access to everything, this document refers to OTS as the organisation team in general.
 
@@ -28,9 +28,9 @@ Even if you already have a pretty clear idea of what you want to do and may even
 
  * Create a mailing list for this topic
  * Promote that mailinglist via our social media channels, spread it in our mailinglist, user groups and communities
- * Make a public call for coaches on our blog - the more clearly your idea is described there, the better
+ * Make a public call for coaches on our blog &mdash; the more clearly your idea is described there, the better
 
-But we also need to you to spread the word and convince people to join - after all, it is your cause!
+But we also need to you to spread the word and convince people to join &mdash; after all, it is your cause!
 
 ## Scheduling the first meeting
 Once there are enough people in the mailing list (we usually wait until there are 15+), we try to set up a first meeting in order to get to know each other as well as figure out how to actually get things done.
@@ -50,4 +50,4 @@ _Note_: We recommend meeting on a weekday evening after work hours. Monday to Th
 
 The usual goals for the first meeting are:
  * Getting to know the interests, motivation, goals, and availability of the coaches
- * Creating a plan for the next steps - this could be anything from a second meeting to talk more, setting up plans for creating/assembling learning materials, to the date and time for the workshop to take place.
+ * Creating a plan for the next steps &mdash; this could be anything from a second meeting to talk more, setting up plans for creating/assembling learning materials, to the date and time for the workshop to take place.

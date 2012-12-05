@@ -121,12 +121,15 @@ pre {
 }
 
 .bg_full {
-  ul {
+  ul, ol {
     margin-bottom: 1.5em;
     padding-left: 2em;
     list-style: none;
   }
-  li:before {
+  ol {
+    list-style: decimal;
+  }
+  ul li:before {
     content: "";
     display: block;
     height: .3em;
@@ -137,7 +140,9 @@ pre {
     background-color: $ots_text_i;
     border-radius: 1em;
   }
-
+  ol li {
+    
+  }
 }
 
 
