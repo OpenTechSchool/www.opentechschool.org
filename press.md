@@ -26,7 +26,7 @@ title: Press
       </div>
       <div class="item" id="js-about-de">
         <p>
-          Die OpenTechSchool (OTS) ist eine Community Initiative, die kostenlose programmier-Workshops und -meetups für Tech-Interessierter jedes sozialen Geschlechter mit jedem Hintergrund und Vorwissen anbietet. Sie unterstützt freiwillige Coaches bei der Organisation dieser Events und fördert das Schaffen neuer Lern-Materialien, die der ganzen OTS-Community online zur Nutzen und zur Weiterentwicklung frei zur Verfügung gestellt werden.
+          Die OpenTechSchool (OTS) ist eine Community-Initiative, die kostenlose Programmier-Workshops und -meetups für Tech-Interessierte anbietet, gleich welchen sozialen Geschlechts, Hintergrunds und mit wieviel Vorwissen. Sie unterstützt ehrenamtliche Coaches bei der Organisation dieser Events und erarbeitet neue Lernmaterialien, die der ganzen OTS-Community online zur freien Nutzung und Weiterentwicklung zur Verfügung gestellt werden.
         </p>
         <p>
           Das Hauptziel der OpenTechSchool liegt in der Schaffung offener Lern-Umgebungen, in denen keine Frage unbeantwortet bleiben soll. Ein jeder ist eingeladen sich daran zu beteiligen, ob als Coach oder Learner, oder um OTS Events überall auf der Welt zu organisieren.
