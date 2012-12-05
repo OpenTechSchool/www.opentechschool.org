@@ -842,8 +842,23 @@ footer a:focus {
 .nav_external .facebook {
   background-position: 50% -56px;
 }
+/* line 38, ../sass/imports/_nav.scss */
+.nav_external .github:hover,
+.nav_external .github:focus {
+  background-position: 50% -84px;
+}
+/* line 42, ../sass/imports/_nav.scss */
+.nav_external .twitter:hover,
+.nav_external .twitter:focus {
+  background-position: 50% -112px;
+}
+/* line 46, ../sass/imports/_nav.scss */
+.nav_external .facebook:hover,
+.nav_external .facebook:focus {
+  background-position: 50% -140px;
+}
 
-/* line 39, ../sass/imports/_nav.scss */
+/* line 51, ../sass/imports/_nav.scss */
 .btn_navbar {
   float: right;
   margin: 0.5em 0.75em;
@@ -854,7 +869,7 @@ footer a:focus {
   cursor: pointer;
 }
 
-/* line 48, ../sass/imports/_nav.scss */
+/* line 60, ../sass/imports/_nav.scss */
 .btn_navbar .icon_bar {
   display: block;
   width: 1.25em;
@@ -863,16 +878,16 @@ footer a:focus {
   background-color: #1f8ab6;
 }
 
-/* line 55, ../sass/imports/_nav.scss */
+/* line 67, ../sass/imports/_nav.scss */
 .btn_navbar .icon_bar_last {
   margin-bottom: 2px;
 }
 
-/* line 59, ../sass/imports/_nav.scss */
+/* line 71, ../sass/imports/_nav.scss */
 .collapse {
   display: none;
 }
-/* line 62, ../sass/imports/_nav.scss */
+/* line 74, ../sass/imports/_nav.scss */
 .collapse.in {
   display: block;
 }
