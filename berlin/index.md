@@ -1,7 +1,7 @@
 ---
 layout: city
 title: Berlin
-image: ../images/bg_berlin.jpg
+class: "berlin"
 tagline: "Where everything started... and you can take a ride in a rotating TV tower"
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin

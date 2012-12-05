@@ -786,8 +786,19 @@ footer a:focus {
 /* line 20, ../sass/imports/_city.scss */
 .site_header_city {
   color: #085987;
-  background-position: 0 50%;
   background-size: 768px;
+}
+
+/* line 25, ../sass/imports/_city.scss */
+.site_header_stockholm {
+  background-image: url(/images/bg_stockholm.jpg);
+  background-position: 50% 30%;
+}
+
+/* line 30, ../sass/imports/_city.scss */
+.site_header_berlin {
+  background-image: url(/images/bg_berlin.jpg);
+  background-position: 50% 50%;
 }
 
 /* line 1, ../sass/imports/_nav.scss */
@@ -1097,6 +1108,6 @@ footer a:focus {
 
   /* line 69, ../sass/imports/_mediaqueries.scss */
   .site_header_city {
-    background-size: 100%;
+    background-size: 130%;
   }
 }
