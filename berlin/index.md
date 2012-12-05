@@ -9,6 +9,9 @@ about: "We are the group of people who created the first chapter of OpenTechScho
 ---
 
 
+<h2 style="margin: 0 0 50px 50px;">Team Berlin</h2>
+
+
 <ul class="float_list float_list_4 team_list">
 
   <li class="member">

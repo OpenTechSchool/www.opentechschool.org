@@ -8,7 +8,7 @@ meetupcom_group: opentechschool-stockholm
 about: "We're the first OpenTechSchool team outside of Germany! We are developing a network of coworking spaces, startups, schools, and institutions to organize our events, and are currently collaborating with the KTH (Royal Institute of Technology) and KKH (Royal Institute of Art) to create a university-powered hacker space in town."
 ---
 
-
+<h2 style="margin: 0 0 50px 50px;">Team Stockholm</h2>
 
 <ul class="float_list float_list_4 team_list">
 
