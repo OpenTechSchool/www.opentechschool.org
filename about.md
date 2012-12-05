@@ -3,7 +3,6 @@ layout: simple
 title: About
 ---
 
-About OTS
 
 ## History
 
@@ -28,7 +27,7 @@ Empowerment is something with which we hope to provide everyone involved. Encour
 ### Hands-on learning
 We believe the best way to learn is by doing it hands-on, and feel that visible progress is the best motivation to continue learning. That is why our workshops are focused on practical cases and provide a hands-on learning experience. We bring people together to learn in small groups, supported by coaches keeping an eye on individual progress. Therefore our workshops aim to reach a certain goal of the learning process while also providing a roadmap on how to continue afterwards.
 
-### Welcoming (or “friendly”) learning environment
+### Welcoming learning environment
 We aim to provide a safe learning environment in which no one feels shy asking any question. Teaching only 3-4 people at a time, coaches can move at the pace most suited for their group, rather than moving on too swiftly. Learners will be encouraged to share their progress, with the goal of solidifying their knowledge and overcoming the fear of speaking in front of others.
 
 ### Transparency
