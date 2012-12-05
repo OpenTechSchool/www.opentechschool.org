@@ -257,7 +257,14 @@ p, ul, ol {
   margin-bottom: 1.5em;
 }
 
-/* line 99, ../sass/imports/_main.scss */
+/* line 97, ../sass/imports/_main.scss */
+.subtle {
+  font-size: .8em;
+  color: #666;
+  font-style: italic;
+}
+
+/* line 104, ../sass/imports/_main.scss */
 pre,
 code {
   font-family: consolas, courier, monospace;
@@ -266,13 +273,13 @@ code {
   border-radius: .25em;
 }
 
-/* line 106, ../sass/imports/_main.scss */
+/* line 111, ../sass/imports/_main.scss */
 code {
   background-color: #F4FBFD;
   padding: 0 .25em;
 }
 
-/* line 111, ../sass/imports/_main.scss */
+/* line 116, ../sass/imports/_main.scss */
 pre {
   line-height: 1.2em;
   padding: 1em;
@@ -280,27 +287,27 @@ pre {
   background-color: #085987;
   color: #c1d5e1;
 }
-/* line 117, ../sass/imports/_main.scss */
+/* line 122, ../sass/imports/_main.scss */
 pre code {
   color: inherit;
   background-color: inherit;
 }
 
-/* line 124, ../sass/imports/_main.scss */
+/* line 129, ../sass/imports/_main.scss */
 .bg_full ul, .bg_full ol {
   margin-bottom: 1.5em;
   padding-left: 2em;
   list-style: none;
 }
-/* line 129, ../sass/imports/_main.scss */
+/* line 134, ../sass/imports/_main.scss */
 .bg_full ol {
   list-style: decimal;
 }
-/* line 132, ../sass/imports/_main.scss */
+/* line 137, ../sass/imports/_main.scss */
 .bg_full ul li:before {
   content: "";
   display: block;
-  height: .3em;
+  height: 3px;
   width: 1em;
   left: -2em;
   top: 0.9em;
@@ -309,26 +316,54 @@ pre code {
   border-radius: 1em;
 }
 
-/* line 149, ../sass/imports/_main.scss */
+/* language switcher on press page */
+/* line 151, ../sass/imports/_main.scss */
+ul.switch_lang {
+  padding-left: 0;
+  overflow: hidden;
+}
+/* line 154, ../sass/imports/_main.scss */
+ul.switch_lang li:before {
+  display: none;
+}
+/* line 157, ../sass/imports/_main.scss */
+ul.switch_lang li {
+  float: left;
+  margin-right: .5em;
+}
+/* line 160, ../sass/imports/_main.scss */
+ul.switch_lang li a {
+  display: block;
+  background-color: #FFF;
+  padding: 0 .4em;
+  border-radius: .25em;
+}
+/* line 167, ../sass/imports/_main.scss */
+ul.switch_lang li.active a {
+  background-color: #085987;
+  color: #FFF;
+}
+
+/* line 173, ../sass/imports/_main.scss */
 .bg_full {
   width: 100%;
   padding: 5% 0;
   background: #f4f4f4;
 }
 
-/* line 155, ../sass/imports/_main.scss */
+/* line 179, ../sass/imports/_main.scss */
 .bg_full_white {
   background: #fff;
 }
 
-/* line 159, ../sass/imports/_main.scss */
+/* line 183, ../sass/imports/_main.scss */
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
   color: #085987;
 }
 
-/* line 165, ../sass/imports/_main.scss */
+/* line 189, ../sass/imports/_main.scss */
 .ots_logo a {
   width: 304px;
   height: 100px;
@@ -340,63 +375,63 @@ pre code {
   background: transparent url("../images/ots_logo_v.png") no-repeat 0 0;
 }
 
-/* line 176, ../sass/imports/_main.scss */
+/* line 200, ../sass/imports/_main.scss */
 .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {
   outline: none;
   background-position: 0 -140px;
   outline: none;
 }
 
-/* line 183, ../sass/imports/_main.scss */
+/* line 207, ../sass/imports/_main.scss */
 .site_header {
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 189, ../sass/imports/_main.scss */
+/* line 213, ../sass/imports/_main.scss */
 .site_header_landing {
   background: #085987;
   color: #FFF;
 }
 
 /* Style for list with floated list items. Responds to screen-width. */
-/* line 197, ../sass/imports/_main.scss */
+/* line 221, ../sass/imports/_main.scss */
 .float_list {
   list-style: none;
   padding: 0;
   overflow: hidden;
 }
 
-/* line 203, ../sass/imports/_main.scss */
+/* line 227, ../sass/imports/_main.scss */
 .float_list > li {
   margin: 0 2% 1.5em 2%;
 }
 
 /* List of OTS members, extends float list. Includes image and links. */
-/* line 210, ../sass/imports/_main.scss */
+/* line 234, ../sass/imports/_main.scss */
 .team_list > li {
   min-height: 8em;
   height: auto !important;
   height: 8em;
   text-align: center;
 }
-/* line 215, ../sass/imports/_main.scss */
+/* line 239, ../sass/imports/_main.scss */
 .team_list > li:before {
   display: none;
 }
-/* line 218, ../sass/imports/_main.scss */
+/* line 242, ../sass/imports/_main.scss */
 .team_list > li img {
   width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 100%;
 }
-/* line 224, ../sass/imports/_main.scss */
+/* line 248, ../sass/imports/_main.scss */
 .team_list > li h3 {
   font-size: 1em;
 }
-/* line 227, ../sass/imports/_main.scss */
+/* line 251, ../sass/imports/_main.scss */
 .team_list > li p {
   font-size: .714em;
   min-height: 6em;
@@ -404,24 +439,24 @@ pre code {
   height: 6em;
 }
 
-/* line 235, ../sass/imports/_main.scss */
+/* line 259, ../sass/imports/_main.scss */
 .top_bar {
   width: 100%;
   z-index: 100;
   background: #FFF;
   color: #FFF;
 }
-/* line 240, ../sass/imports/_main.scss */
+/* line 264, ../sass/imports/_main.scss */
 .top_bar .container {
   overflow: visible;
 }
 
-/* line 245, ../sass/imports/_main.scss */
+/* line 269, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
   padding: 0.5em 0.75em;
 }
-/* line 249, ../sass/imports/_main.scss */
+/* line 273, ../sass/imports/_main.scss */
 .logo_top_bar > a {
   display: block;
   float: left;
@@ -432,7 +467,7 @@ pre code {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 261, ../sass/imports/_main.scss */
+/* line 285, ../sass/imports/_main.scss */
 .logo_top_bar > a,
 .logo_top_bar > a:link,
 .logo_top_bar > a:visited {
@@ -444,7 +479,7 @@ pre code {
   filter: alpha(opacity=80);
   /* IE 5-7  */
 }
-/* line 270, ../sass/imports/_main.scss */
+/* line 294, ../sass/imports/_main.scss */
 .logo_top_bar > a:hover,
 .logo_top_bar > a:active,
 .logo_top_bar > a:focus {
@@ -456,7 +491,7 @@ pre code {
   /* IE 5-7  */
 }
 
-/* line 278, ../sass/imports/_main.scss */
+/* line 302, ../sass/imports/_main.scss */
 footer {
   font-size: .8571em;
   background: #085987;
@@ -464,26 +499,26 @@ footer {
   padding: 3em 0;
   height: auto;
 }
-/* line 284, ../sass/imports/_main.scss */
+/* line 308, ../sass/imports/_main.scss */
 footer p {
   text-align: center;
 }
 
-/* line 291, ../sass/imports/_main.scss */
+/* line 315, ../sass/imports/_main.scss */
 footer a,
 footer a:link,
 footer a:visited {
   color: #c1d5e1;
 }
 
-/* line 297, ../sass/imports/_main.scss */
+/* line 321, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
 }
 
-/* line 301, ../sass/imports/_main.scss */
+/* line 325, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
@@ -491,7 +526,7 @@ footer a:focus {
 }
 
 /* News blocks, events */
-/* line 310, ../sass/imports/_main.scss */
+/* line 334, ../sass/imports/_main.scss */
 .date {
   font-size: .75em;
   font-style: italic;
@@ -499,17 +534,17 @@ footer a:focus {
 }
 
 /* Styleguide*/
-/* line 320, ../sass/imports/_main.scss */
+/* line 344, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
   padding-left: 0 !important;
 }
-/* line 323, ../sass/imports/_main.scss */
+/* line 347, ../sass/imports/_main.scss */
 .sg_list > li:before {
   display: none;
 }
 
-/* line 328, ../sass/imports/_main.scss */
+/* line 352, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
@@ -517,7 +552,7 @@ footer a:focus {
   font-style: italic;
 }
 
-/* line 335, ../sass/imports/_main.scss */
+/* line 359, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
@@ -525,7 +560,7 @@ footer a:focus {
   color: transparent;
 }
 
-/* line 342, ../sass/imports/_main.scss */
+/* line 366, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -538,7 +573,7 @@ footer a:focus {
 
 /* Testimonials */
 /* testimonials */
-/* line 355, ../sass/imports/_main.scss */
+/* line 379, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   position: relative;
@@ -547,17 +582,17 @@ footer a:focus {
   height: auto !important;
   height: 400px;
 }
-/* line 363, ../sass/imports/_main.scss */
+/* line 387, ../sass/imports/_main.scss */
 .testimonial header {
   overflow: hidden;
 }
 
-/* line 368, ../sass/imports/_main.scss */
+/* line 392, ../sass/imports/_main.scss */
 .testimonial_about {
   font-style: italic;
 }
 
-/* line 373, ../sass/imports/_main.scss */
+/* line 397, ../sass/imports/_main.scss */
 .name b {
   color: #666;
   display: block;
@@ -565,7 +600,7 @@ footer a:focus {
   margin-bottom: 1em;
 }
 
-/* line 381, ../sass/imports/_main.scss */
+/* line 405, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
@@ -574,7 +609,7 @@ footer a:focus {
   width: 25%;
 }
 
-/* line 389, ../sass/imports/_main.scss */
+/* line 413, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
@@ -583,7 +618,7 @@ footer a:focus {
   display: block;
 }
 
-/* line 397, ../sass/imports/_main.scss */
+/* line 421, ../sass/imports/_main.scss */
 .testimonial img.close-up {
   width: 100%;
   max-width: 240px;
@@ -595,7 +630,7 @@ footer a:focus {
   float: left;
 }
 
-/* line 408, ../sass/imports/_main.scss */
+/* line 432, ../sass/imports/_main.scss */
 .question {
   color: #085987;
 }
@@ -610,30 +645,30 @@ footer a:focus {
     }*/
 }
 /* ==|== non-semantic helper classes ======================================== */
-/* line 430, ../sass/imports/_main.scss */
+/* line 454, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 431, ../sass/imports/_main.scss */
+/* line 455, ../sass/imports/_main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 432, ../sass/imports/_main.scss */
+/* line 456, ../sass/imports/_main.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 433, ../sass/imports/_main.scss */
+/* line 457, ../sass/imports/_main.scss */
 .center {
   text-align: center;
 }
 
 /* ==|== print styles ======================================================= */
 @media print {
-  /* line 441, ../sass/imports/_main.scss */
+  /* line 465, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -642,43 +677,43 @@ footer a:focus {
     -ms-filter: none !important;
   }
 
-  /* line 442, ../sass/imports/_main.scss */
+  /* line 466, ../sass/imports/_main.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 443, ../sass/imports/_main.scss */
+  /* line 467, ../sass/imports/_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 444, ../sass/imports/_main.scss */
+  /* line 468, ../sass/imports/_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 445, ../sass/imports/_main.scss */
+  /* line 469, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 446, ../sass/imports/_main.scss */
+  /* line 470, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 447, ../sass/imports/_main.scss */
+  /* line 471, ../sass/imports/_main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 448, ../sass/imports/_main.scss */
+  /* line 472, ../sass/imports/_main.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 449, ../sass/imports/_main.scss */
+  /* line 473, ../sass/imports/_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -687,13 +722,13 @@ footer a:focus {
     margin: 0.5cm;
 }
 
-  /* line 451, ../sass/imports/_main.scss */
+  /* line 475, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 452, ../sass/imports/_main.scss */
+  /* line 476, ../sass/imports/_main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
@@ -900,17 +935,16 @@ footer a:focus {
 .carousel {
   position: relative;
   margin-bottom: 20px;
-  line-height: 1;
 }
 
-/* line 11, ../sass/imports/_carousel.scss */
+/* line 10, ../sass/imports/_carousel.scss */
 .carousel-inner {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
-/* line 19, ../sass/imports/_carousel.scss */
+/* line 18, ../sass/imports/_carousel.scss */
 .carousel .item {
   display: none;
   position: relative;
@@ -919,51 +953,51 @@ footer a:focus {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
-/* line 29, ../sass/imports/_carousel.scss */
+/* line 28, ../sass/imports/_carousel.scss */
 .carousel .item > img {
   display: block;
   line-height: 1;
 }
-/* line 36, ../sass/imports/_carousel.scss */
+/* line 35, ../sass/imports/_carousel.scss */
 .carousel .active,
 .carousel .next,
 .carousel .prev {
   display: block;
 }
-/* line 38, ../sass/imports/_carousel.scss */
+/* line 37, ../sass/imports/_carousel.scss */
 .carousel .active {
   left: 0;
 }
-/* line 43, ../sass/imports/_carousel.scss */
+/* line 42, ../sass/imports/_carousel.scss */
 .carousel .next,
 .carousel .prev {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 49, ../sass/imports/_carousel.scss */
+/* line 48, ../sass/imports/_carousel.scss */
 .carousel .next {
   left: 100%;
 }
-/* line 52, ../sass/imports/_carousel.scss */
+/* line 51, ../sass/imports/_carousel.scss */
 .carousel .prev {
   left: -100%;
 }
-/* line 56, ../sass/imports/_carousel.scss */
+/* line 55, ../sass/imports/_carousel.scss */
 .carousel .next.left,
 .carousel .prev.right {
   left: 0;
 }
-/* line 60, ../sass/imports/_carousel.scss */
+/* line 59, ../sass/imports/_carousel.scss */
 .carousel .active.left {
   left: -100%;
 }
-/* line 63, ../sass/imports/_carousel.scss */
+/* line 62, ../sass/imports/_carousel.scss */
 .carousel .active.right {
   left: 100%;
 }
 
-/* line 72, ../sass/imports/_carousel.scss */
+/* line 71, ../sass/imports/_carousel.scss */
 .carousel-control {
   position: absolute;
   top: 40%;
@@ -984,19 +1018,19 @@ footer a:focus {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 93, ../sass/imports/_carousel.scss */
+/* line 92, ../sass/imports/_carousel.scss */
 .carousel-control.right {
   left: auto;
   right: 15px;
 }
-/* line 99, ../sass/imports/_carousel.scss */
+/* line 98, ../sass/imports/_carousel.scss */
 .carousel-control:hover {
   text-decoration: none;
   opacity: 1;
   filter: alpha(opacity=1);
 }
 
-/* line 110, ../sass/imports/_carousel.scss */
+/* line 109, ../sass/imports/_carousel.scss */
 .carousel-caption {
   position: absolute;
   left: 0;
@@ -1007,7 +1041,7 @@ footer a:focus {
   background: rgba(0, 0, 0, 0.75);
 }
 
-/* line 119, ../sass/imports/_carousel.scss */
+/* line 118, ../sass/imports/_carousel.scss */
 .testimonial-caption {
   left: auto;
   width: 450px;
@@ -1016,19 +1050,19 @@ footer a:focus {
   text-align: right;
 }
 
-/* line 127, ../sass/imports/_carousel.scss */
+/* line 126, ../sass/imports/_carousel.scss */
 .carousel-caption h4,
 .carousel-caption p {
   color: white;
   line-height: 20px;
 }
 
-/* line 131, ../sass/imports/_carousel.scss */
+/* line 130, ../sass/imports/_carousel.scss */
 .carousel-caption h4 {
   margin: 0 0 5px;
 }
 
-/* line 134, ../sass/imports/_carousel.scss */
+/* line 133, ../sass/imports/_carousel.scss */
 .carousel-caption p {
   margin-bottom: 0;
 }

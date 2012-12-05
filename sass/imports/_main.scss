@@ -94,6 +94,11 @@ body {
 p, ul, ol {
   margin-bottom: 1.5em;
 }
+.subtle {
+  font-size: .8em;
+  color: #666;
+  font-style: italic;
+}
 
 pre,
 code  {
@@ -132,7 +137,7 @@ pre {
   ul li:before {
     content: "";
     display: block;
-    height: .3em;
+    height: 3px;
     width: 1em;
     left: -2em;
     top: 0.9em;
@@ -140,11 +145,30 @@ pre {
     background-color: $ots_text_i;
     border-radius: 1em;
   }
-  ol li {
-    
-  }
 }
 
+/* language switcher on press page */
+ul.switch_lang {
+  padding-left: 0;
+  overflow: hidden;
+  li:before {
+    display: none;
+  }
+  li {
+    float: left;
+    margin-right: .5em;
+    a {
+      display: block;
+      background-color: #FFF;
+      padding: 0 .4em;
+      border-radius: .25em;
+    }
+  }
+  li.active a {
+    background-color: $ots_blue;
+    color: #FFF;
+  }
+}
 
 .bg_full {
   width: 100%;
