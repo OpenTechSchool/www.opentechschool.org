@@ -6,7 +6,7 @@ title: About
 
 ## History
 
-OTS was born in April of 2012 in Berlin. The first local RailsGirls event -- a free tech workshop with freshly created learning material dedicated to an audience of women of all ages and backgrounds during a both thrilling and cosy weekend -- had just taken place, and had created much admiration and enthusiasm in its wake. 
+OTS was born in April of 2012 in Berlin. The first local RailsGirls event &mdash; a free tech workshop with freshly created learning material dedicated to an audience of women of all ages and backgrounds during a both thrilling and cosy weekend &mdash; had just taken place, and had created much admiration and enthusiasm in its wake. 
 
 Why not expand the concept to all tech topics people might possibly want to learn and open the events to an audience of all genders and experience levels? The challenge couldn’t be greater and since then, hundreds of people have joined OTS as coaches, learners, organizers, and sponsors, in Berlin, Stockholm, and soon: even in more new cities (yours!).
 

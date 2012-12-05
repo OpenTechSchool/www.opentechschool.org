@@ -80,7 +80,6 @@ a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
   background: $ots_red_h;
   @include background-image(linear-gradient(top, $ots_red_h 0%,$ots_red_h 50%,$ots_red_l 51%,$ots_red_h 100%));
-
 }
 
 a.ots_action_city {
