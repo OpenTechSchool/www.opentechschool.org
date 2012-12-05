@@ -9,8 +9,6 @@ This is a handbook -- or a blueprint, so to say -- on how to make it easier to g
 
 Alright. You're still reading this, so that means you are really interested in getting something started. Way to go! The first thing to do is **let us know about it**. There might already be people getting started in/near your city whose efforts we know about, so we may have contacts who can help you. This is crucial: get in touch with us!
 
-# FIXME: write this out:
-
 
 # Teaming up
 Get a team together. Good team members?
@@ -53,7 +51,7 @@ Social networks are a great tool to promote your events and get in touch with mo
  * Document everything: pictures can be tweeted, posted on Facebook (new event, new album!) and uploaded to your Meetup page
  * Share share share
 
-# You're almost ready! Just a couple wise words before you get started
+# You're almost ready! Just a couple of wise words before you get started
  * For whatever meetup/workshop you do, it is ten times easier if you're joined by someone from the organisational team who has already participated coaching/hosting that event before and knows what it is like, what is supposed to be and how to get there.
  * Different city might need different approaches: don't push something because it worked somewhere else when it doesn't work there. Every city and every organisational team is different - and that is a good thing. Focus on the events you really want to do and are passionate about. That makes everything much easier and people are more likely to join you in your cause.
  * Have fun!
