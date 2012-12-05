@@ -33,7 +33,7 @@ title: Press
 				Français
 			</div>
 			<div class="item" id="js-about-es">
-				español
+				La OpenTechSchool es una iniciativa nacida con el objetivo de ofrecer talleres de programación, y encuentros, gratuitos a entusiastas de la tecnología de todos los niveles, sexos y experiencia. Ofrece soporte durante la organización del evento, fomentando la creación de materiales educativos abiertos y originales, que luego puedan ser mejorados por la comunidad OTS global. El objetivo principal es crear una comunidad educativa donde nadie tenga vergüenza a preguntar, donde todo el mundo esta invitado a participar ya sea como profesor, alumno o organizando eventos OTS en cualquier parte del mundo.
 			</div>
 			<div class="item" id="js-about-hi">
 				ओपन टेक स्कूल एक सामुदायिक पहल है जिसके द्वारा लोगो के लिए मुफ्त में
