@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Contact us
+title: Contacts
 ---
 
 ## Email
@@ -32,7 +32,7 @@ We also have our own gossip channel on freenode:
 > irc.freenode.net // 6665
 
 
-## In persona
+## In person
 
-Always feel free to come to us after any Beginners Meetup, the bi-weekly OpenTechSchool-Breakfast we do at [co.up](http://co-up.de) or any other workshop and event and speak with us. And if you unsure who to talk to, just ask a random person that exact question :) .
+Always feel free to come to us after any Learners Meetup, during the bi-weekly OpenTechSchool Breakfast we do at [co.up](http://co-up.de) or any other workshop and event and speak with us. And if you're unsure who to talk to, just ask one of us, the first you see!
 

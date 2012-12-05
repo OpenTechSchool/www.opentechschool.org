@@ -29,10 +29,10 @@ Learn'n'Tell is inspired to Hack'n'Tell (happening in New York and Berlin), an e
 # Pre-requirements
 
 Make sure the workshop and its idea is in agreement with our [values](/values.html). In particular:
-  * even though your workshop may be targeting a certain group of people (because of talk's topic, for example), it needs to be as open and inclusive as possible
-  * you have to make sure that the event is enjoyable at a beginner's level
-  * always remember that the Learners Meetup had to give beginners the chance to learn, (hopefully) get answers to their questions and present what they have created or discovered
-  * you are responsible for creating a safe learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory"
+ * even though your workshop may be targeting a certain group of people (because of talk's topic, for example), it needs to be as open and inclusive as possible
+ * you have to make sure that the event is enjoyable at a beginner's level
+ * always remember that the Learners Meetup had to give beginners the chance to learn, (hopefully) get answers to their questions and present what they have created or discovered
+ * you are responsible for creating a safe learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory"
 
 Have an idea of which are the topics you'd like to include - the clearer the idea, the easier it becomes to recruit speakers
 
