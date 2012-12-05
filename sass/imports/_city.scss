@@ -19,6 +19,15 @@
 
 .site_header_city {
   color: $ots_blue;
-  background-position: 0 50%;
   background-size: 768px;
+}
+
+.site_header_stockholm {
+  background-image: url(/images/bg_stockholm.jpg);
+  background-position: 50% 30%;
+}
+
+.site_header_berlin {
+  background-image: url(/images/bg_berlin.jpg);
+  background-position: 50% 50%;
 }
