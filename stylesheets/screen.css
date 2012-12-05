@@ -778,21 +778,22 @@ footer a:focus {
   font-size: 35px;
   line-height: 1.2;
   margin-bottom: 1em;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 20, ../sass/imports/_city.scss */
+/* line 21, ../sass/imports/_city.scss */
 .site_header_city {
   color: #085987;
   background-size: 768px;
 }
 
-/* line 25, ../sass/imports/_city.scss */
+/* line 26, ../sass/imports/_city.scss */
 .site_header_stockholm {
   background-image: url(/images/bg_stockholm.jpg);
   background-position: 50% 30%;
 }
 
-/* line 30, ../sass/imports/_city.scss */
+/* line 31, ../sass/imports/_city.scss */
 .site_header_berlin {
   background-image: url(/images/bg_berlin.jpg);
   background-position: 50% 50%;
