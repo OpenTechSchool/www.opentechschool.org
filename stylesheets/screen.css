@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,51 +19,52 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 20, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 115, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -188,6 +189,7 @@ a:focus {
   background-image: -webkit-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: -moz-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: -o-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
+  background-image: -ms-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   display: inline-block;
   border-radius: 4px;
@@ -213,6 +215,7 @@ a.ots_action:focus {
   background-image: -webkit-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -moz-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -o-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
+  background-image: -ms-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
 }
 
@@ -225,6 +228,7 @@ a.ots_action_highlight:visited {
   background-image: -webkit-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -moz-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -o-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
+  background-image: -ms-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
 }
 
@@ -237,6 +241,7 @@ a.ots_action_highlight:focus {
   background-image: -webkit-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -moz-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -o-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
+  background-image: -ms-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
 }
 
@@ -1000,45 +1005,55 @@ footer a:focus {
   margin-bottom: 0;
 }
 
+/* variables */
+/* colors */
+/* main blue, logo */
+/* Blue links */
+/* Blue hover states */
+/* Default text color*/
+/* (Inverted) Text color on dark blue backgrounds */
+/* (Inverted) Link color on dark blue backgrounds */
+/* Highlighted, red links, buttons, other highlights */
+/* Red hover states */
 @media screen and (min-width: 440px) {
-  /* line 2, ../sass/imports/_mediaqueries.scss */
+  /* line 4, ../sass/imports/_mediaqueries.scss */
   .float_list > li {
     float: left;
   }
 
-  /* line 5, ../sass/imports/_mediaqueries.scss */
+  /* line 7, ../sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
     width: 46%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 12, ../sass/imports/_mediaqueries.scss */
+  /* line 13, ../sass/imports/_mediaqueries.scss */
   body {
     font-size: 87.5%;
   }
 
-  /* line 15, ../sass/imports/_mediaqueries.scss */
+  /* line 16, ../sass/imports/_mediaqueries.scss */
   .nav {
     float: right;
     clear: none;
   }
-  /* line 18, ../sass/imports/_mediaqueries.scss */
+  /* line 19, ../sass/imports/_mediaqueries.scss */
   .nav li {
     float: left;
     border: none;
   }
 
-  /* line 24, ../sass/imports/_mediaqueries.scss */
+  /* line 25, ../sass/imports/_mediaqueries.scss */
   .btn_navbar {
     display: none;
   }
 
-  /* line 28, ../sass/imports/_mediaqueries.scss */
+  /* line 29, ../sass/imports/_mediaqueries.scss */
   .collapse {
     display: block;
   }
 
-  /* line 32, ../sass/imports/_mediaqueries.scss */
+  /* line 33, ../sass/imports/_mediaqueries.scss */
   .top_bar {
     position: absolute;
     height: 2.5em;
@@ -1049,38 +1064,38 @@ footer a:focus {
     transition: padding-bottom .25s ease-in;
   }
 
-  /* line 42, ../sass/imports/_mediaqueries.scss */
+  /* line 43, ../sass/imports/_mediaqueries.scss */
   .top_bar.affix {
     position: fixed;
     border-bottom: 1px solid #085987;
     padding: 10px 0;
   }
 
-  /* line 48, ../sass/imports/_mediaqueries.scss */
+  /* line 49, ../sass/imports/_mediaqueries.scss */
   .col_left {
     width: 46%;
     float: left;
     margin: 0 4% 1.5em 0;
   }
 
-  /* line 54, ../sass/imports/_mediaqueries.scss */
+  /* line 55, ../sass/imports/_mediaqueries.scss */
   .col_right {
     width: 46%;
     float: right;
     margin: 0 0 1.5em 4%;
   }
 
-  /* line 60, ../sass/imports/_mediaqueries.scss */
+  /* line 61, ../sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
     width: 21%;
   }
 
-  /* line 64, ../sass/imports/_mediaqueries.scss */
+  /* line 65, ../sass/imports/_mediaqueries.scss */
   .site_header {
     padding-top: 8.5em;
   }
 
-  /* line 68, ../sass/imports/_mediaqueries.scss */
+  /* line 69, ../sass/imports/_mediaqueries.scss */
   .site_header_city {
     background-size: 100%;
   }
