@@ -16,6 +16,7 @@ title: Press
 			<li><a href="#js-about-hi">Hindi</a></li>
 			<li><a href="#js-about-sv">Swedish</a></li>
 			<li><a href="#js-about-de">German</a></li>
+			<li><a href="#js-about-cat">Catalan</a></li>
 			<li><a href="#js-about-fr">French</a></li>
 		</ul>
 	</p>
@@ -37,6 +38,11 @@ title: Press
 			<div class="item" id="js-about-it">
 				<p>
 					OpenTechSchool è un'iniziativa volta ad offrire workshop e meetup dedicati a tecnologia e linguaggi di programmazione a chiunque voglia saperne di più, indipendentemente dalla propria esperienza, professione e sesso. OTS supporta volontari interessati a realizzare eventi di questo tipo fornendo aiuto dal punto di vista organizzativo e nella creazione di materiale didattico originale, che viene poi condiviso online e ulteriormente sviluppato grazie alla collaborazione della community globale di OTS. Lo scopo principale di OTS è quello di creare un ambiente confortevole per imparare, dove ci si possa sentire liberi di porre qualsiasi domanda. Tutti sono invitati a partecipare, come coach o learner, e a mettersi contatto con OTS per organizzare eventi ovunque nel mondo.
+				</p>
+			</div>
+			<div class="item" id="js-about-cat">
+				<p>
+					La OpenTechSchool és una iniciativa nascuda amb l’objectiu d'oferir trobades, i tallers de programació gratuïts, a entusiastes de la tecnologia de tots els nivells, sexes i experiències. Ofereix suport per a l'organització d'esdeveniments, fomentant la creació de materials educatius oberts i originals, que després puguin ser millorats per la comunitat OTS global. L'objectiu principal, és crear una comunitat educativa on ningú tingui vergonya de preguntar, i on tothom esta convidat a participar, ja sigui com a professor, alumne o organitzador. Els esdeveniments OTS es fan a qualsevol part del món.
 				</p>
 			</div>
 			<div class="item" id="js-about-fr">
