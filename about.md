@@ -34,5 +34,11 @@ We aim to provide a safe learning environment in which no one feels shy asking a
 ### Transparency
 OTS is an open, transparent movement with which we want to encourage others to create similar or related projects in their own cities. We hope to inspire you with our successes and let you learn from our mistakes, as well as develop a strong support network for those new to coding, giving them a chance to learn and go on to teach others.
 
+### Not for Profit
+We strongly believe in order for education to work the learner needs to have the best learning experience possible. In order to achieve that the coaches and team members donate their personal time for the greater good of the community and the learners. And only with that value as your main goal you can create the experience neede to encourage learners to continue. If you'd do that for your personal gain the quality would simply suffer.
+
+That is why we run the OpenTechSchool as a non-profit and operate on the lowest costs possible; most workshops are run no-cost and self-organised by the local communities. And while sponsoring by companies is welcome to make events and parties more comfortable it is not required to fund the day-to-day business of OTS, nor will it ever govern the way OTS is going.
+
+
 # Our Licensing Policy
-All OTS productions (learning materials, blueprints, content) are released under the Attribution-ShareAlike Creative Commons license.
+In correspondence with our values we release all Learner Materials, Blueprints and any other kind of Content under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US): As long as you attribute the work to the OpenTechSchool (usually by mentioning such and providing the link to the original material) and share it under the same licence again, you are free to use, share, copy and modify it - even in a commercial context. 
