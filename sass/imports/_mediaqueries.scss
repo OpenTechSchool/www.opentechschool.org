@@ -30,6 +30,7 @@
   }
 
   .top_bar {
+    position: absolute;
     height: 2.5em;
     padding: 30px 0;
     -webkit-transition: padding-bottom .25s ease-in;
@@ -59,6 +60,11 @@
   .float_list_4 > li {
     width: 21%;
   }
+
+  .site_header {
+    padding-top: 8.5em;
+  }
+
   .site_header_city {
     background-size: 100%;
   }

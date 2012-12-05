@@ -21,7 +21,7 @@ title: Press
 	<div class="carousel">
 		<div class="carousel-inner">
 			<div class="item active" id="js-about-eng">
-				OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS' main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.
+				OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds, and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS's main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.
 			</div>
 			<div class="item" id="js-about-de">
 				Über in Deutsch
@@ -72,14 +72,13 @@ title: Press
 
 * [Berlin Geekette of the Week – Amélie Anglade](http://berlingeekettes.com/post/30090123718/berlin-geekette-of-the-week) on [Berlin Geekettes](http://www.berlingeekettes.com), August 24th, 2012.
 
-* [Berlin Geekettes of the Week: the Women Behind OpenTechSchool](http://berlingeekettes.com/post/29112914602/berlin-geekettes-of-the-week-the-women-behind)
+* [Berlin Geekettes of the Week: the women behind OpenTechSchool](http://berlingeekettes.com/post/29112914602/berlin-geekettes-of-the-week-the-women-behind)
 on [Berlin Geekettes](http://www.berlingeekettes.com) August 10th, 2012.
 
 
 ### In German
 
 * [Python OpenTechSchool](http://python-verband.org/news/python-opentechschool) by [Python Software Verband](http://python-verband.org), November 23rd, 2012.
-
 
 
 #### In Swedish

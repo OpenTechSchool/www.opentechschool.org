@@ -2,10 +2,10 @@
 layout: city
 title: Berlin
 image: ../images/bg_berlin.jpg
-tagline: "Where everything started – and where you can take a ride on a rotating TV tower"
+tagline: "Where everything started... and you can take a ride in a rotating TV tower"
 rss_feed: berlin
 meetupcom_group: opentechschool-berlin
-about: "We are the very first OpenTechSchool local team – the early birds! The venue that supported us from the very beginning and where we're hosting our events is the fantastic co-working space co.up. This is also where we have our bi-weekly breakfast meeting – the best way to meet us and talk about new ideas and projects!"
+about: "We are the group of people who created the first chapter of OpenTechSchool and want you to start one in your own city! The venue that supported us from the very beginning and where we host our events is the fantastic coworking space, <a href='http://co-up.de/'>co.up</a>. This is also where we hold our bi-weekly breakfast meeting – the best way to meet us and talk about new ideas and projects!"
 ---
 
 

@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,34 +21,51 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+/* line 22, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 24, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 26, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
+/* line 28, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
+/* line 30, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+  quotes: none;
+}
+/* line 103, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
+/* line 32, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none; }
+  border: none;
+}
 
+/* line 116, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 /* variables */
 /* colors */
@@ -59,77 +77,110 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* (Inverted) Link color on dark blue backgrounds */
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
+/* line 1, ../sass/imports/_grid.scss */
 .container {
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 8, ../sass/imports/_grid.scss */
 .container_narrow {
-  max-width: 740px; }
+  max-width: 740px;
+}
 
+/* line 12, ../sass/imports/_grid.scss */
 .container_wide {
-  max-width: 1300px; }
+  max-width: 1300px;
+}
 
+/* line 16, ../sass/imports/_grid.scss */
 img, object, embed {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 20, ../sass/imports/_grid.scss */
 img {
-  height: auto; }
+  height: auto;
+}
 
 /* ========================================== */
 /* ! Shared styles, OTS branding */
 /* ========================================== */
+/* line 5, ../sass/imports/_main.scss */
 body {
   margin: 0;
   font-size: 75%;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
+/* line 6, ../sass/imports/_main.scss */
 body, button, input, select, textarea {
   font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #222222; }
+  color: #222222;
+}
 
+/* line 8, ../sass/imports/_main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
+/* line 13, ../sass/imports/_main.scss */
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+}
 
+/* line 16, ../sass/imports/_main.scss */
 h2 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
+/* line 19, ../sass/imports/_main.scss */
 h3 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
+/* line 22, ../sass/imports/_main.scss */
 h4, h5, h6 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
+/* line 27, ../sass/imports/_main.scss */
 ::-moz-selection {
   background: #fd4b22;
   color: #fff;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 28, ../sass/imports/_main.scss */
 ::selection {
   background: #fd4b22;
   color: #fff;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 32, ../sass/imports/_main.scss */
 a,
 a:link,
 a:visited {
   color: #1f8ab6;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 39, ../sass/imports/_main.scss */
 a:hover,
 a:active,
 a:focus {
   color: #2fb0d5;
   text-decoration: none;
-  outline: none; }
+  outline: none;
+}
 
 /* buttons */
+/* line 46, ../sass/imports/_main.scss */
 .ots_action {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   background-color: #1f8ab6;
@@ -141,14 +192,18 @@ a:focus {
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
-  padding: .25em 1em; }
+  padding: .25em 1em;
+}
 
+/* line 58, ../sass/imports/_main.scss */
 a.ots_action,
 a.ots_action:link,
 a.ots_action:visited {
   color: #FFF;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 65, ../sass/imports/_main.scss */
 a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
@@ -158,8 +213,10 @@ a.ots_action:focus {
   background-image: -webkit-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -moz-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -o-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
-  background-image: linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%); }
+  background-image: linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
+}
 
+/* line 73, ../sass/imports/_main.scss */
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
@@ -168,8 +225,10 @@ a.ots_action_highlight:visited {
   background-image: -webkit-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -moz-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -o-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
-  background-image: linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%); }
+  background-image: linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
+}
 
+/* line 80, ../sass/imports/_main.scss */
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
@@ -178,42 +237,60 @@ a.ots_action_highlight:focus {
   background-image: -webkit-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -moz-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -o-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
-  background-image: linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%); }
+  background-image: linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
+}
 
+/* line 86, ../sass/imports/_main.scss */
 a.ots_action_city {
-  padding: .75em 1.25em; }
+  padding: .75em 1.25em;
+}
 
+/* line 90, ../sass/imports/_main.scss */
 body {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
+/* line 94, ../sass/imports/_main.scss */
 p, ul, ol {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+/* line 99, ../sass/imports/_main.scss */
 pre,
 code {
   font-family: consolas, courier, monospace;
   font-size: 1em;
   white-space: pre;
-  border-radius: .25em; }
+  border-radius: .25em;
+}
 
+/* line 106, ../sass/imports/_main.scss */
 code {
   background-color: #F4FBFD;
-  padding: 0 .25em; }
+  padding: 0 .25em;
+}
 
+/* line 111, ../sass/imports/_main.scss */
 pre {
   line-height: 1.2em;
   padding: 1em;
   margin: 1.5em 0;
   background-color: #085987;
-  color: #c1d5e1; }
-  pre code {
-    color: inherit;
-    background-color: inherit; }
+  color: #c1d5e1;
+}
+/* line 117, ../sass/imports/_main.scss */
+pre code {
+  color: inherit;
+  background-color: inherit;
+}
 
+/* line 124, ../sass/imports/_main.scss */
 .bg_full ul {
   margin-bottom: 1.5em;
   padding-left: 2em;
-  list-style: none; }
+  list-style: none;
+}
+/* line 129, ../sass/imports/_main.scss */
 .bg_full li:before {
   content: "";
   display: block;
@@ -223,21 +300,29 @@ pre {
   top: 0.9em;
   position: relative;
   background-color: #84acc3;
-  border-radius: 1em; }
+  border-radius: 1em;
+}
 
+/* line 144, ../sass/imports/_main.scss */
 .bg_full {
   width: 100%;
   padding: 5% 0;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+}
 
+/* line 150, ../sass/imports/_main.scss */
 .bg_full_white {
-  background: #fff; }
+  background: #fff;
+}
 
+/* line 154, ../sass/imports/_main.scss */
 .ots_logo {
   width: 304px;
   margin: 0 auto 2em auto;
-  color: #085987; }
+  color: #085987;
+}
 
+/* line 160, ../sass/imports/_main.scss */
 .ots_logo a {
   width: 304px;
   height: 100px;
@@ -246,141 +331,195 @@ pre {
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  background: transparent url("../images/ots_logo_v.png") no-repeat 0 0; }
+  background: transparent url("../images/ots_logo_v.png") no-repeat 0 0;
+}
 
+/* line 171, ../sass/imports/_main.scss */
 .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {
   outline: none;
   background-position: 0 -140px;
-  outline: none; }
+  outline: none;
+}
 
+/* line 178, ../sass/imports/_main.scss */
 .site_header {
   padding: 4.5em 0 3em 0;
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
+/* line 184, ../sass/imports/_main.scss */
 .site_header_landing {
   background: #085987;
-  color: #FFF; }
+  color: #FFF;
+}
 
 /* Style for list with floated list items. Responds to screen-width. */
+/* line 192, ../sass/imports/_main.scss */
 .float_list {
   list-style: none;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 198, ../sass/imports/_main.scss */
 .float_list > li {
-  margin: 0 2% 1.5em 2%; }
+  margin: 0 2% 1.5em 2%;
+}
 
 /* List of OTS members, extends float list. Includes image and links. */
+/* line 205, ../sass/imports/_main.scss */
 .team_list > li {
   min-height: 8em;
   height: auto !important;
   height: 8em;
-  text-align: center; }
-  .team_list > li:before {
-    display: none; }
-  .team_list > li img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 100%; }
-  .team_list > li h3 {
-    font-size: 1em; }
-  .team_list > li p {
-    font-size: .714em;
-    min-height: 6em;
-    height: auto !important;
-    height: 6em; }
+  text-align: center;
+}
+/* line 210, ../sass/imports/_main.scss */
+.team_list > li:before {
+  display: none;
+}
+/* line 213, ../sass/imports/_main.scss */
+.team_list > li img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 100%;
+}
+/* line 219, ../sass/imports/_main.scss */
+.team_list > li h3 {
+  font-size: 1em;
+}
+/* line 222, ../sass/imports/_main.scss */
+.team_list > li p {
+  font-size: .714em;
+  min-height: 6em;
+  height: auto !important;
+  height: 6em;
+}
 
+/* line 230, ../sass/imports/_main.scss */
 .top_bar {
   width: 100%;
   z-index: 100;
   background: #FFF;
-  color: #FFF; }
-  .top_bar .container {
-    overflow: visible; }
+  color: #FFF;
+}
+/* line 235, ../sass/imports/_main.scss */
+.top_bar .container {
+  overflow: visible;
+}
 
+/* line 240, ../sass/imports/_main.scss */
 .logo_top_bar {
   float: left;
-  padding: 0.5em 0.75em; }
-  .logo_top_bar > a {
-    display: block;
-    float: left;
-    width: 192px;
-    height: 24px;
-    margin-right: 1em;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
-  .logo_top_bar > a,
-  .logo_top_bar > a:link,
-  .logo_top_bar > a:visited {
-    background: transparent url("../images/ots_logo_meta.png") no-repeat 0 4px;
-    color: #FFF;
-    opacity: 0.8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    /* IE8 */
-    filter: alpha(opacity=80);
-    /* IE 5-7  */ }
-  .logo_top_bar > a:hover,
-  .logo_top_bar > a:active,
-  .logo_top_bar > a:focus {
-    color: #FFF;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    /* IE8 */
-    filter: alpha(opacity=100);
-    /* IE 5-7  */ }
+  padding: 0.5em 0.75em;
+}
+/* line 244, ../sass/imports/_main.scss */
+.logo_top_bar > a {
+  display: block;
+  float: left;
+  width: 192px;
+  height: 24px;
+  margin-right: 1em;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 256, ../sass/imports/_main.scss */
+.logo_top_bar > a,
+.logo_top_bar > a:link,
+.logo_top_bar > a:visited {
+  background: transparent url("../images/ots_logo_meta.png") no-repeat 0 4px;
+  color: #FFF;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* IE8 */
+  filter: alpha(opacity=80);
+  /* IE 5-7  */
+}
+/* line 265, ../sass/imports/_main.scss */
+.logo_top_bar > a:hover,
+.logo_top_bar > a:active,
+.logo_top_bar > a:focus {
+  color: #FFF;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE8 */
+  filter: alpha(opacity=100);
+  /* IE 5-7  */
+}
 
+/* line 273, ../sass/imports/_main.scss */
 footer {
   font-size: .8571em;
   background: #085987;
   color: #84acc3;
   padding: 3em 0;
-  height: auto; }
-  footer p {
-    text-align: center; }
+  height: auto;
+}
+/* line 279, ../sass/imports/_main.scss */
+footer p {
+  text-align: center;
+}
 
+/* line 286, ../sass/imports/_main.scss */
 footer a,
 footer a:link,
 footer a:visited {
-  color: #c1d5e1; }
+  color: #c1d5e1;
+}
 
+/* line 292, ../sass/imports/_main.scss */
 footer a:hover,
 footer a:active,
 footer a:focus {
-  color: #FFF; }
+  color: #FFF;
+}
 
+/* line 296, ../sass/imports/_main.scss */
 .main_img {
   text-align: center;
   height: 24em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* News blocks, events */
+/* line 305, ../sass/imports/_main.scss */
 .date {
   font-size: .75em;
   font-style: italic;
-  color: grey; }
+  color: grey;
+}
 
 /* Styleguide*/
+/* line 315, ../sass/imports/_main.scss */
 .sg_list {
   list-style: none;
-  padding-left: 0 !important; }
-  .sg_list > li:before {
-    display: none; }
+  padding-left: 0 !important;
+}
+/* line 318, ../sass/imports/_main.scss */
+.sg_list > li:before {
+  display: none;
+}
 
+/* line 323, ../sass/imports/_main.scss */
 .sg_list small {
   display: block;
   margin-bottom: .75em;
   color: #888;
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 330, ../sass/imports/_main.scss */
 .sg_color {
   display: inline-block;
   border-radius: 4px;
   padding: 0 1em;
-  color: transparent; }
+  color: transparent;
+}
 
+/* line 337, ../sass/imports/_main.scss */
 .sg_textarea {
   width: 90%;
   font-size: .625em;
@@ -388,43 +527,57 @@ footer a:focus {
   border: 1px solid #888;
   padding: .5em;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 /* Testimonials */
 /* testimonials */
+/* line 350, ../sass/imports/_main.scss */
 .testimonial {
   overflow: hidden;
   position: relative;
   width: 100%;
   min-height: 400px;
   height: auto !important;
-  height: 400px; }
-  .testimonial header {
-    overflow: hidden; }
+  height: 400px;
+}
+/* line 358, ../sass/imports/_main.scss */
+.testimonial header {
+  overflow: hidden;
+}
 
+/* line 363, ../sass/imports/_main.scss */
 .testimonial_about {
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 368, ../sass/imports/_main.scss */
 .name b {
   color: #666;
   display: block;
   font-size: .5714em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
+/* line 376, ../sass/imports/_main.scss */
 .testimonial blockquote {
   position: absolute;
   z-index: 10;
   font-size: 2em;
   float: left;
-  width: 25%; }
+  width: 25%;
+}
 
+/* line 384, ../sass/imports/_main.scss */
 .testimonial img {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+}
 
+/* line 392, ../sass/imports/_main.scss */
 .testimonial img.close-up {
   width: 100%;
   max-width: 240px;
@@ -433,10 +586,13 @@ footer a:focus {
   position: relative;
   display: block;
   margin: 0 3em 1.5em 0;
-  float: left; }
+  float: left;
+}
 
+/* line 403, ../sass/imports/_main.scss */
 .question {
-  color: #085987; }
+  color: #085987;
+}
 
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
@@ -445,138 +601,212 @@ footer a:focus {
   /*  .logo {
       background: url(logo2x.jpg) no-repeat;
       background-size: 212px 303px;
-    }*/ }
+    }*/
+}
 /* ==|== non-semantic helper classes ======================================== */
+/* line 425, ../sass/imports/_main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
-  display: table; }
+  display: table;
+}
 
+/* line 426, ../sass/imports/_main.scss */
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
+/* line 427, ../sass/imports/_main.scss */
 .clearfix {
-  zoom: 1; }
+  zoom: 1;
+}
 
+/* line 428, ../sass/imports/_main.scss */
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
 /* ==|== print styles ======================================================= */
 @media print {
+  /* line 436, ../sass/imports/_main.scss */
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
-    -ms-filter: none !important; }
+    -ms-filter: none !important;
+  }
 
+  /* line 437, ../sass/imports/_main.scss */
   a, a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
+  /* line 438, ../sass/imports/_main.scss */
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
+  /* line 439, ../sass/imports/_main.scss */
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
+  /* line 440, ../sass/imports/_main.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
+  /* line 441, ../sass/imports/_main.scss */
   pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 442, ../sass/imports/_main.scss */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
 
+  /* line 443, ../sass/imports/_main.scss */
   tr, img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 444, ../sass/imports/_main.scss */
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
+    margin: 0.5cm;
+}
 
+  /* line 446, ../sass/imports/_main.scss */
   p, h2, h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
+  /* line 447, ../sass/imports/_main.scss */
   h2, h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}
+/* line 1, ../sass/imports/_dropdown.scss */
 .dropdown {
   float: left;
   position: relative;
-  top: 4px; }
-  .dropdown .dropdown_menu {
-    display: none; }
-  .dropdown .dropdown_toggle {
-    background: #f4f4f4;
-    padding: 3px 5px;
-    line-height: 1em;
-    color: #085987; }
-    .dropdown .dropdown_toggle b {
-      display: inline-block; }
-  .dropdown .city {
-    padding-right: 5px;
-    border-right: 1px solid #085987; }
-  .dropdown .caret {
-    position: relative;
-    top: -2px;
-    border-style: solid;
-    border-width: 5px 5px 0px 5px;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    height: 0px;
-    width: 0px;
-    display: block; }
-  .dropdown.open .dropdown_toggle {
-    background: #085987;
-    color: white; }
-  .dropdown.open .city {
-    border-color: white; }
-  .dropdown.open .dropdown_menu {
-    display: block;
-    position: absolute;
-    top: 2em;
-    left: 0;
-    background: #f4f4f4; }
-    .dropdown.open .dropdown_menu a {
-      display: block;
-      padding: 5px;
-      width: 100%; }
-  .dropdown.open :hover,
-  .dropdown.open :focus {
-    color: white; }
+  top: 4px;
+}
+/* line 7, ../sass/imports/_dropdown.scss */
+.dropdown .dropdown_menu {
+  display: none;
+}
+/* line 11, ../sass/imports/_dropdown.scss */
+.dropdown .dropdown_toggle {
+  background: #f4f4f4;
+  padding: 3px 5px;
+  line-height: 1em;
+  color: #085987;
+}
+/* line 17, ../sass/imports/_dropdown.scss */
+.dropdown .dropdown_toggle b {
+  display: inline-block;
+}
+/* line 22, ../sass/imports/_dropdown.scss */
+.dropdown .city {
+  padding-right: 5px;
+  border-right: 1px solid #085987;
+  width: 100px;
+}
+/* line 28, ../sass/imports/_dropdown.scss */
+.dropdown .caret {
+  position: relative;
+  top: -2px;
+  border-style: solid;
+  border-width: 5px 5px 0px 5px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  height: 0px;
+  width: 0px;
+  display: block;
+}
+/* line 43, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_toggle {
+  background: #1f8ab6;
+  color: white;
+}
+/* line 48, ../sass/imports/_dropdown.scss */
+.dropdown.open .city {
+  border-color: white;
+}
+/* line 52, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: white;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+/* line 61, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu a {
+  border-top: 1px solid #dadada;
+  display: block;
+  padding: 2px 5px;
+  line-height: 2em;
+  width: 118px;
+}
+/* line 69, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu li:first-child a {
+  border: none;
+}
 
 /* Styles specific for city template */
+/* line 9, ../sass/imports/_city.scss */
 .member_count {
   display: block;
-  font-size: .666em; }
+  font-size: .666em;
+}
 
+/* line 14, ../sass/imports/_city.scss */
 .tagline {
   font-size: 35px;
   line-height: 1.2;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
+/* line 20, ../sass/imports/_city.scss */
 .site_header_city {
   color: #085987;
   background-position: 0 50%;
-  background-size: 768px; }
+  background-size: 768px;
+}
 
+/* line 1, ../sass/imports/_nav.scss */
 .nav {
   text-transform: uppercase;
-  clear: both; }
-  .nav a {
-    display: block;
-    padding: .5em .75em;
-    letter-spacing: 0.05em; }
+  clear: both;
+}
+/* line 4, ../sass/imports/_nav.scss */
+.nav a {
+  display: block;
+  padding: .5em .75em;
+  letter-spacing: 0.05em;
+}
 
+/* line 12, ../sass/imports/_nav.scss */
 .nav_external li {
   margin: 0 .5em;
-  border-top: none; }
+  border-top: none;
+}
+/* line 16, ../sass/imports/_nav.scss */
 .nav_external a {
-  border: 0; }
+  border: 0;
+}
+/* line 19, ../sass/imports/_nav.scss */
 .nav_external .ots_nav_icon {
   width: 28px;
   height: 28px;
@@ -584,14 +814,22 @@ footer a:focus {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background: transparent url("../images/ots_icons.png") no-repeat 50% 0; }
+  background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
+}
+/* line 28, ../sass/imports/_nav.scss */
 .nav_external .github {
-  background-position: 50% 0; }
+  background-position: 50% 0;
+}
+/* line 31, ../sass/imports/_nav.scss */
 .nav_external .twitter {
-  background-position: 50% -28px; }
+  background-position: 50% -28px;
+}
+/* line 34, ../sass/imports/_nav.scss */
 .nav_external .facebook {
-  background-position: 50% -56px; }
+  background-position: 50% -56px;
+}
 
+/* line 39, ../sass/imports/_nav.scss */
 .btn_navbar {
   float: right;
   margin: 0.5em 0.75em;
@@ -599,66 +837,100 @@ footer a:focus {
   border: 2px solid #1f8ab6;
   border-radius: .25em;
   background: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 48, ../sass/imports/_nav.scss */
 .btn_navbar .icon_bar {
   display: block;
   width: 1.25em;
   height: 2px;
   margin-top: 3px;
-  background-color: #1f8ab6; }
+  background-color: #1f8ab6;
+}
 
+/* line 55, ../sass/imports/_nav.scss */
 .btn_navbar .icon_bar_last {
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+}
 
+/* line 59, ../sass/imports/_nav.scss */
 .collapse {
-  display: none; }
-  .collapse.in {
-    display: block; }
+  display: none;
+}
+/* line 62, ../sass/imports/_nav.scss */
+.collapse.in {
+  display: block;
+}
 
+/* line 5, ../sass/imports/_carousel.scss */
 .carousel {
   position: relative;
   margin-bottom: 20px;
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 11, ../sass/imports/_carousel.scss */
 .carousel-inner {
   overflow: hidden;
   width: 100%;
-  position: relative; }
+  position: relative;
+}
 
+/* line 19, ../sass/imports/_carousel.scss */
 .carousel .item {
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
   -moz-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left; }
+  transition: 0.6s ease-in-out left;
+}
+/* line 29, ../sass/imports/_carousel.scss */
 .carousel .item > img {
   display: block;
-  line-height: 1; }
+  line-height: 1;
+}
+/* line 36, ../sass/imports/_carousel.scss */
 .carousel .active,
 .carousel .next,
 .carousel .prev {
-  display: block; }
+  display: block;
+}
+/* line 38, ../sass/imports/_carousel.scss */
 .carousel .active {
-  left: 0; }
+  left: 0;
+}
+/* line 43, ../sass/imports/_carousel.scss */
 .carousel .next,
 .carousel .prev {
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+}
+/* line 49, ../sass/imports/_carousel.scss */
 .carousel .next {
-  left: 100%; }
+  left: 100%;
+}
+/* line 52, ../sass/imports/_carousel.scss */
 .carousel .prev {
-  left: -100%; }
+  left: -100%;
+}
+/* line 56, ../sass/imports/_carousel.scss */
 .carousel .next.left,
 .carousel .prev.right {
-  left: 0; }
+  left: 0;
+}
+/* line 60, ../sass/imports/_carousel.scss */
 .carousel .active.left {
-  left: -100%; }
+  left: -100%;
+}
+/* line 63, ../sass/imports/_carousel.scss */
 .carousel .active.right {
-  left: 100%; }
+  left: 100%;
+}
 
+/* line 72, ../sass/imports/_carousel.scss */
 .carousel-control {
   position: absolute;
   top: 40%;
@@ -677,15 +949,21 @@ footer a:focus {
   -moz-border-radius: 23px;
   border-radius: 23px;
   opacity: 0.8;
-  filter: alpha(opacity=80); }
-  .carousel-control.right {
-    left: auto;
-    right: 15px; }
-  .carousel-control:hover {
-    text-decoration: none;
-    opacity: 1;
-    filter: alpha(opacity=1); }
+  filter: alpha(opacity=80);
+}
+/* line 93, ../sass/imports/_carousel.scss */
+.carousel-control.right {
+  left: auto;
+  right: 15px;
+}
+/* line 99, ../sass/imports/_carousel.scss */
+.carousel-control:hover {
+  text-decoration: none;
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
 
+/* line 110, ../sass/imports/_carousel.scss */
 .carousel-caption {
   position: absolute;
   left: 0;
@@ -693,74 +971,117 @@ footer a:focus {
   bottom: 0;
   padding: 15px;
   background: #efefef;
-  background: rgba(0, 0, 0, 0.75); }
+  background: rgba(0, 0, 0, 0.75);
+}
 
+/* line 119, ../sass/imports/_carousel.scss */
 .testimonial-caption {
   left: auto;
   width: 450px;
   bottom: 10px;
   right: 10px;
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 127, ../sass/imports/_carousel.scss */
 .carousel-caption h4,
 .carousel-caption p {
   color: white;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
+/* line 131, ../sass/imports/_carousel.scss */
 .carousel-caption h4 {
-  margin: 0 0 5px; }
+  margin: 0 0 5px;
+}
 
+/* line 134, ../sass/imports/_carousel.scss */
 .carousel-caption p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 @media screen and (min-width: 440px) {
+  /* line 2, ../sass/imports/_mediaqueries.scss */
   .float_list > li {
-    float: left; }
+    float: left;
+  }
 
+  /* line 5, ../sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
-    width: 46%; } }
+    width: 46%;
+  }
+}
 @media screen and (min-width: 768px) {
+  /* line 12, ../sass/imports/_mediaqueries.scss */
   body {
-    font-size: 87.5%; }
+    font-size: 87.5%;
+  }
 
+  /* line 15, ../sass/imports/_mediaqueries.scss */
   .nav {
     float: right;
-    clear: none; }
-    .nav li {
-      float: left;
-      border: none; }
+    clear: none;
+  }
+  /* line 18, ../sass/imports/_mediaqueries.scss */
+  .nav li {
+    float: left;
+    border: none;
+  }
 
+  /* line 24, ../sass/imports/_mediaqueries.scss */
   .btn_navbar {
-    display: none; }
+    display: none;
+  }
 
+  /* line 28, ../sass/imports/_mediaqueries.scss */
   .collapse {
-    display: block; }
+    display: block;
+  }
 
+  /* line 32, ../sass/imports/_mediaqueries.scss */
   .top_bar {
+    position: absolute;
     height: 2.5em;
     padding: 30px 0;
     -webkit-transition: padding-bottom .25s ease-in;
     -moz-transition: padding-bottom .25s ease-in;
     -o-transition: padding-bottom .25s ease-in;
-    transition: padding-bottom .25s ease-in; }
+    transition: padding-bottom .25s ease-in;
+  }
 
+  /* line 42, ../sass/imports/_mediaqueries.scss */
   .top_bar.affix {
     position: fixed;
     border-bottom: 1px solid #085987;
-    padding: 10px 0; }
+    padding: 10px 0;
+  }
 
+  /* line 48, ../sass/imports/_mediaqueries.scss */
   .col_left {
     width: 46%;
     float: left;
-    margin: 0 4% 1.5em 0; }
+    margin: 0 4% 1.5em 0;
+  }
 
+  /* line 54, ../sass/imports/_mediaqueries.scss */
   .col_right {
     width: 46%;
     float: right;
-    margin: 0 0 1.5em 4%; }
+    margin: 0 0 1.5em 4%;
+  }
 
+  /* line 60, ../sass/imports/_mediaqueries.scss */
   .float_list_4 > li {
-    width: 21%; }
+    width: 21%;
+  }
 
+  /* line 64, ../sass/imports/_mediaqueries.scss */
+  .site_header {
+    padding-top: 8.5em;
+  }
+
+  /* line 68, ../sass/imports/_mediaqueries.scss */
   .site_header_city {
-    background-size: 100%; } }
+    background-size: 100%;
+  }
+}
