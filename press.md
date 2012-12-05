@@ -46,8 +46,15 @@ title: Press
 				</p>
 			</div>
 			<div class="item" id="js-about-fr">
-				Français
-			</div>
+				<p>
+					OpenTechSchool est une initiative communautaire qui offre des ateliers gratuits de programmation informatique
+					ainsi que des rencontres entre passionnés de technologie de quelque sexe, formation, ou niveau d'expérience que ce soit.
+					OpenTechSchool aide des formateurs bénévoles à mettre en oeuvre des événements en prenant en charge les détails d'organisation
+					et en les encourageant à créer leur propre contenu pédagogique, qui sera ensuite partagé en ligne et enrichi 
+					par les contributions de toute la communauté OTS. Le but principal d'OTS est de créer un environnement chaleureux 
+					où nul n'hésite à poser quelque question que ce soit. Chacun est invité à participer, que ce soit en tant que formateur ou étudiant,
+					et à se rapprocher d'OTS pour organiser des événements à travers le monde. 
+			</div>  <p>
 			<div class="item" id="js-about-es">
 				<p>
 					La OpenTechSchool es una iniciativa nacida con el objetivo de ofrecer talleres de programación, y encuentros, gratuitos a entusiastas de la tecnología de todos los niveles, sexos y experiencia. Ofrece soporte durante la organización del evento, fomentando la creación de materiales educativos abiertos y originales, que luego puedan ser mejorados por la comunidad OTS global. El objetivo principal es crear una comunidad educativa donde nadie tenga vergüenza a preguntar, donde todo el mundo esta invitado a participar ya sea como profesor, alumno o organizando eventos OTS en cualquier parte del mundo.
@@ -65,7 +72,7 @@ title: Press
 				ओपन टेक स्कूल एक सामुदायिक पहल है जिसके द्वारा लोगो के लिए मुफ्त में
 प्रोग्रामिंग वोर्क्शोप्स और बैठकों का आयोजन किया जाता है। इन बैठकों में
 लोगो के बीच कोई भेदभाव नहीं किया जाता और यह सभी के लिए खुली है। यहाँ हम
-उनको प्रोत्साहित करते है जो या तो आगे आके पढाना चाहते है या पढना।हर चीज़ जो
+उनको प्रोत्साहित करते है जो या तो आगे आके पढाना चाहते है या पढना।हर चीज़ जो
 इन वोर्क्शोप्स एवं बैठकों में बनती है वोह पूरी दुनिया के साथ ऑनलाइन बाटी
 जाती है ताकि और बाकी ओपन टेक स्कूल से झुदे लोग भी इसमें अपना योगदान दे सके।
 ओपन टेक स्कूल का लक्ष्य एक ऐसी जगह का निर्माण करना है जहा लोग कोई भी तकनीकी
