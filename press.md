@@ -6,7 +6,7 @@ title: Press
 
 <section id="about">
   <h2>About OpenTechSchool</h2>
-  <p class="subtle">free to copy</p>
+  <p class="subtle"><small>free to copy</small></p>
   <ul id="js-lang-selector" class="switch_lang">
     <li><a href="#js-about-eng" class="active">English</a></li>
     <li><a href="#js-about-it">Italian</a></li>

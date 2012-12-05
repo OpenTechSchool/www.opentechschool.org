@@ -95,9 +95,11 @@ p, ul, ol {
   margin-bottom: 1.5em;
 }
 .subtle {
-  font-size: .8em;
   color: #666;
   font-style: italic;
+}
+small {
+  font-size: .8571em;
 }
 
 pre,
@@ -307,6 +309,9 @@ footer {
   height: auto;
   p {
     text-align: center;
+  }
+  small {
+    font-size: .8571em;
   }
 }
 
