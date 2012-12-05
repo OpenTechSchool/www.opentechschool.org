@@ -22,9 +22,9 @@ OTS can help you out! We will:
  * Promote that mailinglist via our social media channels, spread it in our mailinglists, user groups and communities
 But we also need to you to spread the word and convince people to join - after all, it is your cause!
 
-You have a team? Great. Now: meet. In flesh.
+You have a team? Great. Now: meet. In person.
 
-# Meeting – in flesh
+# Meeting – in person
 Team building is essential. And meeting is important!
  * We suggest you to meet with your team regularly. How about meeting every second week over breakfast, in a place that leaves you room to gather together, talk and plan upcoming events? Easier than finding time to meet after work and early enough to get to the office in time.
 * The very first meeting (and any time a new face joins): invite the newcomer to introduce her/himself and talk about her/his interest in joining the team
