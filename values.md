@@ -5,7 +5,7 @@ title: "Our core values"
 
 ### Our core values
 
-This is based on the Values Blog Post wi<a href="blog.opentechschool.org/2012/07/what-is-opentechschool.html"></a>
+This is based on [the blog post about OTS's values](blog.opentechschool.org/2012/07/what-is-opentechschool.html).
 
 <div class="otsicon list">
 <img alt="openness" border="0" src="http://4.bp.blogspot.com/-dxNiI-vTpa0/T_6aLdYWLfI/AAAAAAAALM8/ZOHBVyeyDXo/s200/openness_2276.png" title="openness">
