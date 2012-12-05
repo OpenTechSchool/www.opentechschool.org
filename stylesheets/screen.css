@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,51 +19,52 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 20, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../debtapp/ext/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 115, ../../../../.rvm/gems/ruby-1.9.3-p194@wtf/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -188,6 +189,7 @@ a:focus {
   background-image: -webkit-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: -moz-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: -o-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
+  background-image: -ms-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   background-image: linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
   display: inline-block;
   border-radius: 4px;
@@ -213,6 +215,7 @@ a.ots_action:focus {
   background-image: -webkit-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -moz-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: -o-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
+  background-image: -ms-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
   background-image: linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%);
 }
 
@@ -225,6 +228,7 @@ a.ots_action_highlight:visited {
   background-image: -webkit-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -moz-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: -o-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
+  background-image: -ms-linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
   background-image: linear-gradient(top, #e04c3e 0%, #e04c3e 50%, #d40000 51%, #e04c3e 100%);
 }
 
@@ -237,6 +241,7 @@ a.ots_action_highlight:focus {
   background-image: -webkit-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -moz-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: -o-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
+  background-image: -ms-linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
   background-image: linear-gradient(top, #fd4b22 0%, #fd4b22 50%, #e04c3e 51%, #fd4b22 100%);
 }
 
@@ -781,8 +786,19 @@ footer a:focus {
 /* line 20, ../sass/imports/_city.scss */
 .site_header_city {
   color: #085987;
-  background-position: 0 50%;
   background-size: 768px;
+}
+
+/* line 25, ../sass/imports/_city.scss */
+.site_header_stockholm {
+  background-image: url(/images/bg_stockholm.jpg);
+  background-position: 50% 30%;
+}
+
+/* line 30, ../sass/imports/_city.scss */
+.site_header_berlin {
+  background-image: url(/images/bg_berlin.jpg);
+  background-position: 50% 50%;
 }
 
 /* line 1, ../sass/imports/_nav.scss */
@@ -1082,6 +1098,6 @@ footer a:focus {
 
   /* line 68, ../sass/imports/_mediaqueries.scss */
   .site_header_city {
-    background-size: 100%;
+    background-size: 130%;
   }
 }

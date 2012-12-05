@@ -1,7 +1,7 @@
 ---
 layout: city
 title: Stockholm
-image: ../images/bg_stockholm.jpg
+class: "stockholm"
 tagline: "Where kanelbullar and köttbullar come from"
 rss_feed: stockholm
 meetupcom_group: opentechschool-stockholm
