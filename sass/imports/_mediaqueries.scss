@@ -30,6 +30,11 @@
     display: block;
   }
 
+  .container_narrow {
+    width: 100%;
+    padding: 0;
+  }
+
   .top_bar {
     position: absolute;
     height: 2.5em;
@@ -69,6 +74,6 @@
   .site_header_city {
     background-size: 130%;
   }
-  
+
 
 }
