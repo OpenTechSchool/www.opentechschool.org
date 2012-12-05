@@ -47,14 +47,9 @@ title: Press
 			</div>
 			<div class="item" id="js-about-fr">
 				<p>
-					OpenTechSchool est une initiative communautaire qui offre des ateliers gratuits de programmation informatique
-					ainsi que des rencontres entre passionnés de technologie de quelque sexe, formation, ou niveau d'expérience que ce soit.
-					OpenTechSchool aide des formateurs bénévoles à mettre en oeuvre des événements en prenant en charge les détails d'organisation
-					et en les encourageant à créer leur propre contenu pédagogique, qui sera ensuite partagé en ligne et enrichi 
-					par les contributions de toute la communauté OTS. Le but principal d'OTS est de créer un environnement chaleureux 
-					où nul n'hésite à poser quelque question que ce soit. Chacun est invité à participer, que ce soit en tant que formateur ou étudiant,
-					et à se rapprocher d'OTS pour organiser des événements à travers le monde. 
-			</div>  <p>
+					OpenTechSchool est une initiative communautaire qui offre des ateliers gratuits de programmation informatique ainsi que des rencontres entre passionnés de technologie de quelque sexe, formation, ou niveau d'expérience que ce soit. OpenTechSchool aide des formateurs bénévoles à mettre en oeuvre des événements en prenant en charge les détails d'organisation et en les encourageant à créer leur propre contenu pédagogique, qui sera ensuite partagé en ligne et enrichi 					par les contributions de toute la communauté OTS. Le but principal d'OTS est de créer un environnement chaleureux où nul n'hésite à poser quelque question que ce soit. Chacun est invité à participer, que ce soit en tant que formateur ou étudiant, et à se rapprocher d'OTS pour organiser des événements à travers le monde. 
+				</p>
+			</div>  
 			<div class="item" id="js-about-es">
 				<p>
 					La OpenTechSchool es una iniciativa nacida con el objetivo de ofrecer talleres de programación, y encuentros, gratuitos a entusiastas de la tecnología de todos los niveles, sexos y experiencia. Ofrece soporte durante la organización del evento, fomentando la creación de materiales educativos abiertos y originales, que luego puedan ser mejorados por la comunidad OTS global. El objetivo principal es crear una comunidad educativa donde nadie tenga vergüenza a preguntar, donde todo el mundo esta invitado a participar ya sea como profesor, alumno o organizando eventos OTS en cualquier parte del mundo.
