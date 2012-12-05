@@ -11,29 +11,44 @@ title: Press
 		<!-- FIXME: make this inline -->
 		<ul id="js-lang-selector">
 			<li><a href="#js-about-eng" class="active">English</a></li>
-			<li><a href="#js-about-de">German</a></li>
 			<li><a href="#js-about-it">Italian</a></li>
-			<li><a href="#js-about-fr">French</a></li>
 			<li><a href="#js-about-es">Spanish</a></li>
 			<li><a href="#js-about-hi">Hindi</a></li>
+			<li><a href="#js-about-sv">Swedish</a></li>
+			<li><a href="#js-about-de">German</a></li>
+			<li><a href="#js-about-fr">French</a></li>
 		</ul>
 	</p>
 	<div class="carousel">
 		<div class="carousel-inner">
 			<div class="item active" id="js-about-eng">
-				OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds, and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS's main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.
+				<p>
+					OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds, and experience levels. It supports volunteer coaches in setting up the events taking care of the organizational details and encouraging them to create original teaching material, to be then openly shared online and further developed with contributions from the global OTS community. OTS's main goal is to crate a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.
+				</p>
 			</div>
 			<div class="item" id="js-about-de">
 				Über in Deutsch
 			</div>
 			<div class="item" id="js-about-it">
-				OpenTechSchool è un'iniziativa volta ad offrire workshop e meetup dedicati a tecnologia e linguaggi di programmazione a chiunque voglia saperne di più, indipendentemente dalla propria esperienza, professione e sesso. OTS supporta volontari interessati a realizzare eventi di questo tipo fornendo aiuto dal punto di vista organizzativo e nella creazione di materiale didattico originale, che viene poi condiviso online e ulteriormente sviluppato grazie alla collaborazione della community globale di OTS. Lo scopo principale di OTS è quello di creare un ambiente confortevole per imparare, dove ci si possa sentire liberi di porre qualsiasi domanda. Tutti sono invitati a partecipare, come coach o learner, e a mettersi contatto con OTS per organizzare eventi ovunque nel mondo.
+				<p>
+					OpenTechSchool è un'iniziativa volta ad offrire workshop e meetup dedicati a tecnologia e linguaggi di programmazione a chiunque voglia saperne di più, indipendentemente dalla propria esperienza, professione e sesso. OTS supporta volontari interessati a realizzare eventi di questo tipo fornendo aiuto dal punto di vista organizzativo e nella creazione di materiale didattico originale, che viene poi condiviso online e ulteriormente sviluppato grazie alla collaborazione della community globale di OTS. Lo scopo principale di OTS è quello di creare un ambiente confortevole per imparare, dove ci si possa sentire liberi di porre qualsiasi domanda. Tutti sono invitati a partecipare, come coach o learner, e a mettersi contatto con OTS per organizzare eventi ovunque nel mondo.
+				</p>
 			</div>
 			<div class="item" id="js-about-fr">
 				Français
 			</div>
 			<div class="item" id="js-about-es">
-				La OpenTechSchool es una iniciativa nacida con el objetivo de ofrecer talleres de programación, y encuentros, gratuitos a entusiastas de la tecnología de todos los niveles, sexos y experiencia. Ofrece soporte durante la organización del evento, fomentando la creación de materiales educativos abiertos y originales, que luego puedan ser mejorados por la comunidad OTS global. El objetivo principal es crear una comunidad educativa donde nadie tenga vergüenza a preguntar, donde todo el mundo esta invitado a participar ya sea como profesor, alumno o organizando eventos OTS en cualquier parte del mundo.
+				<p>
+					La OpenTechSchool es una iniciativa nacida con el objetivo de ofrecer talleres de programación, y encuentros, gratuitos a entusiastas de la tecnología de todos los niveles, sexos y experiencia. Ofrece soporte durante la organización del evento, fomentando la creación de materiales educativos abiertos y originales, que luego puedan ser mejorados por la comunidad OTS global. El objetivo principal es crear una comunidad educativa donde nadie tenga vergüenza a preguntar, donde todo el mundo esta invitado a participar ya sea como profesor, alumno o organizando eventos OTS en cualquier parte del mundo.
+				</p>
+			</div>
+			<div class="item" id="js-about-sv">
+				<p>
+					OpenTechSchool är ett ideellt community som anordnar gratis workshops inom programmering och meetups för teknikentusiaster oavsett kön, bakgrund och tidigare erfarenhet. OTS använder sig av coacher som ställer upp frivilligt och som tar fram materialet som vi lär ut. Detta material delas sedan öppet online och vidareutvecklas av OTS globala community.
+				</p>
+				<p>
+					OTS:s mål är att skapa en öppen atmosfär där ingen känner sig obekväm att ställa frågor och där alla är inbjudna att delta, oavsett om du vill lära ut eller lära dig. Välkommen att kontakta oss om du vill starta ett OTS-event var som helst i världen.
+				</p>
 			</div>
 			<div class="item" id="js-about-hi">
 				ओपन टेक स्कूल एक सामुदायिक पहल है जिसके द्वारा लोगो के लिए मुफ्त में
