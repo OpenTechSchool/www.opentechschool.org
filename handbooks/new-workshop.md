@@ -8,7 +8,7 @@ Do you have a topic you're passionate about? Do you have the skills and maybe ev
 # Pre-requirements
 Before we can get started, there are a few things we need to ensure first. Those are:
 
- 1. Make sure the workshop and its idea is in agreement with our [values](/values.html). In particular:
+ 1. Make sure the workshop and its idea is in agreement with our [values](/about.html#core_values). In particular:
   * even though your workshop may be targeting a certain group of people and could have some perquisites (like certain skills/hardware/software), it needs to be as open and inclusive as possible
   * it needs to be hands-on
   * you are responsible for creating a safe learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory"
