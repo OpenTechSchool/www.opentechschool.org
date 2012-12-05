@@ -19,14 +19,14 @@ about: "We're the first OpenTechSchool team outside of Germany! We are developin
   </li>
 
   <li class="member">
-    <img src="/images/team/Hanna.jpg">
+    <img src="/images/team/hanna.jpg">
     <h3>Hanna Kulin</h3>
     <p>hanna@opentechschool.org</p>
   </li>
 
 
   <li class="member">
-    <img src="/images/team/Nader.jpg">
+    <img src="/images/team/nader.jpg">
     <h3>Nader Al-Ghazu</h3>
     <p>nader@opentechschool.org</p>
   </li>
