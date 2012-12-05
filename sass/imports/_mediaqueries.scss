@@ -1,4 +1,6 @@
-@media screen and (min-width: 440px) {
+// By writing the media queries as mixins,
+// we can compile them into the IE stylesheet as well
+@mixin min440(){
   .float_list > li {
     float: left;
   }
@@ -7,8 +9,7 @@
   }
 }
 
-
-@media screen and (min-width: 768px) {
+@mixin min768() {
   body {
     font-size: 87.5%;
   }
