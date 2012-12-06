@@ -15,9 +15,7 @@
       var dateWrapper = moment(date);
       var templateData = {
         name: name,
-        dayTime: dateWrapper.format('dddd HH:MM'),
-        month: dateWrapper.format('MMM'),
-        day: dateWrapper.format('Do'),
+        date: dateWrapper.format('dddd, MMM Do, HH:MM'),
         venue: cal_event.venue.name,
         link: cal_event.event_url
       };
