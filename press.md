@@ -91,6 +91,25 @@ title: Press
   });
 </script>
 
+## Wording and Styling
+
+Quoting from the [Style guide](/handbooks/styles.html):
+> OpenTechSchool is spelled as one word, in CamelCase.
+
+> The logo comes in two versions: in one line or in two. Ideally the logo is used in OTS blue&nbsp;(``#085987``), or in black for b/w printing. Another option is to invert the colors. Please always allow some whitespace around the logo to make it stand out from other elements.
+
+<p class="center">
+    <img src="/images/sg/ots_sg_logo.png" alt="OTS-Logo">
+</p>
+
+### Downloads
+
+<ul>
+    <li>OpenTechSchool Logo compact <a href="../downloads/ots_logo.eps">.eps</a></li>
+    <li>OpenTechSchool Logo long <a href="../downloads/ots_logo_long.eps">.eps</a></li>
+    <li>Avatar (Twitter etc.) <a href="../downloads/ots_twitter_avatar.png">.png</a></li>
+</ul>
+
 ## In the press
 
 ### In English
@@ -115,6 +134,6 @@ on [Berlin Geekettes](http://www.berlingeekettes.com) August 10th, 2012.
 * [Python OpenTechSchool](http://python-verband.org/news/python-opentechschool) by [Python Software Verband](http://python-verband.org), November 23rd, 2012.
 
 
-###’ In Swedish
+### In Swedish
 
 * [OpenTechSchool På Export](https://camfia.wordpress.com/2012/09/26/open-tech-school-pa-export/) on [Hallo Welt!](https://camfia.wordpress.com/), September 26th, 2012.
