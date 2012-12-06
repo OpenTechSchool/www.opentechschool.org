@@ -68,12 +68,24 @@
   }
 
   .site_header {
-    padding-top: 8.5em;
+    padding-top: 7em;
   }
 
+  .carousel_testimonial {
+    padding-top: 3em;
+  }
+  
   .site_header_city {
     background-size: 130%;
   }
 
-
+  .name {
+    .close-up {
+      margin-right: 1.5em;
+      float: left;
+    }
+    strong {
+      margin-top: 2.4em;
+    }
+  }
 }

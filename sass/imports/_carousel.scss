@@ -65,6 +65,8 @@
 
 }
 
+
+
 // Left/right controls for nav
 // ---------------------------
 
@@ -72,19 +74,16 @@
   position: absolute;
   top: 40%;
   left: 15px;
-  width: 40px;
-  height: 40px;
+  width: 1em;
+  height: 1em;
   margin-top: -20px;
-  font-size: 60px;
+  font-size: 3em;
   font-weight: 100;
-  line-height: 30px;
+  line-height: .75em;
   color: white;
   text-align: center;
   background: #efefef;
-  border: 3px solid white;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
+  border-radius: 100%;
   opacity: 0.8;
   filter: alpha(opacity=80);
 
@@ -112,24 +111,29 @@
   right: 0;
   bottom: 0;
   padding: 15px;
-  background: #efefef;
-  background: rgba(0,0,0,.75);
+  background: #EFEFEF;
+  background: rgba(0,0,0,.5);
 }
 .testimonial-caption{
   left: auto;
   width: 450px;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
+  max-width: 80%;
+  bottom: 1em;
+  left: 1em;
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: white;
-  line-height: 20px;
+  color: #FFF;
 }
 .carousel-caption h4 {
   margin: 0 0 5px;
 }
-.carousel-caption p {
-  margin-bottom: 0;
+
+.quote {
+  margin-bottom: .8751em;
+  line-height: 1.2;
+  font-size: 1em;
+}
+.author {
+  font-size: .8751em;
 }

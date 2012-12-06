@@ -232,13 +232,15 @@ ul.switch_lang {
 
 
 /* List of OTS members, extends float list. Includes image and links. */
-.team_list > li {
+.team_list {
+  > li {
   min-height: 8em;
   height:auto !important;
   height: 8em;
   text-align: center;
-  &:before {
-    display: none;
+  }
+  > li:before {
+    display: none !important;
   }
   img {
     width: 100%;
@@ -377,8 +379,6 @@ footer a:focus {
   border-radius: 4px;
 }
 
-/* Testimonials */
-
 /* testimonials */
 .testimonial {
   overflow: hidden;
@@ -398,20 +398,31 @@ footer a:focus {
 }
 
 .name {
+  margin-bottom: 1.5em;
+  padding: .666em 0 0 0;
+  text-align: center;
+  border-top: 1px solid $ots_blue;
+  border-bottom: 1px solid $ots_blue;
+  overflow: hidden;
+  strong {
+    display: block;
+    margin-top: .8751em;
+  }
   b {
     color: #666;
     display: block;
     font-size: .5714em;
     margin-bottom: 1em;
   }
-}
-
-.testimonial blockquote {
-  position: absolute;
-  z-index: 10;
-  font-size: 2em;
-  float: left;
-  width: 25%;
+  .close-up {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto .666em;
+    border-radius: 100%;
+  }
 }
 
 .testimonial img {
@@ -422,16 +433,17 @@ footer a:focus {
   display: block;
 }
 
-.testimonial img.close-up {
-  width: 100%;
-  max-width: 240px;
-  height: auto;
-  border-radius: 100%;
-  position: relative;
-  display: block;
-  margin: 0 3em 1.5em 0;
+.testimonial blockquote {
+  position: absolute;
+  z-index: 10;
+  font-size: 2em;
   float: left;
+  width: 25%;
 }
+
+
+
+
 
 .question {
   color: $ots_blue;
