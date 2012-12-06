@@ -818,10 +818,9 @@ footer a:focus {
 /* line 21, ../sass/imports/_dropdown.scss */
 .dropdown .city {
   padding-right: 5px;
-  border-right: 1px solid #085987;
   width: 100px;
 }
-/* line 27, ../sass/imports/_dropdown.scss */
+/* line 26, ../sass/imports/_dropdown.scss */
 .dropdown .caret {
   position: relative;
   top: -2px;
@@ -834,34 +833,37 @@ footer a:focus {
   width: 0px;
   display: block;
 }
-/* line 42, ../sass/imports/_dropdown.scss */
+/* line 41, ../sass/imports/_dropdown.scss */
 .dropdown.open .dropdown_toggle {
   background: #1f8ab6;
   color: white;
 }
-/* line 47, ../sass/imports/_dropdown.scss */
-.dropdown.open .city {
-  border-color: white;
-}
-/* line 51, ../sass/imports/_dropdown.scss */
+/* line 46, ../sass/imports/_dropdown.scss */
 .dropdown.open .dropdown_menu {
   display: block;
   position: absolute;
-  top: 25px;
+  top: 22px;
   left: 0;
-  background: white;
-  border: 1px solid #dadada;
-  border-radius: 5px;
 }
-/* line 60, ../sass/imports/_dropdown.scss */
+/* line 51, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu li {
+  margin-top: .25em;
+}
+/* line 54, ../sass/imports/_dropdown.scss */
 .dropdown.open .dropdown_menu a {
-  border-top: 1px solid #dadada;
   display: block;
   padding: 2px 5px;
-  line-height: 2em;
-  width: 118px;
+  line-height: 1.5em;
+  width: 119px;
+  background: #c1d5e1;
 }
-/* line 68, ../sass/imports/_dropdown.scss */
+/* line 62, ../sass/imports/_dropdown.scss */
+.dropdown.open .dropdown_menu a:hover,
+.dropdown.open .dropdown_menu a:focus {
+  background: #1f8ab6;
+  color: #FFF;
+}
+/* line 67, ../sass/imports/_dropdown.scss */
 .dropdown.open .dropdown_menu li:first-child a {
   border: none;
 }

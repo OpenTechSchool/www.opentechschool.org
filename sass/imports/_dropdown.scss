@@ -20,7 +20,6 @@
 
   .city {
     padding-right: 5px;
-    border-right: 1px solid $ots_blue;
     width: 100px;
   }
 
@@ -44,25 +43,25 @@
       color: white;
     }
 
-    .city {
-      border-color: white
-    }
-
     .dropdown_menu {
       display: block;
       position: absolute;
-      top: 25px;
+      top: 22px;
       left: 0;
-      background: white;
-      border: 1px solid #dadada;
-      border-radius: 5px;
-
+      li {
+        margin-top: .25em;
+      }
       a {
-        border-top: 1px solid #dadada;
         display: block;
         padding: 2px 5px;
-        line-height: 2em;
-        width: 118px;
+        line-height: 1.5em;
+        width: 119px;
+        background: $ots_text_i_l;
+      }
+      a:hover,
+      a:focus {
+        background: $ots_blue_l;
+        color: #FFF;
       }
 
       li:first-child a {
