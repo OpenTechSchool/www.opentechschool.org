@@ -405,6 +405,18 @@ footer a:focus {
 }
 
 /* testimonials */
+.testimonials_teaser {
+  overflow: hidden;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto .666em;
+  }
+}
+
 .testimonial {
   overflow: hidden;
   // color: #FFF;
