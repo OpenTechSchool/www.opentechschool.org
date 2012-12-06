@@ -74,6 +74,17 @@
 
   &.in {
     display: block;
+    > li {
+      text-align: center;
+//      border-top: 1px solid $ots_blue;
+    }
+    .nav_external {
+      width: 128px;
+      margin: .25em auto;
+      li {
+        float: left;
+      }
+    }
   }
 }
 

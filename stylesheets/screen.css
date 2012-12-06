@@ -969,6 +969,19 @@ footer a:focus {
 .collapse.in {
   display: block;
 }
+/* line 77, ../sass/imports/_nav.scss */
+.collapse.in > li {
+  text-align: center;
+}
+/* line 81, ../sass/imports/_nav.scss */
+.collapse.in .nav_external {
+  width: 128px;
+  margin: .25em auto;
+}
+/* line 84, ../sass/imports/_nav.scss */
+.collapse.in .nav_external li {
+  float: left;
+}
 
 /* line 5, ../sass/imports/_carousel.scss */
 .carousel {
