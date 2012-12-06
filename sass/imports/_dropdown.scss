@@ -1,15 +1,14 @@
 .dropdown {
   float: left;
   position: relative;
-  top: 4px;
-
+  top: 2px;
 
   .dropdown_menu {
     display: none;
   }
 
   .dropdown_toggle {
-    background: #f4f4f4;    
+    background: #f4f4f4;
     padding: 3px 5px;
     line-height: 1em;
     color: $ots_blue;
@@ -42,7 +41,7 @@
 
     .dropdown_toggle {
       background: $ots_blue_l;
-      color: white; 
+      color: white;
     }
 
     .city {

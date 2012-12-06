@@ -18,9 +18,10 @@
   text-shadow: 0 1px 1px rgba(255,255,255,.8);
 }
 
-.site_header_city {
+.site_header_img {
   color: $ots_blue;
   background-size: 768px;
+  background-repeat: no-repeat;
 }
 
 .site_header_stockholm {
@@ -32,3 +33,11 @@
   background-image: url(/images/bg_berlin.jpg);
   background-position: 50% 50%;
 }
+
+.site_header_about {
+  height: 600px;
+  background-size: 1300px;
+  background-image: url(/images/bg_about.jpg);
+  background-position: 50% 50%;
+}
+

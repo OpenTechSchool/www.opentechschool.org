@@ -74,45 +74,51 @@ body {
 }
 
 /* line 54, ../sass/imports/_mediaqueries.scss */
+.logo_top_bar {
+  width: auto;
+}
+
+/* line 58, ../sass/imports/_mediaqueries.scss */
 .col_left {
   width: 46%;
   float: left;
   margin: 0 4% 1.5em 0;
 }
 
-/* line 60, ../sass/imports/_mediaqueries.scss */
+/* line 64, ../sass/imports/_mediaqueries.scss */
 .col_right {
   width: 46%;
   float: right;
   margin: 0 0 1.5em 4%;
 }
 
-/* line 66, ../sass/imports/_mediaqueries.scss */
+/* line 70, ../sass/imports/_mediaqueries.scss */
 .float_list_4 > li {
   width: 21%;
 }
 
-/* line 70, ../sass/imports/_mediaqueries.scss */
+/* line 74, ../sass/imports/_mediaqueries.scss */
 .site_header {
   padding-top: 7em;
 }
 
-/* line 74, ../sass/imports/_mediaqueries.scss */
+/* line 79, ../sass/imports/_mediaqueries.scss */
+.site_header_core img,
 .carousel_testimonial {
   padding-top: 3em;
 }
 
-/* line 77, ../sass/imports/_mediaqueries.scss */
-.site_header_city {
+/* line 83, ../sass/imports/_mediaqueries.scss */
+.site_header_img {
   background-size: 130%;
 }
 
-/* line 82, ../sass/imports/_mediaqueries.scss */
+/* line 88, ../sass/imports/_mediaqueries.scss */
 .name .close-up {
   margin-right: 1.5em;
   float: left;
 }
-/* line 86, ../sass/imports/_mediaqueries.scss */
+/* line 92, ../sass/imports/_mediaqueries.scss */
 .name strong {
   margin-top: 2.4em;
 }

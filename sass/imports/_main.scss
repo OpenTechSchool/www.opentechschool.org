@@ -216,6 +216,13 @@ ul.switch_lang {
   color: #FFF;
 }
 
+.site_header_core {
+  img {
+    max-width: 1300px;
+    width: 100%;
+  }
+}
+
 
 /* Style for list with floated list items. Responds to screen-width. */
 
@@ -271,7 +278,8 @@ ul.switch_lang {
 
 .logo_top_bar {
   float: left;
-  padding: 0.5em 0.75em;
+  padding: 0.3em 0.75em .5em;
+  width: 70%;
 
   > a {
     display: block;

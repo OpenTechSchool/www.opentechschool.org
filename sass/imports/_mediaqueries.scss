@@ -51,6 +51,10 @@
     padding: 10px 0;
   }
 
+  .logo_top_bar {
+    width: auto;
+  }
+  
   .col_left {
     width: 46%;
     float: left;
@@ -71,11 +75,12 @@
     padding-top: 7em;
   }
 
+  .site_header_core img,
   .carousel_testimonial {
     padding-top: 3em;
   }
-  
-  .site_header_city {
+
+  .site_header_img {
     background-size: 130%;
   }
 
