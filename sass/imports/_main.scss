@@ -23,6 +23,11 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
+.post_title { 
+  text-transform: capitalize; 
+}
+
+
 
 ::-moz-selection { background: $ots_red_h; color: #fff; text-shadow: none; }
 ::selection { background: $ots_red_h; color: #fff; text-shadow: none; }
@@ -349,11 +354,18 @@ footer a:focus {
 
 
 /* News blocks, events */
+.event, .blog-post {
+  margin-bottom: 1.5em;
+  p:last-child {
+    margin: 0;
+  }
+}
 
 .date {
   font-size: .75em;
   font-style: italic;
-  color: grey;
+  color: #666;
+  margin-bottom: 0;
 }
 
 
