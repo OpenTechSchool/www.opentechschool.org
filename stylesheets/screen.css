@@ -881,7 +881,7 @@ footer a:focus {
 /* line 4, ../sass/imports/_nav.scss */
 .nav a {
   display: block;
-  padding: .5em .75em;
+  padding: .5em;
   letter-spacing: 0.05em;
 }
 
@@ -891,7 +891,7 @@ footer a:focus {
 }
 /* line 13, ../sass/imports/_nav.scss */
 .nav_external li {
-  margin: 0 .5em;
+  margin: 0 .25em;
   border-top: none;
 }
 /* line 17, ../sass/imports/_nav.scss */
