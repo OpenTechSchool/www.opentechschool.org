@@ -54,7 +54,7 @@
   .logo_top_bar {
     width: auto;
   }
-  
+
   .col_left {
     width: 46%;
     float: left;
@@ -79,6 +79,10 @@
   .carousel_testimonial {
     padding-top: 3em;
   }
+  
+  .testimonial-caption{
+    font-size: 1em;
+  }
 
   .site_header_img {
     background-size: 130%;
@@ -91,6 +95,21 @@
     }
     strong {
       margin-top: 2.4em;
+    }
+  }
+}
+
+
+@mixin min1000() {
+  body {
+    font-size: 100%;
+  }
+  .nav {
+    float: right;
+    clear: none;
+    li {
+      float: left;
+      border: none;
     }
   }
 }

@@ -73,15 +73,16 @@
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: 15px;
-  width: 1em;
-  height: 1em;
+  left: -.5em;
+  width: .7em;
+  height: .7em;
+  padding: .15em;
   margin-top: -20px;
   font-size: 3em;
   font-weight: 100;
-  line-height: .75em;
+  line-height: .5em;
   color: white;
-  text-align: center;
+  text-align: right;
   background: #efefef;
   border-radius: 100%;
   opacity: 0.8;
@@ -90,7 +91,8 @@
   // Reposition the right one
   &.right {
     left: auto;
-    right: 15px;
+    right: -.5em;
+    text-align: left;
   }
 
   // Hover state
@@ -117,9 +119,11 @@
 .testimonial-caption{
   left: auto;
   width: 450px;
-  max-width: 80%;
+  max-width: 86%;
   bottom: 1em;
   left: 1em;
+  font-size: .75em;
+  text-shadow: 0 1px 1px #000;
 }
 .carousel-caption h4,
 .carousel-caption p {
@@ -132,7 +136,6 @@
 .quote {
   margin-bottom: .8751em;
   line-height: 1.2;
-  font-size: 1em;
 }
 .author {
   font-size: .8751em;
