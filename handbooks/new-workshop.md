@@ -12,7 +12,6 @@ Before we can get started, there are a few things we need to ensure first. Those
   * even though your workshop may be targeting a certain group of people and could have some perquisites (like certain skills/hardware/software), it needs to be as open and inclusive as possible
   * it needs to be hands-on
   * you are responsible for creating a safe learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory"
-  * FIXME: anything else?
 
  2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global).)
 
