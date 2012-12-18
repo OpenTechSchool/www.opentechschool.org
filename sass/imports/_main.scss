@@ -2,7 +2,7 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
-body { margin: 0; font-size: 87.5%; line-height: 1.5; } /*base font size: 14px, line-height: 21px*/
+body { margin: 0; font-size: 75%; line-height: 1.5; } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: $ots_text; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,14 +17,17 @@ h2 {
   font-size: 2em;
 }
 h3 {
-  font-size: 1.5em;
-}
-h4 {
   font-size: 1.25em;
 }
-h5, h6 {
+h4, h5, h6 {
   font-size: 1em;
 }
+
+.post_title { 
+  text-transform: capitalize; 
+}
+
+
 
 ::-moz-selection { background: $ots_red_h; color: #fff; text-shadow: none; }
 ::selection { background: $ots_red_h; color: #fff; text-shadow: none; }
@@ -39,13 +42,16 @@ a:visited {
 a:hover,
 a:active,
 a:focus {
-  color: $ots_blue_l;
-  text-decoration: underline;
+  color: $ots_blue_h;
+  text-decoration: none;
+  outline: none;
 }
 
 /* buttons */
 .ots_action {
-  background: $ots_blue_l;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
+  background-color: $ots_blue_l;
+  @include background-image(linear-gradient(top, $ots_blue_l 0%,$ots_blue_l 50%,$ots_blue 51%,$ots_blue_l 100%));
   display: inline-block;
   border-radius: 4px;
   cursor: pointer;
@@ -63,35 +69,126 @@ a.ots_action:hover,
 a.ots_action:active,
 a.ots_action:focus {
   text-decoration: none;
-  background: $ots_blue_l;
+  background: $ots_blue_h;
+  @include background-image(linear-gradient(top, $ots_blue_h 0%,$ots_blue_h 50%,$ots_blue_l 51%,$ots_blue_h 100%));
 }
 
 a.ots_action_highlight,
 a.ots_action_highlight:link,
 a.ots_action_highlight:visited {
   background: $ots_red_l;
+  @include background-image(linear-gradient(top, $ots_red_l 0%,$ots_red_l 50%,#D40000 51%,$ots_red_l 100%));
 }
 
 a.ots_action_highlight:hover,
 a.ots_action_highlight:active,
 a.ots_action_highlight:focus {
   background: $ots_red_h;
+  @include background-image(linear-gradient(top, $ots_red_h 0%,$ots_red_h 50%,$ots_red_l 51%,$ots_red_h 100%));
+}
+
+a.ots_action_city {
+  padding: .75em 1.25em;
 }
 
 body {
   line-height: 1.5em;
 }
 
-p {
+p, ul, ol {
   margin-bottom: 1.5em;
 }
+.subtle {
+  color: #666;
+  font-style: italic;
+}
+small {
+  font-size: .8571em;
+}
 
+.tiny_button {
+  font-size: .5em;
+  font-weight: normal;
+}
+
+pre,
+code  {
+  font-family: consolas, courier, monospace;
+  font-size: 1em;
+  white-space: pre;
+  border-radius: .25em;
+}
+
+code {
+  background-color: #F4FBFD;
+  padding: 0 .25em;
+}
+
+pre {
+  line-height: 1.2em;
+  padding: 1em;
+  margin: 1.5em 0;
+  background-color: $ots_blue;
+  color: $ots_text_i_l;
+  code {
+    color: inherit;
+    background-color: inherit;
+  }
+}
 
 .bg_full {
-  width: 96%;
-  margin: 0 2%;
+  ul, ol {
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+    list-style: none;
+  }
+  ol {
+    list-style: decimal;
+  }
+  ul li:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 1em;
+    left: -2em;
+    top: 0.9em;
+    position: relative;
+    background-color: $ots_text_i;
+    border-radius: 1em;
+  }
+}
+
+/* language switcher on press page */
+ul.switch_lang {
+  padding-left: 0;
+  overflow: hidden;
+  li:before {
+    display: none;
+  }
+  li {
+    float: left;
+    margin-right: .5em;
+    a {
+      display: block;
+      background-color: #FFF;
+      padding: 0 .4em;
+      border-radius: .25em;
+    }
+  }
+  li.active a {
+    background-color: $ots_blue;
+    color: #FFF;
+  }
+}
+
+.bg_full {
+  width: 100%;
   padding: 5% 0;
-  background: beige;
+  background: #f4f4f4;
+}
+
+.bg_full_white {
+  background: #fff;
 }
 
 .ots_logo {
@@ -119,7 +216,6 @@ p {
 
 
 .site_header {
-  margin: 0 2%;
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
@@ -130,15 +226,17 @@ p {
   color: #FFF;
 }
 
-.site_header_city {
-  color: $ots_blue;
+.site_header_core {
+  img {
+    max-width: 1300px;
+    width: 100%;
+  }
 }
 
 
 /* Style for list with floated list items. Responds to screen-width. */
 
 .float_list {
-  text-align: center;
   list-style: none;
   padding: 0;
   overflow: hidden;
@@ -148,52 +246,50 @@ p {
   margin: 0 2% 1.5em 2%;
 }
 
-/* START move to media query */
-.float_list > li {
-  float: left;
-}
 
-.float_list_4 > li {
-  width: 21%;
-}
-
-.float_list_3 > li {
-  width: 29%;
-}
-
-
-/* END move to media query */
 
 /* List of OTS members, extends float list. Includes image and links. */
-.team_list > li {
+.team_list {
+  > li {
   min-height: 8em;
   height:auto !important;
   height: 8em;
+  text-align: center;
+  }
+  > li:before {
+    display: none !important;
+  }
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: .714em;
+    min-height: 6em;
+    height:auto !important;
+    height: 6em;
+  }
 }
 
 .top_bar {
+  width: 100%;
   z-index: 100;
-  width: 96%;
-  margin: 2% 2% 0;
-  background: $ots_blue;
+  background: #FFF;
   color: #FFF;
-  font-size: .6666em;
   .container {
     overflow: visible;
   }
 }
 
-footer {
-  width: 96%;
-  margin: 0 2% 2% 2%;
-  font-size: 12px;
-  background: $ots_blue;
-  color: #FFF;
-}
-
 .logo_top_bar {
   float: left;
-  padding: 0.5em 0.75em;
+  padding: 0.3em 0.75em .5em;
+  width: 70%;
 
   > a {
     display: block;
@@ -225,28 +321,30 @@ footer {
 }
 
 footer {
-  text-align: center;
+  font-size: .8571em;
+  background: $ots_blue;
+  color: $ots_text_i;
   padding: 3em 0;
   height: auto;
+  p {
+    text-align: center;
+  }
+  small {
+    font-size: .8571em;
+  }
 }
 
 footer a,
-.meta_nav a,
 footer a:link,
-.meta_nav a:link,
-footer a:visited,
-.meta_nav a:visited {
-  color: #FFF;
-  text-decoration: underline;
+footer a:visited {
+  color: $ots_text_i_l;
 }
 
 footer a:hover,
 footer a:active,
 footer a:focus {
   color: #FFF;
-  text-decoration: underline;
 }
-
 
 .main_img {
   text-align: center;
@@ -256,11 +354,18 @@ footer a:focus {
 
 
 /* News blocks, events */
+.event, .blog-post {
+  margin-bottom: 1.5em;
+  p:last-child {
+    margin: 0;
+  }
+}
 
 .date {
   font-size: .75em;
   font-style: italic;
-  color: grey;
+  color: #666;
+  margin-bottom: 0;
 }
 
 
@@ -269,7 +374,10 @@ footer a:focus {
 
 .sg_list {
   list-style: none;
-  padding: 0;
+  padding-left: 0 !important;
+  > li:before {
+    display: none;
+  }
 }
 
 .sg_list small {
@@ -296,7 +404,18 @@ footer a:focus {
   border-radius: 4px;
 }
 
-/* Testimonials */
+/* testimonials */
+.testimonials_teaser {
+  overflow: hidden;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto .666em;
+  }
+}
 
 .testimonial {
   overflow: hidden;
@@ -306,14 +425,41 @@ footer a:focus {
   min-height: 400px;
   height:auto !important;
   height: 400px;
+  header {
+    overflow: hidden;
+  }
 }
 
-.testimonial blockquote {
-  position: absolute;
-  z-index: 10;
-  font-size: 2em;
-  float: left;
-  width: 25%;
+.testimonial_about {
+  font-style: italic;
+}
+
+.name {
+  margin-bottom: 1.5em;
+  padding: .666em 0 0 0;
+  text-align: center;
+  border-top: 1px solid $ots_blue;
+  border-bottom: 1px solid $ots_blue;
+  overflow: hidden;
+  strong {
+    display: block;
+    margin-top: .8751em;
+  }
+  b {
+    color: #666;
+    display: block;
+    font-size: .5714em;
+    margin-bottom: 1em;
+  }
+  .close-up {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto .666em;
+    border-radius: 100%;
+  }
 }
 
 .testimonial img {
@@ -324,17 +470,22 @@ footer a:focus {
   display: block;
 }
 
-.testimonial img.close-up {
-  width: 350px;
-  position: relative;
-  display: block;
-  margin: 15px;
+.testimonial blockquote {
+  position: absolute;
+  z-index: 10;
+  font-size: 2em;
   float: left;
+  width: 25%;
 }
 
-.testimonial img.close-up.right {
-  float: right;
+
+
+
+
+.question {
+  color: $ots_blue;
 }
+
 
 
 /* ========================================== */

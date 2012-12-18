@@ -1,8 +1,21 @@
-@media screen and (min-width: 768px) {
+// By writing the media queries as mixins,
+// we can compile them into the IE stylesheet as well
+@mixin min440(){
+  .float_list > li {
+    float: left;
+  }
+  .float_list_4 > li {
+    width: 46%;
+  }
+}
 
+@mixin min768() {
+  body {
+    font-size: 87.5%;
+  }
   .nav {
     float: right;
-
+    clear: none;
     li {
       float: left;
       border: none;
@@ -17,13 +30,86 @@
     display: block;
   }
 
+  .container_narrow {
+    width: 100%;
+    padding: 0;
+  }
+
   .top_bar {
-    height: 40px;
+    position: absolute;
+    height: 2.5em;
+    padding: 30px 0;
+    -webkit-transition: padding-bottom .25s ease-in;
+    -moz-transition: padding-bottom .25s ease-in;
+    -o-transition: padding-bottom .25s ease-in;
+    transition: padding-bottom .25s ease-in;
   }
 
   .top_bar.affix {
     position: fixed;
-    box-shadow: 0px 5px 5px $ots_text;
+    border-bottom: 1px solid $ots_blue;
+    padding: 10px 0;
   }
 
+  .logo_top_bar {
+    width: auto;
+  }
+
+  .col_left {
+    width: 46%;
+    float: left;
+    margin: 0 4% 1.5em 0;
+  }
+
+  .col_right {
+    width: 46%;
+    float: right;
+    margin: 0 0 1.5em 4%;
+  }
+
+  .float_list_4 > li {
+    width: 21%;
+  }
+
+  .site_header {
+    padding-top: 7em;
+  }
+
+  .site_header_core img,
+  .carousel_testimonial {
+    padding-top: 3em;
+  }
+  
+  .testimonial-caption{
+    font-size: 1em;
+  }
+
+  .site_header_img {
+    background-size: 130%;
+  }
+
+  .name {
+    .close-up {
+      margin-right: 1.5em;
+      float: left;
+    }
+    strong {
+      margin-top: 2.4em;
+    }
+  }
+}
+
+
+@mixin min1000() {
+  body {
+    font-size: 100%;
+  }
+  .nav {
+    float: right;
+    clear: none;
+    li {
+      float: left;
+      border: none;
+    }
+  }
 }

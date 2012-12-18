@@ -5,6 +5,15 @@
   overflow: hidden;
 }
 
+.container_narrow {
+  max-width: 740px;
+  width: 90%;
+  padding: 0 5%;
+}
+
+.container_wide {
+  max-width: 1300px;
+}
 
 img, object, embed {
   max-width: 100%;
@@ -13,3 +22,4 @@ img, object, embed {
 img {
   height: auto;
 }
+

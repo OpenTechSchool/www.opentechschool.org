@@ -14,6 +14,23 @@ title: Imprint
 
 <p>Kontakt: ben |at| opentechschool |dot| org</p>
 
+<h2>Attribution</h2>
+
+<h3>Pictures</h3>
+<p>
+	The copyright of all Team-Member-Pictures are rightfully held by the people shown.
+</p>
+
+<p>Further more the copyright of the following pictures are hold by:
+	<ul>
+		<li><a href="/berlin/">Berlin Header Picture</a>, copyrighted by <a href="http://www.flickr.com/photos/anberlin/">ANBerlin</a> (on Flickr).
+		</li>
+
+		<li><a href="/stockholm">Stockholm Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/sitomon/5642155262/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/sitomon/">Sitomon</a> (on Flickr).
+		</li>
+	</ul>
+</p>
+
 <h2>Haftungsausschluss:</h2>
 <h3>Datenschutzerklärung für die Nutzung von Facebook-Plugins (Like-Button)</h3>
 

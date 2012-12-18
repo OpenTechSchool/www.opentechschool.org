@@ -3,3 +3,127 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* variables */
+/* colors */
+/* main blue, logo */
+/* Blue links */
+/* Blue hover states */
+/* Default text color*/
+/* (Inverted) Text color on dark blue backgrounds */
+/* (Inverted) Link color on dark blue backgrounds */
+/* Highlighted, red links, buttons, other highlights */
+/* Red hover states */
+/* line 4, ../sass/imports/_mediaqueries.scss */
+.float_list > li {
+  float: left;
+}
+
+/* line 7, ../sass/imports/_mediaqueries.scss */
+.float_list_4 > li {
+  width: 46%;
+}
+
+/* line 13, ../sass/imports/_mediaqueries.scss */
+body {
+  font-size: 87.5%;
+}
+
+/* line 16, ../sass/imports/_mediaqueries.scss */
+.nav {
+  float: right;
+  clear: none;
+}
+/* line 19, ../sass/imports/_mediaqueries.scss */
+.nav li {
+  float: left;
+  border: none;
+}
+
+/* line 25, ../sass/imports/_mediaqueries.scss */
+.btn_navbar {
+  display: none;
+}
+
+/* line 29, ../sass/imports/_mediaqueries.scss */
+.collapse {
+  display: block;
+}
+
+/* line 33, ../sass/imports/_mediaqueries.scss */
+.container_narrow {
+  width: 100%;
+  padding: 0;
+}
+
+/* line 38, ../sass/imports/_mediaqueries.scss */
+.top_bar {
+  position: absolute;
+  height: 2.5em;
+  padding: 30px 0;
+  -webkit-transition: padding-bottom .25s ease-in;
+  -moz-transition: padding-bottom .25s ease-in;
+  -o-transition: padding-bottom .25s ease-in;
+  transition: padding-bottom .25s ease-in;
+}
+
+/* line 48, ../sass/imports/_mediaqueries.scss */
+.top_bar.affix {
+  position: fixed;
+  border-bottom: 1px solid #085987;
+  padding: 10px 0;
+}
+
+/* line 54, ../sass/imports/_mediaqueries.scss */
+.logo_top_bar {
+  width: auto;
+}
+
+/* line 58, ../sass/imports/_mediaqueries.scss */
+.col_left {
+  width: 46%;
+  float: left;
+  margin: 0 4% 1.5em 0;
+}
+
+/* line 64, ../sass/imports/_mediaqueries.scss */
+.col_right {
+  width: 46%;
+  float: right;
+  margin: 0 0 1.5em 4%;
+}
+
+/* line 70, ../sass/imports/_mediaqueries.scss */
+.float_list_4 > li {
+  width: 21%;
+}
+
+/* line 74, ../sass/imports/_mediaqueries.scss */
+.site_header {
+  padding-top: 7em;
+}
+
+/* line 79, ../sass/imports/_mediaqueries.scss */
+.site_header_core img,
+.carousel_testimonial {
+  padding-top: 3em;
+}
+
+/* line 83, ../sass/imports/_mediaqueries.scss */
+.testimonial-caption {
+  font-size: 1em;
+}
+
+/* line 87, ../sass/imports/_mediaqueries.scss */
+.site_header_img {
+  background-size: 130%;
+}
+
+/* line 92, ../sass/imports/_mediaqueries.scss */
+.name .close-up {
+  margin-right: 1.5em;
+  float: left;
+}
+/* line 96, ../sass/imports/_mediaqueries.scss */
+.name strong {
+  margin-top: 2.4em;
+}

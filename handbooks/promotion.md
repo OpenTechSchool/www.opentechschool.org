@@ -3,7 +3,7 @@ layout: simple
 title: Promotion guidelines
 ---
 
-As OpenTechSchool, we have certain [values](/values.html), areas of interest, and goals we want to achieve. Fortunately we are not the only ones! There are others working toward similar goals and serving those interests, and since we believe in cooperation over competition, we are very happy to help promote them and their activities (such as events) as well.
+As OpenTechSchool, we have certain [values](/about.html#core_values), areas of interest, and goals we want to achieve. Fortunately we are not the only ones! There are others working toward similar goals and serving those interests, and since we believe in cooperation over competition, we are very happy to help promote them and their activities (such as events) as well.
 
 As an organisation, we are often approached by various entities and people and asked whether we can help them promote their cause. These guidelines are meant to help you with making the decision whether OpenTechSchool as a brand should promote a certain cause or event.
 

@@ -1,22 +1,72 @@
 .dropdown {
-  position: relative;
   float: left;
+  position: relative;
+  top: 2px;
 
   .dropdown_menu {
     display: none;
   }
 
+  .dropdown_toggle {
+    background: #f4f4f4;
+    padding: 3px 5px;
+    line-height: 1em;
+    color: $ots_blue;
+
+    b {
+      display: inline-block;
+    }
+  }
+
+  .city {
+    padding-right: 5px;
+    width: 100px;
+  }
+
+  .caret {
+    position: relative;
+    top: -2px;
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    height: 0px;
+    width: 0px;
+    display: block;
+  }
+
   &.open {
+
+    .dropdown_toggle {
+      background: $ots_blue_l;
+      color: white;
+    }
+
     .dropdown_menu {
       display: block;
       position: absolute;
-      top: 2em;
+      top: 22px;
       left: 0;
-    }
+      li {
+        margin-top: .25em;
+      }
+      a {
+        display: block;
+        padding: 2px 5px;
+        line-height: 1.5em;
+        width: 119px;
+        background: $ots_text_i_l;
+      }
+      a:hover,
+      a:focus {
+        background: $ots_blue_l;
+        color: #FFF;
+      }
 
-    :hover,
-    :focus {
-      color: red;
+      li:first-child a {
+        border: none;
+      }
     }
   }
 }

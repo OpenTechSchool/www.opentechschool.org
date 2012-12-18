@@ -1,14 +1,22 @@
 <nav class="top_bar" data-spy="affix" data-offset-top="20">
-  <div class="container">
+  <div class="container container_wide">
+
+    <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
+      <span class="icon_bar"></span>
+      <span class="icon_bar"></span>
+      <span class="icon_bar icon_bar_last"></span>
+    </button>
 
     <div class="logo_top_bar">
       <a href="/">OpenTechSchool</a>
       <div class="dropdown">
+        <a class="dropdown_toggle" data-toggle="dropdown" href="#">
         {% if page.layout == "city" %}
-          <a class="dropdown_toggle" data-toggle="dropdown" href="#">{{page.title}}</a>
+          <b class="city">{{page.title}}</b>
         {% else %}
-          <a class="dropdown_toggle" data-toggle="dropdown" href="#">Choose your Location</a>
+          <b class="city">Location</b>
         {% endif %}
+        <b class="caret"></b></a>
         <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
           <li><a tabindex="-1" href="/berlin/">Berlin</a></li>
           <li><a tabindex="-1" href="/stockholm/">Stockholm</a></li>
@@ -21,10 +29,10 @@
         <a href="/about.html">About</a>
       </li>
       <li>
-        <a href="/team.html">Team</a>
+        <a href="/testimonials.html">Testimonials</a>
       </li>
       <li>
-        <a href="/testimonials.html">Testimonials</a>
+        <a href="/team.html">Team</a>
       </li>
       <li>
         <a href="http://blog.opentechschool.org/">Blog</a>
@@ -34,7 +42,7 @@
           <li>
             <a href="https://twitter.com/OpenTechSchool" class="ots_nav_icon twitter">Twitter</a>
           </li>
-          <li>
+          <li style="margin: 0;">
             <a href="http://www.facebook.com/OpenTechSchool" class="ots_nav_icon facebook">Facebook</a>
           </li>
           <li>
@@ -43,12 +51,6 @@
         </ul>
       </li>
     </ul>
-
-    <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
-      <span class="icon_bar"></span>
-      <span class="icon_bar"></span>
-      <span class="icon_bar icon_bar_last"></span>
-    </button>
 
     <div class="clearfix"></div>
 

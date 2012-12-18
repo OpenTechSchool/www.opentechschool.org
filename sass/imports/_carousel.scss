@@ -2,11 +2,9 @@
 // Carousel
 // --------------------------------------------------
 
-
 .carousel {
   position: relative;
   margin-bottom: 20px;
-  line-height: 1;
 }
 
 .carousel-inner {
@@ -20,7 +18,10 @@
   .item {
     display: none;
     position: relative;
-    // .transition(.6s ease-in-out left);
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
   }
 
   // Account for jankitude on images
@@ -64,44 +65,41 @@
 
 }
 
+
+
 // Left/right controls for nav
 // ---------------------------
 
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
+  left: -.5em;
+  width: .7em;
+  height: .7em;
+  padding: .15em;
   margin-top: -20px;
-  font-size: 60px;
+  font-size: 3em;
   font-weight: 100;
-  line-height: 30px;
+  line-height: .5em;
   color: white;
-  text-align: center;
+  text-align: right;
   background: #efefef;
-  border: 3px solid white;
-  // .border-radius(23px);
-  // .opacity(50);
-
-  // we can't have this transition here
-  // because webkit cancels the carousel
-  // animation if you trip this while
-  // in the middle of another animation
-  // ;_;
-  // .transition(opacity .2s linear);
+  border-radius: 100%;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 
   // Reposition the right one
   &.right {
     left: auto;
-    right: 15px;
+    right: -.5em;
+    text-align: left;
   }
 
   // Hover state
   &:hover {
-    color: white;
     text-decoration: none;
-    // .opacity(90);
+    opacity: 1;
+    filter: alpha(opacity=1);
   }
 }
 
@@ -115,24 +113,30 @@
   right: 0;
   bottom: 0;
   padding: 15px;
-  background: #efefef;
-  background: rgba(0,0,0,.75);
+  background: #EFEFEF;
+  background: rgba(0,0,0,.5);
 }
 .testimonial-caption{
   left: auto;
   width: 450px;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
+  max-width: 86%;
+  bottom: 1em;
+  left: 1em;
+  font-size: .75em;
+  text-shadow: 0 1px 1px #000;
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: white;
-  line-height: 20px;
+  color: #FFF;
 }
 .carousel-caption h4 {
   margin: 0 0 5px;
 }
-.carousel-caption p {
-  margin-bottom: 0;
+
+.quote {
+  margin-bottom: .8751em;
+  line-height: 1.2;
+}
+.author {
+  font-size: .8751em;
 }

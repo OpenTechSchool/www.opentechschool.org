@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
 @import "imports/_vars";
 @import "imports/_grid";
@@ -11,4 +12,4 @@
 @import "imports/_city";
 @import "imports/_nav";
 @import "imports/_carousel";
-@import "imports/_mediaqueries";
+@import "imports/_mediaq";
