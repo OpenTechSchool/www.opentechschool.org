@@ -3,38 +3,13 @@ layout: simple
 title: Charter
 ---
 
-<style>
-.en,
-.de {
-	float: left;
-	width: 48%;
-	margin-right: 5px;
-}
 
-#content li {
-	clear: both;
-}
+# Satzung
 
-
-</style>
-
-<h1 class="de">Die Satzung des Vereins</h1>
-<h1 class="en">Charter of the Foundation</h1>
- 
-
-1. <p class="de">Name und Sitz des Vereins, Geschäftsjahr</p>
-	<p class="en">Name and basis of the Foundation, fiscal year</p>
-	<br class="clear" />
-
-	1. <p class="de">Der Verein führte den Namen "OpenTechSchool". Er soll in das Vereinsregister eingetragen werden und danach den Zusatz „e.V." führen. </p>
-	<p class="en">The Foundation is named "OpenTechSchool". It should be registered at the register of associations and then be appended "e.V.".</p>
-
-	2. <p class="de">Der Verein hat seinen Sitz in Berlin.</p>
-	<p class="en">The Foundation is located in Berlin.</p>
-
-	3. <p class="de">Das Geschäftsjahr ist das Kalenderjahr. </p>
-	<p class="en">The fiscal year is the legal year.</p>
-
+1. Name und Sitz des Vereins, Geschäftsjahr
+    1. Der Verein führte den Namen "OpenTechSchool". Er soll in das Vereinsregister eingetragen werden und danach den Zusatz „e.V." führen.
+    2. Der Verein hat seinen Sitz in Berlin.
+    3. Das Geschäftsjahr ist das Kalenderjahr.
 
 2. Zweck, Aufgaben, Gemeinnützigkeit des Vereins 
 
