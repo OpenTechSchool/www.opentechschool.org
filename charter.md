@@ -93,7 +93,10 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
     7. Die Mitgliederversammlung beschließt in offener Abstimmung mit der Mehrheit der Stimmen der anwesenden Mitglieder. Kann bei Wahlen kein Kandidat die Mehrheit der Stimmen der anwesenden Mitglieder auf sich vereinen, ist gewählt, wer die Mehrheit der abgegebenen gültigen Stimmen erhalten hat; zwischen mehreren Kandidaten ist eine Stichwahl durchzuführen. Stimmenthaltungen gelten als ungültige Stimmen. Beschlüsse über eine Änderung der Satzung bedürfen der Mehrheit von drei Vierteln, der Beschluss über die Auflösung des Vereins der Zustimmung von neun Zehnteln der anwesenden Mitglieder. 
     8. Über den Ablauf der Mitgliederversammlung und die gefassten Beschlüsse ist ein Protokoll zu fertigen. Dieses ist vom Protokollführer und vom Versammlungsleiter zu unterschreiben. 
 
-10. Auflösung des Vereins, Beendigung aus anderen Gründen, Wegfallsteuerbegünstigter Zwecke 
+10. Übersetzung von Satzung und Protokoll
+	Diese OpenTechSchool versteht sich als international agierender Verein und hat dementsprechend auch viele nicht deutsch sprechende Mitglieder. Um Ihnen die Teilnahme zu erleichtern soll stehts neben der offiziellen deutschen Version von Satzung und Protokoll auch eine englische Übersetzung angefertigt werden. Die Verantwortung dafür obliegt dem Vorstand. Das Vorliegen der Übersetzung ist dennoch nicht Wirksamkeitsvoraussetzung.
+
+11. Auflösung des Vereins, Beendigung aus anderen Gründen, Wegfallsteuerbegünstigter Zwecke 
 
 	1. Im Falle der Auflösung des Vereins sind der Vorsitzende des Vorstands und sein Stellvertreter gemeinsam vertretungsberechtigte Liquidatoren, falls die Mitgliederversammlung keine anderen Personen beruft. 
 	2. Bei Auflösung oder Aufhebung des Vereins oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen des Vereins an die Stadt Berlin, die es unmittelbar und ausschließlich für gemeinnützige Zwecke zu verwenden hat. 
