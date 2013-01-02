@@ -62,14 +62,14 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
     1. Dem Vorstand des Vereins obliegen die Vertretung des Vereins nach § 26 BGB und die Führung seiner Geschäfte. Er hat insbesondere folgende Aufgaben:
 
   		1. die Einberufung und Vorbereitung der Mitgliederversammlungen einschließlich der Aufstellung der Tagesordnung, 
-		  2. die Ausführung von Beschlüssen der Mitgliederversammlung, 
-		  3. die Verwaltung des Vereinsvermögens und die Anfertigung des Jahresberichts, 
-		  4. die Aufnahme neuer Mitglieder.
+		2. die Ausführung von Beschlüssen der Mitgliederversammlung, 
+		3. die Verwaltung des Vereinsvermögens und die Anfertigung des Jahresberichts, 
+		4. die Aufnahme neuer Mitglieder.
 
     2. Der Vorstand besteht aus dem Vorsitzenden, seinem ersten und Stellvertreter und seinem zweiten Stellvertreter.
     3. Der Vorsitzende vertritt den Verein allein. Im Übrigen vertreten den Verein zwei Vorstandsmitglieder gemeinsam. 
     4. Die Mitglieder des Vorstandes werden von der Mitgliederversammlung für die Dauer von zwei Jahren einzeln gewählt. Mitglieder des Vorstands können nur Mitglieder des Vereins sein; mit der Mitgliedschaft im Verein endet auch die Mitgliedschaft im Vorstand. Die Wiederwahl oder die vorzeitige Abberufung eines Mitglieds durch die Mitgliederversammlung sind zulässig. Ein Mitglied bleibt nach Ablauf der regulären Amtszeit bis zur Wahl seines Nachfolgers im Amt. Scheidet ein Mitglied vorzeitig aus dem Vorstand aus, so sind die verbleibenden Mitglieder berechtigt, ein Mitglied des Vereins bis zur Wahl des Nachfolgers durch die Mitgliederversammlung in den Vorstand zu wählen. 
-    5. Der Vorstand tritt nach Bedarf zusammen. Die Sitzungen werden vom Vorsitzenden, bei   dessen Verhinderung von seinem Stellvertreter, einberufen. Eine Einberufungsfrist von einer Woche soll eingehalten werden. Der Vorstand ist beschlussfähig, wenn mindestens zwei Mitglieder anwesend sind. Bei der Beschlussfassung entscheidet die Mehrheit der abgegebenen gültigen Stimmen.
+    5. Der Vorstand tritt nach Bedarf zusammen. Die Sitzungen werden vom Vorsitzenden, bei dessen Verhinderung von seinem Stellvertreter, einberufen. Eine Einberufungsfrist von einer Woche soll eingehalten werden. Der Vorstand ist beschlussfähig, wenn mindestens zwei Mitglieder anwesend sind. Bei der Beschlussfassung entscheidet die Mehrheit der abgegebenen gültigen Stimmen.
     Bei Stimmengleichheit entscheidet die Stimme des Vorsitzenden, bei dessen Verhinderung die seines Stellvertreters. 
     6. Die Beschlüsse des Vorstandes sind zu protokollieren. Das Protokoll ist vom Protokollführer sowie vom Vorsitzenden, bei dessen Verhinderung von seinem Stellvertreter oder einem anderen Mitglied des Vorstandes zu unterschreiben.
 
@@ -85,7 +85,7 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
   		5. die Entgegennahme des Jahresberichts und die Entlastung des Vorstands, 
   		6. die Festsetzung der Aufnahmegebühr und der Mitgliedsbeiträge.
 
-    2. Mindestens einmal im Jahr, möglichst im ersten Quartal, ist vom Vorstand eine ordentliche Mitgliederversammlung einzuberufen. Die Einberufung erfolgt schriftlich unter Einhaltung einer Frist von zwei Wochen und unter Angabe der Tagesordnung. 
+    2. Mindestens einmal im Jahr, möglichst im ersten Halbjahr, ist vom Vorstand eine ordentliche Mitgliederversammlung einzuberufen. Die Einberufung erfolgt schriftlich unter Einhaltung einer Frist von zwei Wochen und unter Angabe der Tagesordnung. 
     3. Die Tagesordnung setzt der Vorstand fest. Jedes Vereinsmitglied kann bis spätestens eine Woche vor der Mitgliederversammlung beim Vorstand schriftlich eine Ergänzung der Tagesordnung beantragen. Über den Antrag entscheidet der Vorstand. Über Anträge zur Tagesordnung, die vom Vorstand nicht aufgenommen wurden oder die erstmals in der Mitgliederversammlung gestellt werden, entscheidet die Mitgliederversammlung mit der Mehrheit der Stimmen der anwesenden Mitglieder; dies gilt nicht für Anträge, die eine Änderung der Satzung, die Auflösung des Vereins oder Änderungen der Mitgliedsbeiträge zum Gegenstand haben. 
     4. Der Vorstand hat eine außerordentliche Mitgliederversammlung einzuberufen, wenn es das Interesse des Vereins erfordert oder wenn ein Viertel der Mitglieder dies schriftlich unter Angabe des Zwecks und der Gründe beantragt. Soweit die Umstände dies zulassen, ist eine Ladungsfrist von zwei Wochen einzuhalten und die Tagesordnung mit der Einladung bekannt zu geben. 
     5. Die Mitgliederversammlung wird vom Vorsitzenden, bei dessen Verhinderung von seinem Stellvertreter und bei dessen Verhinderung von einem durch die Mitgliederversammlung zu wählenden Versammlungsleiter geleitet. 
@@ -93,8 +93,8 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
     7. Die Mitgliederversammlung beschließt in offener Abstimmung mit der Mehrheit der Stimmen der anwesenden Mitglieder. Kann bei Wahlen kein Kandidat die Mehrheit der Stimmen der anwesenden Mitglieder auf sich vereinen, ist gewählt, wer die Mehrheit der abgegebenen gültigen Stimmen erhalten hat; zwischen mehreren Kandidaten ist eine Stichwahl durchzuführen. Stimmenthaltungen gelten als ungültige Stimmen. Beschlüsse über eine Änderung der Satzung bedürfen der Mehrheit von drei Vierteln, der Beschluss über die Auflösung des Vereins der Zustimmung von neun Zehnteln der anwesenden Mitglieder. 
     8. Über den Ablauf der Mitgliederversammlung und die gefassten Beschlüsse ist ein Protokoll zu fertigen. Dieses ist vom Protokollführer und vom Versammlungsleiter zu unterschreiben. 
 
-10. Übersetzung von Satzung und Protokoll
-	Diese OpenTechSchool versteht sich als international agierender Verein und hat dementsprechend auch viele nicht deutsch sprechende Mitglieder. Um Ihnen die Teilnahme zu erleichtern soll stehts neben der offiziellen deutschen Version von Satzung und Protokoll auch eine englische Übersetzung angefertigt werden. Die Verantwortung dafür obliegt dem Vorstand. Das Vorliegen der Übersetzung ist dennoch nicht Wirksamkeitsvoraussetzung.
+10. Übersetzung von Satzung, Protokollen und offiziellen Korrespondenzen
+	Diese OpenTechSchool versteht sich als international agierender Verein und hat dementsprechend auch viele nicht deutsch sprechende Mitglieder. Um Ihnen die Teilnahme zu erleichtern soll stehts neben der offiziellen deutschen Version von Satzung und Protokoll sowie allen offiziellen Korrespondenzen auch eine englische Übersetzung angefertigt werden. Die Verantwortung dafür obliegt dem Vorstand. Das Vorliegen der Übersetzung ist dennoch nicht Wirksamkeitsvoraussetzung.
 
 11. Auflösung des Vereins, Beendigung aus anderen Gründen, Wegfallsteuerbegünstigter Zwecke 
 
