@@ -42,8 +42,9 @@ title: Charter
 
 5. Rechte und Pflichten der Mitglieder 
 
-	1. Jedes Mitglied hat das Recht, bei der Unterstützung der OpenTechSchool aktiv mitzuwirken und an gemeinsamen Veranstaltungen teilzunehmen. Jedes Mitglied hat gleiches Stimm- und Wahlrecht in der Mitgliederversammlung. 
-	2. Jedes Mitglied hat die Pflicht, die Interessen der OpenTechSchool zu fördern, insbesondere regelmäßig seine Mitgliedsbeiträge zu leisten und, soweit es in seinen Kräften steht, die Veranstaltungen der Spielbühne durch seine Mitarbeit zu unterstützen.
+	1. Jedes Mitglied hat das Recht, bei der Unterstützung der OpenTechSchool aktiv mitzuwirken und an gemeinsamen Veranstaltungen teilzunehmen.
+	2. Jedes Mitglied hat gleiches Stimm- und Wahlrecht in der Mitgliederversammlung. 
+	3. Jedes Mitglied hat die Pflicht, die Interessen der OpenTechSchool zu fördern, insbesondere regelmäßig seine Mitgliedsbeiträge zu leisten und, soweit es in seinen Kräften steht, die Veranstaltungen der Spielbühne durch seine Mitarbeit zu unterstützen.
 
 
 6. Aufnahmegebühr und Mitgliedsbeiträge 
