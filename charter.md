@@ -66,7 +66,7 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 		  3. die Verwaltung des Vereinsvermögens und die Anfertigung des Jahresberichts, 
 		  4. die Aufnahme neuer Mitglieder.
 
-    2. Der Vorstand besteht aus dem Vorsitzenden, seinem Stellvertreter und dem Schatzmeister.
+    2. Der Vorstand besteht aus dem Vorsitzenden, seinem ersten und Stellvertreter und seinem zweiten Stellvertreter.
     3. Der Vorsitzende vertritt den Verein allein. Im Übrigen vertreten den Verein zwei Vorstandsmitglieder gemeinsam. 
     4. Die Mitglieder des Vorstandes werden von der Mitgliederversammlung für die Dauer von zwei Jahren einzeln gewählt. Mitglieder des Vorstands können nur Mitglieder des Vereins sein; mit der Mitgliedschaft im Verein endet auch die Mitgliedschaft im Vorstand. Die Wiederwahl oder die vorzeitige Abberufung eines Mitglieds durch die Mitgliederversammlung sind zulässig. Ein Mitglied bleibt nach Ablauf der regulären Amtszeit bis zur Wahl seines Nachfolgers im Amt. Scheidet ein Mitglied vorzeitig aus dem Vorstand aus, so sind die verbleibenden Mitglieder berechtigt, ein Mitglied des Vereins bis zur Wahl des Nachfolgers durch die Mitgliederversammlung in den Vorstand zu wählen. 
     5. Der Vorstand tritt nach Bedarf zusammen. Die Sitzungen werden vom Vorsitzenden, bei   dessen Verhinderung von seinem Stellvertreter, einberufen. Eine Einberufungsfrist von einer Woche soll eingehalten werden. Der Vorstand ist beschlussfähig, wenn mindestens zwei Mitglieder anwesend sind. Bei der Beschlussfassung entscheidet die Mehrheit der abgegebenen gültigen Stimmen.
