@@ -26,6 +26,11 @@ about: "We are the group of people who created the first chapter of OpenTechScho
     <p>beatrice@opentechschool.org</p>
   </li>
 
+  <li class="member">
+    <img src="/images/team/amelie.jpg">
+    <h3>Amélie Anglade</h3>
+    <p>amelie@opentechschool.org</p>
+  </li>
 
   <li class="member">
     <img src="/images/team/duana.jpg">
