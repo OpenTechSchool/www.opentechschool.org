@@ -10,12 +10,13 @@ Over time, certain practices became the way we usually do things. These texts ar
 The list of all the [Learning Materials can be found here](/materials.html).
 
 ## How Tos
+ * [Schedule for a Workshop organiser](/handbooks/workshops/organisers-schedule.html)
  * [How to organisation a new workshop](/handbooks/workshops/starting-a-workshop.html)
  * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
  * [How to organise a learners meetup](/handbooks/learners_meetup.html)
  * [How to contribute to the learners material](/handbooks/contribute.html)
  * [How to write a Blog Post](/handbooks/blog-posts.html)
- * [Schedule for a Workshop organiser](/handbooks/workshops/organisers-schedule.html)
+
 
 ## Organisational guidelines and policies
  * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
