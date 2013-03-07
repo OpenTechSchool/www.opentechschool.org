@@ -17,21 +17,16 @@ We are planning the workshop to last until EXPECTED_END_TIME, but you are free t
 
 ---- YOU_MIGHT_ALSO_WANT_TO_INCLUDE_SOME_OF_THE_FOLLOWING:
 
-- Food and Drinks:
-  There will be food and drinks provided by our great Sponsors XXXX. But you are free to bring some yourself of course.
-  ---
-  Please bring something to Food and Drinks to share with everyone.
-  ---
-  Unfortunately the venue doesn't provide any place to get drinks, so please don't forget to bring something for yourself.
+ - Food and Drinks:
+   * There will be food and drinks provided by our great Sponsors XXXX. But you are free to bring some yourself of course.
+   * Please bring something to Food and Drinks to share with everyone.
+   * Unfortunately the venue doesn't provide any place to get drinks, so please don't forget to bring something for yourself.
 
-- Schedule/How it works
-  The goal is to have you do XXX by the end of the workshop.
-  ---
-  This workshops contains a creative part at which we encourage you to come up with your own ideas and program them. At the end we'll show them in a small demo sessions, which you might gonna miss out if you leave before.
-  ---
-  We'll go for Food/Drinks after at XXXX. Feel free to come along and invite friends and spouses
+ - Schedule/How it works:
+   * The goal is to have you do XXX by the end of the workshop.
+   * This workshops contains a creative part at which we encourage you to come up with your own ideas and program them. At the end we'll show them in a small demo sessions, which you might gonna miss out if you leave before.
+   * We'll go for Food/Drinks after at XXXX. Feel free to come along and invite friends and spouses
 
-----
 
 Looking forward to seeing you then
 
