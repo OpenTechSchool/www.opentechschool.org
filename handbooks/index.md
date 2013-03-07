@@ -15,6 +15,7 @@ The list of all the [Learning Materials can be found here](/materials.html).
  * [How to organise a learners meetup](/handbooks/learners_meetup.html)
  * [How to contribute to the learners material](/handbooks/contribute.html)
  * [How to write a Blog Post](/handbooks/blog-posts.html)
+ * [Schedule for a Workshop organiser](/handbooks/workshops/organisers-schedule.html)
 
 ## Organisational guidelines and policies
  * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
