@@ -10,7 +10,7 @@ Over time, certain practices became the way we usually do things. These texts ar
 The list of all the [Learning Materials can be found here](/materials.html).
 
 ## How Tos
- * [How to organisation a new workshop](/handbooks/new-workshop.html)
+ * [How to organisation a new workshop](/handbooks/workshops/starting-a-workshop.html)
  * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
  * [How to organise a learners meetup](/handbooks/learners_meetup.html)
  * [How to contribute to the learners material](/handbooks/contribute.html)
