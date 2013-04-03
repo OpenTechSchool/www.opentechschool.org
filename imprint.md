@@ -5,7 +5,7 @@ title: Imprint
 
 <p>Angaben gemäß § 5 TMG:</p>
 <address>
-  OpenTechSchool e. V.
+  OpenTechSchool e.V.
   <br>
   c/o Co.Up
   <br>
