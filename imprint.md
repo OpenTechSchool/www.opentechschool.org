@@ -5,14 +5,16 @@ title: Imprint
 
 <p>Angaben gemäß § 5 TMG:</p>
 <address>
-  Benjamin Kampmann
+  OpenTechSchool e. V.
   <br>
-  Swinemünder Str. 41
+  c/o Co.Up
   <br>
-  13355 Berlin, Germany
+  Adalbertstr. 7/8
+  <br>
+  10999 Berlin, Germany
 </address>
 
-<p>Kontakt: ben |at| opentechschool |dot| org</p>
+<p>Kontakt: foundation.board |at| opentechschool |dot| org</p>
 
 <h2>Attribution</h2>
 
