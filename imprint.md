@@ -30,6 +30,11 @@ title: Imprint
 
 		<li><a href="/stockholm">Stockholm Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/sitomon/5642155262/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/sitomon/">Sitomon</a> (on Flickr).
 		</li>
+
+		<li><a href="/hamburg">Hamburg Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/uggboy/6046156541/sizes/l/in/photostream/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/uggboy/">Uggboy</a> (on Flickr).
+		</li>
+
+		
 	</ul>
 </p>
 
