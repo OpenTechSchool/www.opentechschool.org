@@ -52,7 +52,11 @@ about: "We are the group of people who created the first chapter of OpenTechScho
     <p>simon@opentechschool.org</p>
   </li>
 
-
+  <li class="member">
+    <img src="/images/team/karla.jpg">
+    <h3>Karla Schönicke</h3>
+    <p>karla@opentechschool.org</p>
+  </li>
 
   <li class="member">
     <img src="/images/team/martin.jpg">
