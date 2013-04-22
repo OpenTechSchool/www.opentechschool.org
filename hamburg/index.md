@@ -6,6 +6,14 @@ tagline: "Shipping is our tradition... and so are Franzbrötchen."
 rss_feed: hamburg
 meetupcom_group: opentechschool-hamburg
 about: "The second chapter in Germany was started by Diana and Marie, starting with a <a href=\"http://app-summer-camp.opentechschool.org/\" target=\"_blank\">full-week-workshop for teenage girls in the summer of 2013</a> after attending the first all-female hackathon of Germany in Berlin early that year. Team Hamburg is set out to expand the fun of coding and tech-workshops in this beautiful city with the special nordisch-german touch."
+custom_events: "<div class=\"event\">
+            <h3 class=\"post_title\"><a href=\"http://app-summer-camp.opentechschool.org\">App Summer Camp</a></h3>
+            <p class=\"date\">
+              <span>July 2013</span>
+            </p>
+            <p>IBM</p>
+        </div>
+"
 ---
 
 

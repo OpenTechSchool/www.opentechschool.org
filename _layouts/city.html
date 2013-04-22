@@ -43,8 +43,11 @@
       <section id="events" class="bg_full">
         <h2>
           Upcoming events
-          <a href="" class="tiny_button">&raquo;cal</a>
+          <a href="webcal://www.meetup.com/opentechschool-{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
         </h2>
+        {% if page.custom_events %}
+          {{page.custom_events| markdownify}}
+        {% endif %}
         <div id="js-events-list"></div>
         <script type="text/x-template" data-template="event">
           <div class="event">
