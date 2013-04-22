@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -189,7 +189,7 @@ a:focus {
 /* buttons */
 /* line 51, ../sass/imports/_main.scss */
 .ots_action {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
   background-color: #1f8ab6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f8ab6), color-stop(50%, #1f8ab6), color-stop(51%, #085987), color-stop(100%, #1f8ab6));
   background-image: -webkit-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
@@ -880,7 +880,7 @@ footer a:focus {
   font-size: 35px;
   line-height: 1.2;
   margin-bottom: 1em;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0);
 }
 
 /* line 21, ../sass/imports/_city.scss */
@@ -909,6 +909,12 @@ footer a:focus {
 }
 
 /* line 42, ../sass/imports/_city.scss */
+.site_header_hamburg {
+  background-image: url(/images/bg_hamburg.jpg);
+  background-position: 50% 0%;
+}
+
+/* line 47, ../sass/imports/_city.scss */
 .site_header_about {
   height: 600px;
   background-size: 1300px;
@@ -1096,7 +1102,7 @@ footer a:focus {
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: -.5em;
+  left: -0.5em;
   width: .7em;
   height: .7em;
   padding: .15em;
@@ -1114,7 +1120,7 @@ footer a:focus {
 /* line 92, ../sass/imports/_carousel.scss */
 .carousel-control.right {
   left: auto;
-  right: -.5em;
+  right: -0.5em;
   text-align: left;
 }
 /* line 99, ../sass/imports/_carousel.scss */
@@ -1132,7 +1138,7 @@ footer a:focus {
   bottom: 0;
   padding: 15px;
   background: #EFEFEF;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* line 119, ../sass/imports/_carousel.scss */
