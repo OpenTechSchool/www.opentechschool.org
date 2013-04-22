@@ -46,7 +46,7 @@
           <a href="webcal://www.meetup.com/opentechschool-{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
         </h2>
         {% if page.custom_events %}
-          {{page.custom_events| markdownify}}
+          {{page.custom_events}}
         {% endif %}
         <div id="js-events-list"></div>
         <script type="text/x-template" data-template="event">

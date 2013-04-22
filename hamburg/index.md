@@ -9,9 +9,16 @@ about: "The second chapter in Germany was started by Diana and Marie, starting w
 custom_events: "<div class=\"event\">
             <h3 class=\"post_title\"><a href=\"http://app-summer-camp.opentechschool.org\">App Summer Camp</a></h3>
             <p class=\"date\">
-              <span>July 2013</span>
+              <span>July 16th-19th 2013</span>
             </p>
             <p>IBM</p>
+        </div>
+        <div class=\"event\">
+            <h3 class=\"post_title\"><a href=\"http://www.meetup.com/opentechschool-hamburg/events/115518512/\">Team Kick Off</a></h3>
+            <p class=\"date\">
+              <span>July 2013</span>
+            </p>
+            <p>(needs a location)</p>
         </div>
 "
 ---
