@@ -5,11 +5,11 @@ title: Imprint
 
 <p>Angaben gemäß § 5 TMG:</p>
 <address>
-  OpenTechSchool e.V.
+  <a href="/foundation/">OpenTechSchool e.V.</a>
   <br>
-  c/o Co.Up
+  c/o co.up
   <br>
-  Adalbertstr. 7/8
+  Adalbertstr. 8
   <br>
   10999 Berlin, Germany
 </address>
