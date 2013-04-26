@@ -34,6 +34,9 @@ title: Imprint
 		<li><a href="/hamburg">Hamburg Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/uggboy/6046156541/sizes/l/in/photostream/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/uggboy/">Uggboy</a> (on Flickr).
 		</li>
 
+		<li><a href="/zurich">Zürich Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/aforero/542248140/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/aforero/">Alejandro Forero Cuervo</a> (on Flickr).
+		</li>
+
 		
 	</ul>
 </p>
