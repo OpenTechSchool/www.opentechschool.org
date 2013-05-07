@@ -13,13 +13,6 @@ custom_events: "<div class=\"event\">
             </p>
             <p>IBM</p>
         </div>
-        <div class=\"event\">
-            <h3 class=\"post_title\"><a href=\"http://www.meetup.com/opentechschool-hamburg/events/115518512/\">Team Kick Off</a></h3>
-            <p class=\"date\">
-              <span>July 2013</span>
-            </p>
-            <p>(needs a location)</p>
-        </div>
 "
 ---
 
