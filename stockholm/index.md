@@ -13,17 +13,16 @@ about: "We're the first OpenTechSchool team outside of Germany! We are developin
 <ul class="float_list float_list_4 team_list">
 
   <li class="member">
-    <img src="/images/team/abhinit.jpg">
-    <h3>Abhinit Ambastha</h3>
-    <p>abhinit@opentechschool.org</p>
-  </li>
-
-  <li class="member">
     <img src="/images/team/hanna.jpg">
     <h3>Hanna Kulin</h3>
     <p>hanna@opentechschool.org</p>
   </li>
 
+  <li class="member">
+    <img src="/images/team/liga.jpg">
+    <h3>Liga Viskinte</h3>
+    <p>liga@opentechschool.org</p>
+  </li>
 
   <li class="member">
     <img src="/images/team/nader.jpg">
