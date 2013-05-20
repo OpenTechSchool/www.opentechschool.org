@@ -7,7 +7,7 @@ Over time, certain practices became the way we usually do things. These texts ar
 
 ## Learning Materials
  
-The list of all the [Learning Materials can be found here](/materials.html).
+The list of all the [Learning Materials can be found here](/material.html).
 
 ## How Tos
  * [Schedule for a Workshop organiser](/handbooks/workshops/organisers-schedule.html)
