@@ -59,7 +59,7 @@ def _list_all_members(group_client, group_id):
 
 def global_discuss_count(client):
     members = len(_list_all_members(client, "discuss.global@opentechschool.org"))
-    print("With {} users on discuss global".format(members))
+    print(" *  {} users on discuss global".format(members))
     return members
 
 
@@ -125,6 +125,8 @@ count_global = global_discuss_count(g_client)
 count_coaches, count_topics = get_coaches_num(g_client)
 count_team, count_chapters = get_team_num(g_client)
 
+total_leaners = 0
+
 print(" * Chapters :")
 for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund"):
     if isinstance(chapter, tuple):
@@ -134,10 +136,14 @@ for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "ha
     learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
     team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
 
+    total_leaners += learners_count
+
     print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
 
+print (" --------- ")
+print ("Total of {} learners globally".format(total_leaners))
 
-print()
+print("")
 print(" ---- Errors:")
 for e in ERRORS:
     print(e)
