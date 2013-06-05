@@ -102,7 +102,7 @@ def get_team_num(client):
     groups = client.RetrieveAllGroups()
     team, topics_count = _filter_members(client, groups, "team")
 
-    print(" * A total of {0} (unique) team members in {1} on different topics.".format(len(team), topics_count))
+    print(" * A total of {0} (unique) team members working as {1} teams.".format(len(team), topics_count))
 
     return len(team), topics_count
 
