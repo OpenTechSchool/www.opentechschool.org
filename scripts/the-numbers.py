@@ -11,24 +11,21 @@ except ImportError:
     print "Please install py-gdata"
     sys.exit(1)
 
+import json
+import urllib2
+
+
+ERRORS = []
 
 parser = argparse.ArgumentParser(description='')
-parser.add_argument('email')
 parser.add_argument('--domain', default="opentechschool.org")
+parser.add_argument('--email', default="ben@opentechschool.org")
 parser.add_argument('--password')
+parser.add_argument('--meetup-key')
 
 args = parser.parse_args()
 
 BASE_LINK = "https://groups.google.com/a/%s/forum/?fromgroups#!forum/" % args.domain
-
-HEADER = """
-"""
-
-FORMAT_ENTRY = """
-#### [{name}]({link})
-
-{desc}
-"""
 
 password = args.password
 if not password:
@@ -56,13 +53,15 @@ def _list_all_members(group_client, group_id):
       else:
         members_list.append(member.member_id)
   except gdata.client.RequestError, e:
-    print 'Request error: %s %s %s' % (e.status, e.reason, e.body)
+    ERRORS.append('Request error: %s %s %s' % (e.status, e.reason, e.body))
   return members_list
+
 
 def global_discuss_count(client):
     members = len(_list_all_members(client, "discuss.global@opentechschool.org"))
     print("With {} users on discuss global".format(members))
     return members
+
 
 def _filter_members(client, listing, category):
     total_member = set([])
@@ -113,8 +112,32 @@ def get_groups_client():
     client.ClientLogin(email=args.email, password=password, source='apps')
     return client
 
+def get_meetup_learners_count(group):
+    if not args.meetup_key:
+        return None
+
+    resp = urllib2.urlopen("https://api.meetup.com/2/groups?group_urlname={0}&key={1}".format(group, args.meetup_key))    
+    return json.loads(resp.read())["results"][0]["members"]
+
+
 g_client = get_groups_client()
 count_global = global_discuss_count(g_client)
 count_coaches, count_topics = get_coaches_num(g_client)
 count_team, count_chapters = get_team_num(g_client)
 
+print(" * Chapters :")
+for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund"):
+    if isinstance(chapter, tuple):
+        chapter, team_list = chapter
+    else:
+        team_list = chapter
+    learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
+    team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
+
+    print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+
+
+print()
+print(" ---- Errors:")
+for e in ERRORS:
+    print(e)
