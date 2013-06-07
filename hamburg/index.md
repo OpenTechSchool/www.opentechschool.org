@@ -34,6 +34,13 @@ custom_events: "<div class=\"event\">
     <p>marie@opentechschool.org</p>
   </li>
 
+
+  <li class="member">
+    <img src="/images/team/philipp.jpg">
+    <h3>Philipp</h3>
+    <p>phil@opentechschool.org</p>
+  </li>
+
 </ul>
 
 <!-- <div style="display: block; margin: 15px auto; width:522px">
