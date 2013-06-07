@@ -15,7 +15,7 @@ There is quite a few things the OpenTechSchool can help with. And promoting an e
 We have a huge network of coaches on various topics and in many fields all around the globe. If you can not scale up your event because you are missing more people helping you coach others, poke us.
 
 ### Material
-We also have an growing directory of learners material ready and available as open source. Feel free to use that without any further communication (though we are happy know where it gets used).
+We also have a growing directory of learners material ready and available as open source. Feel free to use that without any further communication (though we are happy know where it gets used).
 
 ### Organisational Help
 We are organising these events all the time. We have experience and a huge network of supporters, especiall when it comes to hands-on workshops. If you need help organising your event, that is what we are there for.
