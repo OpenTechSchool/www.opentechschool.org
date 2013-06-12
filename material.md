@@ -16,7 +16,7 @@ All OpenTechSchool Material is open sourced under the [Creative Commons ShareAli
 ### Python
 
  * [4h Introduction Workshop with turtle](http://opentechschool.github.com/python-beginners/en/index.html)
- * [Introdcution to Data Processing](http://opentechschool.github.io/python-data-intro/)
+ * [Introduction to Data Processing](http://opentechschool.github.io/python-data-intro/)
  * [Building the first Webapp with Django (Marcador)](http://django-marcador.keimlink.de/), [Sources](https://bitbucket.org/keimlink/django-marcador)
  * [Websites with Flasks](http://opentechschool.github.io/python-flask/), [corresponding code](https://github.com/OpenTechSchool/python-flask-code), [example instance](http://python-flask-code.herokuapp.com/)
  * BioPython: [Help Material](https://github.com/OpenTechSchool/biopython/tree/material) for [Rosalind challenges](http://rosalind.info)
