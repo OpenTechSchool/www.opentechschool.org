@@ -1,4 +1,5 @@
 ---
+published: true
 layout: simple
 title: Material
 ---
@@ -15,8 +16,9 @@ All OpenTechSchool Material is open sourced under the [Creative Commons ShareAli
 ### Python
 
  * [4h Introduction Workshop with turtle](http://opentechschool.github.com/python-beginners/en/index.html)
- * [Twitter Client]()
- * Django101: [English](http://opentechschool.github.com/django-101/en/index.html), [Deutsch](http://opentechschool.github.com/django-101/de/index.html)
+ * [Introdcution to Data Processing](http://opentechschool.github.io/python-data-intro/)
+ * [Building the first Webapp with Django (Marcador)](http://django-marcador.keimlink.de/), [Sources](https://bitbucket.org/keimlink/django-marcador)
+ * [Websites with Flasks](http://opentechschool.github.io/python-flask/), [corresponding code](https://github.com/OpenTechSchool/python-flask-code), [example instance](http://python-flask-code.herokuapp.com/)
  * BioPython: [Help Material](https://github.com/OpenTechSchool/biopython/tree/material) for [Rosalind challenges](http://rosalind.info)
  * [Material Discussion Page](https://github.com/OpenTechSchool/python/wiki)
 
@@ -26,19 +28,25 @@ Have a good idea about a Python Workshop? Join the [python coaches group](https:
  * Weekend Workshop
    - Day 1: [English](http://opentechschool.github.com/js-beginners-4h-workshop-1/index.html), [Deutsch](http://opentechschool.github.com/js-beginners-4h-workshop-1/index_de.html)
    - Day 2: [English](http://opentechschool.github.com/js-beginners-day2/index.html), [Deutsch](http://opentechschool.github.com/js-beginners-day2/index_de.html)
+   
+Want more Javascript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
+### Ruby
+ * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further material](http://railsgirls.com/materials)
+
+### Arduino
+  * [Material for the introduction workshop](https://github.com/OpenTechSchool/arduino-workshop-01)
+  
+Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
 
 ### Git
  * [Social-Coding with GitHub](http://opentechschool.github.com/social-coding/)
  * Coming up: Advanced Git
 
+## Upcoming
 
 ### Math-3D
   * Coming up
 
-### Arduino
-  * Coming up
-
 ### Design
   * Coming up
-  
