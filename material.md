@@ -35,7 +35,7 @@ Want more Javascript and have an idea for a Workshop? Join the [javascript coach
  * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further material](http://railsgirls.com/materials)
 
 ### Arduino
-  * [Material for the introduction workshop](https://github.com/OpenTechSchool/arduino-workshop-01)
+ * [Material for the introduction workshop](https://github.com/OpenTechSchool/arduino-workshop-01)
   
 Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
 
