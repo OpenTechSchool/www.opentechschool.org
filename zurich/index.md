@@ -6,6 +6,7 @@ tagline: "The real Mountain View"
 rss_feed: zurich
 meetupcom_group: opentechschool-zurich
 about: "Bringing our great workshops to the beautifully international city in the Alps.  We collaborate with the Google Developer Group for our first local workshop, Python for beginners."
+custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Techup</a>."
 ---
 
 
