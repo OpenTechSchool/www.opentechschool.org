@@ -13,6 +13,7 @@ except ImportError:
 
 import json
 import urllib2
+import html5lib
 
 
 ERRORS = []
@@ -120,30 +121,53 @@ def get_meetup_learners_count(group):
     return json.loads(resp.read())["results"][0]["members"]
 
 
-g_client = get_groups_client()
-count_global = global_discuss_count(g_client)
-count_coaches, count_topics = get_coaches_num(g_client)
-count_team, count_chapters = get_team_num(g_client)
+def fetch_twitter_followers(account):
+    resp = urllib2.urlopen("http://twitter.com/{}".format(account))
+    doc = html5lib.parse(resp.read())
+    fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}a[@data-element-term="follower_stats"]')
+    if not fw_elem:
+        ERRORS.append("Follow item not found for twitter account {}".format(account))
+        return 0
+    return int(fw_elem.getchildren()[0].text)
 
-total_leaners = 0
 
-print(" * Chapters :")
-for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund"):
-    if isinstance(chapter, tuple):
-        chapter, team_list = chapter
-    else:
-        team_list = chapter
-    learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
-    team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
+def compile_social_media():
+    for name in ("opentechschool", "ots_bln", "ots_sthml", "ots_dortmund"):
+        followers_count = fetch_twitter_followers(name)
+    return 0
 
-    total_leaners += learners_count
+def make_group_stats():
+    g_client = get_groups_client()
+    count_global = global_discuss_count(g_client)
+    count_coaches, count_topics = get_coaches_num(g_client)
+    count_team, count_chapters = get_team_num(g_client)
 
-    print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+    total_leaners = 0
 
-print (" --------- ")
-print ("Total of {} learners globally".format(total_leaners))
+    print(" * Chapters :")
+    for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund", "tel-aviv", "ramallah"):
+        if isinstance(chapter, tuple):
+            chapter, team_list = chapter
+        else:
+            team_list = chapter
+        learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
+        team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
 
-print("")
-print(" ---- Errors:")
-for e in ERRORS:
-    print(e)
+        total_leaners += learners_count
+
+        print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+
+    print (" --------- ")
+    print ("Total of {} learners globally".format(total_leaners))
+
+if __name__ == "__main__":
+    # make_group_stats()
+    # compile_social_media()
+    print fetch_twitter_followers("opentechschool")
+    print fetch_twitter_followers("ots_bln")
+
+    if ERRORS:
+        print("")
+        print(" ---- Errors:")
+        for e in ERRORS:
+            print(e)
