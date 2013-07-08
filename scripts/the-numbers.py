@@ -121,6 +121,16 @@ def get_meetup_learners_count(group):
     return json.loads(resp.read())["results"][0]["members"]
 
 
+def fetch_facebook_likes(account):
+    resp = urllib2.urlopen("http://m.facebook.com/{}".format(account))
+    doc = html5lib.parse(resp.read())
+    fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}span[@class="mfss fcg"]')
+    if not fw_elem:
+        ERRORS.append("Likes item not found for facebook account {}".format(account))
+        return 0      
+    return int(fw_elem.getchildren()[-1].text.split()[0])
+
+
 def fetch_twitter_followers(account):
     resp = urllib2.urlopen("http://twitter.com/{}".format(account))
     doc = html5lib.parse(resp.read())
@@ -163,8 +173,8 @@ def make_group_stats():
 if __name__ == "__main__":
     # make_group_stats()
     # compile_social_media()
-    print fetch_twitter_followers("opentechschool")
-    print fetch_twitter_followers("ots_bln")
+    print fetch_facebook_likes("opentechschool")
+    
 
     if ERRORS:
         print("")
