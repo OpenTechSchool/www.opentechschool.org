@@ -25,4 +25,4 @@ The list of all the [Learning Materials can be found here](/material.html).
  
 ## References
  * [Branding and Styleguide](/handbooks/styles.html)
- * [How mailing lists are organised and handled](/handbooks/mailinglists.html)
+ * [How mailing lists are organised and handled](/handbooks/mailing-lists.html)

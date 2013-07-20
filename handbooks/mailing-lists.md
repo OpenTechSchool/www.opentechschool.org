@@ -62,8 +62,8 @@ These mailing-lists are for @ots members only. They will filter, curate and/or a
       * OTS in all caps,
       * dash
       * Secondword is upper case and is the second word in the mailing-list name (or only word in the case of the public facing mailing-list) -> e.g. Berlin for team.berlin, Tech for team.tech, Python for coaches.python, Math-3d for coaches.math-3d, Offers for offers
-      * If Secondword is actually several words (e.g. math-3d, online-courses, etc.) use "-" to seperate the words and lower case for all words except the first one -> [OTS-Math-3d], [OTS-Online-courses], etc.
-      * Only exception is for discuss: then use [OpenTechSchool-Berlin], [OpenTechSchool-Global] etc. -> as some people might sign up and not know/remember what OTS means and to avoid confusion with team.berlin (which is [OTS-Berlin])
+      * If Secondword is actually several words (e.g. math-3d, online-courses, etc.) use "-" to seperate the words and lower case for all words except the first one -> \[OTS-Math-3d\], \[OTS-Online-courses\], etc.
+      * Only exception is for discuss: then use \[OpenTechSchool-Berlin\], \[OpenTechSchool-Global\] etc. -> as some people might sign up and not know/remember what OTS means and to avoid confusion with team.berlin (which is \[OTS-Berlin\])
 
 * have varying membership/posting privileges/visibility:
 
