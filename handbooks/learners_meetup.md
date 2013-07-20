@@ -36,7 +36,7 @@ Make sure the event and its idea is in agreement with our [values](/about.html#c
 
 Have an idea which topics you'd like to include: the clearer the idea, the easier it becomes to recruit speakers.
 
-Get in touch with OpenTechSchool members (which you might have already done via the mailinglist) and discuss your idea. Someone may already be working on something similar, so it makes sense to join forces.
+Get in touch with OpenTechSchool members (which you might have already done via the [mailing list](/handbooks/mailing-lists.html)) and discuss your idea. Someone may already be working on something similar, so it makes sense to join forces.
 
 In order to make the organization easier, once you've contacted the OpenTechSchool team, find someone who is passionate about helping you organise the workshop from within OpenTechSchool or who has at least done something like this before. We call this person "the co-host" and you are referred to as the "organizer". Since this co-host might not have access to everything, this document refers to OTS as the organisational team in general.
 
@@ -44,7 +44,7 @@ In order to make the organization easier, once you've contacted the OpenTechScho
 
 Even if you already have a pretty clear idea of what you want to do, we strongly believe that more people working together yields bigger results. In any case, you want to have other people helping you with organization, so the next things OTS will do are:
 
- * Provide a [mailing list] for all discussion related to learners meetups (https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/team.beginners-meetup).
+ * Provide a [mailing list](/handbooks/mailing-lists.html) for all discussion related to learners meetups (https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/team.beginners-meetup).
 Every message posted here will need to mention the city it belongs to.
 E.g. "Amsterdam. Call for speakers for the upcoming Learners Meetup in May"
 
