@@ -23,7 +23,7 @@ Now you can create a new blog post via the rake command like this:
 
 ``rake post title="My Awesome Day at OpenTechSchool" date="2012-05-24"``
 
-Which creates a new file for you in the _posts/ folder with the name of exactly that date and the title. This will be used by jekyll to put the date into the post meta information as well. So if you want to change the date of the post, rename the file.
+Which creates a new file for you in the ``_posts/`` folder with the name of exactly that date and the title. This will be used by jekyll to put the date into the post meta information as well. So if you want to change the date of the post, rename the file.
 
 ### The metadata
 Once you open that newly created file, you'll find that there is a header section encapsulated by three dashes and a first include directive like this:
