@@ -25,7 +25,7 @@ Have a good idea about a Python Workshop? Join the [python coaches group](https:
  * Weekend Workshop
    - Day 1: [English](http://opentechschool.github.io/js-beginners-4h-workshop-1/), [Deutsch](http://opentechschool.github.io/js-beginners-4h-workshop-1/index_de.html)
    - Day 2: [English](http://opentechschool.github.io/js-beginners-day2/), [Deutsch](http://opentechschool.github.io/js-beginners-day2/index_de.html)
-   
+
 Want more Javascript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
 ### Ruby
@@ -33,16 +33,17 @@ Want more Javascript and have an idea for a Workshop? Join the [javascript coach
 
 ### Arduino
  * [Material for the introduction workshop](https://github.com/OpenTechSchool/arduino-workshop-01)
-  
+
 Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
 
 ### Git
- * [Social-Coding with GitHub](http://opentechschool.github.io/social-coding/)
+ * [Social coding with GitHub](http://opentechschool.github.io/social-coding/)
  * Coming up: Advanced Git
 
 ## Upcoming
 
 ### Math-3D
-  * Coming up
+ * Coming up
 
-### Design * Coming up
+### Design
+ * Coming up
