@@ -920,14 +920,21 @@ footer a:focus {
   background-position: 50% 0%;
 }
 
-/* line 53, ../sass/imports/_city.scss */
+/* line 52, ../sass/imports/_city.scss */
+.site_header_ramallah {
+  background-image: url(../images/bg_ramallah.jpg);
+  background-position: 50% 0%;
+  background-size: 105%;
+}
+
+/* line 58, ../sass/imports/_city.scss */
 .site_header_zurich {
   background-image: url(../images/bg_zurich.jpg);
   background-position: 30% 5%;
   background-size: 105%;
 }
 
-/* line 59, ../sass/imports/_city.scss */
+/* line 64, ../sass/imports/_city.scss */
 .site_header_about {
   height: 600px;
   background-size: 1300px;
