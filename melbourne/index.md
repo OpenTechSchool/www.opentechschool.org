@@ -20,11 +20,17 @@ about: "OpenTechSchool's Melbourne chapter was started off by ex-berliner Steven
     <p>steven@opentechschool.org</p>
   </li>
 
-  <!--<li class="member">-->
-    <!--<img src="/images/team/matthew.jpg">-->
-    <!--<h3>Matthew Iversen</h3>-->
-    <!--<p>matthew@opentechschool.org</p>-->
-  <!--</li>-->
+  <li class="member">
+    <img src="/images/team/matthew.jpg">
+    <h3>Matthew Iversen</h3>
+    <p>matthew@opentechschool.org</p>
+  </li>
+
+  <li class="member">
+    <img src="/images/team/angus.jpg">
+    <h3>Angus Gratton</h3>
+    <p>angus@opentechschool.org</p>
+  </li>
 
 </ul>
 

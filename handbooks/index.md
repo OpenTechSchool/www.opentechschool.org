@@ -13,7 +13,7 @@ The list of all the [Learning Materials can be found here](/material.html).
  * [Schedule for a Workshop organiser](/handbooks/workshops/organisers-schedule.html)
  * [How to organisation a new workshop](/handbooks/workshops/starting-a-workshop.html)
  * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
- * [How to organise a learners meetup](/handbooks/learners_meetup.html)
+ * [How to organise a learners meetup](/handbooks/learners-meetups.html)
  * [How to contribute to the learners material](/handbooks/contribute.html)
  * [How to write a Blog Post](/handbooks/blog-posts.html)
 
@@ -25,4 +25,4 @@ The list of all the [Learning Materials can be found here](/material.html).
  
 ## References
  * [Branding and Styleguide](/handbooks/styles.html)
- * [How mailing lists are organised and handled](/handbooks/mailinglists.html)
+ * [How mailing lists are organised and handled](/handbooks/mailing-lists.html)
