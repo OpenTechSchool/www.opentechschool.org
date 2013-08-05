@@ -31,6 +31,12 @@ about: "OpenTechSchool's Melbourne chapter was started off by ex-berliner Steven
     <h3>Angus Gratton</h3>
     <p>angus@opentechschool.org</p>
   </li>
+  
+    <li class="member">
+    <img src="/images/team/lilly.jpg">
+    <h3>Lilly Ryan</h3>
+    <p>lilly@opentechschool.org</p>
+  </li>
 
 </ul>
 
