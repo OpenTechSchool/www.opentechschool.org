@@ -11,7 +11,7 @@ The list of all the [Learning Materials can be found here](/material.html).
 
 ## How Tos
  * [Schedule for a workshop organiser](/handbooks/workshops/organisers-schedule.html)
- * [How to organisation a new workshop](/handbooks/workshops/starting-a-workshop.html)
+ * [How to organise a new workshop](/handbooks/workshops/starting-a-workshop.html)
  * [How to start OTS in my city? - a blueprint](/handbooks/city-blueprint.html)
  * [How to organise a learners meetup](/handbooks/learners-meetups.html)
  * [How to contribute to the learners material](/handbooks/contribute.html)
