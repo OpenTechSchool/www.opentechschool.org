@@ -6,7 +6,7 @@ published: true
 
 ## Introduction
 
-Similar to of be asked for promotion, we are also sometimes interested in partnering with others and co-organise events and workshops. As stated in the promotion guidelines, we are supporting all initiatives and groups falling in line with our [values](/about.html#core_values). And while some just need promotional support (consult the promotion guidelines about that), sometimes we can and want to help more. This document is meant to help clearify what we do and how we do it.
+Similar of be asked for promotion, we are also sometimes interested in partnering with others and co-organise events and workshops. As stated in the promotion guidelines, we are supporting all initiatives and groups falling in line with our [values](/about.html#core_values). And while some just need promotional support (consult the promotion guidelines about that), sometimes we can and want to help more. This document is meant to help clearify what we do and how we do it.
 
 ## Contributions
 
