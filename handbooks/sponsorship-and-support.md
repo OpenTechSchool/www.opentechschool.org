@@ -1,9 +1,10 @@
 ---
 layout: simple
 title: Sponsorship guidelines
+published: true
 ---
 
-So, you like what we do at OpenTechSchool, the [values](/about.html#core_values) we focus on and you want to support us. That is great, as you of now we are an official legal entity and you can just give us a donation via paypal using the following button:
+So, you like what we do at OpenTechSchool, the [values](/about.html#core_values) we focus on and **you want to support us**. That is great, as you of now we are an official legal entity, you can just give us a donation via paypal using the following button:
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
@@ -15,7 +16,7 @@ So, you like what we do at OpenTechSchool, the [values](/about.html#core_values)
 Thank you very much. Your support is highly appreciated.
 
 ## What you get
-Oh. So you want something for that support in exchange? Well, as said before, we have a few [values](/about.html#core_values) we are looking after and that are very valuable to us. But depending on your support, we might be very thankful and do one of the following. But to be clear, we don't owe you anything that wasn't agreed before hand - especially if that goes beyond what is stated here.
+Oh. So you want something for that support in exchange? Well, as said before, we have a few [values](/about.html#core_values) we are looking after and that are very valuable to us. But depending on your support, we might be very thankful and do some of the following. But to be clear, we don't owe you anything that wasn't agreed before hand - especially if that goes beyond what is stated here.
 
 ### Supporting a specific Event
 If you sponsor a specific event, workshop, series or program, we are willing to offer the following:
@@ -23,10 +24,10 @@ If you sponsor a specific event, workshop, series or program, we are willing to 
   * gladly thank you during the introduction talk at the event, also naming what you sponsored (like the space or pizza)
   * make you an official supporter on the corresponding local meetup.com group (for up to one month after the event is over)
   * name you as a supporter on all official promotion and marketing around and for that event (namely: tweets, facebook, meetup event and blog post)
-  * you are free to provide us logo to include in the promotion material (if not provided, we'll just google for it ;) )
-  * you are free to send a person or two to the event and official represent you/your entity there, mingle and talk to people (as long as it doesn't disturb learners), but you will not get any public speaking time
+  * you are free to provide us the logo to include in the promotion material (if not provided, we'll just google for it ;) )
+  * you are free to send up to two people two to the event and official represent you/your entity there, mingle and talk to people (as long as it doesn't disturb learners) - there won't be any public speaking time though
   * if you want to take pictures or videos, make sure it gets stated before at the event and if there is someone, who doesn't want to be included in your material, you have to respect that
-  * you are free to say that supported this event of OpenTechSchool and link to the website or the event itself
+  * you are free to say that you supported this event of OpenTechSchool and link to the website or the event itself
 
 
 ### Support in general and on infrastructure
@@ -47,5 +48,4 @@ There is often a wrong assumption on what one can expect for supporting us. Let 
   * you do not have the right to review any material before it gets published
   * your support will not annul our [promotion guidelines](/handbooks/promotion.html) for your event and what you do
   * you do not have the right to call it "yours", not that workshop, programme or OpenTechSchool in general 
-  * You must not use any photos or videos take as part of your public marketing campaign
-
+  * you must not use any photos or videos taken as part of your public marketing campaign
