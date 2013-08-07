@@ -1,43 +1,44 @@
 ---
 layout: simple
 title: Partnership guidelines
+published: true
 ---
 
 ## Introduction
 
-Similar to our be asked for promotion, we are also sometimes interested in partnering with others and co-organise events and workshops. As stated in promotion guidelines, we are supporting all initiatives and groups falling in line with our [values](/about.html#core_values). And while some just need promotional support (consult the promotion guidelines about that), sometimes we can and want to help more. This document is meant to help clearify what we do and how we do it.
+Similar to of be asked for promotion, we are also sometimes interested in partnering with others and co-organise events and workshops. As stated in the promotion guidelines, we are supporting all initiatives and groups falling in line with our [values](/about.html#core_values). And while some just need promotional support (consult the promotion guidelines about that), sometimes we can and want to help more. This document is meant to help clearify what we do and how we do it.
 
 ## Contributions
 
-There is quite a few things the OpenTechSchool can help with. And promoting an event is really just the smallest part. Much bigger are we on the backend side of things:
+There is quite a few things the OpenTechSchool can help with, promoting an event is really just the smallest part. We are much bigger on the backend side of things:
 
 ### Coaches
 We have a huge network of coaches on various topics and in many fields all around the globe. If you can not scale up your event because you are missing more people helping you coach others, poke us.
 
 ### Material
-We also have a growing directory of learners material ready and available as open source. Feel free to use that without any further communication (though we are happy know where it gets used).
+We also have a growing directory of learners material ready and available as open source. Feel free to use that without any further communication (though we are happy know where and when it gets used). It is all licenced under [Creative Commons Share-Alike](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US) and are happy for any feedback and/or pull-requests. 
 
 ### Organisational Help
-We are organising these events all the time. We have experience and a huge network of supporters, especiall when it comes to hands-on workshops. If you need help organising your event, that is what we are there for.
+We are organising events all the time. We have experience and a huge network of supporters, especially when it comes to hands-on tech workshops. If you need help organising your event, that is what we are there for.
 
 ### Diversity
-We also have plenty of experience shaping events to make them more interesting for a more diverse audience and we'd love to help you on that part
+We also have plenty of experience shaping events to make them more interesting for a more diverse audience and we'd love to help you on that part, too.
 
 ## Naming / Branding
-We do consider ourself a supporting meta-community. That means we do not require to be the official part of events brand/event for everthing. We might as for that if the event wouldn't happen without our contribution but generally it is enough for us if it is clearly pointed out, what the OpenTechSchool provided or contributed to the event.
+We do consider ourself a supporting meta-community. Meaning we do not require to be the official part of events brand/event for everthing. We might ask for that if the event wouldn't be able to take place without our contribution but generally it is enough for us if it is clearly pointed out, what the OpenTechSchool provided or contributed to the event.
 
 Any other mentioning of OpenTechSchool is of course highly appreciated and helps motivate to spread the word more, but isn't required to be offically supported by us.
 
 ### Official vs. Non-Official
-Sometimes we come to the conclusion that the event doesn't follow our guidelines or we do not want to officially support it/be named  for other reasons. But that doesn't mean the people are not allowed to still help. Maybe it is just a friend and you want to help out. And that is ok, just make clear that you are not doing it as an official OpenTechSchool person and don't use any official means of communication. 
+Sometimes we come to the conclusion that the event doesn't follow our guidelines or we do not want to officially support it/be named  for other reasons. But that doesn't mean the people are not allowed to still help. Maybe it is just a friend and you want to help out. And that is ok, just make clear that you are not doing it as an official OpenTechSchool person and don't use any official means of communication for that regard. 
 
 ## Requirements towards the partner
 
 Aside from the official naming, make sure the partner is aware of the following:
 
-  * we are still free to promote or not promote the event and the support-and-sponsorship rules still apply to them to
+  * we are still free to promote or not promote this or any other event and the support-and-sponsorship rules still apply to them, too
   * any material created for or within workshops have to be released as Open Source to the public
-  * we might name ourself supporter of the event (stating what we contribute)
+  * we are free call ourself supporter of the event (stating what we contribute)
 
 If it is a co-partnered event also make sure that:
  
