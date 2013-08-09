@@ -16,7 +16,7 @@
       var templateData = {
         name: name,
         date: dateWrapper.format('dddd, MMM Do, HH:MM'),
-        venue: cal_event.venue.name,
+        venue: cal_event.venue ? cal_event.venue.name : "TBA",
         link: cal_event.event_url
       };
       html += OTS.template('event', templateData);
