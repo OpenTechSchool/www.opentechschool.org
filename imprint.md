@@ -37,7 +37,9 @@ title: Imprint
 		<li><a href="/zurich">Zürich Header Picture</a> is a devariaton of <a href="http://www.flickr.com/photos/aforero/542248140/">this picture</a> copyrighted by <a href="http://www.flickr.com/photos/aforero/">Alejandro Forero Cuervo</a> (on Flickr).
 		</li>
 
-		
+		<li><a href="/ramallah/">Ramallah Header Picture</a> is a devariaton of <a href="http://commons.wikimedia.org/wiki/File:2010-08_Ramallah_40.jpg">this picture</a> copyrighted by <a href="http://commons.wikimedia.org/wiki/User:Sicherlich">Ralf Lotys</a> (from Wikipedia).
+		</li>
+
 	</ul>
 </p>
 

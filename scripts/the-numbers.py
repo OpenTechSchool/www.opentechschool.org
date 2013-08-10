@@ -13,7 +13,10 @@ except ImportError:
 
 import json
 import urllib2
+import html5lib
+import re
 
+GPLUS_RE = re.compile(r'.*data-plusonecount="(\d*?)".*')
 
 ERRORS = []
 
@@ -32,29 +35,28 @@ if not password:
     password = raw_input("Password please: ")
 
 
-
 def _list_all_members(group_client, group_id):
-  """Lists all members including members of sub-groups.
+    """Lists all members including members of sub-groups.
 
-  Args:
+    Args:
     group_client: gdata.apps.groups.client.GroupsProvisioningClient instance.
     group_id: String, identifier of the group from which members are listed.
 
-  Returns:
+    Returns:
     members_list: List containing the member_id of group members.
-  """
-  members_list = []
-  try:
-    group_members = group_client.RetrieveAllMembers(group_id)
-    for member in group_members.entry:
-      if member.member_type == 'Group':
-        temp_list = _list_all_members(group_client, member.member_id)
-        members_list.extend(temp_list)
-      else:
-        members_list.append(member.member_id)
-  except gdata.client.RequestError, e:
-    ERRORS.append('Request error: %s %s %s' % (e.status, e.reason, e.body))
-  return members_list
+    """
+    members_list = []
+    try:
+        group_members = group_client.RetrieveAllMembers(group_id)
+        for member in group_members.entry:
+            if member.member_type == 'Group':
+                temp_list = _list_all_members(group_client, member.member_id)
+                members_list.extend(temp_list)
+            else:
+                members_list.append(member.member_id)
+    except gdata.client.RequestError, e:
+        ERRORS.append('Request error: %s %s %s' % (e.status, e.reason, e.body))
+    return members_list
 
 
 def global_discuss_count(client):
@@ -88,7 +90,6 @@ def _filter_members(client, listing, category):
 
 
 def get_coaches_num(client):
-    
     groups = client.RetrieveAllGroups()
     coaches, topics_count = _filter_members(client, groups, "coaches")
 
@@ -98,7 +99,6 @@ def get_coaches_num(client):
 
 
 def get_team_num(client):
-
     groups = client.RetrieveAllGroups()
     team, topics_count = _filter_members(client, groups, "team")
 
@@ -120,30 +120,88 @@ def get_meetup_learners_count(group):
     return json.loads(resp.read())["results"][0]["members"]
 
 
-g_client = get_groups_client()
-count_global = global_discuss_count(g_client)
-count_coaches, count_topics = get_coaches_num(g_client)
-count_team, count_chapters = get_team_num(g_client)
+def fetch_facebook_likes(account):
+    resp = urllib2.urlopen("http://m.facebook.com/{}".format(account))
+    doc = html5lib.parse(resp.read())
+    fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}span[@class="mfss fcg"]')
+    if not fw_elem:
+        ERRORS.append("Likes item not found for facebook account {}".format(account))
+        return 0  
+    return int(fw_elem.getchildren()[-1].text.split()[0])
 
-total_leaners = 0
 
-print(" * Chapters :")
-for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund"):
-    if isinstance(chapter, tuple):
-        chapter, team_list = chapter
-    else:
-        team_list = chapter
-    learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
-    team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
+def fetch_google_plusses(account):
+    resp = urllib2.urlopen("https://plus.google.com/app/basic/{}/".format(account))
+    search_res = GPLUS_RE.search(resp.read())
+    if not search_res:
+        ERRORS.append("Couldn't read plusses of {}".format(account))
+        return 0
 
-    total_leaners += learners_count
+    return int(search_res.group(1))
 
-    print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+def fetch_twitter_followers(account):
+    resp = urllib2.urlopen("http://twitter.com/{}".format(account))
+    doc = html5lib.parse(resp.read())
+    fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}a[@data-element-term="follower_stats"]')
+    if not fw_elem:
+        ERRORS.append("Follow item not found for twitter account {}".format(account))
+        return 0
+    return int(fw_elem.getchildren()[0].text)
 
-print (" --------- ")
-print ("Total of {} learners globally".format(total_leaners))
 
-print("")
-print(" ---- Errors:")
-for e in ERRORS:
-    print(e)
+def compile_social_media():
+    print "  * Social Media:"
+    print "    - twitter:"
+    total_followers = 0
+    for name in ("OpenTechSchool", "OTS_BLN", "OTS_STHLM", "OTS_Do"):
+        followers_count = fetch_twitter_followers(name)
+        print "      - {} has {} followers".format(name, followers_count)
+        total_followers += followers_count
+
+    facebook_likes = fetch_facebook_likes("opentechschool")
+    total_followers += facebook_likes
+
+    print "    - Facebook (OpenTechSchool): {} likes".format(facebook_likes)
+
+    google_plusses = fetch_google_plusses("114834784518588736271")
+    total_followers += google_plusses
+
+    print "    - Google+ (OpenTechSchool): plussed {} times".format(google_plusses)
+    print "--------------"
+    print "total of {} non-unique followers".format(total_followers)
+    return total_followers
+
+def make_group_stats():
+    g_client = get_groups_client()
+    count_global = global_discuss_count(g_client)
+    count_coaches, count_topics = get_coaches_num(g_client)
+    count_team, count_chapters = get_team_num(g_client)
+
+    total_leaners = 0
+
+    print(" * Chapters :")
+    for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund", "tel-aviv", "ramallah"):
+        if isinstance(chapter, tuple):
+            chapter, team_list = chapter
+        else:
+            team_list = chapter
+        learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
+        team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
+
+        total_leaners += learners_count
+
+        print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+
+    print (" --------- ")
+    print ("Total of {} learners globally".format(total_leaners))
+
+if __name__ == "__main__":
+    # make_group_stats()
+    compile_social_media()
+    
+
+    if ERRORS:
+        print("")
+        print(" ---- Errors:")
+        for e in ERRORS:
+            print(e)
