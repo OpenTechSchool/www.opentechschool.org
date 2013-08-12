@@ -5,7 +5,7 @@ class: "zurich"
 tagline: "The real Mountain View"
 rss_feed: zurich
 meetupcom_group: opentechschool-zurich
-about: "Bringing our great workshops to the beautifully international city in the Alps.  We're kindly hosted in the fabulous <a href="http://colab-zurich.ch/">Colab</a>."
+about: "Bringing our great workshops to the beautifully international city in the Alps.  We're kindly hosted in the fabulous <a href=\"http://colab-zurich.ch/\">Colab</a>."
 custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Techup</a>."
 ---
 
