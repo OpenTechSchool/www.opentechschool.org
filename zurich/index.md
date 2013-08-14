@@ -19,6 +19,9 @@ custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Te
     <img src="/images/team/robert.jpg">
     <h3>Robert Lehmann</h3>
     <p>robert@opentechschool.org</p>
+    <img src="/images/team/ale.jpg">
+    <h3>Ale Rimoldi</h3>
+    <p>ale@opentechschool.org</p>
   </li>
 
 
