@@ -20,4 +20,11 @@ about: "Ramallah is the heart of the growing tech and startup scene in the West-
     <p>hosam@opentechschool.org</p>
   </li>
 
+
+  <li class="member">
+    <img src="/images/team/maymoona.jpg" alt="Maymoona" title="Maymoona">
+    <h3>Maymoona</h3>
+    <p>maymoona@opentechschool.org</p>
+  </li>
+
 </ul>
