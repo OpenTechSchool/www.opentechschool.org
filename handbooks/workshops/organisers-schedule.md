@@ -11,7 +11,7 @@ In order to make the Workshop the most accessible and best experience for everyo
 
 ## Settle on a date
 
-While we aim to accommodate the learners as much as possible, coaches are critical for a workshop.  Usually, date decisions are driven by coach availability.  So set up a Doodle and let your potential coaches pick between a couple of dates.  We call this a **Call for Coaches**.  As you will see below, these dates should be at least two weeks in the future to allow for enough preparation time.
+While we aim to accommodate the learners as much as possible, coaches are critical for a workshop.  Usually, date decisions are driven by coach availability.  So set up a [Doodle](http://doodle.com/) and let your potential coaches pick between a couple of dates.  We call this a **Call for Coaches**.  As you will see below, these dates should be at least two weeks in the future to allow for enough preparation time.
 
 Don't offer too many dates as only filling out the Doodle then already gets a chore.  If you cannot seem to find a quorum consensus you can still post another vote with alternative dates.
 
