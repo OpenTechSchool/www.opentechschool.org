@@ -311,7 +311,7 @@ pre code {
 /* line 147, ../sass/imports/_main.scss */
 .bg_full {
   width: 100%;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 /* line 150, ../sass/imports/_main.scss */
 .bg_full ul, .bg_full ol {
@@ -526,7 +526,7 @@ footer {
   font-size: .8571em;
   background: #085987;
   color: #84acc3;
-  padding: 3em 0;
+  padding: 2% 0;
   height: auto;
 }
 /* line 335, ../sass/imports/_main.scss */
