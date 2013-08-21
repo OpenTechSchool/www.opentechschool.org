@@ -6,9 +6,6 @@ body {
   margin: 0;
   font-size: 75%;
   line-height: 1.5;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: #888;
-  -webkit-font-smoothing: antialiased;
 } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 
 body, button, input, select, textarea { 
@@ -34,8 +31,8 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-.post_title { 
-  text-transform: capitalize; 
+.post_title {
+  text-transform: capitalize;
 }
 
 
@@ -148,6 +145,8 @@ pre {
 }
 
 .bg_full {
+  width: 100%;
+  padding: 3% 0;
   ul, ol {
     margin-bottom: 1.5em;
     padding-left: 2em;
@@ -168,6 +167,12 @@ pre {
     border-radius: 1em;
   }
 }
+
+.bg_white { background: #fff; }
+
+.bg_grey { background: #eee; }
+
+.bg_lightgrey { background: #f4f4f4; }
 
 /* language switcher on press page */
 ul.switch_lang {
@@ -190,16 +195,6 @@ ul.switch_lang {
     background-color: $ots_blue;
     color: #FFF;
   }
-}
-
-.bg_full {
-  width: 100%;
-  padding: 5% 0;
-  background: #f4f4f4;
-}
-
-.bg_full_white {
-  background: #fff;
 }
 
 .ots_logo {
@@ -335,7 +330,7 @@ footer {
   font-size: .8571em;
   background: $ots_blue;
   color: $ots_text_i;
-  padding: 3em 0;
+  padding: 2% 0;
   height: auto;
   p {
     text-align: center;
