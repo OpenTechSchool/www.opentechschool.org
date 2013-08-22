@@ -1,7 +1,9 @@
 ---
 layout: simple
 title: Sponsorship guidelines
+published: true
 ---
+
 
 So, you like what we do at OpenTechSchool, the [values](/about.html#core_values) we focus on and **you want to support us**. That is great; as we are now an official legal entity, you can simply contribute us a donation via paypal using the following button:
 
@@ -21,12 +23,14 @@ Oh. So you want something for that support in exchange? Well, as said before, we
 ### Supporting a specific Event
 If you sponsor a specific event, workshop, series or program, we are willing to offer the following:
 
+
  * Make you an official supporter on the corresponding local meetup.com group (for up to one month after the event is over)
  * Name you as a supporter on all official promotion and marketing around and for that event (namely: tweets, facebook, meetup event and blog post)
  * You are free to provide us the logo / branding for us to include in promotion material
  * You are free to send up to two people to the event and officially represent you/your entity there, mingle and talk to people (as long as it doesn't disturb event participation) - there won't be any public speaking time though
  * If you want to take pictures or videos, make sure it gets stated before at the event and if there is someone, who doesn't want to be included in your material, you have to respect that
  * You are free to say that you supported this event of OpenTechSchool and link to the website or the event itself
+
 
 
 ### Support in general and on infrastructure
@@ -40,6 +44,7 @@ If you want to support us more generally and globally or by providing infrastruc
 
 
 ### What won't happen
+
 There is often a wrong assumption on what one can expect for supporting us. Let us be clear: **It is more important to us to provide the best learning experience in a safe learning environment, than garnering conditional support, and we have no problem declining such, if we believe it would have a negative impact on those and our values**. That said, here are a few things you can be sure, won't happen because of your support:
 
  * we will not send emails to our community on your request,
@@ -48,4 +53,3 @@ There is often a wrong assumption on what one can expect for supporting us. Let 
  * your support will not annul our [promotion guidelines](/handbooks/promotion.html) for your event and what you do
  * you do not have the right to call it "yours", not that workshop, programme or OpenTechSchool in general 
  * You must not use any photos or videos take as part of your public marketing campaign
-
