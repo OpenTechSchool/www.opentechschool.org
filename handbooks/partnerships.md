@@ -41,7 +41,7 @@ Aside from the official naming, make sure the partner is aware of the following:
 
 If it is a co-partnered event also make sure that:
  
- * the other partners are aware of the [values](/about.html#core_values) of OpenTechSchool - especially about it being free
+ * the other partners are aware of the [values](/about.html#core_values) of OpenTechSchool -- **especially about it being free**
  * it is made clear that any audio and visual material created of the event by the partners, will be shared freely - as in no-restricitons of use - between each other
  * make sure the spelling is correct: "OpenTechSchool" - one word, CamelCased
 

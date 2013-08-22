@@ -150,7 +150,12 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
-/* line 26, ../sass/imports/_main.scss */
+/* line 26, /Users/benjaminkampmann/dev/ots-www/sass/imports/_main.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 30, /Users/benjaminkampmann/dev/ots-www/sass/imports/_main.scss */
 .post_title {
   text-transform: capitalize;
 }
@@ -189,7 +194,7 @@ a:focus {
 /* buttons */
 /* line 51, ../sass/imports/_main.scss */
 .ots_action {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   background-color: #1f8ab6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f8ab6), color-stop(50%, #1f8ab6), color-stop(51%, #085987), color-stop(100%, #1f8ab6));
   background-image: -webkit-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%);
