@@ -35,15 +35,15 @@ Sometimes we come to the conclusion that the event doesn't follow our guidelines
 
 Aside from the official naming, make sure the partner is aware of the following:
 
-  * we are still free to promote or not promote the event and the support-and-sponsorship rules still apply to them to
-  * any material created for or within workshops have to be released as Open Source to the public
-  * we might name ourself supporter of the event (stating what we contribute)
+ * we are still free to promote or not promote the event and the support-and-sponsorship rules still apply to them to
+ * any material created for or within workshops have to be released as Open Source to the public
+ * we might name ourself supporter of the event (stating what we contribute)
 
 If it is a co-partnered event also make sure that:
  
-  * the other partners are aware of the [values](/about.html#core_values) of OpenTechSchool - especially about it being free
-  * it is made clear that any audio and visual material created of the event by the partners, will be shared freely - as in no-restricitons of use - between each other
-  * make sure the spelling is correct: "OpenTechSchool" - one word, camelCased
+ * the other partners are aware of the [values](/about.html#core_values) of OpenTechSchool - especially about it being free
+ * it is made clear that any audio and visual material created of the event by the partners, will be shared freely - as in no-restricitons of use - between each other
+ * make sure the spelling is correct: "OpenTechSchool" - one word, camelCased
 
 ## Promoting the event
 
