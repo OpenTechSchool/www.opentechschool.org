@@ -49,3 +49,5 @@ sponsors:
 		</div>
 	{% endfor %}
 </div>
+
+<h4 style="text-align: center">You like what we do and want to sponsor us?<br/> <a href="/handbooks/sponsorship-and-support.html">Learn here how.</a></h4>

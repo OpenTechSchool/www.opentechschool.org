@@ -36,7 +36,7 @@ If you sponsor a specific event, workshop, series or program, we are willing to 
 ### Support in general and on infrastructure
 If you want to support us more generally and globally or by providing infrastructure and services that not only one specific event will benefit from but OpenTechSchool as a whole, it wouldn't make much sense to name you at all events but we'd like to thank you none-the less by:
  
- * Adding you to the official list of sponsors (LINK HERE)
+ * Adding you to the [official list of sponsors](/sponsors.html)
  * Writing a Blog post about your contribution, in which you can optionally describe your service infrastructure
  * Promote that Blog post like any other
  * A second round of thanks via social media
