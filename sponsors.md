@@ -7,23 +7,26 @@ sponsors:
     name: Co.Up Berlin Coworking Space
     web: http://co-up.de
     logo: /images/sponsors/coup.png
+    blog_post:
     about: Co.Up is the coworking space where the roots of OpenTechSchool lie. There we had our first meetup leading up to the founding of the organisation. Many meetings and events followed until today and Co.Up provided us gratiously with space and all help possible. We are thankful to have them on our side.
   google:
     name: Google Apps for Education
     web: https://www.google.com/enterprise/apps/education/
     logo: /images/sponsors/google_apps_edu.png
     about: Working with a distrubted network of volunteers brings it's challanges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
+    blog_post: http://blog.opentechschool.org/2012/07/we-are-supported-by-google-apps-for-education.html
   paypal:
     name: PayPal
     web: https://www.paypal.com
     logo: /images/sponsors/paypal.jpg
+    blog_post: http://blog.opentechschool.org/2013/08/paypal-donations.html
     about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
 
 ---
 
 ## The Sponsor's Wall of Thanks
 
-<p>Although OpenTechSchool is run by volunteers we need a few things to do our job that usually involves money. We are thankful to the sponsors below for supporting us in our work.
+<p>Although OpenTechSchool is run by volunteers we need a few things to do our job that usually involves money or need certain infrastructure. We are thankful to the sponsors below for supporting us in our work.
     </p>
 
 <div class="sponsor_list">
@@ -35,9 +38,14 @@ sponsors:
 				<a href="{{sponsor.web}}"><img src="{{sponsor.logo}}" alt="{{sponsor.name}} Logo" ></a>
 		    {% endif %}
 
-		<h3 id="{{sponsor_id}}">{{sponsor.name}}</h3>
-		    <p>{{sponsor.about}}</p>
-		    <p><a href="{{sponsor.web}}">{{sponsor.web}}</a></p>
+			<div>
+			<h3 id="{{sponsor_id}}"><a href="{{sponsor.web}}">{{sponsor.name}}</a></h3>
+			    <p>{{sponsor.about}}
+			    	{% if sponsor.blog_post %}
+			    		<span class="blog_post"><a href="{{sponsor.blog_post}}">Learn more about their sponsorship on our blog.</a></span>
+			    	{% endif %}
+			    </p>
+			</div>
 		</div>
 	{% endfor %}
 </div>
