@@ -9,7 +9,7 @@ We organise our work in teams: various groups of people take care of different t
 
 Our teams mailing lists are:
 
- * OpenTechSchool global: The [public discussion group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global) accessible and visible to everyone for discussing all topics related to OTS. If you want to connect with people involved with OTS in your city or start a discussion about a certain topic which does not yet have its [own coaching group](/handbooks/mailinglists.html#coaches_lists), send an email here.
+ * OpenTechSchool global: The [public discussion group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global) accessible and visible to everyone for discussing all topics related to OTS. If you want to connect with people involved with OTS in your city or start a discussion about a certain topic which does not yet have its [own coaching group](/handbooks/mailing-lists.html#coaches_lists), send an email here.
 
  * [Team beginners meetup](mailto:team.beginners-meetup[at]opentechschool.org) organises the beginner and learnermeetups. If you have an interesting proposal, want to talk about something or connect one of the organisers about anything, this is where your email should go.
 

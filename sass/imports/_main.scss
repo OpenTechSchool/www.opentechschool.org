@@ -2,8 +2,19 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
-body { margin: 0; font-size: 75%; line-height: 1.5; } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
-body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: $ots_text; }
+body { 
+  margin: 0;
+  font-size: 75%;
+  line-height: 1.5;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #888;
+  -webkit-font-smoothing: antialiased;
+} /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
+
+body, button, input, select, textarea { 
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: $ots_text;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;

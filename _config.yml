@@ -1,2 +1,22 @@
 url: opentechschool.org
 blog_domain: blog.opentechschool.org
+
+sponsors:
+  co_up:
+    name: Co.Up Berlin Coworking Space
+    gplus:
+    web: http://co-up.de
+    logo: /images/sponsors/coup.png
+    about: Co.Up is the coworking space where the roots of OpenTechSchool lie. There we had our first meetup leading up to the founding of the organisation. Many meetings and events followed until today and Co.Up provided us gratiously with space and all help possible. We are thankful to have them on our side.
+  google:
+    name: Google Apps for Education
+    gplus: https://plus.google.com/+GoogleforNonprofits
+    web: https://www.google.com/enterprise/apps/education/
+    logo: /images/sponsors/google_apps_edu.png
+    about: Working with a distrubted network of volunteers brings it's challanges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
+  paypal:
+    name: PayPal
+    gplus: https://plus.google.com/+paypal
+    web: https://www.paypal.com
+    logo: /images/sponsors/paypal.jpg
+    about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
