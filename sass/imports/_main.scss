@@ -34,6 +34,10 @@ h4, h5, h6 {
   font-size: 1em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .post_title { 
   text-transform: capitalize; 
 }
@@ -258,6 +262,44 @@ ul.switch_lang {
 }
 
 
+
+.sponsor_list {
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+  }
+
+  > div {
+    clear: both;
+    margin: 15px;
+    min-height: 200px;
+  }
+
+  h3 {
+    padding-top: 30px;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .left {
+    text-align: left;
+
+    img {
+      float:left;
+    }
+  }
+
+  .right {
+    text-align: right;
+    img {
+      float:right;
+    }
+  }
+}
 
 /* List of OTS members, extends float list. Includes image and links. */
 .team_list {
