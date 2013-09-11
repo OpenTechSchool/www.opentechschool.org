@@ -1,3 +1,4 @@
+
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
@@ -238,6 +239,7 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .dropdown.open .dropdown_menu li:first-child a { border: none; }
 
 /* Styles specific for city template */
+<<<<<<< HEAD
 .member_count { display: block; font-size: .666em; }
 
 .tagline { font-size: 35px; line-height: 1.2; margin-bottom: 1em; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
@@ -316,34 +318,336 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .quote { margin-bottom: .8751em; line-height: 1.2; }
 
 .author { font-size: .8751em; }
+=======
+/* line 9, ../sass/imports/_city.scss */
+.member_count {
+  display: block;
+  font-size: .666em;
+}
 
-/* variables */
-/* colors */
-/* main blue, logo */
-/* Blue links */
-/* Blue hover states */
-/* Default text color*/
-/* (Inverted) Text color on dark blue backgrounds */
-/* (Inverted) Link color on dark blue backgrounds */
-/* Highlighted, red links, buttons, other highlights */
-/* Red hover states */
-@media screen and (min-width: 440px) { .float_list > li { float: left; }
-  .float_list_4 > li { width: 46%; } }
-@media screen and (min-width: 768px) { body { font-size: 87.5%; }
-  .nav { float: right; clear: none; }
-  .nav li { float: left; border: none; }
-  .btn_navbar { display: none; }
-  .collapse { display: block; }
-  .container_narrow { width: 100%; padding: 0; }
-  .top_bar { position: absolute; height: 2.5em; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
-  .top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
-  .logo_top_bar { width: auto; }
-  .col_left { width: 46%; float: left; margin: 0 4% 1.5em 0; }
-  .col_right { width: 46%; float: right; margin: 0 0 1.5em 4%; }
-  .float_list_4 > li { width: 21%; }
-  .site_header { padding-top: 7em; }
-  .site_header_core img, .carousel_testimonial { padding-top: 3em; }
-  .testimonial-caption { font-size: 1em; }
-  .site_header_img { background-size: 125%; }
-  .name .close-up { margin-right: 1.5em; float: left; }
-  .name strong { margin-top: 2.4em; } }
+/* line 14, ../sass/imports/_city.scss */
+.tagline {
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* line 21, ../sass/imports/_city.scss */
+.site_header_img {
+  color: #085987;
+  background-size: 768px;
+  background-repeat: no-repeat;
+}
+
+/* line 27, ../sass/imports/_city.scss */
+.site_header_berlin {
+  background-image: url(/images/bg_berlin.jpg);
+  background-position: 50% 55%;
+}
+
+/* line 32, ../sass/imports/_city.scss */
+.site_header_stockholm {
+  background-image: url(/images/bg_stockholm.jpg);
+  background-position: 50% 50%;
+}
+
+/* line 37, ../sass/imports/_city.scss */
+.site_header_melbourne {
+  background-image: url(/images/bg_melbourne.jpg);
+  background-position: 50% 0%;
+}
+
+/* line 42, ../sass/imports/_city.scss */
+.site_header_hamburg {
+  background-image: url(/images/bg_hamburg.jpg);
+  background-position: 50% 0%;
+}
+
+/* line 47, ../sass/imports/_city.scss */
+.site_header_dortmund {
+  background-image: url(/images/bg_dortmund.jpg);
+  background-position: 50% 0%;
+}
+
+/* line 52, ../sass/imports/_city.scss */
+.site_header_ramallah {
+  background-image: url(../images/bg_ramallah.jpg);
+  background-position: 50% 0%;
+}
+
+/* line 57, ../sass/imports/_city.scss */
+.site_header_zurich {
+  background-image: url(../images/bg_zurich.jpg);
+  background-position: 30% 5%;
+  background-size: 105%;
+}
+
+/* line 63, ../sass/imports/_city.scss */
+.site_header_about {
+  height: 600px;
+  background-size: 1300px;
+  background-image: url(/images/bg_about.jpg);
+  background-position: 50% 50%;
+}
+
+/* line 1, ../sass/imports/_nav.scss */
+.nav {
+  text-transform: uppercase;
+  clear: both;
+}
+/* line 4, ../sass/imports/_nav.scss */
+.nav a {
+  display: block;
+  padding: .5em;
+  letter-spacing: 0.05em;
+}
+
+/* line 11, ../sass/imports/_nav.scss */
+.nav_external {
+  padding-top: .25em;
+}
+/* line 13, ../sass/imports/_nav.scss */
+.nav_external li {
+  margin: 0 .25em;
+  border-top: none;
+}
+/* line 17, ../sass/imports/_nav.scss */
+.nav_external a {
+  border: 0;
+}
+/* line 20, ../sass/imports/_nav.scss */
+.nav_external .ots_nav_icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url("../images/ots_icons.png") no-repeat 0 0;
+}
+/* line 29, ../sass/imports/_nav.scss */
+.nav_external .github {
+  background-position: 0 0;
+}
+/* line 32, ../sass/imports/_nav.scss */
+.nav_external .twitter {
+  background-position: 0 -28px;
+}
+/* line 35, ../sass/imports/_nav.scss */
+.nav_external .facebook {
+  background-position: 0 -56px;
+}
+/* line 39, ../sass/imports/_nav.scss */
+.nav_external .github:hover,
+.nav_external .github:focus {
+  background-position: 0 -84px;
+}
+/* line 43, ../sass/imports/_nav.scss */
+.nav_external .twitter:hover,
+.nav_external .twitter:focus {
+  background-position: 0 -112px;
+}
+/* line 47, ../sass/imports/_nav.scss */
+.nav_external .facebook:hover,
+.nav_external .facebook:focus {
+  background-position: 0 -140px;
+}
+/* line 51, ../sass/imports/_nav.scss */
+.nav_external .discourse {
+  background-position: -28px 0;
+}
+/* line 56, ../sass/imports/_nav.scss */
+.nav_external .discourse:hover,
+.nav_external .discourse:focus {
+  background-position: -28px -83px;
+}
+
+/* line 61, ../sass/imports/_nav.scss */
+.btn_navbar {
+  float: right;
+  margin: 0.5em 0.75em;
+  padding: 0;
+  border: 2px solid #1f8ab6;
+  border-radius: .25em;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* line 70, ../sass/imports/_nav.scss */
+.btn_navbar .icon_bar {
+  display: block;
+  width: 1.25em;
+  height: 2px;
+  margin-top: 3px;
+  background-color: #1f8ab6;
+}
+
+/* line 77, ../sass/imports/_nav.scss */
+.btn_navbar .icon_bar_last {
+  margin-bottom: 2px;
+}
+
+/* line 81, ../sass/imports/_nav.scss */
+.collapse {
+  display: none;
+}
+/* line 84, ../sass/imports/_nav.scss */
+.collapse.in {
+  display: block;
+}
+/* line 86, ../sass/imports/_nav.scss */
+.collapse.in > li {
+  text-align: center;
+}
+/* line 90, ../sass/imports/_nav.scss */
+.collapse.in .nav_external {
+  width: 150px;
+  margin: .25em auto;
+}
+/* line 93, ../sass/imports/_nav.scss */
+.collapse.in .nav_external li {
+  float: left;
+}
+
+/* line 5, ../sass/imports/_carousel.scss */
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 10, ../sass/imports/_carousel.scss */
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* line 18, ../sass/imports/_carousel.scss */
+.carousel .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+/* line 28, ../sass/imports/_carousel.scss */
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+/* line 35, ../sass/imports/_carousel.scss */
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+/* line 37, ../sass/imports/_carousel.scss */
+.carousel .active {
+  left: 0;
+}
+/* line 42, ../sass/imports/_carousel.scss */
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 48, ../sass/imports/_carousel.scss */
+.carousel .next {
+  left: 100%;
+}
+/* line 51, ../sass/imports/_carousel.scss */
+.carousel .prev {
+  left: -100%;
+}
+/* line 55, ../sass/imports/_carousel.scss */
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+/* line 59, ../sass/imports/_carousel.scss */
+.carousel .active.left {
+  left: -100%;
+}
+/* line 62, ../sass/imports/_carousel.scss */
+.carousel .active.right {
+  left: 100%;
+}
+
+/* line 73, ../sass/imports/_carousel.scss */
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: -.5em;
+  width: .7em;
+  height: .7em;
+  padding: .15em;
+  margin-top: -20px;
+  font-size: 3em;
+  font-weight: 100;
+  line-height: .5em;
+  color: white;
+  text-align: right;
+  background: #efefef;
+  border-radius: 100%;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* line 92, ../sass/imports/_carousel.scss */
+.carousel-control.right {
+  left: auto;
+  right: -.5em;
+  text-align: left;
+}
+/* line 99, ../sass/imports/_carousel.scss */
+.carousel-control:hover {
+  text-decoration: none;
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+/* line 110, ../sass/imports/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  background: #EFEFEF;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 119, ../sass/imports/_carousel.scss */
+.testimonial-caption {
+  left: auto;
+  width: 450px;
+  max-width: 86%;
+  bottom: 1em;
+  left: 1em;
+  font-size: .75em;
+  text-shadow: 0 1px 1px #000;
+}
+
+/* line 129, ../sass/imports/_carousel.scss */
+.carousel-caption h4,
+.carousel-caption p {
+  color: #FFF;
+}
+
+/* line 132, ../sass/imports/_carousel.scss */
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+/* line 136, ../sass/imports/_carousel.scss */
+.quote {
+  margin-bottom: .8751em;
+  line-height: 1.2;
+}
+
+/* line 140, ../sass/imports/_carousel.scss */
+.author {
+  font-size: .8751em;
+}

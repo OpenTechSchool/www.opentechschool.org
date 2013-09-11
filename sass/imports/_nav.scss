@@ -24,28 +24,37 @@
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background: transparent url("../images/ots_icons.png") no-repeat 50% 0;
+    background: transparent url("../images/ots_icons.png") no-repeat 0 0;
   }
   .github {
-    background-position: 50% 0;
+    background-position: 0 0;
   }
   .twitter {
-    background-position: 50% -28px;
+    background-position: 0 -28px;
   }
   .facebook {
-    background-position: 50% -56px;
+    background-position: 0 -56px;
   }
   .github:hover,
   .github:focus {
-    background-position: 50% -84px;
+    background-position: 0 -84px;
   }
   .twitter:hover,
   .twitter:focus {
-    background-position: 50% -112px;
+    background-position: 0 -112px;
   }
   .facebook:hover,
   .facebook:focus {
-    background-position: 50% -140px;
+    background-position: 0 -140px;
+  }
+  
+  .discourse {
+    background-position: -28px 0;
+  }
+
+  .discourse:hover,
+  .discourse:focus {
+    background-position: -28px -83px;
   }
 }
 
@@ -79,7 +88,7 @@
 //      border-top: 1px solid $ots_blue;
     }
     .nav_external {
-      width: 128px;
+      width: 150px;
       margin: .25em auto;
       li {
         float: left;
