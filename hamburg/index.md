@@ -47,3 +47,4 @@ custom_events: "<div class=\"event\">
   <a class="twitter-timeline" href="https://twitter.com/OTS_HH" data-widget-id="276335676528672768">Tweets by @OTS_HH</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div> -->
+<div>photo by By Arcadiuš (Flickr: 203-365 Zinneke Pis, Bruxelles) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons</div>
