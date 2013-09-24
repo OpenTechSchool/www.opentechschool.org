@@ -5,7 +5,7 @@ class: "brussels"
 tagline: "Where knowledge is brewed"
 rss_feed: brussels
 meetupcom_group: opentechschool-brussels
-about: "Brussels is known as the center of European politics. There is more! "
+about: "Brussels is known as the center of European politics. There is more! With OpenTechSchool we want to offer free course about new technologies for all citizens."
 ---
 
 <h2 style="margin: 0 0 50px 50px;">Team Brussels</h2>
