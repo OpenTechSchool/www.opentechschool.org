@@ -1,4 +1,6 @@
 url: www.opentechschool.org
-baseurl: /www.opentechschool.org/
+baseurl: /
 blog_domain: blog.opentechschool.org
 css_version: 3
+
+encoding: UTF-8
