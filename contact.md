@@ -7,6 +7,8 @@ title: Contacts
 
 We organise our work in teams: various groups of people take care of different tasks. Please feel free to email the one you think is most appropriate for your inquiry.
 
+Please note the addresses following have replaced @ with [at] to prevent spam.
+
 Our teams mailing lists are:
 
  * OpenTechSchool global: The [public discussion group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global) accessible and visible to everyone for discussing all topics related to OTS. If you want to connect with people involved with OTS in your city or start a discussion about a certain topic which does not yet have its [own coaching group](/handbooks/mailing-lists.html#coaches_lists), send an email here.
@@ -19,7 +21,7 @@ Our teams mailing lists are:
 
  * [Team communications](mailto:team.communications[at]opentechschool.org) takes care of all online and offline OTS communication. Whether you have something you think OTS would like to tweet or facebook, or you are interested in having one of us speak at your event/conference, send your emails here.
 
- * [Team blueprint](team.blueprint[at]opentechschool.org) is in charge of the [handbooks](/handbooks/). If you find any mistakes, have feedback or want more information about a specific part, send your email here.
+ * [Team blueprint](team.blueprint[at]opentechschool.org) is in charge of the [handbooks]({{site.baseurl}}handbooks/). If you find any mistakes, have feedback or want more information about a specific part, send your email here.
 
  * [Team tech](mailto:team.tech[at]opentechschool.org) organises the tech parts of OTS, such as the GitHub accounts, email adresses, domains, etc. If you need help setting up a mailing list or any of the aforementioned points, send your email here.
 
@@ -29,7 +31,9 @@ We also have our own chat channel on freenode:
 
 > \#OpenTechSchool
 
-> irc.freenode.net // 6665
+> irc.freenode.net // 6667
+
+You can connect in a browser [here](http://webchat.freenode.net/?channels=#OpenTechschool)!
 
 
 ## In person
