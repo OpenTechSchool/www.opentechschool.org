@@ -21,7 +21,7 @@ about: "Brussels is known as the center of European politics. There is more! Wit
   </li>
 
   <li class="member">
-    <img src="/images/team/friedger.jpg" alt="Friedger" title="Friedger">
+    <img src="{{site.baseurl}}/images/team/friedger.jpg" alt="Friedger" title="Friedger">
     <h3>Friedger Müffke</h3>
   </li>
 
