@@ -5,7 +5,17 @@ class: "brussels"
 tagline: "Where knowledge is brewed"
 rss_feed: brussels
 meetupcom_group: opentechschool-brussels
-about: "Brussels is known as the center of European politics. There is more! With OpenTechSchool we want to offer free workshops about new technologies for all citizens. The root of the group in Brussels lays in the hackerspace HSBXL and lives the spirit of freedom and sharing."
+about: "Brussels is known for its multiculturality, governmental complexity and as the center of European politics. But, there is more! 
+<br>
+<br>
+Through OpenTechSchool we offer free workshops about new technologies for <b>everyone</b>.
+
+<br>
+<br>
+
+The sprout of OTS Brussels lays in a bitcoin-meeting and rooted further in the hackerspace HSBXL. 
+
+It breathes the spirit of freedom and sharing in an open environment through empowerment and reaching out by crowd sourced, self-directed education."
 ---
 
 <h2 style="margin: 0 0 50px 50px;">Team Brussels</h2>
