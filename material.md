@@ -6,7 +6,7 @@ title: Material
 
 ## About the Material
 
-All OpenTechSchool Material is open sourced under the [Creative Commons ShareAlike Attribution](http://creativecommons.org/licenses/by-sa/3.0/) as described in our [values](/about.html#core_values).
+All OpenTechSchool Material is open sourced under the [Creative Commons ShareAlike Attribution](http://creativecommons.org/licenses/by-sa/3.0/) as described in our [values]({{site.baseurl}}about.html#core_values).
 
 ## Learning Material
 

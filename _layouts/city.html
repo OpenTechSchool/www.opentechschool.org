@@ -6,7 +6,7 @@
 
     <div class="city_title">
       <h1>
-        <a href="/">{{page.title}}</a>
+        <a href="{{site.baseurl}}{{page.title | downcase}}/">{{page.title}}</a>
       </h1>
       {% if page.tagline %}
         <h2 class="tagline">
@@ -66,13 +66,13 @@
       <section id="blog-posts" class="bg_full">
         <h2>
           Latest news
-          <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a>
+          <a href="http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a>
         </h2>
 
         <div id="js-blog-posts-list"></div>
         <script type="text/x-template" data-template="blog-post">
           <article class="blog-post">
-            <h3 class="post_title"><a href="http://blog.opentechschool.org${link}">${title}</a></h3>
+            <h3 class="post_title"><a href="{{site.blog_domain}}${link}">${title}</a></h3>
             <p class="date">
               ${date}
             </p>
@@ -85,12 +85,9 @@
 
 </div>
 
-
-
-
 <section class="bg_full bg_full_white">
   <div class="container container_wide">
-    {{ page.content }}
+    {{content}}
   </div>
 </section>
 

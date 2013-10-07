@@ -5,7 +5,7 @@ title: Imprint
 
 <p>Angaben gemäß § 5 TMG:</p>
 <address>
-  <a href="/foundation/">OpenTechSchool e.V.</a>
+  <a href="{{site.baseurl}}foundation/">OpenTechSchool e.V.</a>
   <br>
   c/o co.up
   <br>
