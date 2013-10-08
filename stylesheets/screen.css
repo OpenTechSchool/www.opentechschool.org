@@ -244,21 +244,21 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .site_header_img { color: #085987; background-size: 768px; background-repeat: no-repeat; }
 
-.site_header_berlin { background-image: url(/images/bg_berlin.jpg); background-position: 50% 55%; }
+.site_header_berlin { background-image: url(../images/bg_berlin.jpg); background-position: 40% 60%; }
 
-.site_header_stockholm { background-image: url(/images/bg_stockholm.jpg); background-position: 50% 50%; }
+.site_header_dortmund { background-image: url(../images/bg_dortmund.jpg); background-position: 0% 70%; }
 
-.site_header_melbourne { background-image: url(/images/bg_melbourne.jpg); background-position: 50% 0%; }
+.site_header_hamburg { background-image: url(../images/bg_hamburg.jpg); background-position: 20% 10%; }
 
-.site_header_hamburg { background-image: url(/images/bg_hamburg.jpg); background-position: 50% 0%; }
+.site_header_melbourne { background-image: url(../images/bg_melbourne.jpg); background-position: 45% 0%; }
 
-.site_header_dortmund { background-image: url(/images/bg_dortmund.jpg); background-position: 50% 0%; }
+.site_header_ramallah { background-image: url(../images/bg_ramallah.jpg); background-position: 55% 0%; }
 
-.site_header_ramallah { background-image: url(../images/bg_ramallah.jpg); background-position: 50% 0%; }
+.site_header_stockholm { background-image: url(../images/bg_stockholm.jpg); background-position: 30% 45%; }
 
-.site_header_zurich { background-image: url(../images/bg_zurich.jpg); background-position: 30% 5%; background-size: 105%; }
+.site_header_zurich { background-image: url(../images/bg_zurich.jpg); background-position: 100% 5%; background-size: 105% !important; }
 
-.site_header_about { height: 600px; background-size: 1300px; background-image: url(/images/bg_about.jpg); background-position: 50% 50%; }
+.site_header_about { height: 600px; background-size: 1300px; background-image: url(../images/bg_about.jpg); background-position: 50% 50%; }
 
 .nav { text-transform: uppercase; clear: both; }
 .nav a { display: block; padding: .5em; letter-spacing: 0.05em; }
@@ -344,6 +344,6 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
   .site_header { padding-top: 7em; }
   .site_header_core img, .carousel_testimonial { padding-top: 3em; }
   .testimonial-caption { font-size: 1em; }
-  .site_header_img { background-size: 130%; }
+  .site_header_img { background-size: 125%; }
   .name .close-up { margin-right: 1.5em; float: left; }
   .name strong { margin-top: 2.4em; } }
