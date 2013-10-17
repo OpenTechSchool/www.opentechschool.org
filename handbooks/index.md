@@ -26,5 +26,5 @@ The list of all the [Learning Materials can be found here](/material.html).
  * [How we decide on (strategic) stuff](/handbooks/decision-making.html)
  
 ## References
- * [Branding and Styleguide](/handbooks/styles.html)
+ * [Branding and Style Guide](/handbooks/styles.html)
  * [How mailing lists are organised and handled](/handbooks/mailing-lists.html)

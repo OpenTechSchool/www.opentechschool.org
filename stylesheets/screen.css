@@ -39,7 +39,7 @@ img { height: auto; }
 /* ========================================== */
 /* ! Shared styles, OTS branding */
 /* ========================================== */
-body { margin: 0; font-size: 75%; line-height: 1.5; -webkit-text-stroke-width: .5px; -webkit-text-stroke-color: #888; -webkit-font-smoothing: antialiased; }
+body { margin: 0; font-size: 75%; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
 /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: #222222; }
@@ -168,7 +168,7 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .date { font-size: .75em; font-style: italic; color: #666; margin-bottom: 0; }
 
-/* Styleguide*/
+/* Style Guide*/
 .sg_list { list-style: none; padding-left: 0 !important; }
 .sg_list > li:before { display: none; }
 
