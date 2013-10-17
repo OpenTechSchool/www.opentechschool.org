@@ -2,16 +2,14 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
-body { 
+body {
   margin: 0;
   font-size: 75%;
   line-height: 1.5;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: #888;
   -webkit-font-smoothing: antialiased;
 } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 
-body, button, input, select, textarea { 
+body, button, input, select, textarea {
   font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: $ots_text;
 }
@@ -38,8 +36,8 @@ strong {
   font-weight: bold;
 }
 
-.post_title { 
-  text-transform: capitalize; 
+.post_title {
+  text-transform: capitalize;
 }
 
 
