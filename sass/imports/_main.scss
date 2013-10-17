@@ -10,11 +10,12 @@ body {
 } /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
 
 body, button, input, select, textarea {
-  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: $ots_text;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -126,7 +127,7 @@ small {
 
 pre,
 code  {
-  font-family: consolas, courier, monospace;
+  font-family: 'Source Code Pro', Consolas, "Liberation Mono", Courier, monospace;
   font-size: 1em;
   white-space: pre;
   border-radius: .25em;
@@ -443,16 +444,6 @@ footer a:focus {
   border-radius: 4px;
   padding: 0 1em;
   color: transparent;
-}
-
-.sg_textarea {
-  width: 90%;
-  font-size: .625em;
-  color: #888;
-  border: 1px solid #888;
-  padding: .5em;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  border-radius: 4px;
 }
 
 /* testimonials */

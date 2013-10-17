@@ -42,9 +42,9 @@ img { height: auto; }
 body { margin: 0; font-size: 75%; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
 /* base font size: 12px, line-height: 18px; 14/21 on bigger screens */
-body, button, input, select, textarea { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; color: #222222; }
+body, button, input, select, textarea { font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #222222; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.5; }
 
 h1 { font-size: 2.5em; }
 
@@ -89,7 +89,7 @@ small { font-size: .8571em; }
 
 .tiny_button { font-size: .5em; font-weight: normal; }
 
-pre, code { font-family: consolas, courier, monospace; font-size: 1em; white-space: pre; border-radius: .25em; }
+pre, code { font-family: 'Source Code Pro', Consolas, "Liberation Mono", Courier, monospace; font-size: 1em; white-space: pre; border-radius: .25em; }
 
 code { background-color: #F4FBFD; padding: 0 .25em; }
 
@@ -175,8 +175,6 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .sg_list small { display: block; margin-bottom: .75em; color: #888; font-style: italic; }
 
 .sg_color { display: inline-block; border-radius: 4px; padding: 0 1em; color: transparent; }
-
-.sg_textarea { width: 90%; font-size: .625em; color: #888; border: 1px solid #888; padding: .5em; font-family: Consolas, "Liberation Mono", Courier, monospace; border-radius: 4px; }
 
 /* testimonials */
 .testimonials_teaser { overflow: hidden; text-align: center; }
@@ -327,9 +325,10 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 /* (Inverted) Link color on dark blue backgrounds */
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
-@media screen and (min-width: 440px) { .float_list > li { float: left; }
+@media screen and (min-width: 440px) { body { font-size: 87.5%; }
+  .float_list > li { float: left; }
   .float_list_4 > li { width: 46%; } }
-@media screen and (min-width: 768px) { body { font-size: 87.5%; }
+@media screen and (min-width: 768px) { body { font-size: 100%; }
   .nav { float: right; clear: none; }
   .nav li { float: left; border: none; }
   .btn_navbar { display: none; }

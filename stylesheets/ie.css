@@ -9,11 +9,13 @@
 /* (Inverted) Link color on dark blue backgrounds */
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
+body { font-size: 87.5%; }
+
 .float_list > li { float: left; }
 
 .float_list_4 > li { width: 46%; }
 
-body { font-size: 87.5%; }
+body { font-size: 100%; }
 
 .nav { float: right; clear: none; }
 .nav li { float: left; border: none; }
