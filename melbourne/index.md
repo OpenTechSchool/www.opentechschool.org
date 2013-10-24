@@ -5,8 +5,8 @@ class: "melbourne"
 tagline: "Great learning is achieved with great coffee!"
 rss_feed: melbourne
 meetupcom_group: OpenTechSchool-Melbourne
-twitter: false
-widget_id: false
+twitter: OTS_AU
+widget_id: 393411216825016320
 ---
 
 ## About
