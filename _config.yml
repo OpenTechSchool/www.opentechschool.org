@@ -1,7 +1,22 @@
 url: www.opentechschool.org
 baseurl: /
 blog_domain: blog.opentechschool.org
-css_version: 3
+css_version: 4
 
 encoding: UTF-8
 exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock']
+
+members:
+  Melbourne:
+    - name: Steven Farlie
+      email: steven@opentechschool.org
+      img: steven.jpg
+    - name: Matthew Iversen
+      email: matthew@opentechschool.org
+      img: matthew.jpg
+    - name: Angus Gratton
+      email: angus@opentechschool.org
+      img: angus.jpg
+    - name: Lilly Ryan
+      email: lilly@opentechschool.org
+      img: lilly.jpg

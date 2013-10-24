@@ -6,13 +6,21 @@ title: Material
 
 ## About the Material
 
-All OpenTechSchool Material is open sourced under the [Creative Commons ShareAlike Attribution](http://creativecommons.org/licenses/by-sa/3.0/) as described in our [values]({{site.baseurl}}about.html#core_values).
+All OpenTechSchool Material is open sourced under the
+[Creative Commons ShareAlike Attribution][CC-SA] as described in our [values].
 
 ## Learning Material
 
+Check out our new portal for all our newest workshops -
+**[learn.opentechschool.org]**!
+
+[CC-SA]: http://creativecommons.org/licenses/by-sa/3.0/
+[values]: {{site.baseurl}}about.html#core_values
+[learn.opentechschool.org]: http://learn.opentechschool.org
+
 ### Python
 
-**See our [Python portal](http://python.opentechschool.org/) for all material,** or [discuss it](https://github.com/OpenTechSchool/python/wiki) online. 
+**See our [Python portal] for all material,** or [discuss it][python-discuss] online. 
 
 Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
@@ -23,6 +31,12 @@ Have a good idea about a Python Workshop? Join the [python coaches group](https:
 
 Want more Javascript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
+### Web Development
+ * [Intro to HTML & CSS][HTMLCSS]
+
+### Git
+ * [Social coding with GitHub][social-git]
+
 ### Ruby
  * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further material](http://railsgirls.com/materials)
 
@@ -31,14 +45,15 @@ Want more Javascript and have an idea for a Workshop? Join the [javascript coach
 
 Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
 
-### Git
- * [Social coding with GitHub](http://opentechschool.github.io/social-coding/)
- * Coming up: Advanced Git
-
 ## Upcoming
 
-### Math-3D
- * Coming up
+### Web development
+ * Advanced CSS
 
-### Design
- * Coming up
+### Git
+ * Advanced Git
+
+[Python portal]: http://python.opentechschool.org
+[python-discuss]: https://github.com/OpenTechSchool/python/wiki
+[HTMLCSS]: http://opentechschool.github.io/html-css-beginners/
+[social-git]: http://opentechschool.github.io/social-coding/

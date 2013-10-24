@@ -238,6 +238,10 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .dropdown.open .dropdown_menu li:first-child a { border: none; }
 
 /* Styles specific for city template */
+.team_title { margin: 0 0 50px 50px; }
+
+.team_twitter { display: block; margin: 15px auto; width: 522px; }
+
 .member_count { display: block; font-size: .666em; }
 
 .tagline { font-size: 35px; line-height: 1.2; margin-bottom: 1em; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
