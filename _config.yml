@@ -4,3 +4,4 @@ blog_domain: blog.opentechschool.org
 css_version: 3
 
 encoding: UTF-8
+exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock']
