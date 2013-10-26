@@ -20,3 +20,13 @@ members:
     - name: Lilly Ryan
       email: lilly@opentechschool.org
       img: lilly.jpg
+  Nairobi:
+    - name: Martha Chumo
+      email: martha@opentechschool.org
+      img: martha.jpg
+    - name: Shiko Kimani
+      email: shiko@opentechschool.org
+      img: shiko.jpg
+    - name: Timothy
+      email: timothy@opentechschool.org
+      img: timothy.jpg
