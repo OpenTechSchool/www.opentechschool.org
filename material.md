@@ -47,10 +47,10 @@ Arduino wants your love and help in developing further materials. Join the [ardu
 
 ## Upcoming
 
-### Web development
+### Web Development {#upcoming_web_development}
  * Advanced CSS
 
-### Git
+### Git {#upcoming_git}
  * Advanced Git
 
 [Python portal]: http://python.opentechschool.org

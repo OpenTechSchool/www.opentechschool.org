@@ -10,14 +10,15 @@
     <div class="logo_top_bar">
       <a href="{{site.baseurl}}">OpenTechSchool</a>
       <div class="dropdown">
-        <a class="dropdown_toggle" data-toggle="dropdown" href="#">
-        {% if page.layout == "city" %}
+        <a id="city_dropdown" class="dropdown_toggle" data-toggle="dropdown" href="#">
+        {% if page.layout == "city" or page.layout == "city_new" %}
           <b class="city">{{page.title}}</b>
         {% else %}
           <b class="city">Location</b>
         {% endif %}
-        <b class="caret"></b></a>
-        <ul class="dropdown_menu" role="menu" aria-labelledby="dLabel">
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
           <li>
             <a tabindex="-1" href="{{site.baseurl}}berlin/" title="Berlin, Germany">Berlin</a>
           </li>
