@@ -1,7 +1,7 @@
 {% include _head.html %}
 {% include _main_nav.html %}
 
-<header class="site_header site_header_img site_header_{{page.class}}">
+<header class="site_header site_header_img site_header_{{page.title | downcase}}">
   <div class="container">
 
     <div class="city_title">
@@ -40,7 +40,7 @@
       <section id="events" class="bg_full">
         <h2>
           Upcoming events
-          <a href="webcal://www.meetup.com/opentechschool-{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
+          <a href="webcal://www.meetup.com/{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
         </h2>
         {% if page.custom_events %}
           {{page.custom_events}}

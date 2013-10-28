@@ -1,7 +1,6 @@
 ---
 layout: city_new
 title: Melbourne
-class: "melbourne"
 tagline: "Great learning is achieved with great coffee!"
 rss_feed: melbourne
 meetupcom_group: OpenTechSchool-Melbourne

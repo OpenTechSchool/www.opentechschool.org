@@ -1,7 +1,6 @@
 ---
 layout: city_new
 title: Nairobi
-class: "nairobi"
 tagline: "When nature and tech had a baby, Nairobi was born"
 rss_feed: nairobi
 meetupcom_group: OpenTechSchool-Nairobi
