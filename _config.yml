@@ -7,6 +7,19 @@ encoding: UTF-8
 exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock']
 
 members:
+  Dortmund:
+    - name: Carsten
+      email: carsten@opentechschool.org
+      img: carsten.jpg
+    - name: Hendrik
+      email: hendrik@opentechschool.org
+      img: hendrik.jpg
+    - name: Leif
+      email: leif@opentechschool.org
+      img: leif.jpg
+    - name: Ola
+      email: ola@opentechschool.org
+      img: ola.jpg
   Melbourne:
     - name: Steven Farlie
       email: steven@opentechschool.org
