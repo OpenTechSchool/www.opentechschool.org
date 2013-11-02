@@ -51,6 +51,16 @@ members:
     - name: Ola
       email: ola@opentechschool.org
       img: ola.jpg
+  Hamburg:
+    - name: Diana
+      email: diana@opentechschool.org
+      img: diana.jpg
+    - name: Marie
+      email: marie@opentechschool.org
+      img: marie.jpg
+    - name: Philipp
+      email: phil@opentechschool.org
+      img: philipp.jpg
   Melbourne:
     - name: Steven Farlie
       email: steven@opentechschool.org
