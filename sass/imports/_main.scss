@@ -307,6 +307,31 @@ ul.switch_lang {
   height: 8em;
   text-align: center;
   }
+  > li.join {
+    div {
+      display: inline-block;
+      border: 5px solid #eee;
+      border-radius: 100%;
+      width: 190px;
+      height: 190px;
+      position: relative;
+
+      form {
+        position: absolute;
+        top: 50%;
+        margin-top: -13px;
+        font-size: 90%;
+
+        input#subscribe_email {
+          width: 180px;
+          height: 22px;
+          padding: 2px;
+          margin-bottom: 3px;
+          border: 1px solid gray;
+        }
+      }
+    }
+  }
   > li:before {
     display: none !important;
   }

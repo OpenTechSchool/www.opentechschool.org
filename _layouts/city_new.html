@@ -93,6 +93,18 @@
         <p>{{member.email}}</p>
       </li>
       {% endfor %}
+      {% if page.mailing_list %}
+      <li class="join">
+        <div>
+          <form action="https://groups.google.com/a/opentechschool.org/group/{{ page.mailing_list }}/boxsubscribe">
+            <input type="text" id="subscribe_email" name="email" placeholder="your@email">
+            <input type="submit" name="sub" value="Subscribe">
+          </form>
+        </div>
+        <h3>You?</h3>
+        <p>{{ page.mailing_list }}@opentechschool.org</p>
+      </li>
+      {% endif %}
     </ul>
     {% if page.twitter %}
     <div class="team_twitter">
