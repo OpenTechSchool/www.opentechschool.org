@@ -1,7 +1,7 @@
 {% include _head.html %}
 {% include _main_nav.html %}
 
-<header class="site_header site_header_img site_header_{{page.title | downcase}}">
+<header class="site_header site_header_img site_header_{% if page.class %}{{ page.class }}{% else %}{{page.title | downcase}}{% endif %}">
   <div class="container">
 
     <div class="city_title">
