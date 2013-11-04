@@ -84,3 +84,16 @@ members:
     - name: Timothy
       email: timothy@opentechschool.org
       img: timothy.jpg
+  Zurich:
+    - name: Robert Lehmann
+      email: robert@opentechschool.org
+      img: robert.jpg
+    - name: Ale Rimoldi
+      email: ale@opentechschool.org
+      img: ale.jpg
+    - name: Alan Frei
+      email: alan@opentechschool.org
+      img: alan.jpg
+    - name: Marc Egli
+      email: marc@opentechschool.org
+      img: marc.jpg
