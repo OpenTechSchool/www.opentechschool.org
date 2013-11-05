@@ -1,5 +1,5 @@
 ---
-layout: city_new
+layout: city
 title: Melbourne
 tagline: "Great learning is achieved with great coffee!"
 rss_feed: melbourne

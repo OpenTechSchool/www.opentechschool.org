@@ -1,5 +1,5 @@
 ---
-layout: city_new
+layout: city
 title: Berlin
 tagline: "Where everything started... and you can take a ride in a rotating TV tower"
 rss_feed: berlin

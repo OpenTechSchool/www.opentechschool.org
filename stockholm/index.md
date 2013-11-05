@@ -1,5 +1,5 @@
 ---
-layout: city_new
+layout: city
 title: Stockholm
 tagline: "Where kanelbullar and köttbullar come from"
 rss_feed: stockholm

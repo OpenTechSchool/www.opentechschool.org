@@ -1,5 +1,5 @@
 ---
-layout: city_new
+layout: city
 title: Ramallah
 tagline: "freedom is our dream .... learning is our passion"
 rss_feed: ramallah

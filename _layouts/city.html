@@ -1,7 +1,7 @@
 {% include _head.html %}
 {% include _main_nav.html %}
 
-<header class="site_header site_header_img site_header_{{page.class}}">
+<header class="site_header site_header_img site_header_{% if page.class %}{{ page.class }}{% else %}{{page.title | downcase}}{% endif %}">
   <div class="container">
 
     <div class="city_title">
@@ -28,10 +28,7 @@
 
 <section class="bg_full bg_full_white about">
   <div class="container container_narrow">
-    <h2>About</h2>
-    <p>
-      {{page.about}}
-    </p>
+    {{content}}
   </div>
 </section>
 
@@ -86,7 +83,37 @@
 
 <section class="bg_full bg_full_white">
   <div class="container container_wide">
-    {{content}}
+    <h2 class="team_title">Team {{page.title}}</h2>
+    <ul class="float_list float_list_4 team_list">
+      {% for member in site.members[page.title] %}
+      <li class="member">
+        <img src="{{site.baseurl}}images/team/{{member.img}}"
+        alt="{{member.name}}">
+        <h3>{{member.name}}</h3>
+        <p>{{member.email}}</p>
+      </li>
+      {% endfor %}
+      {% if page.mailing_list %}
+      <li class="join">
+        <div>
+          <form action="https://groups.google.com/a/opentechschool.org/group/{{ page.mailing_list }}/boxsubscribe">
+            <input type="text" class="subscribe_email" name="email" placeholder="your@email">
+            <input type="submit" name="sub" value="Subscribe">
+          </form>
+        </div>
+        <h3>You?</h3>
+        <p>{{ page.mailing_list }}@opentechschool.org</p>
+      </li>
+      {% endif %}
+    </ul>
+    {% if page.twitter %}
+    <div class="team_twitter">
+      <a class="twitter-timeline"
+        href="https://twitter.com/{{page.twitter}}"
+        data-widget-id="{{page.widget_id}}">Tweets by @{{page.twitter}}</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    {% endif %}
   </div>
 </section>
 
