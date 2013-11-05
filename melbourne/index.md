@@ -6,6 +6,7 @@ rss_feed: melbourne
 meetupcom_group: OpenTechSchool-Melbourne
 twitter: OTS_AU
 widget_id: 393411216825016320
+mailing_list: discuss.australia
 ---
 
 ## About
