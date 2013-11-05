@@ -91,6 +91,19 @@ members:
     - name: Maymoona
       email: maymoona@opentechschool.org
       img: maymoona.jpg
+  Stockholm:
+    - name: Hanna Kulin
+      email: hanna@opentechschool.org
+      img: hanna.jpg
+    - name: Liga Viskinte
+      email: liga@opentechschool.org
+      img: liga.jpg
+    - name: Nader Al-Ghazu
+      email: nader@opentechschool.org
+      img: nader.jpg
+    - name: Soares Chen
+      email: soares@opentechschool.org
+      img: soares.jpg
   Zürich:
     - name: Robert Lehmann
       email: robert@opentechschool.org
