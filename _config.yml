@@ -84,6 +84,13 @@ members:
     - name: Timothy
       email: timothy@opentechschool.org
       img: timothy.jpg
+  Ramallah:
+    - name: Hosam
+      email: hosam@opentechschool.org
+      img: hosam.jpg
+    - name: Maymoona
+      email: maymoona@opentechschool.org
+      img: maymoona.jpg
   Zürich:
     - name: Robert Lehmann
       email: robert@opentechschool.org
