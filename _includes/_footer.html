@@ -5,37 +5,19 @@
         <li>
           <h3>OTS in your city</h3>
           <ul>
+            {% for city in site.cities %}
+            {% if city.page %}
             <li>
-              <a href="{{site.baseurl}}berlin/" title="Berlin, Germany">Berlin</a>
+              <a href="{{site.baseurl}}{{city.page}}" 
+                title="{{city.location}}">{{city.title}}</a>
             </li>
+            {% else if city.meetup %}
             <li>
-              <a href="{{site.baseurl}}dortmund/" title="Dortmund, Germany">Dortmund</a>
+              <a href="{{city.meetup}}" 
+                title="{{city.location}}">{{city.title}}</a>
             </li>
-            <li>
-              <a href="{{site.baseurl}}hamburg/" title="Hamburg, Germany">Hamburg</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}melbourne/" title="Melbourne, Australia">Melbourne</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}nairobi/" title="Nairobi, Kenya">Nairobi</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}ramallah/" title="Ramallah, West-Bank">Ramallah</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}stockholm/" title="Stockholm, Sweden">Stockholm</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}zurich/" title="Zurich, Switzerland">Zürich</a>
-            </li>
-             <!-- Communities without dedicated pages but with meetup groups -->
-            <li>
-              <a href="http://www.meetup.com/opentechschool-tel-aviv/" target="_blank" title="Tel-Aviv, Israel">Tel-Aviv</a>
-            </li>
-            <li>
-              <a href="http://www.meetup.com/opentechschool-brussels/" target="_blank" title="Brussels, Belgium">Brussels</a>
-            </li>
+            {% endif %}
+            {% endfor %}
             <li>&nbsp;</li>
             <li>
               <a href="{{site.baseurl}}handbooks/city-blueprint.html">Your City?</a>

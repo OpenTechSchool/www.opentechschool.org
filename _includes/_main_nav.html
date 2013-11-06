@@ -19,30 +19,14 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
+          {% for city in site.cities %}
+          {% if city.page %}
           <li>
-            <a tabindex="-1" href="{{site.baseurl}}berlin/" title="Berlin, Germany">Berlin</a>
+            <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" 
+              title="{{city.location}}">{{city.title}}</a>
           </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}dortmund/" title="Dortmund, Germany">Dortmund</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}hamburg/" title="Hamburg, Germany">Hamburg</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}melbourne/" title="Melbourne, Australia">Melbourne</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}nairobi/" title="Nairobi, Kenya">Nairobi</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}ramallah/" title="Ramallah, West-Bank">Ramallah</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}stockholm/" title="Stockholm, Sweden">Stockholm</a>
-          </li>
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}zurich/" title="Zurich, Switzerland">Zürich</a>
-          </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>

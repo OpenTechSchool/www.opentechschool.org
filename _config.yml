@@ -6,6 +6,38 @@ css_version: 5
 encoding: UTF-8
 exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock']
 
+cities:
+  - title: Berlin
+    location: "Berlin, Germany"
+    page: berlin/
+  - title: Brussels
+    location: "Brussels, Belgium"
+    meetup: http://www.meetup.com/opentechschool-brussels/
+  - title: Dortmund
+    location: "Dortmund, Germany"
+    page: dortmund/
+  - title: Hamburg
+    location: "Hamburg, Germany"
+    page: hamburg/
+  - title: Melbourne
+    location: "Melbourne, Australia"
+    page: melbourne/
+  - title: Nairobi
+    location: "Nairobi, Kenya"
+    page: nairobi/
+  - title: Ramallah
+    location: "Ramallah, West-Bank"
+    page: ramallah/
+  - title: Stockholm
+    location: "Stockholm, Sweden"
+    page: stockholm/
+  - title: Tel-Aviv
+    location: "Tel-Aviv, Isreal"
+    meetup: http://www.meetup.com/opentechschool-tel-aviv/
+  - title: Zürich
+    location: "Zürich, Switzerland"
+    page: zurich/
+
 members:
   Berlin:
     - name: Aleks
