@@ -19,14 +19,11 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
-          {% for city in site.cities %}
-          {% if city.page %}
+          {% for city in site.cities %}{% if city.page %}
           <li>
-            <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" 
-              title="{{city.location}}">{{city.title}}</a>
+            <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
           </li>
-          {% endif %}
-          {% endfor %}
+          {% endif %}{% endfor %}
         </ul>
       </div>
     </div>
