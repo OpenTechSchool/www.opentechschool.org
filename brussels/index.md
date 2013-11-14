@@ -15,7 +15,7 @@ Through OpenTechSchool we offer free workshops about new technologies for <b>eve
 
 The sprout of OTS Brussels lays in a bitcoin-meeting and rooted further in the hackerspace HSBXL. 
 
-It breathes the spirit of freedom and sharing in an open environment through empowerment and reaching out by crowd sourced, self-directed education."
+Our main aim is to reach out, to empower individuals from any background. We want to give people the skills to realise their own projects, would they be entrepreneur, artist, in reinsertion, makers or just curious!
 ---
 
 <h2 style="margin: 0 0 50px 50px;">Team Brussels</h2>
