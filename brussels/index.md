@@ -37,6 +37,7 @@ It breathes the spirit of freedom and sharing in an open environment through emp
   </li>
 
   <li class="member">
+    <img src="{{site.baseurl}}/images/team/nino.png" alt="Nino" title="Nino">
     <h3>Nino Bosteels</h3>
   </li>
 
