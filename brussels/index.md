@@ -23,11 +23,12 @@ It breathes the spirit of freedom and sharing in an open environment through emp
 <ul class="float_list float_list_4 team_list">
 
   <li class="member">
+    <img src="{{site.baseurl}}/images/team/roman.jpg" alt="Roman" title="Roman">
     <h3>Roman Miletitch</h3>    
   </li>
 
   <li class="member">
-    <h3>Hugo Hether</h3>    
+    <h3>Hugo Herter</h3>    
   </li>
 
   <li class="member">
