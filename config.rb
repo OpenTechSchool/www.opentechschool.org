@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "http://opentechschool-brussels.github.io/www.opentechschool.org"
+http_path = "http://www.opentechschool.org"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"
