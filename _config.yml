@@ -12,7 +12,7 @@ cities:
     page: berlin/
   - title: Brussels
     location: "Brussels, Belgium"
-    meetup: http://www.meetup.com/opentechschool-brussels/
+    page: brussels/
   - title: Dortmund
     location: "Dortmund, Germany"
     page: dortmund/
@@ -70,6 +70,14 @@ members:
     - name: Stephan Klinger
       email: staeff@opentechschool.org
       img: stephan.jpg
+  Brussels:
+    - name: Roman Miletitch
+      img: roman.jpg
+    - name: Hugo Herter
+    - name: Friedger Müffke
+      img: friedger.jpg
+    - name: Nino Bosteels
+      img: nino.png    
   Dortmund:
     - name: Carsten
       email: carsten@opentechschool.org
