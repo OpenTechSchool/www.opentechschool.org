@@ -141,7 +141,7 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 .team_list > li { min-height: 8em; height: auto !important; height: 8em; text-align: center; }
 .team_list > li.join div { display: inline-block; border: 5px solid #eee; border-radius: 100%; width: 190px; height: 190px; position: relative; }
 .team_list > li.join div form { position: absolute; top: 50%; margin-top: -13px; font-size: 90%; }
-.team_list > li.join div form input#subscribe_email { width: 180px; height: 22px; padding: 2px; margin-bottom: 3px; border: 1px solid gray; }
+.team_list > li.join div form input.subscribe_email { width: 180px; height: 22px; padding: 2px; margin-bottom: 3px; border: 1px solid gray; }
 .team_list > li:before { display: none !important; }
 .team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; }
 .team_list h3 { font-size: 1em; }
@@ -252,6 +252,8 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .site_header_img { color: #085987; background-size: 768px; background-repeat: no-repeat; }
 
 .site_header_berlin { background-image: url(../images/bg_berlin.jpg); background-position: 40% 60%; }
+
+.site_header_brussels { background-image: url(../images/bg_brussels.jpg); background-position: 40% 60%; }
 
 .site_header_dortmund { background-image: url(../images/bg_dortmund.jpg); background-position: 0% 70%; }
 
