@@ -93,6 +93,9 @@ members:
     - name: Philipp
       email: phil@opentechschool.org
       img: philipp.jpg
+    - name: Fabian
+      email: fabian@opentechschool.org
+      img: fabian.jpg
   Melbourne:
     - name: Steven Farlie
       email: steven@opentechschool.org
