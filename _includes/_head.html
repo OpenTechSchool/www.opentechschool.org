@@ -6,10 +6,9 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>OpenTechSchool – {{ page.title }}</title>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' 
-  rel='stylesheet' type='text/css' />
 
   <meta name="description" content="OpenTechSchool is a community initiative to
   provide programming and other tech-related workshops to women and their
@@ -22,9 +21,9 @@
   <meta name="author" content="OpenTechSchool">
   <meta property="og:title" content="OpenTechSchool" />
   <meta property="og:type" content="school" />
-  <meta property="og:url" content="http://{{site.url}}" />
-  <meta property="og:image" content="http://{{site.url}}/images/ots_logo_fb.jpg" />
-  <meta property="og:site_name" content="opentechschool.org" />
+  <meta property="og:url" content="http://{{ site.url }}" />
+  <meta property="og:image" content="http://{{ site.url }}/images/ots_logo_fb.jpg" />
+  <meta property="og:site_name" content="{{ site.url }}" />
   <meta property="og:description" content="OpenTechSchool is a community
   initiative to provide programming and other tech-related workshops to women
   and their friends of all genders. We take care of the organizational side of
@@ -35,8 +34,7 @@
   invited to participate, whether as a coach or a learner." /> 
   <meta property="fb:admins" content="825782113" />
 
-  <link rel="icon" href="{{site.baseurl}}favicon.ico" type="image/png">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico" />
 
   <style>
     article, aside, dialog, figure, footer, header,
@@ -44,13 +42,14 @@
   </style>
   <link href="{{site.baseurl}}stylesheets/screen.css?v={{site.css_version}}" 
   media="screen, projection" rel="stylesheet" type="text/css" />
-  <!-- CSS concatenated and minified via ant build script-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="{{site.baseurl}}stylesheets/ie.css" type="text/css" media="screen" /><![endif]-->
-
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" 
+  rel="stylesheet" type="text/css" />
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="{{site.baseurl}}stylesheets/ie.css" type="text/css" media="screen" />
+  <![endif]-->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <!-- end CSS-->
   <script type="text/javascript">
   if(!window.$) {
     window.__call_laters = [];
@@ -61,5 +60,4 @@
   }
   </script>
 </head>
-
 <body>
