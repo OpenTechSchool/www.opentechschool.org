@@ -1,38 +1,38 @@
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
   if(window.__call_laters && window.__call_laters.length) {
     $.each(window.__call_laters, function(idx, fun) {
       $(fun);
     });
   }
-  </script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
-  <script>
-    window.OTS = window.OTS || {};
-    OTS.template = function(name, data) {
-      var templateString = $('script[data-template=' + name + ']').html();
-      !templateString && console.error('empty or non-existing template "' + name + '"');
-      templateString = $.trim(templateString);
-      var replacer = function(match, key) {
-        return data[key];
-      }
-      templateString = templateString.replace(/\$\{([^\s\:\}]+)(?:\:([^\s\:\}]+))?\}/g, replacer);
-      return templateString;
+</script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
+<script>
+  window.OTS = window.OTS || {};
+  OTS.template = function(name, data) {
+    var templateString = $('script[data-template=' + name + ']').html();
+    !templateString && console.error('empty or non-existing template "' + name + '"');
+    templateString = $.trim(templateString);
+    var replacer = function(match, key) {
+      return data[key];
     }
-  </script>
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33344154-1']);
-    _gaq.push(['_trackPageview']);
+    templateString = templateString.replace(/\$\{([^\s\:\}]+)(?:\:([^\s\:\}]+))?\}/g, replacer);
+    return templateString;
+  }
+</script>
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33344154-1']);
+  _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

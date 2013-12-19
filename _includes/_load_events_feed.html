@@ -1,5 +1,5 @@
 {% if page.meetupcom_group %}
-  <script type="text/javascript">
+<script type="text/javascript">
   var meetupcom_key = '38406b383fa43605b6b234269316';
   $.getJSON('https://api.meetup.com/2/events?callback=?', {
     key: meetupcom_key,
@@ -33,6 +33,5 @@
     $('#js-meetup-members').html(group.members);
     $('#js-meetup-who').html(group.who);
   });
-
-  </script>
+</script>
 {% endif %}

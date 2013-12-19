@@ -7,7 +7,7 @@ title: Team
   <div class="container container_wide">
 
    <ul class="float_list float_list_4 team_list">
-   {% for city in site.members %}
+   {% for city in site.data.members %}
      {% for member in city[1] %}
      <li class="member">
        <img src="{{site.baseurl}}images/team/{{member.img}}" alt="{{member.name}}">

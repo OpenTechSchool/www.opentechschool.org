@@ -1,0 +1,121 @@
+Berlin:
+  - name: Aleks
+    email: aleks@opentechschool.org
+    img: aleks.jpg
+  - name: Beatrice Martini
+    email: beatrice@opentechschool.org
+    img: beatrice.jpg
+  - name: Amélie Anglade
+    email: amelie@opentechschool.org
+    img: amelie.jpg
+  - name: Duana Stanley
+    email: duana@opentechschool.org
+    img: duana.jpg
+  - name: Giorgia Sambrotta
+    email: giorgia@opentechschool.org
+    img: giorgia.jpg
+  - name: Simon Jockers
+    email: simon@opentechschool.org
+    img: simon.jpg
+  - name: Karla Schönicke
+    email: karla@opentechschool.org
+    img: karla.jpg
+  - name: Martin Stadler
+    email: martin@opentechschool.org
+    img: martin.jpg
+  - name: Rachel Uwa
+    email: rachel@opentechschool.org
+    img: rachel.jpg
+  - name: Stephan Klinger
+    email: staeff@opentechschool.org
+    img: stephan.jpg
+Brussels:
+  - name: Roman Miletitch
+    img: roman.jpg
+  - name: Hugo Herter
+  - name: Friedger Müffke
+    img: friedger.jpg
+  - name: Nino Bosteels
+    img: nino.png    
+Dortmund:
+  - name: Carsten
+    email: carsten@opentechschool.org
+    img: carsten.jpg
+  - name: Hendrik
+    email: hendrik@opentechschool.org
+    img: hendrik.jpg
+  - name: Leif
+    email: leif@opentechschool.org
+    img: leif.jpg
+  - name: Ola
+    email: ola@opentechschool.org
+    img: ola.jpg
+Hamburg:
+  - name: Diana
+    email: diana@opentechschool.org
+    img: diana.jpg
+  - name: Marie
+    email: marie@opentechschool.org
+    img: marie.jpg
+  - name: Philipp
+    email: phil@opentechschool.org
+    img: philipp.jpg
+  - name: Fabian
+    email: fabian@opentechschool.org
+    img: fabian.jpg
+Melbourne:
+  - name: Steven Farlie
+    email: steven@opentechschool.org
+    img: steven.jpg
+  - name: Matthew Iversen
+    email: matthew@opentechschool.org
+    img: matthew.jpg
+  - name: Angus Gratton
+    email: angus@opentechschool.org
+    img: angus.jpg
+  - name: Lilly Ryan
+    email: lilly@opentechschool.org
+    img: lilly.jpg
+Nairobi:
+  - name: Martha Chumo
+    email: martha@opentechschool.org
+    img: martha.jpg
+  - name: Shiko Kimani
+    email: shiko@opentechschool.org
+    img: shiko.jpg
+  - name: Timothy
+    email: timothy@opentechschool.org
+    img: timothy.jpg
+Ramallah:
+  - name: Hosam
+    email: hosam@opentechschool.org
+    img: hosam.jpg
+  - name: Maymoona
+    email: maymoona@opentechschool.org
+    img: maymoona.jpg
+Stockholm:
+  - name: Hanna Kulin
+    email: hanna@opentechschool.org
+    img: hanna.jpg
+  - name: Liga Viskinte
+    email: liga@opentechschool.org
+    img: liga.jpg
+  - name: Nader Al-Ghazu
+    email: nader@opentechschool.org
+    img: nader.jpg
+  - name: Soares Chen
+    email: soares@opentechschool.org
+    img: soares.jpg
+Zürich:
+  - name: Robert Lehmann
+    email: robert@opentechschool.org
+    img: robert.jpg
+  - name: Ale Rimoldi
+    email: ale@opentechschool.org
+    img: ale.jpg
+  - name: Alan Frei
+    email: alan@opentechschool.org
+    img: alan.jpg
+  - name: Marc Egli
+    email: marc@opentechschool.org
+    img: marc.jpg

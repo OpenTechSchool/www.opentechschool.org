@@ -1,9 +1,7 @@
 {% include _head.html %}
 {% include _main_nav.html %}
-
 <header class="site_header site_header_img site_header_{% if page.class %}{{ page.class }}{% else %}{{page.title | downcase}}{% endif %}">
   <div class="container">
-
     <div class="city_title">
       <h1>
         <a href="{{site.baseurl}}{{page.title | downcase}}/">{{page.title}}</a>
@@ -21,8 +19,6 @@
         <span class="member_count"><span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span></span>
       </a>
     </div>
-
-
   </div>
 </header>
 
@@ -33,7 +29,6 @@
 </section>
 
 <div class="bg_full">
-
   <div class="container container_narrow">
     <div class="col_left">
       <section id="events" class="bg_full">
@@ -76,16 +71,14 @@
         </script>
       </section>
     </div>
-
   </div>
-
 </div>
 
 <section class="bg_full bg_full_white">
   <div class="container container_wide">
     <h2 class="team_title">Team {{page.title}}</h2>
     <ul class="float_list float_list_4 team_list">
-      {% for member in site.members[page.title] %}
+      {% for member in site.data.members[page.title] %}
       <li class="member">
         <img src="{{site.baseurl}}images/team/{{member.img}}"
         alt="{{member.name}}">
@@ -116,7 +109,6 @@
     {% endif %}
   </div>
 </section>
-
 {% include _footer.html %}
 {% include _scripts.html %}
 {% include _load_blog_feed.html %}

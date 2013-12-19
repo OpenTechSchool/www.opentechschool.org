@@ -1,12 +1,10 @@
 <nav class="top_bar" data-spy="affix" data-offset-top="20">
   <div class="container container_wide">
-
     <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
       <span class="icon_bar"></span>
       <span class="icon_bar"></span>
       <span class="icon_bar icon_bar_last"></span>
     </button>
-
     <div class="logo_top_bar">
       <a href="{{site.baseurl}}">OpenTechSchool</a>
       <div class="dropdown">
@@ -19,7 +17,7 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
-          {% for city in site.cities %}{% if city.page %}
+          {% for city in site.data.cities %}{% if city.page %}
           <li>
             <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
           </li>
@@ -27,7 +25,6 @@
         </ul>
       </div>
     </div>
-
     <ul class="nav nav_internal collapse">
       <li>
         <a href="{{site.baseurl}}about.html">About</a>
@@ -61,8 +58,6 @@
         </ul>
       </li>
     </ul>
-
     <div class="clearfix"></div>
-
   </div>
 </nav>

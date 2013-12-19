@@ -1,12 +1,10 @@
 {% include _head.html %}
 {% include _main_nav.html %}
-
 <header class="site_header">
   <div class="container container_wide">
     <h1>
       {{page.title}}
     </h1>
-
     <div id="testimonial-carousel" class="carousel carousel_testimonial slide">
       <!-- Carousel items -->
       <div class="carousel-inner">
@@ -36,18 +34,13 @@
       <a class="carousel-control left" href="#testimonial-carousel" data-slide="prev">&lsaquo;</a>
       <a class="carousel-control right" href="#testimonial-carousel" data-slide="next">&rsaquo;</a>
     </div>
-
   </div>
-
 </header>
-
-
 <section class="bg_full">
   <div class="container container_narrow">
     {{ content }}
   </div>
 </section>
-
 {% include _footer.html %}
 {% include _scripts.html %}
 {% include _end.html %}
