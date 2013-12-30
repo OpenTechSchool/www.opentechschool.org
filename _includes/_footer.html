@@ -5,19 +5,13 @@
         <li>
           <h3>OTS in your city</h3>
           <ul>
-            {% for city in site.cities %}
-            {% if city.page %}
+            {% for city in site.data.cities %}{% if city.page %}
             <li>
-              <a href="{{site.baseurl}}{{city.page}}" 
-                title="{{city.location}}">{{city.title}}</a>
+              <a href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
+            </li>{% else if city.meetup %}<li>
+              <a href="{{city.meetup}}" title="{{city.location}}">{{city.title}}</a>
             </li>
-            {% else if city.meetup %}
-            <li>
-              <a href="{{city.meetup}}" 
-                title="{{city.location}}">{{city.title}}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
+            {% endif %}{% endfor %}
             <li>&nbsp;</li>
             <li>
               <a href="{{site.baseurl}}handbooks/city-blueprint.html">Your City?</a>
