@@ -11,28 +11,53 @@ except ImportError:
     print "Please install py-gdata"
     sys.exit(1)
 
+from getpass import getpass
+
 import json
 import urllib2
 import html5lib
 import re
 
 GPLUS_RE = re.compile(r'.*data-plusonecount="(\d*?)".*')
+GROUPS = ('berlin', 'stockholm',
+          ("melbourne", "australia"), "zurich", "hamburg",
+           "dortmund", "tel-aviv", "ramallah", "brussels",
+           "nairobi")
 
 ERRORS = []
+
+TOTAL_STATS = {}
+
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('--domain', default="opentechschool.org")
 parser.add_argument('--email', default="ben@opentechschool.org")
 parser.add_argument('--password')
-parser.add_argument('--meetup-key')
+parser.add_argument('--meetup_key')
 
+parser.add_argument('--exclude-social-media', action="store_true")
+parser.add_argument('--exclude-meetups', action="store_true")
+parser.add_argument('--exclude-global-lists', action="store_true")
+parser.add_argument('--include-events', action="store_false")
+parser.add_argument('--group', action="append")
+parser.add_argument('--since', action="store")
 args = parser.parse_args()
 
 BASE_LINK = "https://groups.google.com/a/%s/forum/?fromgroups#!forum/" % args.domain
 
 password = args.password
 if not password:
-    password = raw_input("Password please: ")
+    password = getpass("Password please: ")
+
+
+def apply_stats(**stats):
+    global TOTAL_STATS
+
+    for key, value in stats.iteritems():
+        try:
+            TOTAL_STATS[key] += value
+        except KeyError:
+            TOTAL_STATS[key] = value
 
 
 def _list_all_members(group_client, group_id):
@@ -112,12 +137,38 @@ def get_groups_client():
     client.ClientLogin(email=args.email, password=password, source='apps')
     return client
 
+
+def get_meetup_events(group):
+    if not args.meetup_key:
+        return None
+
+    url ="https://api.meetup.com/2/events?&status=past&group_urlname={0}&page=1000&key={1}".format(group, args.meetup_key)
+    if args.since:
+        url += "&time={0},1m".format(args.since)
+
+    resp = urllib2.urlopen(url)    
+    results = json.loads(resp.read())["results"]
+
+    workshops = [x for x in results
+                if "workshop" in x["name"].lower() or "workshop" in x["description"].lower()]
+
+    workshops_count = len(workshops)
+    workshops_participants_count = sum([x["yes_rsvp_count"] for x in workshops])
+
+    total_participants_count = sum([x["yes_rsvp_count"] for x in results])
+
+    return {"total_events": len(results),
+            "total_workshops": workshops_count,
+            "total_events_participants": total_participants_count,
+            "total_workshops_participants": workshops_participants_count}
+
 def get_meetup_learners_count(group):
     if not args.meetup_key:
         return None
 
     resp = urllib2.urlopen("https://api.meetup.com/2/groups?group_urlname={0}&key={1}".format(group, args.meetup_key))    
     return json.loads(resp.read())["results"][0]["members"]
+
 
 
 def fetch_facebook_likes(account):
@@ -172,15 +223,17 @@ def compile_social_media():
     return total_followers
 
 def make_group_stats():
+    global TOTAL_STATS
     g_client = get_groups_client()
-    count_global = global_discuss_count(g_client)
-    count_coaches, count_topics = get_coaches_num(g_client)
-    count_team, count_chapters = get_team_num(g_client)
+    if not args.exclude_global_lists:
+        count_global = global_discuss_count(g_client)
+        count_coaches, count_topics = get_coaches_num(g_client)
+        count_team, count_chapters = get_team_num(g_client)
 
-    total_leaners = 0
+    groups = args.group or GROUPS
 
     print(" * Chapters :")
-    for chapter in ('berlin', 'stockholm', ("melbourne", "australia"), "zurich", "hamburg", "dortmund", "tel-aviv", "ramallah"):
+    for chapter in groups:
         if isinstance(chapter, tuple):
             chapter, team_list = chapter
         else:
@@ -188,16 +241,31 @@ def make_group_stats():
         learners_count = get_meetup_learners_count("opentechschool-{}".format(chapter)) or "N/A"
         team_members = _list_all_members(g_client, "team.{}@opentechschool.org".format(team_list))
 
-        total_leaners += learners_count
+        apply_stats(total_learners=learners_count)
 
-        print("    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count ))
+        to_print = "    * {}: Team of {} for {} learners ".format(chapter.title(), team_members and len(team_members) or "N/A", learners_count)
+
+        if True or args.include_events:
+            stats = get_meetup_events("opentechschool-{}".format(chapter))
+
+            apply_stats(**stats)
+
+            to_print += ": {total_events} ({total_events_participants}) events total, including at least {total_workshops} Workshops ({total_workshops_participants}) ".format(**stats)
+
+        print(to_print)
+
 
     print (" --------- ")
-    print ("Total of {} learners globally".format(total_leaners))
+    print ("Total of {} learners globally".format(TOTAL_STATS["total_learners"]))
+
+    if True or args.include_events:
+        print("Total of {total_events} ({total_events_participants}) events of which at least {total_workshops} were workshops ({total_workshops_participants})".format(**TOTAL_STATS))
 
 if __name__ == "__main__":
-    # make_group_stats()
-    compile_social_media()
+    if not args.exclude_meetups:
+        make_group_stats()
+    if not args.exclude_social_media:
+        compile_social_media()
     
 
     if ERRORS:
