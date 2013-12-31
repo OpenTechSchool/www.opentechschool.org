@@ -93,6 +93,13 @@ Ramallah:
   - name: Maymoona
     email: maymoona@opentechschool.org
     img: maymoona.jpg
+RheinMain:
+  - name: Darren
+    email: darren@opentechschool.org
+    img: darren.jpg
+  - name: Christoph
+    email: christoph@opentechscool.org
+    img: christoph.jpg
 Stockholm:
   - name: Hanna Kulin
     email: hanna@opentechschool.org

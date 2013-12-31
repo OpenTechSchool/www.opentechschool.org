@@ -255,6 +255,8 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .site_header_brussels { background-image: url(../images/bg_brussels.jpg); background-position: 0% 25%; }
 
+.site_header_rheinmain { background-image: url(../images/bg_rheinmain.jpg); background-position: 0% 30%; }
+
 .site_header_dortmund { background-image: url(../images/bg_dortmund.jpg); background-position: 0% 70%; }
 
 .site_header_hamburg { background-image: url(../images/bg_hamburg.jpg); background-position: 20% 10%; }
