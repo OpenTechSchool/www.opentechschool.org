@@ -19,6 +19,9 @@
 - title: Ramallah
   location: "Ramallah, West-Bank"
   page: ramallah/
+- title: RheinMain
+  location: "RheinMain, Germany"
+  page: rheinmain/
 - title: Stockholm
   location: "Stockholm, Sweden"
   page: stockholm/
@@ -28,6 +31,3 @@
 - title: Zürich
   location: "Zürich, Switzerland"
   page: zurich/
-- title: RheinMain
-  location: "RheinMain, Germany"
-  page: rheinmain/
