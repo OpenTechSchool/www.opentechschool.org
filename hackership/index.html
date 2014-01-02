@@ -1,0 +1,45 @@
+---
+layout: simple
+title: Hackership
+---
+
+
+<!-- <h3>Wall of Fame</h3> -->
+
+
+<h3>Pirates</h3>
+<p>The active supporters and fore-speakers of the Hackership crowd funding campaign. You also want to <a href="#become-a-pirate">become a Pirate? Click here.</a></p>
+
+<div class="pirates">
+    <ul class="float_list float_list_4 team_list">
+      {% for pirate in site.data.pirates %}
+      <li class="member">
+        <img src="{{pirate.image}}"
+        alt="{{pirate.name}}">
+        {% if pirate.url %}
+        	<h3><a href="{{pirate.url}}" target="_blank">{{pirate.name}}</a></h3>
+        {% else %}
+        	<h3>{{pirate.name}}</h3>
+        {% endif %}
+      </li>
+      {% endfor %}
+     </ul>
+</div>
+
+<h3>Donors</h3>
+
+<div class="donors">
+    <ul class="float_list float_list_4 team_list">
+      {% for donor in site.data.donors %}
+      <li class="member">
+        <img src="{{donor.image}}"
+        alt="{{donor.name}}">
+        {% if donor.url %}
+        	<h3><a href="{{donor.url}}" target="_blank">{{donor.name}}</a></h3>
+        {% else %}
+        	<h3>{{donor.name}}</h3>
+        {% endif %}
+      </li>
+      {% endfor %}
+     </ul>
+</div>
