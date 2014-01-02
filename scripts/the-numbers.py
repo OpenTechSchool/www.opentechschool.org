@@ -173,7 +173,7 @@ def get_meetup_learners_count(group):
 
 def fetch_facebook_likes(account):
     resp = urllib2.urlopen("http://m.facebook.com/{}".format(account))
-    doc = html5lib.parse(resp.read())
+    doc = html5lib.parse(resp.read(), treebuilder="lxml")
     fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}span[@class="mfss fcg"]')
     if not fw_elem:
         ERRORS.append("Likes item not found for facebook account {}".format(account))
@@ -192,7 +192,7 @@ def fetch_google_plusses(account):
 
 def fetch_twitter_followers(account):
     resp = urllib2.urlopen("http://twitter.com/{}".format(account))
-    doc = html5lib.parse(resp.read())
+    doc = html5lib.parse(resp.read(), treebuilder="lxml")
     fw_elem = doc.find('.//{http://www.w3.org/1999/xhtml}a[@data-element-term="follower_stats"]')
     if not fw_elem:
         ERRORS.append("Follow item not found for twitter account {}".format(account))
