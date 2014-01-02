@@ -8,7 +8,6 @@ doc = html5lib.parse(resp.read(), treebuilder="lxml")
 divs = doc.findall(".//{http://www.w3.org/1999/xhtml}div")
 
 target = open("_data/donors.yml", "w")
-target.write("Donors:")
 
 def urlify(inp):
     if inp.startswith("/"):
@@ -18,8 +17,6 @@ def urlify(inp):
 for div in divs:
     attrs = dict(div.items())
     if not "pledge " in attrs.get("class", ""): continue
-
-    image = urlify(dict(div.find(".//{http://www.w3.org/1999/xhtml}img").items())["src"])
 
     span = div.find(".//{http://www.w3.org/1999/xhtml}span")
     if not span.getchildren():
@@ -32,9 +29,16 @@ for div in divs:
             pdb.set_trace()
         url = urlify(dict(span[0].items())["href"])
 
-    target.write("\n  - name: {0}".format(name.encode("utf-8")))
-    target.write("\n    image: {0}".format(image))
+
+    image_data = dict(div.find(".//{http://www.w3.org/1999/xhtml}img").items())
+    if image_data["alt"] == "Cubepeep":
+        image = "http://robohash.org/" + name
+    else:
+        image = image_data["src"]
+        
+    target.write("- name: {0}\n".format(name.encode("utf-8")))
+    target.write("  image: {0}\n".format(image))
     if url:
-        target.write("\n    url: {0}".format(url))
+        target.write("  url: {0}\n".format(url))
 
 target.close()
