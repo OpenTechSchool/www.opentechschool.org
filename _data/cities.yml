@@ -10,6 +10,9 @@
 - title: Hamburg
   location: "Hamburg, Germany"
   page: hamburg/
+- title: Hackership
+  location: "Hackership, Berlin, Germany"
+  page: hackership/
 - title: Melbourne
   location: "Melbourne, Australia"
   page: melbourne/
