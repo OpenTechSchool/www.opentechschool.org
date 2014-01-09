@@ -1,0 +1,45 @@
+---
+layout: simple
+title: Hackership
+---
+
+
+<!-- <h3>Wall of Fame</h3> -->
+
+
+<h3>Advocates</h3>
+<p>The active supporters and fore-speakers of the Hackership crowd funding campaign. Want to become an Advocate? <a href="http://blog.opentechschool.org/2014/01/announcing-opentechschool-hackership-advocates-programme.html">Read more on how to become an Advocate here</a>,</p>
+
+<div class="advocats">
+    <ul class="float_list float_list_4 team_list">
+      {% for advocate in site.data.advocates %}
+      <li class="member">
+        <img src="{{advocate.image}}"
+        alt="{{advocate.name}}">
+        {% if advocate.url %}
+        	<h3><a href="{{advocate.url}}" target="_blank">{{advocate.name}}</a></h3>
+        {% else %}
+        	<h3>{{advocate.name}}</h3>
+        {% endif %}
+      </li>
+      {% endfor %}
+     </ul>
+</div>
+
+<h3>Donors</h3>
+
+<div class="donors">
+    <ul class="float_list float_list_4 team_list">
+      {% for donor in site.data.donors %}
+      <li class="member">
+        <img src="{{donor.image}}"
+        alt="{{donor.name}}">
+        {% if donor.url %}
+        	<h3><a href="{{donor.url}}" target="_blank">{{donor.name}}</a></h3>
+        {% else %}
+        	<h3>{{donor.name}}</h3>
+        {% endif %}
+      </li>
+      {% endfor %}
+     </ul>
+</div>
