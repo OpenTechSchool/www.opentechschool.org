@@ -23,7 +23,7 @@ for div in divs:
         name = span.text
         url = ""
     else:
-        name = span[0].text
+        name = span[0].text.encode("latin-1").decode("utf-8")
         if isinstance(span[0], basestring):
             import pdb
             pdb.set_trace()
