@@ -35,7 +35,10 @@ for div in divs:
         image = "http://robohash.org/" + name
     else:
         image = image_data["src"]
-        
+
+    if name in ("Anonymous", "Anonymous Contributor"):
+        continue
+
     target.write("- name: {0}\n".format(name.encode("utf-8")))
     target.write("  image: {0}\n".format(image))
     if url:
