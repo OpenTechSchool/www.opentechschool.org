@@ -306,6 +306,10 @@ ul.switch_lang {
   height:auto !important;
   height: 8em;
   text-align: center;
+    &.member {
+          height: 220px !important; 
+          min-height: 220px; 
+    }
   }
   > li.join {
     div {
