@@ -69,6 +69,14 @@ a:hover, a:active, a:focus { color: #2fb0d5; text-decoration: none; outline: non
 /* buttons */
 .ots_action { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); background-color: #1f8ab6; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f8ab6), color-stop(50%, #1f8ab6), color-stop(51%, #085987), color-stop(100%, #1f8ab6)); background-image: -webkit-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%); background-image: -moz-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%); background-image: -o-linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%); background-image: linear-gradient(top, #1f8ab6 0%, #1f8ab6 50%, #085987 51%, #1f8ab6 100%); display: inline-block; border-radius: 4px; cursor: pointer; padding: .25em 1em; }
 
+.label-important { background-color: #e04c3e; }
+
+.label-info { background-color: #1f8ab6; }
+
+.label-ots { background-color: #085987; }
+
+.label { display: inline; padding: 0.2em 0.6em 0.3em; font-size: 75%; font-weight: bold; line-height: 1; color: #FFF; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25em; }
+
 a.ots_action, a.ots_action:link, a.ots_action:visited { color: #FFF; text-decoration: none; }
 
 a.ots_action:hover, a.ots_action:active, a.ots_action:focus { text-decoration: none; background: #2fb0d5; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fb0d5), color-stop(50%, #2fb0d5), color-stop(51%, #1f8ab6), color-stop(100%, #2fb0d5)); background-image: -webkit-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%); background-image: -moz-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%); background-image: -o-linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%); background-image: linear-gradient(top, #2fb0d5 0%, #2fb0d5 50%, #1f8ab6 51%, #2fb0d5 100%); }

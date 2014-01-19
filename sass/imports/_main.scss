@@ -71,6 +71,31 @@ a:focus {
   padding: .25em 1em;
 }
 
+.label-important {
+    background-color: $ots_red_l;
+}
+
+.label-info {
+    background-color: $ots_blue_l;
+}
+
+.label-ots {
+    background-color: $ots_blue;
+}
+
+.label {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #FFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+
 a.ots_action,
 a.ots_action:link,
 a.ots_action:visited {
