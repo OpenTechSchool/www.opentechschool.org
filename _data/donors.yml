@@ -1,3 +1,17 @@
+- name: Nick Schneble
+  image: http://images.indiegogo.com/individuals/616710/pictures/cubepeep/20130930034504-Profile_Photo.jpg?1380537906
+  url: http://www.indiegogo.com/individuals/616710
+- name: dguido
+  image: http://robohash.org/dguido
+- name: ellen45
+  image: http://images.indiegogo.com/individuals/999684/pictures/cubepeep/20140117071444-fb_neu.jpg?1389971686
+  url: http://www.indiegogo.com/individuals/999684
+- name: anoukruhaak
+  image: http://robohash.org/anoukruhaak
+  url: http://www.indiegogo.com/individuals/5840802
+- name: André Bernhardt
+  image: http://robohash.org/André Bernhardt
+  url: http://www.indiegogo.com/individuals/3848789
 - name: Alexander van der Berg
   image: http://robohash.org/Alexander van der Berg
   url: http://www.indiegogo.com/individuals/6046839
@@ -29,8 +43,8 @@
 - name: Justin Lorenzon
   image: http://robohash.org/Justin Lorenzon
   url: http://www.indiegogo.com/individuals/645383
-- name: strongcoffee2
-  image: http://robohash.org/strongcoffee2
+- name: Duana Stanley
+  image: http://images.indiegogo.com/individuals/1570196/pictures/cubepeep/20140120082221-yellow-avatar.jpeg?1390234944
   url: http://www.indiegogo.com/individuals/1570196
 - name: Joan Wolkerstorfer
   image: http://robohash.org/Joan Wolkerstorfer
@@ -50,6 +64,9 @@
   image: http://robohash.org/henryvw1
 - name: KathrynRotondo
   image: http://robohash.org/KathrynRotondo
+- name: anoukruhaak
+  image: http://robohash.org/anoukruhaak
+  url: http://www.indiegogo.com/individuals/5840802
 - name: mamhoff
   image: http://robohash.org/mamhoff
 - name: Josefina Petrus
@@ -64,7 +81,7 @@
 - name: lorenzo19
   image: http://robohash.org/lorenzo19
 - name: ellen45
-  image: http://robohash.org/ellen45
+  image: http://images.indiegogo.com/individuals/999684/pictures/cubepeep/20140117071444-fb_neu.jpg?1389971686
   url: http://www.indiegogo.com/individuals/999684
 - name: Julius Volz
   image: http://robohash.org/Julius Volz
