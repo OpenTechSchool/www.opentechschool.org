@@ -40,7 +40,7 @@ for div in divs:
         continue
 
     target.write("- name: {0}\n".format(name.encode("utf-8")))
-    target.write("  image: {0}\n".format(image))
+    target.write("  image: {0}\n".format(image.encode("utf-8")))
     if url:
         target.write("  url: {0}\n".format(url))
 
