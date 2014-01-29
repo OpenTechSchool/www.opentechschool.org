@@ -1,0 +1,59 @@
+---
+layout: full
+title: OpenTechSchool Locator
+---
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+ <style type="text/css" media="screen">
+   #map { height: 480px; }
+ </style>
+
+<div id="map"></div>
+
+<div class="container container_narrow">
+
+</div>
+
+
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+<script type="text/x-template" data-template="marker-popup">
+  <a href="${link}">${name}</a><br/>
+  <span>${members} Learners</span> in <span>${city}</span>
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    var map = L.map('map').setView([52.5167, 13.3833], 1),
+        meetupcom_key = '38406b383fa43605b6b234269316';
+
+  var tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+  maxZoom: 16
+});
+
+  tiles.addTo(map);
+
+  map.locate({setView: true, maxZoom: 5});
+  
+  var req = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
+    key: meetupcom_key,
+    sign: true,
+    text: 'opentechschool',
+    radius: 'global',
+    page: 200
+  });
+
+  req.then(function(data){
+    $.each(data.data, function(idx, group){
+      var marker = L.marker([group.lat, group.lon], {
+          title: group.name,
+
+        })
+        .addTo(map)
+        .bindPopup(OTS.template('marker-popup', group))
+    })
+  });
+
+});  
+</script>
