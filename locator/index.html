@@ -10,12 +10,21 @@ title: OpenTechSchool Locator
 <div id="map"></div>
 
 <div class="container container_narrow">
-
+  <div id="eventsList"></div>
 </div>
 
+<script type="text/x-template" data-template="event">
+    <p class="team">${</p>
+    <h3 class="post_title"><a href="${link}">${name}</a></h3>
+    <p class="date">
+      <span>${date}</span>
+    </p>
+    <p>${venue}</p> <!-- Venue as text -->
+</script>
 
 
-<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
 
 <script type="text/x-template" data-template="marker-popup">
   <a href="${link}">${name}</a><br/>
@@ -25,35 +34,134 @@ title: OpenTechSchool Locator
 <script type="text/javascript" charset="utf-8">
   $(function() {
     var map = L.map('map').setView([52.5167, 13.3833], 1),
-        meetupcom_key = '38406b383fa43605b6b234269316';
+        markers = [],
+        position_found = false;
+        meetupcom_key = '38406b383fa43605b6b234269316',
+        tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+                  maxZoom: 16
+                });
 
-  var tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-  maxZoom: 16
-});
+    tiles.addTo(map);
 
-  tiles.addTo(map);
+    function zoom_to_closest(){
 
-  map.locate({setView: true, maxZoom: 5});
-  
-  var req = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
-    key: meetupcom_key,
-    sign: true,
-    text: 'opentechschool',
-    radius: 'global',
-    page: 200
+    }
+
+    map.on('locationfound', function(e) {
+      position_found = e;
+      if (markers.length){
+        zoom_to_closest();
+      }
+      var radius = e.accuracy / 2;
+
+      L.marker(e.latlng).addTo(map)
+          .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+      L.circle(e.latlng, radius).addTo(map);
+    });
+
+    map.locate({setView: true, maxZoom: 5});
+
+    
+    var req = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
+      key: meetupcom_key,
+      sign: true,
+      text: 'opentechschool',
+      radius: 'global',
+      page: 200
+    });
+
+    req.then(function(data){
+      $.each(data.data, function(idx, group){
+        var marker = L.marker([group.lat, group.lon], {
+            title: group.name,
+          })
+          .addTo(map)
+          .bindPopup(OTS.template('marker-popup', group))
+      })
+    });
+
+    var Event = React.createClass({
+        render: function() {
+          var cal_event = this.props.event;
+          return React.DOM.div({className: "event" }, [
+                    React.DOM.p({className:"team"}, cal_event.group.name),
+                    React.DOM.h3({className: "post_title"},
+                        React.DOM.a({href: cal_event.event_url}, cal_event.name)),
+                    React.DOM.p({className:"date"},
+                        React.DOM.span({},
+                          moment(new Date(cal_event.time)).format('dddd, MMM Do, HH:mm'))
+                        ),
+                    React.DOM.p({},
+                        cal_event.venue ? cal_event.venue.name : "TBA")
+                  ]);
+        }
+      });
+
+    var EventsList = React.createClass({
+          render: function() {
+            if (!this.props.data) {return;}
+            var eventNodes = this.props.data.map(function (event) {
+              return Event({event: event});
+            });
+            return React.DOM.div({className:"eventsList",
+              children: eventNodes});
+          }
+        });
+
+    var Filters = React.createClass({
+      render: function() {
+          if (!this.props.data) {return;}
+          var me = this,
+              filterNodes = this.props.data.map(function (filter, idx) {
+                return React.DOM.div({className: "filter"}, [
+                          React.DOM.span({}, filter),
+                          React.DOM.span({className: "close",
+                              onClick: function() {me.props.removeFilter(idx);}
+                            }, "x")
+                        ]);
+              });
+
+          return React.DOM.div({className:"filterList"}, filterNodes);
+        }
+      })
+    var EventsBox = React.createClass({
+          loadCommentsFromServer: function() {
+            $.getJSON('https://api.meetup.com/2/open_events?callback=?', {
+                key: meetupcom_key,
+                sign: true,
+                text: 'opentechschool',
+                page: 200
+              }).then(function(data){
+                  console.log(data);
+                    this.setState({data: data.results});
+                  console.log(this.state);
+                  }.bind(this)
+              );
+          },
+          getInitialState: function() {
+            return {data: [], filters: ["berlin", "hamburg"]};
+          },
+          componentWillMount: function() {
+            this.loadCommentsFromServer();
+          },
+          removeFilter: function(filterIdx){
+            var filters = this.state.filters;
+            filters.pop(filterIdx);
+            this.setState({filters: filters});
+          },
+          render: function() {
+            return React.DOM.div({className:"eventsBox",
+              children:[
+                React.DOM.h1({children:"Upcomoing Events"}),
+                Filters({data: this.state.filters, removeFilter: this.removeFilter.bind(this)}),
+                EventsList({data: this.state.data})
+              ]});
+          }
+        });
+    React.renderComponent(EventsBox(),
+      document.getElementById('eventsList')
+    );
   });
-
-  req.then(function(data){
-    $.each(data.data, function(idx, group){
-      var marker = L.marker([group.lat, group.lon], {
-          title: group.name,
-
-        })
-        .addTo(map)
-        .bindPopup(OTS.template('marker-popup', group))
-    })
-  });
-
-});  
 </script>
