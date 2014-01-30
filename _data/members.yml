@@ -50,6 +50,12 @@ Dortmund:
   - name: Ola
     email: ola@opentechschool.org
     img: ola.jpg
+  - name: Tobias
+    email: tobias@opentechschool.org
+    img: tobias.jpg
+  - name: Dennis
+    email: dennis@opentechschool.org
+    img: dennis.jpg
 Hamburg:
   - name: Diana
     email: diana@opentechschool.org
