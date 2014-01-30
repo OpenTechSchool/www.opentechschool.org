@@ -5,6 +5,9 @@ title: OpenTechSchool Locator
  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
  <style type="text/css" media="screen">
    #map { height: 480px; }
+   .event.hidden {
+    opacity: 0.5;
+   }
  </style>
 
 <div id="map"></div>
@@ -34,7 +37,7 @@ title: OpenTechSchool Locator
 <script type="text/javascript" charset="utf-8">
   $(function() {
     var map = L.map('map').setView([52.5167, 13.3833], 1),
-        markers = [],
+        groups = [],
         position_found = false;
         meetupcom_key = '38406b383fa43605b6b234269316',
         tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -44,24 +47,18 @@ title: OpenTechSchool Locator
 
     tiles.addTo(map);
 
-    function zoom_to_closest(){
+    // function zoom_to_closest(){
 
-    }
+    // }
 
-    map.on('locationfound', function(e) {
-      position_found = e;
-      if (markers.length){
-        zoom_to_closest();
-      }
-      var radius = e.accuracy / 2;
+    // map.on('locationfound', function(e) {
+    //   position_found = e;
+    //   if (markers.length){
+    //     zoom_to_closest();
+    //   }
+    // });
 
-      L.marker(e.latlng).addTo(map)
-          .bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-      L.circle(e.latlng, radius).addTo(map);
-    });
-
-    map.locate({setView: true, maxZoom: 5});
+    // map.locate();
 
     
     var req = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
@@ -78,14 +75,28 @@ title: OpenTechSchool Locator
             title: group.name,
           })
           .addTo(map)
-          .bindPopup(OTS.template('marker-popup', group))
+          .bindPopup(OTS.template('marker-popup', group));
+        eventsBox.setState({groups: data.data});
       })
     });
 
     var Event = React.createClass({
+        in_box: function() {
+          var ev = this.props.event,
+              bb = this.props.boundingBox;
+          if (!bb) return true; // we always are in without any bounding box
+          console.log(ev.group);
+          if (!ev.group.latLng){
+            ev.group.latLng = L.latLng(ev.group.group_lat, ev.group.group_lon)
+          }
+
+          return bb.contains(ev.group.latLng);
+        },
         render: function() {
-          var cal_event = this.props.event;
-          return React.DOM.div({className: "event" }, [
+          var cal_event = this.props.event,
+              in_box = this.in_box();
+
+          return React.DOM.div({className: in_box ? "event" : "event hidden"}, [
                     React.DOM.p({className:"team"}, cal_event.group.name),
                     React.DOM.h3({className: "post_title"},
                         React.DOM.a({href: cal_event.event_url}, cal_event.name)),
@@ -101,31 +112,31 @@ title: OpenTechSchool Locator
 
     var EventsList = React.createClass({
           render: function() {
-            if (!this.props.data) {return;}
-            var eventNodes = this.props.data.map(function (event) {
-              return Event({event: event});
-            });
+            if (!this.props.events) {return;}
+            var eventNodes = this.props.events.map(function (event) {
+              return Event({event: event, boundingBox: this.props.boundingBox});
+            }.bind(this));
             return React.DOM.div({className:"eventsList",
               children: eventNodes});
           }
         });
 
-    var Filters = React.createClass({
-      render: function() {
-          if (!this.props.data) {return;}
-          var me = this,
-              filterNodes = this.props.data.map(function (filter, idx) {
-                return React.DOM.div({className: "filter"}, [
-                          React.DOM.span({}, filter),
-                          React.DOM.span({className: "close",
-                              onClick: function() {me.props.removeFilter(idx);}
-                            }, "x")
-                        ]);
-              });
+    // var Filters = React.createClass({
+    //   render: function() {
+    //       if (!this.props.data) {return;}
+    //       var me = this,
+    //           filterNodes = this.props.data.map(function (filter, idx) {
+    //             return React.DOM.div({className: "filter"}, [
+    //                       React.DOM.span({}, filter.name),
+    //                       React.DOM.span({className: "close",
+    //                           onClick: function() {me.props.removeFilter(idx);}
+    //                         }, "x")
+    //                     ]);
+    //           });
 
-          return React.DOM.div({className:"filterList"}, filterNodes);
-        }
-      })
+    //       return React.DOM.div({className:"filterList"}, filterNodes);
+    //     }
+    //   })
     var EventsBox = React.createClass({
           loadCommentsFromServer: function() {
             $.getJSON('https://api.meetup.com/2/open_events?callback=?', {
@@ -134,34 +145,45 @@ title: OpenTechSchool Locator
                 text: 'opentechschool',
                 page: 200
               }).then(function(data){
-                  console.log(data);
-                    this.setState({data: data.results});
-                  console.log(this.state);
+                    this.setState({events: data.results});
                   }.bind(this)
               );
           },
           getInitialState: function() {
-            return {data: [], filters: ["berlin", "hamburg"]};
+            return {events: [], filters: [], boundingBox: null};
           },
           componentWillMount: function() {
             this.loadCommentsFromServer();
           },
-          removeFilter: function(filterIdx){
-            var filters = this.state.filters;
-            filters.pop(filterIdx);
-            this.setState({filters: filters});
+          // removeFilter: function(filterIdx){
+          //   var filters = this.state.filters;
+          //   filters.pop(filterIdx);
+          //   this.setState({filters: filters});
+          // },
+          // addFilter: function(filterData){
+          //   var filters = this.state.filters;
+          //   filters.push(filterData);
+          //   this.setState({filters: filters});
+          // },
+          setGroups: function(groups){
+            this.setState({groups: groups});
           },
           render: function() {
             return React.DOM.div({className:"eventsBox",
               children:[
                 React.DOM.h1({children:"Upcomoing Events"}),
-                Filters({data: this.state.filters, removeFilter: this.removeFilter.bind(this)}),
-                EventsList({data: this.state.data})
+                //Filters({data: this.state.filters, removeFilter: this.removeFilter.bind(this)}),
+                EventsList({events: this.state.events,
+                            boundingBox:this.state.boundingBox})
               ]});
           }
         });
-    React.renderComponent(EventsBox(),
+    var eventsBox = React.renderComponent(EventsBox(),
       document.getElementById('eventsList')
     );
+
+    map.on("moveend", function(){
+      eventsBox.setState({"boundingBox": map.getBounds()})
+    });
   });
 </script>
