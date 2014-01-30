@@ -38,27 +38,72 @@ title: OpenTechSchool Locator
   $(function() {
     var map = L.map('map').setView([52.5167, 13.3833], 1),
         groups = [],
+        markers = [],
         position_found = false;
         meetupcom_key = '38406b383fa43605b6b234269316',
         tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
                   attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
                   maxZoom: 16
-                });
+                }),
+        blueIcon = L.icon({
+            iconUrl: '/images/map/marker-blue.png',
+            shadowUrl: '/images/map/marker-shadow.png',
+            iconSize: [35, 45],
+            iconAnchor: [17, 42],
+            popupAnchor: [1, -32],
+            shadowAnchor: [10, 12],
+            shadowSize: [36, 16],
+        }),
+        redIcon = L.icon({
+            iconUrl: '/images/map/marker-red.png',
+            //shadowUrl: '/images/map/marker-shadow-mini.png',
+            iconSize: [15, 20],
+            //iconAnchor: [8, 42],
+            popupAnchor: [1, -10],
+            //shadowAnchor: [0, 20],
+            //shadowSize: [15, 20],
+        })
 
     tiles.addTo(map);
 
-    // function zoom_to_closest(){
+    function zoom_to_closest(){
+      var best_marker = null,
+          title,
+          cur_pos = L.latLng(position_found.latlng),
+          best_distance = Infinity;
 
-    // }
+      $.each(markers, function(index, marker){
+        var my_distance = marker.getLatLng().distanceTo(cur_pos);
+        if (my_distance < best_distance){
+          best_distance = my_distance;
+          best_marker = marker;
+        }
+      });
 
-    // map.on('locationfound', function(e) {
-    //   position_found = e;
-    //   if (markers.length){
-    //     zoom_to_closest();
-    //   }
-    // });
+      title = "Great. You are just " + (best_distance / 1000).toFixed() + " km from the next closest Team: " + best_marker.title;
 
-    // map.locate();
+      if (best_distance < 1000){
+        title = "Great. You are just " + best_distance.toFixed() + " meters from the next closest Team: " + best_marker.title;
+      } else if (best_distance > 100000){
+        title = 'Sorry, there is no OpenTechSchool around. How about <a href="/handbooks/city-blueprint.html">starting your own one</a>?';
+
+      }
+
+      L.marker(cur_pos, {icon: redIcon}).addTo(map)
+          .bindPopup(title).openPopup();
+      map.fitBounds(L.latLngBounds([cur_pos, best_marker.getLatLng()]).pad(1));
+      
+
+    }
+
+    map.on('locationfound', function(e) {
+      position_found = e;
+      if (markers.length){
+        zoom_to_closest();
+      }
+    });
+
+    map.locate();
 
     
     var req = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
@@ -70,14 +115,21 @@ title: OpenTechSchool Locator
     });
 
     req.then(function(data){
-      $.each(data.data, function(idx, group){
+      markers = $.map(data.data, function(group){
         var marker = L.marker([group.lat, group.lon], {
             title: group.name,
+            icon: blueIcon
           })
           .addTo(map)
           .bindPopup(OTS.template('marker-popup', group));
-        eventsBox.setState({groups: data.data});
-      })
+          marker.title = group.name;
+        return marker;
+      });
+
+      if(position_found) {
+        zoom_to_closest();
+      }
+
     });
 
     var Event = React.createClass({
