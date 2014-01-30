@@ -22,6 +22,7 @@ title: OpenTechSchool Locator
       border-radius: 15px;
       color: white;
       margin: 5px;
+      cursor: pointer;
     }  
     ul.teamsList li.team.hidden {
       background-color: #84ACC3;
@@ -172,6 +173,10 @@ title: OpenTechSchool Locator
           }
         });
     var Team = React.createClass({
+        selectTeam: function(){
+          var team = this.props.team;
+          map.panTo(team.latLng, {animate: true, duration: 1});
+        },
         in_box: function() {
           var team = this.props.team,
               bb = this.props.boundingBox;
@@ -184,7 +189,7 @@ title: OpenTechSchool Locator
         },
         render: function() {
           in_box = this.in_box();
-          return React.DOM.li({className: in_box ? "team" : "team hidden"}, this.props.team.name.replace("OpenTechSchool", ""))
+          return React.DOM.li({className: in_box ? "team" : "team hidden", onClick:this.selectTeam.bind(this)}, this.props.team.name.replace("OpenTechSchool", ""))
 
         }
     });
