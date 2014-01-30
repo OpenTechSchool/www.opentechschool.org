@@ -9,6 +9,11 @@ title: OpenTechSchool Locator
     opacity: 0.5;
    }
 
+   .eventsList .empty {
+    margin: 5% 30%;
+    font-style: italic;
+   }
+
    ul.teamsList{
     list-style: none;
     display: block;
@@ -37,10 +42,59 @@ title: OpenTechSchool Locator
        content: "";
        display: block; 
     }
+
+    .onoffswitch {
+      position: relative;
+      width: 94px;
+      float: right;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select: none;
+    }
+    .onoffswitch-label {
+      display: block; overflow: hidden; cursor: pointer;
+      border: 2px solid #84ACC3; border-radius: 22px;
+    }
+    .onoffswitch-inner {
+      width: 200%; margin-left: -100%;
+      -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+      -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+      float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+      font-size: 9px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+      -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+      content: "Show all";
+      padding-left: 10px;
+      background-color: #085987; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+      content: "Matching only";
+      padding-right: 10px;
+      background-color: #EEEEEE; color: #A69999;
+      text-align: right;
+    }
+    .onoffswitch-switch {
+      width: 9px;
+      margin: 6px;
+      background: #FFFFFF;
+      border: 2px solid #84ACC3;
+      border-radius: 10px;
+      position: absolute; top: 0; bottom: 0; right: 70px;
+      -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+      -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+    }
+    .onoffswitch.checked .onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+    }
+    .onoffswitch.checked .onoffswitch-label .onoffswitch-switch {
+      right: 0px;
+    }
  </style>
 
 <div id="map"></div>
-
 <div class="container container_narrow">
   <div id="eventsList"></div>
 </div>
@@ -145,14 +199,36 @@ title: OpenTechSchool Locator
         }
       });
 
+
+    var EventFilterSwitch = React.createClass({
+        render: function() {
+          return React.DOM.div({className: this.props.showNonMatching ? "onoffswitch checked" : "onoffswitch", onClick: function(){
+              this.props.toggleFilter();
+            }.bind(this)}, 
+              React.DOM.div({className: "onoffswitch-label"},
+                React.DOM.div({className: "onoffswitch-inner"}),
+                React.DOM.div({className: "onoffswitch-switch"})
+                )
+            );
+        }
+    });
+
     var EventsList = React.createClass({
           render: function() {
             if (!this.props.events) {return;}
             var eventNodes = this.props.events.map(function (event) {
-              return Event({event: event, boundingBox: this.props.boundingBox});
+              return Event({event: event,
+                            boundingBox: this.props.boundingBox});
             }.bind(this));
-            return React.DOM.div({className:"eventsList",
-              children: eventNodes});
+            if (!this.props.showNonMatching){
+              eventNodes = eventNodes.filter(function(evt){
+                return evt.in_box();
+              });
+            }
+            if (eventNodes.length == 0){
+              eventNodes = React.DOM.div({className:"empty"},"No events found :( ");
+            }
+            return React.DOM.div({className:"eventsList"}, eventNodes);
           }
         });
     var Team = React.createClass({
@@ -172,7 +248,7 @@ title: OpenTechSchool Locator
         },
         render: function() {
           in_box = this.in_box();
-          return React.DOM.li({className: in_box ? "team" : "team hidden", onClick:this.selectTeam.bind(this)}, this.props.team.name.replace("OpenTechSchool", ""))
+          return React.DOM.li({className: in_box ? "team" : "team hidden", onClick:this.selectTeam}, this.props.team.name.replace("OpenTechSchool", ""))
 
         }
     });
@@ -201,20 +277,31 @@ title: OpenTechSchool Locator
               );
           },
           getInitialState: function() {
-            return {events: [], filters: [], teams:[], boundingBox: null};
+            return {events: [], filters: [],
+                    showNonMatching: true,
+                    teams:[], boundingBox: null};
           },
           componentWillMount: function() {
             this.loadEventsFromServer();
           },
+          toggleFilter: function() {
+            this.setState({showNonMatching: !this.state.showNonMatching});
+          },
           render: function() {
-            return React.DOM.div({className:"eventsBox",
-              children:[
-                React.DOM.h1({children:"Upcoming Events"}),
+            return React.DOM.div({className:"eventsBox"}, [
+                React.DOM.h2({}, "Teams"),
                 TeamList({teams: this.state.teams,
-                          boundingBox:this.state.boundingBox}),
+                          boundingBox: this.state.boundingBox}),
+                React.DOM.h2({}, ["Upcoming Events",
+                    EventFilterSwitch({
+                          showNonMatching: this.state.showNonMatching,
+                          key:"eventswitcher",
+                          toggleFilter: this.toggleFilter})
+                    ]),
                 EventsList({events: this.state.events,
+                            showNonMatching: this.state.showNonMatching,
                             boundingBox:this.state.boundingBox})
-              ]});
+              ]);
           }
         });
 
