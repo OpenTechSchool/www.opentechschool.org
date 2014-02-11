@@ -177,12 +177,12 @@ title: OpenTechSchool Locator
       }
     });
 
-    var eventsBox = React.renderComponent(OTS.Widgets.EventsBox({map: map}),
+    var locator = React.renderComponent(OTS.Widgets.Locator({map: map}),
       document.getElementById('eventsList')
     );
 
     map.on("moveend", function(){
-      eventsBox.setState({"boundingBox": map.getBounds()});
+      locator.setState({"boundingBox": map.getBounds()});
     });
 
     var reqTeams = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
@@ -216,7 +216,7 @@ title: OpenTechSchool Locator
         return 0;
       });
 
-      eventsBox.setState({teams: teams});
+      locator.setState({teams: teams});
 
       if(position_found) {
         zoom_to_closest();

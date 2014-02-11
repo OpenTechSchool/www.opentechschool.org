@@ -103,7 +103,7 @@
             return React.DOM.ul({className: "teamsList"}, teamNodes);
           }
     });
-    OTS.Widgets.EventsBox = React.createClass({
+    OTS.Widgets.Locator = React.createClass({
           loadEventsFromServer: function() {
             $.getJSON('https://api.meetup.com/2/open_events?callback=?', {
                 key: meetupcom_key,
@@ -148,4 +148,28 @@
               ]);
           }
         });
+
+    OTS.Widgets.UpcomingEventsPreview = React.createClass({
+    	loadEventsFromServer: function() {
+            $.getJSON('https://api.meetup.com/2/open_events?callback=?', {
+                key: meetupcom_key,
+                sign: true,
+                text: 'opentechschool',
+                page: 5
+              }).then(function(data){
+                    this.setState({events: data.results});
+                  }.bind(this)
+              );
+          },
+          getInitialState: function() {
+            return {events: []};
+          },
+          componentWillMount: function() {
+            this.loadEventsFromServer();
+          },
+          render: function(){
+          	return OTS.Widgets.EventsList({events: this.state.events,
+                            showNonMatching: true, boundingBox: null})
+          }
+    });
 })();
