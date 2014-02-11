@@ -26,9 +26,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* (Inverted) Link color on dark blue backgrounds */
 /* Highlighted, red links, buttons, other highlights */
 /* Red hover states */
-.container { width: 100%; max-width: 1020px; margin: 0 auto; overflow: hidden; }
+.container { width: 100%; max-width: 1020px; margin: 0 auto; overflow: visible; }
 
 .container_narrow { max-width: 740px; width: 90%; padding: 0 5%; }
+
+.a-third { width: 30%; margin-right: 3.2%; float: left; }
 
 .container_wide { max-width: 1300px; }
 
@@ -129,15 +131,19 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 
 .bg_full_white { background: #fff; }
 
-.ots_logo { width: 304px; margin: 0 auto 2em auto; color: #085987; }
+.ots_logo { margin: 1em auto 0.5em auto; font-size: 3em; }
 
-.ots_logo a { width: 304px; height: 100px; margin-bottom: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; display: block; background: transparent url("../images/ots_logo_v.png") no-repeat 0 0; }
+.ots_logo a { height: 100px; margin-bottom: 0; text-indent: 100%; white-space: nowrap; color: #085987; font-family: "Montserrat"; font-style: normal; font-weight: 400; }
 
-.ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active { outline: none; background-position: 0 -140px; outline: none; }
+.ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active { outline: none; outline: none; }
 
 .site_header { padding: 4.5em 0 3em 0; text-align: center; font-size: 1.5em; }
 
-.site_header_landing { background: #085987; color: #FFF; }
+.intro { background-color: #FFF; margin-bottom: 2em; opacity: 0.5; padding: 1em 2em; font-size: 0.9em; }
+
+.site_header_landing { background-image: url(../images/header.png); padding-bottom: 2em; }
+.site_header_landing .site_header { color: #000; }
+.site_header_landing .intro { color: #000; }
 
 .site_header_core img { max-width: 1300px; width: 100%; }
 
@@ -165,6 +171,19 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 .team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; }
 .team_list h3 { font-size: 1em; }
 .team_list p { font-size: .714em; min-height: 6em; height: auto !important; height: 6em; }
+
+.blocky { border-left: 2px #085987 solid; overflow: display; min-height: 130px; margin-bottom: 1em; }
+.blocky .head { border-bottom: 2px #085987 solid; padding-left: 25px; margin-left: -10px; }
+.blocky > p, .blocky > div, .blocky > section { padding: 0.5em; }
+
+.blocky.green { border-color: lime; }
+.blocky.green .head { border-color: lime; }
+
+.blocky.orange { border-color: orange; }
+.blocky.orange .head { border-color: orange; }
+
+.blocky.violet { border-color: violet; }
+.blocky.violet .head { border-color: violet; }
 
 .top_bar { width: 100%; z-index: 100; background: #FFF; color: #FFF; }
 .top_bar .container { overflow: visible; }
@@ -378,6 +397,6 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
   .site_header { padding-top: 7em; }
   .site_header_core img, .carousel_testimonial { padding-top: 3em; }
   .testimonial-caption { font-size: 1em; }
-  .site_header_img { background-size: 125%; }
+  .site_header_img { background-size: 100%; }
   .name .close-up { margin-right: 1.5em; float: left; }
   .name strong { margin-top: 2.4em; } }

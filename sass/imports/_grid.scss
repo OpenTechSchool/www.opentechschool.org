@@ -2,13 +2,19 @@
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .container_narrow {
   max-width: 740px;
   width: 90%;
   padding: 0 5%;
+}
+
+.a-third {
+  width: 30%;
+  margin-right: 3.2%;
+  float: left;
 }
 
 .container_wide {
