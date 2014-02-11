@@ -22,9 +22,11 @@
               in_box = this.in_box();
 
           return React.DOM.div({className: in_box ? "event" : "event hidden"}, [
-                    React.DOM.p({className:"team"}, cal_event.group.name),
-                    React.DOM.h3({className: "post_title"},
-                        React.DOM.a({href: cal_event.event_url}, cal_event.name)),
+                    React.DOM.h3({className: "post_title"},[
+                    	React.DOM.span({className:"team"}, cal_event.group.name.replace("OpenTechSchool", "")),
+                    	" ",
+                        React.DOM.a({href: cal_event.event_url}, cal_event.name)
+                        ]),
                     React.DOM.p({className:"date"},
                         React.DOM.span({},
                           moment(new Date(cal_event.time)).format('dddd, MMM Do, HH:mm'))
