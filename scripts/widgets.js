@@ -55,9 +55,9 @@
           render: function() {
             if (!this.props.events) {return;}
             var eventNodes = this.props.events.map(function (event) {
-              return OTS.Widgets.Event({event: event,
+              	return OTS.Widgets.Event({event: event,
                             boundingBox: this.props.boundingBox});
-            }.bind(this));
+            	}.bind(this));
             if (!this.props.showNonMatching){
               eventNodes = eventNodes.filter(function(evt){
                 return evt.in_box();
@@ -93,6 +93,7 @@
 
         }
     });
+
     OTS.Widgets.TeamList = React.createClass({
           render: function() {
             if (!this.props.teams) {
@@ -100,7 +101,8 @@
                   React.DOM.li({}, "loading"));
             }
             var teamNodes = this.props.teams.map(function (team) {
-              return OTS.Widgets.Team({team: team, boundingBox: this.props.boundingBox});
+              return OTS.Widgets.Team({team: team,
+              		map: this.props.map, boundingBox: this.props.boundingBox});
             }.bind(this));
             return React.DOM.ul({className: "teamsList"}, teamNodes);
           }
@@ -129,7 +131,7 @@
             this.setState({showNonMatching: !this.state.showNonMatching});
           },
           showAll: function() {
-            map.fitWorld();
+            this.props.map.fitWorld();
           },
           render: function() {
             return React.DOM.div({className:"eventsBox"}, [
@@ -137,6 +139,7 @@
                     React.DOM.a({onClick: this.showAll, className:"showall"}, "show all"),
                   ]),
                 OTS.Widgets.TeamList({teams: this.state.teams,
+                		  map: this.props.map,
                           boundingBox: this.state.boundingBox}),
                 React.DOM.h2({}, ["Upcoming Events",
                     OTS.Widgets.EventFilterSwitch({
