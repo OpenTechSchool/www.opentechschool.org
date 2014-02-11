@@ -62,6 +62,7 @@ rss_feed: full
     <div class="blocky orange">
 
       <h3 class="head">Community Discussions</h3>
+      <div id="currentTopics">
       </div>
   </div>
 </div>
@@ -87,5 +88,7 @@ rss_feed: full
 <script type="text/javascript" charset="utf-8">
    $(function() {
     React.renderComponent(OTS.Widgets.UpcomingEventsPreview(), document.getElementById('upcomingEvents'));
+
+    console.log(React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics')));
    });
 </script>

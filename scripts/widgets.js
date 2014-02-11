@@ -177,4 +177,73 @@
                             showNonMatching: true, boundingBox: null})
           }
     });
+
+    OTS.Widgets.Topic = React.createClass({
+    	get_url: function() {
+    		var topic = this.props.topic;
+    		return ["http://discourse.opentechschool.org/t",
+    				topic.slug, topic.id].join("/");
+    	},
+        render: function() {
+          var topic = this.props.topic,
+              users = this.props.users,
+              date = moment(topic.bumped_at);
+
+          console.log(date);
+
+          return React.DOM.div({className: "topic"}, [
+                    React.DOM.h3({className: "topic_title"},
+                        React.DOM.a({href: this.get_url()}, topic.fancy_title)
+                        ),
+                    React.DOM.p({className: "topic_date"}, date.format('dddd, MMM Do, HH:mm')),
+                    React.DOM.div({className: "posters"}, topic.posters.map(function(poster){
+                    			var poster = users[poster.user_id];
+                    			return React.DOM.img({
+                    				className: "topic_poster",
+                    				src: poster.avatar_template.replace("{size}", "45"),
+                    				title: poster.username,
+                    				alt: poster.username});
+                    		})
+                    	)
+                    ]);
+        }
+    });
+
+    OTS.Widgets.TopicList = React.createClass({
+
+          render: function() {
+            if (!this.props.topics) {return;}
+            var topicNodes = this.props.topics.slice(0,5).map(function (topic) {
+              	return OTS.Widgets.Topic({topic: topic, users: this.props.users});
+            	}.bind(this));
+            if (topicNodes.length == 0){
+              topicNodes = React.DOM.div({className:"empty"},"No topics found :( ");
+            }
+            return React.DOM.div({className:"topicsList"}, topicNodes);
+          }
+    });
+
+    OTS.Widgets.LatestConversations = React.createClass({
+    	loadEventsFromServer: function() {
+            $.getJSON('http://discourse.opentechschool.org' + this.props.path)
+             .then(function(data){
+             	var users = {};
+
+             	data.users.map(function(user){ users[user.id] = user; });
+             	this.setState({users: users, topics: data.topic_list.topics});
+
+			    }.bind(this)
+              );
+          },
+          getInitialState: function() {
+            return {topics: [], users: {}};
+          },
+          componentWillMount: function() {
+            this.loadEventsFromServer();
+          },
+          render: function(){
+          	return OTS.Widgets.TopicList({topics: this.state.topics,
+                            users: this.state.users})
+          }
+    })
 })();
