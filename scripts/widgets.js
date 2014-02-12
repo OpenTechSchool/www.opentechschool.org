@@ -17,6 +17,11 @@
 
           return bb.contains(ev.group.latLng);
         },
+        teamClicked: function() {
+        	if (this.props.teamClicked) {
+        		this.props.teamClicked(this.props.event.group);
+        	}
+        },
         render: function() {
           var cal_event = this.props.event,
           	  date = moment(new Date(cal_event.time)),
@@ -33,7 +38,7 @@
           							React.DOM.a({href: cal_event.event_url}, cal_event.name)
           						),
           					React.DOM.span({className: "venue"}, cal_event.venue ? cal_event.venue.name : "TBA"),
-          					React.DOM.span({className: "team"}, cal_event.group.name.replace("OpenTechSchool", ""))
+          					React.DOM.span({className: "team", onClick: this.teamClicked}, cal_event.group.name.replace("OpenTechSchool", ""))
           				])
                   ]);
         }
@@ -58,6 +63,7 @@
             if (!this.props.events) {return;}
             var eventNodes = this.props.events.map(function (event) {
               	return OTS.Widgets.Event({event: event,
+              				teamClicked: this.props.teamClicked,
                             boundingBox: this.props.boundingBox});
             	}.bind(this));
             if (!this.props.showNonMatching){
@@ -121,6 +127,12 @@
                   }.bind(this)
               );
           },
+          teamClicked: function(team){
+          	var map = this.props.map;
+          	map.setZoom(8, {animate: false});
+            map.panTo([team.group_lat, team.group_lon],
+            		{animate: false, duration: 1});
+          },
           getInitialState: function() {
             return {events: [], filters: [],
                     showNonMatching: true,
@@ -150,6 +162,7 @@
                           toggleFilter: this.toggleFilter})
                     ]),
                 OTS.Widgets.EventsList({events: this.state.events,
+                			teamClicked: this.teamClicked,
                             showNonMatching: this.state.showNonMatching,
                             boundingBox:this.state.boundingBox})
               ]);
@@ -168,6 +181,9 @@
                   }.bind(this)
               );
           },
+          teamClicked: function(team){
+          	console.log(team);
+          },
           getInitialState: function() {
             return {events: []};
           },
@@ -176,6 +192,7 @@
           },
           render: function(){
           	return OTS.Widgets.EventsList({events: this.state.events,
+          					teamClicked: this.teamClicked,
                             showNonMatching: true, boundingBox: null})
           }
     });
