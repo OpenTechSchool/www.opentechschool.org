@@ -182,7 +182,11 @@
               );
           },
           teamClicked: function(team){
-          	console.log(team);
+          	var url_name = team.urlname.toLowerCase(),
+          		team_config = this.props.teams[url_name];
+          	if (team_config && team_config.page){
+          		window.location.href = "/" + team_config.page;
+          	}
           },
           getInitialState: function() {
             return {events: []};

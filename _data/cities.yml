@@ -1,36 +1,47 @@
 - title: Berlin
+  meetup_key: opentechschool-berlin
   location: "Berlin, Germany"
   page: berlin/
 - title: Brussels
+  meetup_key: opentechschool-brussels
   location: "Brussels, Belgium"
   page: brussels/
 - title: Dortmund
+  meetup_key: opentechschool-dortmund
   location: "Dortmund, Germany"
   page: dortmund/
 - title: Hamburg
   location: "Hamburg, Germany"
+  meetup_key: opentechschool-hamburg
   page: hamburg/
 - title: Hackership
   location: "Hackership, Berlin, Germany"
   page: hackership/
 - title: Melbourne
+  meetup_key: opentechschool-melbourne
   location: "Melbourne, Australia"
   page: melbourne/
 - title: Nairobi
+  meetup_key: opentechschool-nairobi
   location: "Nairobi, Kenya"
   page: nairobi/
 - title: Ramallah
+  meetup_key: opentechschool-ramallah
   location: "Ramallah, West-Bank"
   page: ramallah/
 - title: RheinMain
+  meetup_key: opentechschool-rheinmain
   location: "RheinMain, Germany"
   page: rheinmain/
 - title: Stockholm
+  meetup_key: opentechschool-stockholm
   location: "Stockholm, Sweden"
   page: stockholm/
 - title: Tel-Aviv
+  meetup_key: opentechschool-tel-aviv
   location: "Tel-Aviv, Isreal"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
 - title: Zürich
+  meetup_key: opentechschool-zurich
   location: "Zürich, Switzerland"
   page: zurich/
