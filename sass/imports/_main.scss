@@ -387,6 +387,9 @@ ul.switch_lang {
 
     .details {
       padding: 5px;
+      .team {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -515,6 +518,9 @@ ul.switch_lang {
   }
 }
 
+// blocks on front-page
+
+
 .blocky {
   border-left: 2px $ots_blue solid;
   overflow: display;
@@ -528,29 +534,80 @@ ul.switch_lang {
   > p, > div, > section {
     padding: 0.5em;
   }
-}
 
-.blocky.green {
-  border-color: lime;
-  .head {
+
+  &.green {
     border-color: lime;
+    .head {
+      border-color: lime;
+    }
   }
-}
 
-.blocky.orange {
-  border-color: orange;
-  .head {
+  &.orange {
     border-color: orange;
+    .head {
+      border-color: orange;
+    }
   }
-}
 
-.blocky.violet {
-  border-color: violet;
-  .head {
+  &.violet {
     border-color: violet;
+    .head {
+      border-color: violet;
+    }
   }
 }
 
+// on-off-switch for locator
+.onoffswitch {
+  position: relative;
+  width: 94px;
+  float: right;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #84ACC3; border-radius: 22px;
+}
+.onoffswitch-inner {
+  width: 200%; margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+  font-size: 9px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "Show all";
+  padding-left: 10px;
+  background-color: #085987; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+  content: "Matching only";
+  padding-right: 10px;
+  background-color: #EEEEEE; color: #A69999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  width: 9px;
+  margin: 6px;
+  background: #FFFFFF;
+  border: 2px solid #84ACC3;
+  border-radius: 10px;
+  position: absolute; top: 0; bottom: 0; right: 70px;
+  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.onoffswitch.checked .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch.checked .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
 
 .top_bar {
   width: 100%;

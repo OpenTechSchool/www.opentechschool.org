@@ -98,6 +98,6 @@ rss_feed: full
    $(function() {
     React.renderComponent(OTS.Widgets.UpcomingEventsPreview(), document.getElementById('upcomingEvents'));
 
-    console.log(React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics')));
+    React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
    });
 </script>
