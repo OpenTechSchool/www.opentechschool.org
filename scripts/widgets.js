@@ -186,12 +186,24 @@
     		return ["http://discourse.opentechschool.org/t",
     				topic.slug, topic.id].join("/");
     	},
+      	getInitialState: function() {
+        	return {highlight: false};
+      	},
+      	mouseEnter: function() {
+      		this.setState({"highlight": true});
+      	},
+      	mouseLeave: function() {
+      		this.setState({"highlight": false});
+      	},
         render: function() {
           var topic = this.props.topic,
               users = this.props.users,
               bumped = moment(topic.bumped_at);
 
-          return React.DOM.div({className: "topic"}, [
+
+          return React.DOM.div({
+          				className: this.state.highlight ? "topic highlight" : "topic",
+          				onMouseEnter: this.mouseEnter, onMouseLeave: this.mouseLeave}, [
                     React.DOM.h3({className: "topic_title"},
                         React.DOM.a({href: this.get_url()}, topic.fancy_title)
                         ),

@@ -394,7 +394,7 @@ ul.switch_lang {
 // discourse topic loader
 
 .topic {
-  margin: 15px 10px;
+  padding: 15px 10px;
   clear: both;
   .metadata {
     opacity: 0.6;
@@ -409,10 +409,12 @@ ul.switch_lang {
       border-radius: 2px;
       vertical-align: middle;
       margin: 2px;
+    }
+  }
 
-      &.latest {
-        box-shadow: 0px 0px 6px 1px #2B95CA;
-      }
+  &.highlight {
+    .metadata {
+      opacity: 1;
     }
   }
 }
