@@ -19,20 +19,22 @@
         },
         render: function() {
           var cal_event = this.props.event,
+          	  date = moment(new Date(cal_event.time)),
               in_box = this.in_box();
 
           return React.DOM.div({className: in_box ? "event" : "event hidden"}, [
-                    React.DOM.h3({className: "post_title"},[
-                    	React.DOM.span({className:"team"}, cal_event.group.name.replace("OpenTechSchool", "")),
-                    	" ",
-                        React.DOM.a({href: cal_event.event_url}, cal_event.name)
-                        ]),
-                    React.DOM.p({className:"date"},
-                        React.DOM.span({},
-                          moment(new Date(cal_event.time)).format('dddd, MMM Do, HH:mm'))
-                        ),
-                    React.DOM.p({},
-                        cal_event.venue ? cal_event.venue.name : "TBA")
+          			React.DOM.div({className: "date"}, [
+          					React.DOM.span({className: "month"}, date.format("MMM")),
+          					React.DOM.span({className: "day"}, date.format("Do")),
+          					React.DOM.span({className: "time"}, date.format("HH:mm")),
+          				]),
+          			React.DOM.div({className: "details"}, [
+          					React.DOM.h3({className: "title"},
+          							React.DOM.a({href: cal_event.event_url}, cal_event.name)
+          						),
+          					React.DOM.span({className: "venue"}, cal_event.venue ? cal_event.venue.name : "TBA"),
+          					React.DOM.span({className: "team"}, cal_event.group.name.replace("OpenTechSchool", ""))
+          				])
                   ]);
         }
       });

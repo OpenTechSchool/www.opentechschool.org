@@ -152,7 +152,15 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 
 .float_list > li { margin: 0 2% 1.5em 2%; }
 
-.topic { margin: 15px 10px; clear: both; }
+.eventsList .event { clear: both; min-height: 80px; }
+.eventsList .event .date { float: left; width: 60px; height: 70px; text-align: center; margin: 5px; border: #085987 2px solid; }
+.eventsList .event .date > * { width: 100%; display: block; font-style: normal; }
+.eventsList .event .date .month { background: #085987; color: white; }
+.eventsList .event .date .day { font-size: 18px; line-height: 36px; color: black; }
+.eventsList .event .date .time { border-top: 1px #085987 solid; line-height: 12px; }
+.eventsList .event .details { padding: 5px; }
+
+.topic { padding: 15px 10px; clear: both; }
 .topic .metadata { opacity: 0.6; width: 100%; line-height: 30px; }
 .topic .posters { width: 150px; display: block; float: left; }
 .topic .posters .avatar { border-radius: 2px; vertical-align: middle; margin: 2px; }

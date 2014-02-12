@@ -351,6 +351,45 @@ ul.switch_lang {
   margin: 0 2% 1.5em 2%;
 }
 
+// events loader
+.eventsList {
+  .event {
+    clear: both;
+    min-height: 80px;
+    .date {
+      float: left;
+      width: 60px;
+      height: 70px;
+      text-align: center;
+      margin: 5px;
+      border: $ots_blue 2px solid;
+
+      > * {
+        width: 100%;
+        display: block;
+        font-style: normal;
+      }
+
+      .month {
+        background: $ots_blue;
+        color: white;
+      }
+      .day {
+        font-size: 18px;
+        line-height: 36px;
+        color: black;
+      }
+      .time {
+        border-top: 1px $ots_blue solid;
+        line-height: 12px;
+      }
+    }
+
+    .details {
+      padding: 5px;
+    }
+  }
+}
 
 // discourse topic loader
 
