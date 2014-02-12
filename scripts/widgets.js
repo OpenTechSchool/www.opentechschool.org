@@ -38,7 +38,7 @@
           							React.DOM.a({href: cal_event.event_url}, cal_event.name)
           						),
           					React.DOM.span({className: "venue"}, cal_event.venue ? cal_event.venue.name : "TBA"),
-          					React.DOM.span({className: "team", onClick: this.teamClicked}, cal_event.group.name.replace("OpenTechSchool", ""))
+          					this.props.hideTeams ? React.DOM.span() : React.DOM.span({className: "team", onClick: this.teamClicked}, cal_event.group.name.replace("OpenTechSchool", ""))
           				])
                   ]);
         }
@@ -64,6 +64,7 @@
             var eventNodes = this.props.events.map(function (event) {
               	return OTS.Widgets.Event({event: event,
               				teamClicked: this.props.teamClicked,
+              				hideTeams: this.props.hideTeams,
                             boundingBox: this.props.boundingBox});
             	}.bind(this));
             if (!this.props.showNonMatching){
@@ -171,12 +172,9 @@
 
     OTS.Widgets.UpcomingEventsPreview = React.createClass({
     	loadEventsFromServer: function() {
-            $.getJSON('https://api.meetup.com/2/open_events?callback=?', {
-                key: meetupcom_key,
-                sign: true,
-                text: 'opentechschool',
-                page: 5
-              }).then(function(data){
+    		var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
+    			path = this.props.path || 'open_events';
+            $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).then(function(data){
                     this.setState({events: data.results});
                   }.bind(this)
               );
@@ -196,6 +194,7 @@
           },
           render: function(){
           	return OTS.Widgets.EventsList({events: this.state.events,
+          					hideTeams: this.props.hideTeams,
           					teamClicked: this.teamClicked,
                             showNonMatching: true, boundingBox: null})
           }

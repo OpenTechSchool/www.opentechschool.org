@@ -29,36 +29,26 @@
 </section>
 
 <div class="bg_full">
-  <div class="container container_narrow clearfix">
-    <div class="col_left">
-      <section id="events" class="bg_full">
-        <h2>
+  <div class="container clearfix">
+    <div class="blocky col_left">
+      <section>
+        <h3 class="head">
           Upcoming events
           <a href="webcal://www.meetup.com/{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
-        </h2>
+        </h3>
         {% if page.custom_events %}
           {{page.custom_events}}
         {% endif %}
-        <div id="js-events-list"></div>
-        <script type="text/x-template" data-template="event">
-          <div class="event">
-            <h3 class="post_title"><a href="${link}">${name}</a></h3>
-            <p class="date">
-              <span>${date}</span>
-            </p>
-            <p>${venue}</p> <!-- Venue as text -->
-
-        </div>
-        </script>
+        <div id="upcomingEvents"></div>
       </section>
     </div>
 
-    <div class="col_right">
-      <section id="blog-posts" class="bg_full">
-        <h2>
+    <div class="col_right blocky">
+      <section>
+        <h3 class="head">
           Latest news
           <a href="http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a>
-        </h2>
+        </h3>
 
         <div id="js-blog-posts-list"></div>
         <script type="text/x-template" data-template="blog-post">
@@ -109,6 +99,17 @@
     {% endif %}
   </div>
 </section>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+   $(function() {
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", hideTeams: true, params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('upcomingEvents'));
+
+    // React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
+   });
+</script>
+
 {% include _footer.html %}
 {% include _scripts.html %}
 {% include _load_blog_feed.html %}

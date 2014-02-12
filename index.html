@@ -93,7 +93,7 @@ rss_feed: full
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters}), document.getElementById('upcomingEvents'));
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, params: {text: 'opentechschool'}), document.getElementById('upcomingEvents'));
 
     React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
    });
