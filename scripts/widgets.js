@@ -187,24 +187,25 @@
         render: function() {
           var topic = this.props.topic,
               users = this.props.users,
-              date = moment(topic.bumped_at);
-
-          console.log(date);
+              bumped = moment(topic.bumped_at);
 
           return React.DOM.div({className: "topic"}, [
                     React.DOM.h3({className: "topic_title"},
                         React.DOM.a({href: this.get_url()}, topic.fancy_title)
                         ),
-                    React.DOM.p({className: "topic_date"}, date.format('dddd, MMM Do, HH:mm')),
-                    React.DOM.div({className: "posters"}, topic.posters.map(function(poster){
+                    React.DOM.div({className: "metadata"}, [ 
+                    	React.DOM.div({className: "posters"}, topic.posters.slice(0, 5).map(function(poster){
                     			var poster = users[poster.user_id];
                     			return React.DOM.img({
-                    				className: "topic_poster",
-                    				src: poster.avatar_template.replace("{size}", "45"),
+                    				className: poster.extras === "latest" ? "avatar latest" : "avatar",
+                    				src: poster.avatar_template.replace("{size}", "25"),
                     				title: poster.username,
                     				alt: poster.username});
-                    		})
-                    	)
+                    			})
+                    		), 
+                    	React.DOM.span({className: "bumped"},
+                    		bumped.fromNow())
+                    	])
                     ]);
         }
     });
