@@ -30,8 +30,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .container_narrow { max-width: 740px; width: 90%; padding: 0 5%; }
 
-.a-third { width: 30%; margin-right: 3.2%; float: left; }
-
 .container_wide { max-width: 1300px; }
 
 img, object, embed { max-width: 100%; }
@@ -421,8 +419,9 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
   .top_bar { position: absolute; height: 2.5em; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
   .top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
   .logo_top_bar { width: auto; }
-  .col_left { width: 46%; float: left; margin: 0 4% 1.5em 0; }
-  .col_right { width: 46%; float: right; margin: 0 0 1.5em 4%; }
+  .col_left { width: 46%; float: left; margin: 0 3.75% 1.5em 0; }
+  .col_right { width: 46%; float: right; margin: 0 0 1.5em 3.75%; }
+  .a-third { width: 30%; margin-right: 3.2%; float: left; }
   .float_list_4 > li { width: 21%; }
   .site_header { padding-top: 7em; }
   .site_header_core img, .carousel_testimonial { padding-top: 3em; }
