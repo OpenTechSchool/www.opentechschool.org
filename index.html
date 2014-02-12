@@ -28,43 +28,52 @@ rss_feed: full
       <p>If you are looking to learn coding/about tech yourself, you probably want to find out <a href="/locator/">where and when the next events</a> takes place near you.</p>
       <p>In any case make sure you <a href="" onclick="alert('still missing')">stay connected</a> to receive updates about whats going on.</p>
     </div>
+
     <div class="a-third blocky orange">
       <h3 class="head">Join the movement</h3>
       <p>Just reach out to the <a href="/locator/">next chapter close to you</a> and help organising, coaching or with general support.</p>
  
       <p>You might also want to join the <a href="/foundation/">Foundation as a Member</a> and <a href="http://discourse.opentechschool.org">join our online community</a> of coaches, organisers and volunteers and generally <a href="" onclick="alert('still missing')">stay connected</a>.</p>
     </div>
+
   </div>
 
   <div class="container clearfix">
     <div class="blocky">
 
       <h3 class="head">Latest News <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a></h3>
-        <section id="blog-posts">
-          <div id="js-blog-posts-list"></div>
-        </section>
-        <script type="text/x-template" data-template="blog-post">
-          <article>
-            <h3 class="post_title"><a href="http://blog.opentechschool.org${link}">${title}</a></h3>
-            <p>${date}</p>
-          </article>
-        </script>
-      </div>
+
+      <section id="blog-posts">
+        <div id="js-blog-posts-list"> </div>
+      </section>
+
+      <script type="text/x-template" data-template="blog-post">
+        <article>
+          <h3 class="post_title"><a href="http://blog.opentechschool.org${link}">${title}</a></h3>
+          <p>${date}</p>
+        </article>
+      </script>
+
+    </div>
   </div>
+
   <div class="container clearfix">
     <div class="blocky violet">
 
       <h3 class="head">Upcoming events <a href="/locator/" class="tiny_button">find closest to me</a></h3>
       <div id="upcomingEvents"></div>
     </div>
+
   </div>
+
   <div class="container clearfix">
     <div class="blocky orange">
 
       <h3 class="head">Community Discussions</h3>
-      <div id="currentTopics">
-      </div>
+      <div id="currentTopics"> </div>
+    </div>
   </div>
+  
 </div>
 
 
