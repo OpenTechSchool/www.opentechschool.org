@@ -3,10 +3,10 @@ layout: landing
 title: OpenTechSchool
 rss_feed: full
 ---
-
+<!-- 
 <div class="bg_full" style="position:relative">
-  <div id="pledgeRibbon" style="display: none">
-      <a href="http://www.indiegogo.com/projects/an-apprenticeship-for-hackers-a-hackership/x/3944401">Only <span id="daysLeft"></span> left</a>
+  <div id="pledgeRibbon">
+      <a href="http://www.indiegogo.com/projects/an-apprenticeship-for-hackers-a-hackership/x/3944401">LAST DAY. DONATE NOW.</a>
     </div>
   <div class="container container_narrow">
 
@@ -21,7 +21,7 @@ rss_feed: full
       </a>
     </p>
   </div>
-</div>
+</div> -->
 
 <div class="bg_full bg_full_white">
   <div class="container container_narrow">
@@ -97,17 +97,17 @@ rss_feed: full
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  $(function() {
-    var daysLeft = 34 - (new Date()).getUTCDate();
-    if (daysLeft <+ 0){
-      $("#pledgeRibbon").hide()
-    } else if (daysLeft === 1 ){
-      $("#daysLeft").html("1 day");
-      $("#pledgeRibbon").show();
-    } else {
-      $("#daysLeft").html(daysLeft + " days");
-      $("#pledgeRibbon").show();
-    }
-  })
+  // $(function() {
+  //   var daysLeft = 3 - (new Date()).getUTCDate();
+  //   if (daysLeft <= 0){
+  //     $("#pledgeRibbon").hide()
+  //   } else if (daysLeft === 1 ){
+  //     $("#daysLeft").html("1 day");
+  //     $("#pledgeRibbon").show();
+  //   } else {
+  //     $("#daysLeft").html(daysLeft + " days");
+  //     $("#pledgeRibbon").show();
+  //   }
+  // })
   
 </script>
