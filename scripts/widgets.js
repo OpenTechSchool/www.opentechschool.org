@@ -180,9 +180,9 @@
 
     OTS.Widgets.UpcomingEventsPreview = React.createClass({
     	loadEventsFromServer: function() {
-    		var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
-    			path = this.props.path || 'open_events';
-            $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).then(function(data){
+      		var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
+      			  path = this.props.path || 'open_events';
+          $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).then(function(data){
                     this.setState({events: data.results});
                   }.bind(this)
               );

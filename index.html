@@ -92,10 +92,9 @@ rss_feed: full
 <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-   //$(function() {
-    console.log("AAAAAA");
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, params: {text: 'opentechschool'}), document.getElementById('upcomingEvents'));
+   $(function() {
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, params: {text: 'opentechschool'}}), document.getElementById('upcomingEvents'));
 
     React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
-   //});
+   });
 </script>
