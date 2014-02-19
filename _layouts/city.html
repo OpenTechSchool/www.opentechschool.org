@@ -16,7 +16,7 @@
     <div class="city_cta">
       <a class="ots_action ots_action_city ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">
         Join now
-        <span class="member_count"><span id="js-meetup-members"></span>&nbsp;<span id="js-meetup-who"></span></span>
+        <span class="member_count" id="membersCount"></span>
       </a>
     </div>
   </div>
@@ -109,6 +109,7 @@
 
     React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.rss_feed}}.json"}), document.getElementById('chapterConversations'));
 
+    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('membersCount'));
    });
 </script>
 

@@ -178,34 +178,42 @@
           }
         });
 
+    var MeetupMixin = {
+      componentWillMount: function() {
+        var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
+            path = this.props.path || 'open_events';
+        $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).
+          then(function(data){
+              this.resultsReceived(data);
+            }.bind(this)
+        );
+      }
+    }
+
     OTS.Widgets.UpcomingEventsPreview = React.createClass({
-    	loadEventsFromServer: function() {
-      		var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
-      			  path = this.props.path || 'open_events';
-          $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).then(function(data){
-                    this.setState({events: data.results});
-                  }.bind(this)
-              );
-          },
-          teamClicked: function(team){
-          	var url_name = team.urlname.toLowerCase(),
-          		team_config = this.props.teams[url_name];
-          	if (team_config && team_config.page){
-          		window.location.href = "/" + team_config.page;
-          	}
-          },
-          getInitialState: function() {
-            return {events: []};
-          },
-          componentWillMount: function() {
-            this.loadEventsFromServer();
-          },
-          render: function(){
-          	return OTS.Widgets.EventsList({events: this.state.events,
-          					hideTeams: this.props.hideTeams,
-          					teamClicked: this.teamClicked,
-                            showNonMatching: true, boundingBox: null})
-          }
+
+      mixins: [MeetupMixin],
+
+      resultsReceived: function(data){
+        this.setState({events: data.results});
+      },
+      getInitialState: function() {
+        return {events: []};
+      },
+	
+      teamClicked: function(team){
+      	var url_name = team.urlname.toLowerCase(),
+      		team_config = this.props.teams[url_name];
+      	if (team_config && team_config.page){
+      		window.location.href = "/" + team_config.page;
+      	}
+      },
+      render: function(){
+      	return OTS.Widgets.EventsList({events: this.state.events,
+      					hideTeams: this.props.hideTeams,
+      					teamClicked: this.teamClicked,
+                        showNonMatching: true, boundingBox: null})
+      }
     });
 
     OTS.Widgets.Topic = React.createClass({
@@ -266,8 +274,8 @@
           }
     });
 
-    DiscourseMixin = {
-      loadEventsFromServer: function() {
+    var DiscourseMixin = {
+      loadTopicsFromServer: function() {
             $.getJSON('http://discourse.opentechschool.org' + this.props.path)
              .then(function(data){
                 var users = {};
@@ -285,19 +293,19 @@
             return {topics: [], users: {}, loading: true};
           },
           componentWillMount: function() {
-            this.loadEventsFromServer();
+            this.loadTopicsFromServer();
           },
     }
 
     OTS.Widgets.LatestConversations = React.createClass({
-          mixins: [DiscourseMixin],
-          render: function(){
-            if (!this.state.loading) {
-              return OTS.Widgets.Loading();
-            }
-          	return OTS.Widgets.TopicList({topics: this.state.topics,
-                            users: this.state.users});
-          }
+      mixins: [DiscourseMixin],
+      render: function(){
+        if (!this.state.loading) {
+          return OTS.Widgets.Loading();
+        }
+      	return OTS.Widgets.TopicList({topics: this.state.topics,
+                        users: this.state.users});
+      }
     });
 
     OTS.Widgets.ChapterConversations = React.createClass({
@@ -319,5 +327,19 @@
                             users: this.state.users})
             );
       }
-    })
+    });
+
+    OTS.Widgets.MembersCounter = React.createClass({
+      mixins: [MeetupMixin],
+      resultsReceived: function(data){
+        var group = data.results[0];
+        this.setState({members: group.members, who: group.who});
+      }, 
+      getInitialState: function() {
+        return {members: "", who: ""};
+      },
+      render: function(){
+        return React.DOM.span({}, this.state.members + " " + this.state.who);
+      }
+    });
 })();
