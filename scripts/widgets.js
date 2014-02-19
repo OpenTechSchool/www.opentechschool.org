@@ -275,8 +275,11 @@
     });
 
     var DiscourseMixin = {
+      get_discourse_path: function() {
+        return 'http://discourse.opentechschool.org' + this.props.path;
+      },
       loadTopicsFromServer: function() {
-            $.getJSON('http://discourse.opentechschool.org' + this.props.path)
+            $.getJSON(this.get_discourse_path())
              .then(function(data){
                 var users = {};
 
@@ -322,7 +325,10 @@
           }
 
           return React.DOM.div({className:"blocky"},
-              React.DOM.h3({className:"head"}, "LatestConversations"),
+              React.DOM.h3({className:"head"},
+                  "Latest Conversations ",
+                  React.DOM.a({href:this.get_discourse_path().replace(".json", ""), className: "tiny_button"}, "join")
+                  ),
               OTS.Widgets.TopicList({topics: this.state.topics,
                             users: this.state.users})
             );
