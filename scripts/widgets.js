@@ -5,6 +5,14 @@
 
 	window.OTS.Widgets = {};
 
+  OTS.Widgets.Loading = React.createClass({
+    render: function() {
+      return React.DOM.div({},
+          React.DOM.img({src: "/images/progress.gif"})
+        );
+    }
+  });
+
 
     OTS.Widgets.Event = React.createClass({
         in_box: function() {
@@ -258,27 +266,58 @@
           }
     });
 
-    OTS.Widgets.LatestConversations = React.createClass({
-    	loadEventsFromServer: function() {
+    DiscourseMixin = {
+      loadEventsFromServer: function() {
             $.getJSON('http://discourse.opentechschool.org' + this.props.path)
              .then(function(data){
-             	var users = {};
+                var users = {};
 
-             	data.users.map(function(user){ users[user.id] = user; });
-             	this.setState({users: users, topics: data.topic_list.topics});
+                data.users.map(function(user){ users[user.id] = user; });
+                this.setState({users: users, topics: data.topic_list.topics, loading: "do"});
 
-			    }.bind(this)
-              );
+              }.bind(this))
+             .fail(function(){
+                this.setState({loading: "failed"});
+              }.bind(this));
+
           },
           getInitialState: function() {
-            return {topics: [], users: {}};
+            return {topics: [], users: {}, loading: true};
           },
           componentWillMount: function() {
             this.loadEventsFromServer();
           },
+    }
+
+    OTS.Widgets.LatestConversations = React.createClass({
+          mixins: [DiscourseMixin],
           render: function(){
+            if (!this.state.loading) {
+              return OTS.Widgets.Loading();
+            }
           	return OTS.Widgets.TopicList({topics: this.state.topics,
-                            users: this.state.users})
+                            users: this.state.users});
           }
+    });
+
+    OTS.Widgets.ChapterConversations = React.createClass({
+      mixins: [DiscourseMixin],
+
+      render: function() {
+          if (!this.state.loading) {
+            return OTS.Widgets.Loading();
+          }
+
+          if (this.state.topics.length === 0){
+            // in case we are empty, don't show anything
+            return React.DOM.div();
+          }
+
+          return React.DOM.div({className:"blocky"},
+              React.DOM.h3({className:"head"}, "LatestConversations"),
+              OTS.Widgets.TopicList({topics: this.state.topics,
+                            users: this.state.users})
+            );
+      }
     })
 })();
