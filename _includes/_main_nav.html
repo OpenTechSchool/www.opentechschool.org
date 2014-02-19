@@ -12,11 +12,14 @@
         {% if page.layout == "city" or page.layout == "city_new" %}
           <b class="city">{{page.title}}</b>
         {% else %}
-          <b class="city">Location</b>
+          <b class="city">Find Team</b>
         {% endif %}
           <b class="caret"></b>
         </a>
         <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
+          <li>
+            <a tabindex="-1" href="{{site.baseurl}}locator">team locator</a>
+          </li>
           {% for city in site.data.cities %}{% if city.page %}
           <li>
             <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
@@ -30,13 +33,10 @@
         <a href="{{site.baseurl}}about.html">About</a>
       </li>
       <li>
-        <a href="http://learn.opentechschool.org">Learn</a>
+        <a href="{{site.baseurl}}locator/">Team Locator</a>
       </li>
       <li>
-        <a href="{{site.baseurl}}testimonials.html">Testimonials</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}team.html">Team</a>
+        <a href="http://learn.opentechschool.org">Materials</a>
       </li>
       <li>
         <a href="http://{{site.blog_domain}}">Blog</a>
