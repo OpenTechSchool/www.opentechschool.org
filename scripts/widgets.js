@@ -180,7 +180,7 @@
 
     var MeetupMixin = {
       componentWillMount: function() {
-        var params = $.extend({}, { key: meetupcom_key, sign: true, page: 5}, this.props.params ),
+        var params = $.extend({}, { key: meetupcom_key, sign: true, page: 200}, this.props.params ),
             path = this.props.path || 'open_events';
         $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).
           then(function(data){
@@ -195,7 +195,7 @@
       mixins: [MeetupMixin],
 
       resultsReceived: function(data){
-        this.setState({events: data.results});
+        this.setState({events: this.props.page ? data.results.splice(0, this.props.page) : data.results});
       },
       getInitialState: function() {
         return {events: []};
