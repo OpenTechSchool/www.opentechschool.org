@@ -15,8 +15,9 @@ body, button, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   line-height: 1.5;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
 }
 
 h1 {
@@ -285,8 +286,8 @@ ul.switch_lang {
 }
 
 .ots_logo {
-  margin: 1em auto 0.5em auto;
-  font-size: 3em;
+  margin: 1em auto 0.25em auto;
+  font-size: 4.25em;
 }
 
 .ots_logo a {
@@ -297,7 +298,7 @@ ul.switch_lang {
   color: $ots_blue;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {

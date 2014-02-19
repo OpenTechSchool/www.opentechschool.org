@@ -40,6 +40,8 @@ body { font-size: 87.5%; }
 
 .site_header { padding-top: 7em; }
 
+.site_header_landing .site_header { padding-top: 4.25em; padding-bottom: 2.5em; }
+
 .site_header_core img, .carousel_testimonial { padding-top: 3em; }
 
 .testimonial-caption { font-size: 1em; }
