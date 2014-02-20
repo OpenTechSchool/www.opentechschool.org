@@ -295,7 +295,7 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
   h2, h3 { page-break-after: avoid; } }
 .modal-backdrop { position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 1040; background-color: #000; opacity: 0.8; display: none; }
 
-.modal { position: fixed; top: 0px; width: 100%; height: 100%; z-index: 1050; overflow: auto; display: none; }
+.modal { position: fixed; top: 0px; width: 100%; height: 100%; z-index: 1050; overflow: auto; display: none; color: #222; }
 
 .modal-outer-container { display: table; width: 100%; height: 100%; }
 
@@ -303,14 +303,15 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .modal-inner-container { max-width: 710px; margin: 0px auto; background-color: #FFF; border: 1px solid rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3); background-clip: padding-box; }
 
-.modal-header { border-bottom: 1px solid #DDD; }
+.modal-header, .modal-body .clearfix { border-bottom: 1px solid #DDD; }
 
 .modal-header h3 { padding: 3px 10px; }
 
-.modal-header .close { float: right; font-size: 20px; margin: 10px 10px 0px; text-decoration: none; color: #B4B4B4; cursor: pointer; }
+.modal-header .close { float: right; font-size: 20px; margin: -2px 5px 0px; text-decoration: none; color: #B4B4B4; cursor: pointer; }
 
 .modal-body { padding: 3px 10px; }
-.modal-body .btn { display: block; background: #085987; padding: 3px 5px; float: left; color: white; text-align: center; margin: 1%; width: 23%; }
+.modal-body .btn { display: block; background: #085987; padding: 3px 5px; float: left; color: white; line-height: 28px; text-align: center; margin: 1%; width: 23%; }
+.modal-body .btn .ots_icon { display: inline-block; margin-bottom: -10px; }
 
 body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 
@@ -363,18 +364,20 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 .nav { text-transform: uppercase; clear: both; }
 .nav a { display: block; padding: .5em; letter-spacing: 0.05em; }
 
+.ots_icon { width: 28px; height: 28px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; display: block; background: transparent url("../images/ots_icons.png") no-repeat 0 0; }
+.ots_icon.github { background-position: 0 0; }
+.ots_icon.twitter { background-position: 0 -28px; }
+.ots_icon.facebook { background-position: 0 -56px; }
+.ots_icon.github:hover, .ots_icon.github:focus { background-position: 0 -84px; }
+.ots_icon.twitter:hover, .ots_icon.twitter:focus { background-position: 0 -112px; }
+.ots_icon.facebook:hover, .ots_icon.facebook:focus { background-position: 0 -140px; }
+.ots_icon.discourse { background-position: -28px 0; }
+.ots_icon.discourse:hover, .ots_icon.discourse:focus { background-position: -28px -83px; }
+
 .nav_external { padding-top: .25em; }
 .nav_external li { margin: 0 .25em; border-top: none; }
 .nav_external a { border: 0; }
-.nav_external .ots_nav_icon { width: 28px; height: 28px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; background: transparent url("../images/ots_icons.png") no-repeat 0 0; }
-.nav_external .github { background-position: 0 0; }
-.nav_external .twitter { background-position: 0 -28px; }
-.nav_external .facebook { background-position: 0 -56px; }
-.nav_external .github:hover, .nav_external .github:focus { background-position: 0 -84px; }
-.nav_external .twitter:hover, .nav_external .twitter:focus { background-position: 0 -112px; }
-.nav_external .facebook:hover, .nav_external .facebook:focus { background-position: 0 -140px; }
-.nav_external .discourse { background-position: -28px 0; }
-.nav_external .discourse:hover, .nav_external .discourse:focus { background-position: -28px -83px; }
+.nav_external a.ots_icon { padding: 0px; }
 
 .btn_navbar { float: right; margin: 0.5em 0.75em; padding: 0; border: 2px solid #1f8ab6; border-radius: .25em; background: transparent; cursor: pointer; }
 

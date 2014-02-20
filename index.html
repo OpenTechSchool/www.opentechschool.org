@@ -96,15 +96,21 @@ rss_feed: full
     <div class="modal-middle-container">
       <div class="modal-inner-container">
         <div class="modal-header">
-          <h3>Stay connected</h3>
+          <h3>Stay connected with OpenTechSchool <span class="close" title="close">x</span></h3>
         </div>
         <div class="modal-body clearfix">
-          <a href="https://www.twitter.com/OpenTechSchool" class="btn">Twitter</a>
-          <a href="http://www.facebook.com/OpenTechSchool" class="btn">Facebook</a> 
-          <a href="https://github.com/OpenTechSchool" class="btn">Github</a>
-          <a href="http://blog.opentechschool.org/" class="btn">Blog</a>
-          <a href="http://discourse.opentechschool.org/" class="btn">Forum</a>
-          <a href="https://plus.google.com/b/114834784518588736271/114834784518588736271/posts" class="btn">Google+</a>
+          <h4>Follow us on</h4>
+          <div class="clearfix">
+            <a href="https://www.twitter.com/OpenTechSchool" class="btn"><span class="ots_icon twitter"></span> Twitter</a>
+            <a href="http://www.facebook.com/OpenTechSchool" class="btn"><span class="ots_icon facebook"></span> Facebook</a> 
+            <a href="https://plus.google.com/b/114834784518588736271/114834784518588736271/posts" class="btn">Google+</a>
+          </div>
+          <h4>and</h4>
+          <div class="clearfix">
+            <a href="http://blog.opentechschool.org/" class="btn">Read the Blog</a>
+            <a href="http://discourse.opentechschool.org/" class="btn"><span class="ots_icon discourse"></span> Join the Forum</a>
+            <a href="https://github.com/OpenTechSchool" class="btn"><span class="ots_icon github"></span> Github</a>
+          </div>
         </div>
       </div>
     </div>
@@ -121,6 +127,9 @@ rss_feed: full
 
     $(".stay-connected").click(function() {
       $('body').addClass("show-modal");
+    });
+    $(".modal .close").click(function() {
+      $('body').removeClass("show-modal"); 
     });
     $(document).keypress(function(ev){
       if (ev.keyCode === 27){ // ESCAPE
