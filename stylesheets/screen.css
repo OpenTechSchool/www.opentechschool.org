@@ -293,6 +293,27 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
+.modal-backdrop { position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 1040; background-color: #000; opacity: 0.8; display: none; }
+
+.modal { position: fixed; top: 0px; width: 100%; height: 100%; z-index: 1050; overflow: auto; display: none; }
+
+.modal-outer-container { display: table; width: 100%; height: 100%; }
+
+.modal-middle-container { display: table-cell; vertical-align: middle; }
+
+.modal-inner-container { max-width: 710px; margin: 0px auto; background-color: #FFF; border: 1px solid rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3); background-clip: padding-box; }
+
+.modal-header { border-bottom: 1px solid #DDD; }
+
+.modal-header h3 { padding: 3px 10px; }
+
+.modal-header .close { float: right; font-size: 20px; margin: 10px 10px 0px; text-decoration: none; color: #B4B4B4; cursor: pointer; }
+
+.modal-body { padding: 3px 10px; }
+.modal-body .btn { display: block; background: #085987; padding: 3px 5px; float: left; color: white; text-align: center; margin: 1%; width: 23%; }
+
+body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
+
 .dropdown { float: left; position: relative; top: 2px; }
 .dropdown .dropdown_menu { display: none; }
 .dropdown .dropdown_toggle { background: #f4f4f4; padding: 3px 5px; line-height: 1em; color: #085987; }
