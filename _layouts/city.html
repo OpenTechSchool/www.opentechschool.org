@@ -105,7 +105,7 @@
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", hideTeams: true, params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('upcomingEvents'));
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('upcomingEvents'));
 
     React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.rss_feed}}.json"}), document.getElementById('chapterConversations'));
 
