@@ -1,0 +1,19 @@
+{% include _head.html %}
+{% include _main_nav.html %}
+<header class="site_header">
+  <div class="container">
+    <h1>
+      {{page.title}}
+    </h1>
+  </div>
+</header>
+<section class="bg_full">
+  <div class="container container_narrow">
+    {{ content }}
+
+    <a class="ots_action" href="mailto:team.blueprint@opentechschool.org?Subject='Reporting a problem with {{page.title}}'">Report a problem</a>
+  </div>
+</section>
+{% include _footer.html %}
+{% include _scripts.html %}
+{% include _end.html %}

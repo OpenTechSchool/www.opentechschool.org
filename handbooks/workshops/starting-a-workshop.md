@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: handbook
 title: How to organize a new workshop
 ---
 
