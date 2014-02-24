@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: handbook
 title: Workshop Organisers Schedule
 ---
 

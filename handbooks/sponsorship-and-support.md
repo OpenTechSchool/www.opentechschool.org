@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: handbook
 title: Sponsorship guidelines
 published: true
 ---
