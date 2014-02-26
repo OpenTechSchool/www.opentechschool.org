@@ -67,13 +67,13 @@ Have a quick chat with the coaches, quickly re-iterate how this is going to work
 ### Kickoff the event
  - Once the majority of learners is there and set up, do a short and quick welcome speech.
  - Ask how many people know the OpenTechSchool already and/or have been to other events before.  (Make them raise their hands. It sounds cheesy but sets an interactive mood.)
-  * If a bigger group doesn't know what OTS is and does, give a [quick introduction](http://opentechschool.github.io/slides/presentations/about-micro/) and tell them to check the website for more details.
-  * Promote any recurring events such as the Learners Meetup or Continuous Learning Groups.
+   * If a bigger group doesn't know what OTS is and does, give a [quick introduction](http://opentechschool.github.io/slides/presentations/about-micro/) and tell them to check the website for more details.
+   * Promote any recurring events such as the Learners Meetup or Continuous Learning Groups.
  - (This is critical!)  Explain the schedule and how the workshop is going to happen:  They are working on their own with the material, the coaches standing around are there to assist, help and support, so instead of getting stuck, they should ask them for help.  If there will be a demo session at the end, tell them about that, too.
  - Make sure you explained the necessaries, like:
-  * how to get back in if you are out (if that is a problem)
-  * where to find the toilets, for all genders
-  * where to get something to drink, when the food will be delivered, that kinda stuff
+   * how to get back in if you are out (if that is a problem)
+   * where to find the toilets, for all genders
+   * where to get something to drink, when the food will be delivered, that kinda stuff
  - Tell them to take breaks whenever they want. It is important to take breaks. We -- developers -- do breaks all the time.
  - Show the URL to the learners material again. Let them know, that they should work at their own pace and if they are not able to get finished that day that is fine, too, the material is available online all the time. Tell them to get started.
  - And mention that they are very much invited to the next Learners Meetup to show what they've done in this workshop, find other learners, connect and socialise.  Bonus points if you can already share a date.
