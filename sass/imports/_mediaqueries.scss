@@ -38,6 +38,7 @@
   .top_bar {
     position: absolute;
     height: 2.5em;
+    overflow: hidden;
     padding: 30px 0;
     -webkit-transition: padding-bottom .25s ease-in;
     -moz-transition: padding-bottom .25s ease-in;
@@ -65,6 +66,12 @@
     width: 46%;
     float: right;
     margin: 0 0 1.5em 3.75%;
+  }
+
+  .two-third {
+    width: 60%;
+    margin-right: 6.4%;
+    float: left;
   }
 
   .a-third {

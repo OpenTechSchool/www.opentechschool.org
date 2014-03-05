@@ -1,3 +1,24 @@
+<script>
+  $(function() {
+    $(".quick_nav_btn").click(function() {
+      var opened = $(".quick_nav_btn").data("opened");
+      console.log(opened);
+      if (opened !== true){
+        var curH = $(".top_bar").height();
+        $(".top_bar").height("auto");
+        var nextH = $(".top_bar").height();
+        $(".top_bar").height(curH);
+        $(".top_bar").animate({height: nextH}, 500);
+        $(".quick_nav_btn").data("opened", true);
+      } else {
+        $(".top_bar").animate({height: "2.5em"}, 500);
+        $(".quick_nav_btn").data("opened", false);
+      }
+
+    });
+  });
+</script>
+
 <nav class="top_bar" data-spy="affix" data-offset-top="20">
   <div class="container container_wide">
     <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
@@ -5,29 +26,15 @@
       <span class="icon_bar"></span>
       <span class="icon_bar icon_bar_last"></span>
     </button>
-    <div class="logo_top_bar">
-      <a href="{{site.baseurl}}">OpenTechSchool</a>
-      <div class="dropdown">
-        <a id="city_dropdown" class="dropdown_toggle" data-toggle="dropdown" href="#">
-        {% if page.layout == "city" or page.layout == "city_new" %}
-          <b class="city">{{page.title}}</b>
-        {% else %}
-          <b class="city">Find Team</b>
-        {% endif %}
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown_menu" role="menu" aria-labelledby="city_dropdown">
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}locator">team locator</a>
-          </li>
-          {% for city in site.data.cities %}{% if city.page %}
-          <li>
-            <a tabindex="-1" href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
-          </li>
-          {% endif %}{% endfor %}
-        </ul>
-      </div>
-    </div>
+    <a href="{{site.baseurl}}" class="menu_ots_logo">OpenTechSchool</a>
+    <a href="#" class="quick_nav_btn">
+    {% if page.nav_item %}
+      <b class="city">{{page.nav_item}}</b>
+    {% else %}
+      <b class="city">Quick Jump</b>
+    {% endif %}
+      <b class="caret"></b>
+    </a>
     <ul class="nav nav_internal collapse">
       <li>
         <a href="{{site.baseurl}}about.html">About</a>
@@ -58,6 +65,72 @@
         </ul>
       </li>
     </ul>
-    <div class="clearfix"></div>
+    <div class="clearfix big-data"></div>
+    <div class="container">
+      <div class="two-third">
+        <h3>Chapters</h3>
+        <div class="chapters_list">
+          <ul>
+            <li>
+              <a href="/berlin/" title="Berlin, Germany">Berlin</a>
+            </li>
+            <li>
+              <a href="/brussels/" title="Brussels, Belgium">Brussels</a>
+            </li>
+            <li>
+              <a href="/dortmund/" title="Dortmund, Germany">Dortmund</a>
+            </li>
+            <li>
+              <a href="/hamburg/" title="Hamburg, Germany">Hamburg</a>
+            </li>
+            <li>
+              <a href="/melbourne/" title="Melbourne, Australia">Melbourne</a>
+            </li>
+            <li>
+              <a href="/nairobi/" title="Nairobi, Kenya">Nairobi</a>
+            </li>
+            <li>
+              <a href="/ramallah/" title="Ramallah, West-Bank">Ramallah</a>
+            </li>
+            <li>
+              <a href="/rheinmain/" title="RheinMain, Germany">RheinMain</a>
+            </li>
+            <li>
+              <a href="/stockholm/" title="Stockholm, Sweden">Stockholm</a>
+            </li><li>
+              <a href="http://www.meetup.com/opentechschool-tel-aviv/" title="Tel-Aviv, Isreal">Tel-Aviv</a>
+            </li>
+            <li>
+              <a href="/zurich/" title="Zürich, Switzerland">Zürich</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="a-third">
+        <h3>Projects and Formats</h3>
+        <ul>
+          <li>
+            <a href="/berlin/" title="Berlin, Germany">App Summer Camps</a>
+          </li>
+          <li>
+            <a href="/nairobi/" title="Nairobi, Kenya">Coding Workshops</a>
+          </li>
+          <li>
+            <a href="/brussels/" title="Brussels, Belgium">Continuous Learning Groups</a>
+          </li>
+          <li>
+            <a href="/hackership/" title="Hackership, Berlin, Germany">Hackership</a>
+          </li>
+          <li>
+            <a href="/dortmund/" title="Dortmund, Germany">IT Labs</a>
+          </li>
+          <li>
+            <a href="/melbourne/" title="Melbourne, Australia">Learners Meetup</a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix big-data"></div>
+    </div>
   </div>
 </nav>
