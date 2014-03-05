@@ -131,11 +131,14 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 
 .ots_logo { margin: 1em auto 0.25em auto; font-size: 4.25em; }
 
-.menu_ots_logo { font-size: 2em; }
+.menu_ots_logo { font-size: 2em; margin: 0.5em; }
 
-.quick_nav { font-size: 1em; background-color: #085987; padding: 5px; color: white; }
+.quick_nav_btn { font-size: 2em; padding: 5px; color: white; }
+.quick_nav_btn span:before { content: "\25BE"; }
+.quick_nav_btn.open span:before { content: "\25B4"; }
 
-.chapters_list { -moz-columns: 2; -webkit-columns: 2; columns: 2; }
+.more-nav { margin-top: 2em; padding-top: 2em; border-top: #2fb0d5 solid 1px; }
+.more-nav .chapters_list { -moz-columns: 2; -webkit-columns: 2; columns: 2; }
 
 .menu_ots_logo, .ots_logo a { margin-bottom: 0; text-indent: 100%; white-space: nowrap; color: #085987; font-family: "Montserrat"; font-style: normal; font-weight: 300; }
 .menu_ots_logo:focus, .menu_ots_logo:hover, .menu_ots_logo:active, .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active { outline: none; outline: none; }

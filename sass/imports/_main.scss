@@ -292,19 +292,30 @@ ul.switch_lang {
 
 .menu_ots_logo {
   font-size: 2em;
+  margin: 0.5em;
 }
 
-.quick_nav {
-  font-size: 1em;
-  background-color: $ots_blue;
+.quick_nav_btn {
+  font-size: 2em;
   padding: 5px;
   color: white;
+  span:before {
+    content: "\25BE";
+  }
+  &.open span:before {
+    content: "\25B4";
+  }
 }
 
-.chapters_list {
-  -moz-columns: 2;
-  -webkit-columns: 2;
-  columns: 2;
+.more-nav {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: $ots_blue_h solid 1px;
+  .chapters_list {
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    columns: 2;
+  }
 }
 
 
