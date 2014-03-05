@@ -370,7 +370,7 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 .ots_icon.discourse { background-position: -28px 0; }
 .ots_icon.discourse:hover, .ots_icon.discourse:focus { background-position: -28px -83px; }
 
-.nav_external { padding-top: .25em; }
+.nav_external { padding-top: .65em; }
 .nav_external li { margin: 0 .25em; border-top: none; }
 .nav_external a { border: 0; }
 .nav_external a.ots_icon { padding: 0px; }
