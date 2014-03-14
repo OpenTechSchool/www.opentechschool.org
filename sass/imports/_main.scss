@@ -388,7 +388,8 @@ ul.switch_lang {
   text-align: center;
     &.member {
           height: 220px !important; 
-          min-height: 220px; 
+          min-height: 220px;
+          margin-bottom: 40px;
     }
   }
   > li.join {

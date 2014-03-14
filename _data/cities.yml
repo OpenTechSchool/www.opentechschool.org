@@ -25,11 +25,14 @@
 - title: RheinMain
   location: "RheinMain, Germany"
   page: rheinmain/
+- title: San Francisco
+  location: "San Francisco, United States"
+  page: san_francisco/
 - title: Stockholm
   location: "Stockholm, Sweden"
   page: stockholm/
 - title: Tel-Aviv
-  location: "Tel-Aviv, Isreal"
+  location: "Tel-Aviv, Israel"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
 - title: Zürich
   location: "Zürich, Switzerland"
