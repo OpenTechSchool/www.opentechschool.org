@@ -185,7 +185,7 @@ small {
     bottom: 1px;
     top: auto;
 }
-@media screen and (min-width:800px) { 
+@media screen and (min-width:800px) {
     #pledgeRibbon {
         position: absolute;
         display: block;
@@ -521,6 +521,9 @@ ul.switch_lang {
     text-align: center;
     &.member {
       @include min-height(240px);
+          height: 220px !important;
+          min-height: 220px;
+          margin-bottom: 40px;
     }
   }
   > li.join {

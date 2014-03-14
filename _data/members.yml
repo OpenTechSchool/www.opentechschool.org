@@ -119,6 +119,19 @@ RheinMain:
   - name: Christoph
     email: christoph@opentechscool.org
     img: christoph.jpg
+San Francisco:
+  - name: Charlie
+    email: charlie@opentechschool.org
+    img: charlie.jpg
+  - name: Peter
+    email: peter@opentechschool.org
+    img: peter.jpg
+  - name: Sam
+    email: sam@opentechschool.org
+    img: sam.jpg
+  - name: Will
+    email: will@opentechschool.org
+    img: will.jpg
 Stockholm:
   - name: Hanna Kulin
     email: hanna@opentechschool.org
