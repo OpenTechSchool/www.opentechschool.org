@@ -2,6 +2,8 @@
 /* ! Shared styles, OTS branding */
 /* ========================================== */
 
+@import "compass/utilities/general/min";
+
 body {
   margin: 0;
   font-size: 75%;
@@ -382,13 +384,10 @@ ul.switch_lang {
 /* List of OTS members, extends float list. Includes image and links. */
 .team_list {
   > li {
-  min-height: 8em;
-  height:auto !important;
-  height: 8em;
-  text-align: center;
+    @include min-height(8em);
+    text-align: center;
     &.member {
-          height: 220px !important; 
-          min-height: 220px; 
+      @include min-height(240px);
     }
   }
   > li.join {
@@ -430,9 +429,7 @@ ul.switch_lang {
   }
   p {
     font-size: .714em;
-    min-height: 6em;
-    height:auto !important;
-    height: 6em;
+    @include min-height(6em);
   }
 }
 
@@ -582,9 +579,7 @@ footer a:focus {
   // color: #FFF;
   position: relative;
   width: 100%;
-  min-height: 400px;
-  height:auto !important;
-  height: 400px;
+  @include min-height(400px);
   header {
     overflow: hidden;
   }
