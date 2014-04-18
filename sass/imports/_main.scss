@@ -343,9 +343,17 @@ ul.switch_lang {
 .intro {
   background-color: #FFF;
   margin-bottom: 2em;
-  opacity: 0.5;
+  opacity: 0.8;
   padding: 1em 2em;
   font-size: 0.9em;
+
+  .action-wrap {
+    text-align: center;
+    .ots_action {
+      font-size: 1.2em;
+      line-height: 2.5em;
+    }
+  }
 }
 
 .site_header_landing {
