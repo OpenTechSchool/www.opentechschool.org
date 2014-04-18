@@ -6,6 +6,7 @@
     hackership
     learninggroups
     workshops
+    learnersmeetup
     itlabs
 - title: Brussels
   meetup_key: opentechschool-brussels
@@ -20,6 +21,7 @@
   does:
     workshops
     appsummercamps
+    learnersmeetup
 - title: Hamburg
   location: "Hamburg, Germany"
   meetup_key: opentechschool-hamburg
@@ -27,6 +29,7 @@
   does:
     workshops
     appsummercamps
+    learnersmeetup
 - title: Melbourne
   meetup_key: opentechschool-melbourne
   location: "Melbourne, Australia"
@@ -51,6 +54,7 @@
   page: rheinmain/
   does:
     workshops
+    learnersmeetup
 - title: Stockholm
   meetup_key: opentechschool-stockholm
   location: "Stockholm, Sweden"
