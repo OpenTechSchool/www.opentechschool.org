@@ -63,38 +63,13 @@
           <h3>Chapters <a href="{{site.baseurl}}locator/">⌖</a></h3>
           <div class="chapters_list">
             <ul>
-              <li>
-                <a href="/berlin/" title="Berlin, Germany">Berlin</a>
-              </li>
-              <li>
-                <a href="/brussels/" title="Brussels, Belgium">Brussels</a>
-              </li>
-              <li>
-                <a href="/dortmund/" title="Dortmund, Germany">Dortmund</a>
-              </li>
-              <li>
-                <a href="/hamburg/" title="Hamburg, Germany">Hamburg</a>
-              </li>
-              <li>
-                <a href="/melbourne/" title="Melbourne, Australia">Melbourne</a>
-              </li>
-              <li>
-                <a href="/nairobi/" title="Nairobi, Kenya">Nairobi</a>
-              </li>
-              <li>
-                <a href="/ramallah/" title="Ramallah, West-Bank">Ramallah</a>
-              </li>
-              <li>
-                <a href="/rheinmain/" title="RheinMain, Germany">RheinMain</a>
-              </li>
-              <li>
-                <a href="/stockholm/" title="Stockholm, Sweden">Stockholm</a>
-              </li><li>
-                <a href="http://www.meetup.com/opentechschool-tel-aviv/" title="Tel-Aviv, Isreal">Tel-Aviv</a>
-              </li>
-              <li>
-                <a href="/zurich/" title="Zürich, Switzerland">Zürich</a>
-              </li>
+              {% for city in site.data.cities %}
+                {% if city.page %}
+                  <li>
+                    <a href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
         </div>
@@ -103,22 +78,22 @@
           <h3>Projects</h3>
           <ul>
             <li>
-              <a href="/berlin/" title="Berlin, Germany">App Summer Camps</a>
+              <a href="/projects/workshops/">Workshops</a>
             </li>
             <li>
-              <a href="/nairobi/" title="Nairobi, Kenya">Coding Workshops</a>
+              <a href="/projects/app-summer-camps/">App Summer Camps</a>
             </li>
             <li>
-              <a href="/brussels/" title="Brussels, Belgium">Continuous Learning Groups</a>
+              <a href="/projects/continuous-learning-groups/">Continuous Learning Groups</a>
             </li>
             <li>
-              <a href="/hackership/" title="Hackership, Berlin, Germany">Hackership</a>
+              <a href="/projects/hackership/">Hackership</a>
             </li>
             <li>
-              <a href="/dortmund/" title="Dortmund, Germany">IT Labs</a>
+              <a href="/projects/it-labs/">IT Labs</a>
             </li>
             <li>
-              <a href="/melbourne/" title="Melbourne, Australia">Learners Meetup</a>
+              <a href="/projects/learners-meetup/">Learners Meetup</a>
             </li>
           </ul>
         </div>
