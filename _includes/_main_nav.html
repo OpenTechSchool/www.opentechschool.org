@@ -1,8 +1,7 @@
 <script>
   $(function() {
-    $(".quick_nav_btn").click(function() {
+    $(".quick_nav_btn, .menu_ots_logo").click(function() {
       var opened = $(".quick_nav_btn").data("opened");
-      console.log(opened);
       if (opened !== true){
         var curH = $(".top_bar").height();
         $(".top_bar").height("auto");
@@ -26,7 +25,7 @@
       <span class="icon_bar"></span>
       <span class="icon_bar icon_bar_last"></span>
     </button>
-    <a href="{{site.baseurl}}" class="menu_ots_logo">OpenTechSchool</a>
+    <a href="#" class="menu_ots_logo">OpenTechSchool</a>
     <a href="#" class="quick_nav_btn"><span></span></a>
     <ul class="nav nav_internal collapse">
       <li>
@@ -61,7 +60,7 @@
     <div class="more-nav">
       <div class="container">
         <div class="two-third">
-          <h3>Chapters</h3>
+          <h3>Chapters <a href="{{site.baseurl}}locator/">⌖</a></h3>
           <div class="chapters_list">
             <ul>
               <li>
