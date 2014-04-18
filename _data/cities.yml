@@ -30,6 +30,18 @@
     workshops
     appsummercamps
     learnersmeetup
+- title: Jerusalem
+  location: "Jerusalem, Isreal"
+  meetup_key: opentechschool-jerusalem
+  meetup: http://www.meetup.com/opentechschool-jerusalem/
+  does:
+    workshops
+- title: London
+  location: "London, UK"
+  meetup_key: opentechschool-london
+  meetup: http://www.meetup.com/opentechschool-london/
+  does:
+    workshops
 - title: Melbourne
   meetup_key: opentechschool-melbourne
   location: "Melbourne, Australia"
@@ -61,10 +73,22 @@
   page: stockholm/
   does:
     workshops
+- title: San Francisco
+  location: "San Francisco, CA, USA"
+  meetup_key: opentechschool-san-francisco
+  meetup: http://www.meetup.com/opentechschool-san-francisco
+  does:
+    workshops
 - title: Tel-Aviv
   meetup_key: opentechschool-tel-aviv
   location: "Tel-Aviv, Isreal"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
+  does:
+    workshops
+- title: Washington
+  meetup_key: OpenTechSchool-DC
+  location: "Washington DC, USA"
+  meetup: http://www.meetup.com/OpenTechSchool-DC/
   does:
     workshops
 - title: Zürich
