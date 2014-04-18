@@ -2,46 +2,71 @@
   meetup_key: opentechschool-berlin
   location: "Berlin, Germany"
   page: berlin/
+  does:
+    hackership
+    learninggroups
+    workshops
+    itlabs
 - title: Brussels
   meetup_key: opentechschool-brussels
   location: "Brussels, Belgium"
   page: brussels/
+  does:
+    workshops
 - title: Dortmund
   meetup_key: opentechschool-dortmund
   location: "Dortmund, Germany"
   page: dortmund/
+  does:
+    workshops
+    appsummercamps
 - title: Hamburg
   location: "Hamburg, Germany"
   meetup_key: opentechschool-hamburg
   page: hamburg/
-- title: Hackership
-  location: "Hackership, Berlin, Germany"
-  page: hackership/
+  does:
+    workshops
+    appsummercamps
 - title: Melbourne
   meetup_key: opentechschool-melbourne
   location: "Melbourne, Australia"
   page: melbourne/
+  does:
+    workshops
 - title: Nairobi
   meetup_key: opentechschool-nairobi
   location: "Nairobi, Kenya"
   page: nairobi/
+  does:
+    workshops
 - title: Ramallah
   meetup_key: opentechschool-ramallah
   location: "Ramallah, West-Bank"
   page: ramallah/
+  does:
+    workshops
 - title: RheinMain
   meetup_key: opentechschool-rheinmain
   location: "RheinMain, Germany"
   page: rheinmain/
+  does:
+    workshops
 - title: Stockholm
   meetup_key: opentechschool-stockholm
   location: "Stockholm, Sweden"
   page: stockholm/
+  does:
+    workshops
 - title: Tel-Aviv
   meetup_key: opentechschool-tel-aviv
   location: "Tel-Aviv, Isreal"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
+  does:
+    workshops
 - title: Zürich
   meetup_key: opentechschool-zurich
   location: "Zürich, Switzerland"
   page: zurich/
+  does:
+    workshops
+    itlabs
