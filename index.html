@@ -3,80 +3,74 @@ layout: landing
 title: OpenTechSchool
 rss_feed: full
 ---
-<!-- 
-<div class="bg_full" style="position:relative">
-  <div id="pledgeRibbon">
-      <a href="http://www.indiegogo.com/projects/an-apprenticeship-for-hackers-a-hackership/x/3944401">LAST DAY. DONATE NOW.</a>
-    </div>
-  <div class="container container_narrow">
-
-    <h3><span class="label label-info">Important</span></h3>
-    <h2>OpenTechSchool to build first Learning Space</h2>
-    <p><a href="/berlin/">Team Berlin</a> is set to build the first open tech learning space based on the <a href="/about.html">values of OpenTechSchool</a>. The goal is to run the full-time code learning programmen and master class for advanced programmers during the day and host more OpenTechSchool Workshops and Learning events during the evenings and weekends. To make this vision a reality, we need your support. Please consider <a href="http://www.indiegogo.com/projects/an-apprenticeship-for-hackers-a-hackership">donating to our crowd funding campaign</a> or become an <a href="http://blog.opentechschool.org/2014/01/announcing-opentechschool-hackership-advocates-programme.html">advocate</a> for it.
-    </p>
-  
-    <p>
-      <a class="ots_action ots_action_city ots_action_highlight" href="http://www.indiegogo.com/projects/an-apprenticeship-for-hackers-a-hackership">
-        Learn more
-      </a>
-    </p>
-  </div>
-</div> -->
-
-<div class="bg_full bg_full_white">
-  <div class="container container_narrow">
-
-    <h2>About</h2>
-    <p>
-      OpenTechSchool is a community initiative offering free programming workshops and meetups to technology enthusiasts of all genders, backgrounds, and experience levels. It supports volunteer coaches in setting up events by taking care of the organizational details, encouraging coaches to create original teaching material. This material is then openly shared online and can be further developed by contributions from the global OTS community. OTS’ main goal is to create a friendly learning environment where no one feels shy about asking any question. Everyone is invited to participate, whether as a coach or a learner, and get in contact to organize OTS events anywhere in the world.
-    </p>
-    <a href="{{site.baseurl}}about.html">Learn more about OpenTechSchool</a>
-
-  </div>
-</div>
 
 <div class="bg_full">
   <div class="container container_narrow">
 
-    <div class="col_left">
-      <h2>Latest News <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a></h2>
+    <h3><span class="label label-info">Important</span></h3>
+    <h2>Hackership Batch-1 Applications open</h2>
+    <p>Hackership, the 12-weeks full-time code learning programme and hacker master class run by the <a href="/berlin/">OpenTechSchool Berlin</a>, openend its application for Batch-1 taking place summer 2014. Learn more about it, the schedule and deadline through the <a href="http://blog.hackership.org/2014/05/Announcing-Hackership-Batch-1-and-partnership-zalando.html" target="_blank">announcement blog post</a> or at one of their <a href="http://blog.hackership.org/2014/05/Announcing-Taste-of-Hackership-Experience-Hackership-first-hand.html" target="_blank">Taste of Hackership sessions</a>.
+    </p>
+    <p><a href="http://www.hackership.org/apply">Or apply right here.</a></p>
+  </div>
+</div>
+
+<div class="bg_full bg_full_white">
+  <div class="container clearfix">
+    <div class="a-third blocky green">
+      <h3 class="head">More about OTS</h3>
+      <p>Go to <a href="/about.hml">about</a> to learn more about what OpenTechSchool is, what we do, the values and the history of the movement. 
+      </p>
+      <p>You might also want to learn more about <a href="/foundation/">the foundation</a> behind it and what some of the learners, coaches and organisers <a href="testimonials.html">say about OpenTechSchool</a>.</p>
+
+    </div>
+    <div class="a-third blocky violet">
+      <h3 class="head">Start learning</h3>
+      <p>If you are looking to learn coding/about tech yourself, you probably want to find out <a href="/locator/">where and when the next events</a> takes place near you.</p>
+      <p>In any case make sure you <a href="#stay-connected" class="stay-connected">stay connected</a> to receive updates about whats going on.</p>
+    </div>
+
+    <div class="a-third blocky orange">
+      <h3 class="head">Join the movement</h3>
+      <p>Just reach out to the <a href="/locator/">next chapter close to you</a> and help organising, coaching or with general support.</p>
+ 
+      <p>You might also want to join the <a href="/foundation/">Foundation as a Member</a> and <a href="http://discourse.opentechschool.org">join our online community</a> of coaches, organisers and volunteers and generally <a href="#stay-connected" class="stay-connected">stay connected</a>.</p>
+    </div>
+
+  </div>
+
+  <div class="container clearfix">
+    <div class="blocky col_left">
+
+      <h3 class="head">Upcoming events <a href="/locator/" class="tiny_button">find closest to me</a></h3>
+      <div id="upcomingEvents"></div>
+    </div>
+
+    <div class="blocky col_right">
+
+      <h3 class="head">Community <a href="http://discourse.opentechschool.org" class="tiny_button">see all</a></h3>
+      <div id="currentTopics"> </div>
+    </div>
+  </div>
+  
+
+  <div class="container clearfix">
+    <div class="blocky">
+
+      <h3 class="head">News <a href="http://blog.opentechschool.org/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a></h3>
+
       <section id="blog-posts">
-        <div id="js-blog-posts-list"></div>
+        <div id="js-blog-posts-list"> </div>
       </section>
+
       <script type="text/x-template" data-template="blog-post">
         <article>
           <h3 class="post_title"><a href="http://blog.opentechschool.org${link}">${title}</a></h3>
           <p>${date}</p>
         </article>
       </script>
-    </div>
-
-
-    <div class="col_right">
-
-      <h2>Handbooks and guidelines</h2>
-      <ul>
-        <li><a href="{{site.baseurl}}material.html">Learning Materials</a></li>
-        <li><a href="http://opentechschool.github.com/slides/presentations/coaching/">Coaching guidelines</a></li>
-        <li><a href="{{site.baseurl}}handbooks/workshops/starting-a-workshop.html" >How to start a new workshop</a></li>
-        <li><a href="{{site.baseurl}}handbooks/city-blueprint.html">How to start an OTS chapter in your city</a></li>
-        <li><a href="{{site.baseurl}}handbooks">More</a></li>
-      </ul>
-
-      <h2>Join the Movement</h2>
-      <ul>
-
-        <li>Join the <a href="http://discourse.opentechschool.org">community</a></li>
-        <li>Follow <a href="http://blog.opentechschool.org">our blog</a></li>
-        <li>Start <a href="{{site.baseurl}}handbooks/city-blueprint.html">OTS in your city</a></li>
-        <li>Donate to <a href="{{site.baseurl}}foundation/">the Foundation</a></li>
-        <li>Become a <a href="{{site.baseurl}}handbooks/sponsorship-and-support.html">Sponsor</a></li>
-        
-      </ul>
 
     </div>
-
-
   </div>
 </div>
 
@@ -96,18 +90,52 @@ rss_feed: full
   </div>
 </div>
 
+<div class="modal-backdrop"></div>
+
+<div class="modal">
+  <div class="modal-outer-container">
+    <div class="modal-middle-container">
+      <div class="modal-inner-container">
+        <div class="modal-header">
+          <h3>Stay connected with OpenTechSchool <span class="close" title="close">x</span></h3>
+        </div>
+        <div class="modal-body clearfix">
+          <h4>Follow us on</h4>
+          <div class="clearfix">
+            <a href="https://www.twitter.com/OpenTechSchool" class="btn"><span class="ots_icon twitter"></span> Twitter</a>
+            <a href="http://www.facebook.com/OpenTechSchool" class="btn"><span class="ots_icon facebook"></span> Facebook</a> 
+            <a href="https://plus.google.com/b/114834784518588736271/114834784518588736271/posts" class="btn">Google+</a>
+          </div>
+          <h4>and</h4>
+          <div class="clearfix">
+            <a href="http://blog.opentechschool.org/" class="btn">Read the Blog</a>
+            <a href="http://discourse.opentechschool.org/" class="btn"><span class="ots_icon discourse"></span> Join the Forum</a>
+            <a href="https://github.com/OpenTechSchool" class="btn"><span class="ots_icon github"></span> Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-  // $(function() {
-  //   var daysLeft = 3 - (new Date()).getUTCDate();
-  //   if (daysLeft <= 0){
-  //     $("#pledgeRibbon").hide()
-  //   } else if (daysLeft === 1 ){
-  //     $("#daysLeft").html("1 day");
-  //     $("#pledgeRibbon").show();
-  //   } else {
-  //     $("#daysLeft").html(daysLeft + " days");
-  //     $("#pledgeRibbon").show();
-  //   }
-  // })
-  
+   $(function() {
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, page: 5, params: {text: 'opentechschool'}}), document.getElementById('upcomingEvents'));
+
+    React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
+
+    $(".stay-connected").click(function() {
+      $('body').addClass("show-modal");
+    });
+    $(".modal .close").click(function() {
+      $('body').removeClass("show-modal"); 
+    });
+    $(document).keypress(function(ev){
+      if (ev.keyCode === 27){ // ESCAPE
+       $('body').removeClass("show-modal"); 
+      }
+    });
+   });
 </script>

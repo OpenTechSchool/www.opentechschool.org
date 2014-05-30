@@ -1,36 +1,100 @@
 - title: Berlin
+  meetup_key: opentechschool-berlin
   location: "Berlin, Germany"
   page: berlin/
+  does:
+    hackership
+    learninggroups
+    workshops
+    learnersmeetup
+    itlabs
 - title: Brussels
+  meetup_key: opentechschool-brussels
   location: "Brussels, Belgium"
   page: brussels/
+  does:
+    workshops
 - title: Dortmund
+  meetup_key: opentechschool-dortmund
   location: "Dortmund, Germany"
   page: dortmund/
+  does:
+    workshops
+    appsummercamps
+    learnersmeetup
 - title: Hamburg
   location: "Hamburg, Germany"
+  meetup_key: opentechschool-hamburg
   page: hamburg/
-- title: Hackership
-  location: "Hackership, Berlin, Germany"
-  page: hackership/
+  does:
+    workshops
+    appsummercamps
+    learnersmeetup
+- title: Jerusalem
+  location: "Jerusalem, Isreal"
+  meetup_key: opentechschool-jerusalem
+  meetup: http://www.meetup.com/opentechschool-jerusalem/
+  does:
+    workshops
+- title: London
+  location: "London, UK"
+  meetup_key: opentechschool-london
+  meetup: http://www.meetup.com/opentechschool-london/
+  does:
+    workshops
 - title: Melbourne
+  meetup_key: opentechschool-melbourne
   location: "Melbourne, Australia"
   page: melbourne/
+  does:
+    workshops
 - title: Nairobi
+  meetup_key: opentechschool-nairobi
   location: "Nairobi, Kenya"
   page: nairobi/
+  does:
+    workshops
 - title: Ramallah
+  meetup_key: opentechschool-ramallah
   location: "Ramallah, West-Bank"
   page: ramallah/
+  does:
+    workshops
 - title: RheinMain
+  meetup_key: opentechschool-rheinmain
   location: "RheinMain, Germany"
   page: rheinmain/
+  does:
+    workshops
+    learnersmeetup
 - title: Stockholm
+  meetup_key: opentechschool-stockholm
   location: "Stockholm, Sweden"
   page: stockholm/
+  does:
+    workshops
+- title: San Francisco
+  location: "San Francisco, CA, USA"
+  meetup_key: opentechschool-san-francisco
+  meetup: http://www.meetup.com/opentechschool-san-francisco
+  does:
+    workshops
 - title: Tel-Aviv
+  meetup_key: opentechschool-tel-aviv
   location: "Tel-Aviv, Isreal"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
+  does:
+    workshops
+- title: Washington
+  meetup_key: OpenTechSchool-DC
+  location: "Washington DC, USA"
+  meetup: http://www.meetup.com/OpenTechSchool-DC/
+  does:
+    workshops
 - title: Zürich
+  meetup_key: opentechschool-zurich
   location: "Zürich, Switzerland"
   page: zurich/
+  does:
+    workshops
+    itlabs

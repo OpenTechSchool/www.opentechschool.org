@@ -10,6 +10,22 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
 <script>
   window.OTS = window.OTS || {};
+  var OTS = window.OTS;
+
+  OTS.config = {
+    chapters: {}
+  }
+
+  // pass over chapter configuration
+
+  var chapters = window.OTS.config.chapters
+
+  {% for city in site.data.cities %}
+    {% if city.meetup_key %}
+    chapters["{{city.meetup_key}}"] = {{city | jsonify}}
+    {% endif %}
+  {% endfor %}
+
   OTS.template = function(name, data) {
     var templateString = $('script[data-template=' + name + ']').html();
     !templateString && console.error('empty or non-existing template "' + name + '"');

@@ -8,54 +8,62 @@
   }
 }
 
+.ots_icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background: transparent url("../images/ots_icons.png") no-repeat 0 0;
+
+  &.github {
+    background-position: 0 0;
+  }
+  &.twitter {
+    background-position: 0 -28px;
+  }
+  &.facebook {
+    background-position: 0 -56px;
+  }
+  &.github:hover,
+  &.github:focus {
+    background-position: 0 -84px;
+  }
+  &.twitter:hover,
+  &.twitter:focus {
+    background-position: 0 -112px;
+  }
+  &.facebook:hover,
+  &.facebook:focus {
+    background-position: 0 -140px;
+  }
+  
+  &.discourse {
+    background-position: -28px 0;
+  }
+
+  &.discourse:hover,
+  &.discourse:focus {
+    background-position: -28px -83px;
+  }
+}
+
 .nav_external {
-  padding-top: .25em;
+  padding-top: .65em;
   li {
     margin: 0 .25em;
     border-top: none;
   }
   a {
     border: 0;
-  }
-  .ots_nav_icon {
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: transparent url("../images/ots_icons.png") no-repeat 0 0;
-  }
-  .github {
-    background-position: 0 0;
-  }
-  .twitter {
-    background-position: 0 -28px;
-  }
-  .facebook {
-    background-position: 0 -56px;
-  }
-  .github:hover,
-  .github:focus {
-    background-position: 0 -84px;
-  }
-  .twitter:hover,
-  .twitter:focus {
-    background-position: 0 -112px;
-  }
-  .facebook:hover,
-  .facebook:focus {
-    background-position: 0 -140px;
+
+    &.ots_icon {
+      padding: 0px;
+    }
   }
   
-  .discourse {
-    background-position: -28px 0;
-  }
-
-  .discourse:hover,
-  .discourse:focus {
-    background-position: -28px -83px;
-  }
 }
 
 .btn_navbar {

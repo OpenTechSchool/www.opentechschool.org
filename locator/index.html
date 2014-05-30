@@ -1,0 +1,180 @@
+---
+layout: full
+title: OpenTechSchool Locator
+---
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+ <style type="text/css" media="screen">
+   #map { height: 480px; }
+   .event.hidden {
+    opacity: 0.5;
+   }
+
+   .eventsList .empty {
+    margin: 5% 30%;
+    font-style: italic;
+   }
+
+   a.showall {
+    cursor: pointer;
+    font-size: 0.5em;
+    margin-left: 1em;
+   }
+
+   ul.teamsList{
+    list-style: none;
+    display: block;
+    }
+    ul.teamsList li.team {
+      display: block;
+      float: left;
+      padding: 2px 8px;
+      background-color: #085987;
+      border: 1px solid #085987;
+      border-radius: 15px;
+      color: white;
+      margin: 5px;
+      cursor: pointer;
+    }  
+    ul.teamsList li.team.hidden {
+      background-color: #84ACC3;
+      border: 1px solid #84ACC3;
+    }
+    ul.teamsList li.team:before {
+      display: none
+
+    }
+    ul.teamsList:after {
+       clear: both;
+       content: "";
+       display: block; 
+    }
+
+ </style>
+
+<div id="map"></div>
+<div class="container container_narrow">
+  <div id="eventsList"></div>
+</div>
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/x-template" data-template="marker-popup">
+  <a href="${link}">${name}</a><br/>
+  <span>${members} Learners</span> in <span>${city}</span>
+</script>
+
+<script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    var map = L.map('map'),
+        groups = [],
+        meetupcom_key = '38406b383fa43605b6b234269316'
+        markers = [],
+        position_found = false,
+        tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+                  maxZoom: 16
+                }),
+        blueIcon = L.icon({
+            iconUrl: '/images/map/marker-blue.png',
+            shadowUrl: '/images/map/marker-shadow.png',
+            iconSize: [35, 45],
+            iconAnchor: [17, 42],
+            popupAnchor: [1, -32],
+            shadowAnchor: [10, 12],
+            shadowSize: [36, 16],
+        }),
+        redIcon = L.icon({
+            iconUrl: '/images/map/marker-red.png',
+            iconSize: [15, 20],
+            popupAnchor: [1, -10],
+        })
+
+    tiles.addTo(map);
+
+    function zoom_to_closest(){
+      var best_marker = null,
+          title,
+          cur_pos = L.latLng(position_found.latlng),
+          best_distance = Infinity;
+
+      $.each(markers, function(index, marker){
+        var my_distance = marker.getLatLng().distanceTo(cur_pos);
+        if (my_distance < best_distance){
+          best_distance = my_distance;
+          best_marker = marker;
+        }
+      });
+
+      title = "Great. You are just " + (best_distance / 1000).toFixed() + " km from the next closest Team: " + best_marker.title;
+
+      if (best_distance < 1000){
+        title = "Great. You are just " + best_distance.toFixed() + " meters from the next closest Team: " + best_marker.title;
+      } else if (best_distance > 100000){
+        title = 'Sorry, there is no OpenTechSchool around. How about <a href="/handbooks/city-blueprint.html">starting your own one</a>?';
+
+      }
+
+      L.marker(cur_pos, {icon: redIcon}).addTo(map).bindPopup(title).openPopup();
+      map.fitBounds(L.latLngBounds([cur_pos, best_marker.getLatLng()]).pad(1));
+
+    }
+
+    map.on('locationfound', function(e) {
+      position_found = e;
+      if (markers.length){
+        zoom_to_closest();
+      }
+    });
+
+    var locator = React.renderComponent(OTS.Widgets.Locator({map: map}),
+      document.getElementById('eventsList')
+    );
+
+    map.on("moveend", function(){
+      locator.setState({"boundingBox": map.getBounds()});
+    });
+
+    var reqTeams = $.getJSON('https://api.meetup.com/find/groups?callback=?', {
+      key: meetupcom_key,
+      sign: true,
+      text: 'opentechschool',
+      radius: 'global',
+      page: 200
+    });
+
+    reqTeams.then(function(data){
+      markers = $.map(data.data, function(group){
+        var marker = L.marker([group.lat, group.lon], {
+            title: group.name,
+            icon: blueIcon
+          })
+          .addTo(map)
+          .bindPopup(OTS.template('marker-popup', group));
+          marker.title = group.name;
+        return marker;
+      });
+
+      teams = data.data;
+      // sort alphabetically first
+      teams.sort(function(a, b){
+        if (a.name > b.name) {
+          return 1;
+        } else if (a.name < b.name){
+          return -1;
+        }
+        return 0;
+      });
+
+      locator.setState({teams: teams});
+
+      if(position_found) {
+        zoom_to_closest();
+      }
+
+    });
+
+    map.locate();
+  });
+</script>

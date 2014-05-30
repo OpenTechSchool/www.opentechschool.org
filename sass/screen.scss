@@ -2,13 +2,14 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+@charset "UTF-8";
 @import "compass";
 @import "compass/reset";
 @import "imports/_vars";
 @import "imports/_grid";
 @import "imports/_main";
-@import "imports/_dropdown";
+@import "imports/_modal";
+// @import "imports/_dropdown";
 @import "imports/_city";
 @import "imports/_nav";
 @import "imports/_carousel";

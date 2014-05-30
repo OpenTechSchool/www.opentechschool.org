@@ -17,8 +17,9 @@ body, button, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   line-height: 1.5;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
 }
 
 h1 {
@@ -287,38 +288,100 @@ ul.switch_lang {
 }
 
 .ots_logo {
-  width: 304px;
-  margin: 0 auto 2em auto;
-  color: $ots_blue;
+  margin: 1em auto 0.25em auto;
+  font-size: 4.25em;
+  text-shadow: 0px 0px 1px;
 }
 
+.menu_ots_logo {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.quick_nav_btn {
+  font-size: 2em;
+  padding: 5px;
+  color: white;
+  span:before {
+    content: "\25BE";
+  }
+  &.open span:before {
+    content: "\25B4";
+  }
+}
+
+.more-nav {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: $ots_blue_h solid 1px;
+  .chapters_list {
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    columns: 2;
+  }
+  .main {
+    li {
+      display: inline-block;
+      padding-right: 2em;
+    }
+  }
+}
+
+
+.menu_ots_logo,
 .ots_logo a {
-  width: 304px;
-  height: 100px;
   margin-bottom: 0;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
-  display: block;
-  background: transparent url("../images/ots_logo_v.png") no-repeat 0 0;
+  color: $ots_blue;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  &:focus, &:hover, &:active {
+    outline: none;
+    outline: none;
+  }
 }
-
-.ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active {
-  outline: none;
-  background-position: 0 -140px;
-  outline: none;
-}
-
 
 .site_header {
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
+  p {
+    text-shadow: 0px 0px 4px #999;
+  }
+}
+
+.intro {
+  background-color: #FFF;
+  margin-bottom: 2em;
+  opacity: 0.8;
+  padding: 1em 2em;
+  font-size: 0.9em;
+
+  .action-wrap {
+    text-align: center;
+    .ots_action {
+      font-size: 1.2em;
+      line-height: 2.5em;
+    }
+  }
 }
 
 .site_header_landing {
-  background: $ots_blue;
-  color: #FFF;
+  background-image: url(../images/header.png);
+  padding-bottom: 2em;
+  .site_header {
+    color: #000;
+  }
+  .intro {
+    color: #000;
+    font-size: 1em;
+    text-shadow: 1px 1px 10px #AAA;
+    em {
+      font-weight: bold;
+    }
+  }
 }
 
 .site_header_core {
@@ -341,6 +404,76 @@ ul.switch_lang {
   margin: 0 2% 1.5em 2%;
 }
 
+// events loader
+.eventsList {
+  .event {
+    clear: both;
+    min-height: 80px;
+    .date {
+      float: left;
+      width: 60px;
+      height: 70px;
+      text-align: center;
+      margin: 5px;
+      border: $ots_blue 2px solid;
+
+      > * {
+        width: 100%;
+        display: block;
+        font-style: normal;
+      }
+
+      .month {
+        background: $ots_blue;
+        color: white;
+      }
+      .day {
+        font-size: 18px;
+        line-height: 36px;
+        color: black;
+      }
+      .time {
+        border-top: 1px $ots_blue solid;
+        line-height: 12px;
+      }
+    }
+
+    .details {
+      padding: 5px;
+      .team {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// discourse topic loader
+
+.topic {
+  padding: 15px 10px;
+  clear: both;
+  .metadata {
+    opacity: 0.6;
+    width: 100%;
+    line-height: 30px;
+  }
+  .posters {
+    width: 150px;
+    display: block;
+    float: left;
+    .avatar {
+      border-radius: 2px;
+      vertical-align: middle;
+      margin: 2px;
+    }
+  }
+
+  &.highlight {
+    .metadata {
+      opacity: 1;
+    }
+  }
+}
 
 
 .sponsor_list {
@@ -433,13 +566,109 @@ ul.switch_lang {
   }
 }
 
+// blocks on front-page
+
+
+.blocky {
+  border-left: 2px $ots_blue solid;
+  overflow: display;
+  min-height: 130px;
+  margin-bottom: 1em;
+  .head {
+    border-bottom: 2px $ots_blue solid;
+    padding-left: 25px;
+    margin-left: -10px;
+  }
+  > p, > div, > section {
+    padding: 0.5em;
+  }
+
+
+  &.green {
+    border-color: lime;
+    .head {
+      border-color: lime;
+    }
+  }
+
+  &.orange {
+    border-color: orange;
+    .head {
+      border-color: orange;
+    }
+  }
+
+  &.violet {
+    border-color: violet;
+    .head {
+      border-color: violet;
+    }
+  }
+}
+
+// on-off-switch for locator
+.onoffswitch {
+  position: relative;
+  width: 94px;
+  float: right;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #84ACC3; border-radius: 22px;
+}
+.onoffswitch-inner {
+  width: 200%; margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+  font-size: 9px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "Show all";
+  padding-left: 10px;
+  background-color: #085987; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+  content: "Matching only";
+  padding-right: 10px;
+  background-color: #EEEEEE; color: #A69999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  width: 9px;
+  margin: 6px;
+  background: #FFFFFF;
+  border: 2px solid #84ACC3;
+  border-radius: 10px;
+  position: absolute; top: 0; bottom: 0; right: 70px;
+  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.onoffswitch.checked .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch.checked .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
 .top_bar {
   width: 100%;
   z-index: 100;
   background: #FFF;
+  line-height: 2.5em;
   color: #FFF;
   .container {
     overflow: visible;
+    vertical-align: middle;
+  }
+  h3 {
+    color: $ots_blue_h;
   }
 }
 

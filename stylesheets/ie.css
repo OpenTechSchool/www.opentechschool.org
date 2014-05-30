@@ -24,25 +24,31 @@ body { font-size: 87.5%; }
 
 .container_narrow { width: 100%; padding: 0; }
 
-.top_bar { position: absolute; height: 2.5em; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
+.top_bar { position: absolute; height: 2.5em; overflow: hidden; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
 
 .top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
 
 .logo_top_bar { width: auto; }
 
-.col_left { width: 46%; float: left; margin: 0 4% 1.5em 0; }
+.col_left { width: 46%; float: left; margin: 0 3.75% 1.5em 0; }
 
-.col_right { width: 46%; float: right; margin: 0 0 1.5em 4%; }
+.col_right { width: 46%; float: right; margin: 0 0 1.5em 3.75%; }
+
+.two-third { width: 60%; margin-right: 6.4%; float: left; }
+
+.a-third { width: 30%; margin-right: 3.1%; float: left; }
 
 .float_list_4 > li { width: 21%; }
 
 .site_header { padding-top: 7em; }
 
+.site_header_landing .site_header { padding-top: 4.25em; padding-bottom: 2.5em; }
+
 .site_header_core img, .carousel_testimonial { padding-top: 3em; }
 
 .testimonial-caption { font-size: 1em; }
 
-.site_header_img { background-size: 125%; }
+.site_header_img { background-size: 100%; }
 
 .name .close-up { margin-right: 1.5em; float: left; }
 .name strong { margin-top: 2.4em; }
