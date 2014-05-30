@@ -2,6 +2,7 @@ url: www.opentechschool.org
 baseurl: /
 blog_domain: blog.opentechschool.org
 css_version: 6
+markdown: kramdown
 
 encoding: UTF-8
 exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock']
