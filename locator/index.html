@@ -34,7 +34,7 @@ title: OpenTechSchool Locator
       color: white;
       margin: 5px;
       cursor: pointer;
-    }  
+    }
     ul.teamsList li.team.hidden {
       background-color: #84ACC3;
       border: 1px solid #84ACC3;
@@ -46,7 +46,7 @@ title: OpenTechSchool Locator
     ul.teamsList:after {
        clear: both;
        content: "";
-       display: block; 
+       display: block;
     }
 
  </style>
@@ -123,6 +123,12 @@ title: OpenTechSchool Locator
 
     map.on('locationfound', function(e) {
       position_found = e;
+      if (markers.length){
+        zoom_to_closest();
+      }
+    });
+    map.on('locationerror', function(err){
+      position_found = {latlng: [52.5003845, 13.4197383]};
       if (markers.length){
         zoom_to_closest();
       }
