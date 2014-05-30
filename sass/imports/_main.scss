@@ -288,6 +288,7 @@ ul.switch_lang {
 .ots_logo {
   margin: 1em auto 0.25em auto;
   font-size: 4.25em;
+  text-shadow: 0px 0px 1px;
 }
 
 .menu_ots_logo {
@@ -338,6 +339,9 @@ ul.switch_lang {
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
+  p {
+    text-shadow: 0px 0px 4px #999;
+  }
 }
 
 .intro {
@@ -364,6 +368,11 @@ ul.switch_lang {
   }
   .intro {
     color: #000;
+    font-size: 1em;
+    text-shadow: 1px 1px 10px #AAA;
+    em {
+      font-weight: bold;
+    }
   }
 }
 
