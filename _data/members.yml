@@ -69,6 +69,13 @@ Hamburg:
   - name: Fabian
     email: fabian@opentechschool.org
     img: fabian.jpg
+Istanbul:
+  - name: Uğur Özyılmazel
+    email: ugur@opentechschool.org
+    img: ugur.jpg
+  - name: Fatih Kadir Akın
+    email: fatih@opentechschool.org
+    img: fatih.jpg
 Melbourne:
   - name: Steven Farlie
     email: steven@opentechschool.org
@@ -135,10 +142,3 @@ Zürich:
   - name: Lars Butler
     email: lars@opentechschool.org
     img: lars.jpg
-İstanbul:
-  - name: Uğur Özyılmazel
-    email: ugur@opentechschool.org
-    img: ugur.jpg
-  - name: Fatih Kadir Akın
-    email: fatih@opentechschool.org
-    img: fatih.jpg
