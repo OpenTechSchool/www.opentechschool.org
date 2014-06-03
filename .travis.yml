@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.1.1
+script:
+  - jekyll build --trace
+  - htmlproof ./_site
+branches:
+  only:
+    - gh-pages
+
