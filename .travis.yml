@@ -4,3 +4,6 @@ rvm:
 script:
   - jekyll build --trace
   - htmlproof ./_site
+branches:
+  only:
+    - gh-pages
