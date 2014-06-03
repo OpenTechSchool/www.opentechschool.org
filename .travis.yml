@@ -3,7 +3,7 @@ rvm:
   - 2.1.1
 script:
   - jekyll build --trace
-  - htmlproof ./_site
+  #  - htmlproof ./_site
 branches:
   only:
     - gh-pages
