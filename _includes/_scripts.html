@@ -13,19 +13,13 @@
   var OTS = window.OTS;
 
   OTS.config = {
-    chapters: {}
-  }
-
-  // pass over chapter configuration
-
-  var chapters = window.OTS.config.chapters
-
-  {% for city in site.data.cities %}
-    {% if city.meetup_key %}
-    chapters["{{city.meetup_key}}"] = {{city | jsonify}}
-    {% endif %}
-  {% endfor %}
-
+    chapters: {
+    {% for city in site.data.cities %}{% if city.meetup_key %}
+      "{{city.meetup_key}}": {{city | jsonify}}{% unless forloop.last %},{% endunless %}
+    {% endif %}{% endfor %}
+    }
+  };
+  
   OTS.template = function(name, data) {
     var templateString = $('script[data-template=' + name + ']').html();
     !templateString && console.error('empty or non-existing template "' + name + '"');
