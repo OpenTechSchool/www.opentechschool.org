@@ -48,6 +48,7 @@
   page: melbourne/
   does:
     workshops
+    learnersmeetup
 - title: Nairobi
   meetup_key: opentechschool-nairobi
   location: "Nairobi, Kenya"
