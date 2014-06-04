@@ -1,6 +1,6 @@
 # [www.opentechschool.org](http://www.opentechschool.org)
 
-![Travis Build Status](https://travis-ci.org/OpenTechSchool/www.opentechschool.org.svg "Travis Build Status")
+[![Travis Build Status](https://travis-ci.org/OpenTechSchool/www.opentechschool.org.svg "Travis Build Status")](https://travis-ci.org/OpenTechSchool/www.opentechschool.org)
 
 
 The source code behind OTS' main web site.
