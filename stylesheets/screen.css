@@ -350,6 +350,8 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 
 .site_header_hamburg { background-image: url(../images/bg_hamburg.jpg); background-position: 20% 10%; }
 
+.site_header_istanbul { background-image: url(../images/bg_istanbul.jpg); background-position: 0% 50%; }
+
 .site_header_melbourne { background-image: url(../images/bg_melbourne.jpg); background-position: 45% 0%; }
 
 .site_header_ramallah { background-image: url(../images/bg_ramallah.jpg); background-position: 55% 0%; }

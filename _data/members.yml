@@ -36,7 +36,7 @@ Brussels:
   - name: Friedger Müffke
     img: friedger.jpg
   - name: Nino Bosteels
-    img: nino.png    
+    img: nino.png
 Dortmund:
   - name: Carsten
     email: carsten@opentechschool.org
@@ -69,6 +69,13 @@ Hamburg:
   - name: Fabian
     email: fabian@opentechschool.org
     img: fabian.jpg
+Istanbul:
+  - name: Uğur Özyılmazel
+    email: vigo@opentechschool.org
+    img: ugur.jpg
+  - name: Fatih Kadir Akın
+    email: fatih@opentechschool.org
+    img: fatih.jpg
 Melbourne:
   - name: Steven Farlie
     email: steven@opentechschool.org

@@ -30,6 +30,13 @@
     workshops
     appsummercamps
     learnersmeetup
+- title: Istanbul
+  meetup_key: opentechschool-istanbul
+  location: "İstanbul, Turkey"
+  page: istanbul/
+  does:
+    workshops
+    learnersmeetup
 - title: Jerusalem
   location: "Jerusalem, Isreal"
   meetup_key: opentechschool-jerusalem
