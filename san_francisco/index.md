@@ -1,7 +1,6 @@
 ---
 layout: city
 title: San Francisco
-underscore_title: san_francisco
 tagline: "Greetings from Karl"
 rss_feed: san_francisco
 meetupcom_group: opentechschool-san-francisco
