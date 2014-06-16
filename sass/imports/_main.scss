@@ -520,6 +520,7 @@ ul.switch_lang {
     @include min-height(8em);
     text-align: center;
     &.member {
+      // fix spacing for teams that take up more than one line
       @include min-height(240px);
           height: 220px !important;
           min-height: 220px;
