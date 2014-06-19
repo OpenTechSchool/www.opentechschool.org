@@ -25,11 +25,11 @@ When scheduling the event, please keep in mind:
 
 - Out of experience the best time to open signup is on Tuesdays at 6pm.
 - We usually schedule the event info and start the promotion _before_ signups are opened, at least a day before.  This is in order to ensure we reach as diverse an audience as possible and not only those who are able to check their email every 2 minutes.
-- Feel free to ignore this if you do not expect to have a waiting list.  It might actually discourage people if they have to come back to actually sign up and, thus, hurt smaller chapters.
+  * Feel free to ignore this if you do not expect to have a waiting list.  It might actually discourage people if they have to come back to actually sign up and, thus, hurt smaller chapters.
 - Since this is a free event, the no-show rate is going to be about 20-30% (up to 50% on good weather.)  You can well overbook your capacities usually.
 - Set the number of people able to sign up to the number of coaches which confirmed to come * 4.  So if you have 10 coaches, allow 40 signups.  This allows, bearing the no-show rate in mind, for a 3:1 learner/coach ratio.
-- If you also track coaches through Meetup, raise the sign up limit to * 5.  This way the coaches can RSVP the event as well.
-- Do not set the number of slots too high, initially, to create some kind of demand.  You can still raise the limits when there is a waiting list.
+  * If you also track coaches through Meetup, raise the sign up limit to * 5.  This way the coaches can RSVP the event as well.
+  * Do not set the number of slots too high, initially, to create some kind of demand.  You can still raise the limits when there is a waiting list.
 - You might want to close signups a few days before the actual event to make sure communication happens accordingly.
 
 When promoting, also make sure potential coaches know they are invited to come and who to talk to, if they want to. Usually that would be via answering on a public email or to you personally.
