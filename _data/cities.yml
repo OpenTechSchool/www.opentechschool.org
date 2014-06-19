@@ -88,8 +88,8 @@
   does:
     workshops
 - title: Tel-Aviv
-  location: "Tel-Aviv, Isreal"
   meetup_key: opentechschool-tel-aviv
+  location: "Tel-Aviv, Isreal"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
   does:
     workshops
