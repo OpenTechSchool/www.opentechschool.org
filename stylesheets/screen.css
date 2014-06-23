@@ -145,13 +145,14 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 .menu_ots_logo:focus, .menu_ots_logo:hover, .menu_ots_logo:active, .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active { outline: none; outline: none; }
 
 .site_header { padding: 4.5em 0 3em 0; text-align: center; font-size: 1.5em; }
-.site_header p { text-shadow: 0px 0px 4px #999; }
+.site_header h1 { text-shadow: 0px 0px 6px #99A; }
+.site_header p { text-shadow: 0px 0px 10px #BBB; }
 
 .intro { background-color: #FFF; margin-bottom: 2em; opacity: 0.8; padding: 1em 2em; font-size: 0.9em; }
 .intro .action-wrap { text-align: center; }
 .intro .action-wrap .ots_action { font-size: 1.2em; line-height: 2.5em; }
 
-.site_header_landing { background-image: url(../images/header.png); padding-bottom: 2em; }
+.site_header_landing { background-image: url(../images/header.jpg); padding-bottom: 2em; }
 .site_header_landing .site_header { color: #000; }
 .site_header_landing .intro { color: #000; font-size: 1em; text-shadow: 1px 1px 10px #AAA; }
 .site_header_landing .intro em { font-weight: bold; }

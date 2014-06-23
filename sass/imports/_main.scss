@@ -185,7 +185,7 @@ small {
     bottom: 1px;
     top: auto;
 }
-@media screen and (min-width:800px) { 
+@media screen and (min-width:800px) {
     #pledgeRibbon {
         position: absolute;
         display: block;
@@ -347,8 +347,11 @@ ul.switch_lang {
   padding: 4.5em 0 3em 0;
   text-align: center;
   font-size: 1.5em;
+  h1 {
+    text-shadow: 0px 0px 6px #99A;
+  }
   p {
-    text-shadow: 0px 0px 4px #999;
+    text-shadow: 0px 0px 10px #BBB;
   }
 }
 
@@ -369,7 +372,7 @@ ul.switch_lang {
 }
 
 .site_header_landing {
-  background-image: url(../images/header.png);
+  background-image: url(../images/header.jpg);
   padding-bottom: 2em;
   .site_header {
     color: #000;
