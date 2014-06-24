@@ -85,6 +85,7 @@
   location: "San Francisco, CA, USA"
   meetup_key: opentechschool-san-francisco
   meetup: http://www.meetup.com/opentechschool-san-francisco
+  page: san_francisco/
   does:
     workshops
 - title: Tel-Aviv
