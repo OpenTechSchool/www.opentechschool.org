@@ -1,9 +1,13 @@
 language: ruby
+cache: bundler
+
 rvm:
   - 2.1.1
+
 script:
-  - jekyll build --trace
+  - bundle exec jekyll build --trace
   #  - htmlproof ./_site
+
 branches:
   only:
     - gh-pages
