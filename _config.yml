@@ -5,5 +5,5 @@ css_version: 6
 markdown: kramdown
 
 encoding: UTF-8
-exlude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['scripts', 'sass', 'config.rb', 'Gemfile', 'Gemfile.lock', 'vendor']
 
