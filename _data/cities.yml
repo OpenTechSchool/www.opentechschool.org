@@ -98,3 +98,12 @@
   does:
     workshops
     itlabs
+- title: New York City
+  meetup_key: opentechschool-nyc
+  location: "New York City, New York, USA"
+  page: nyc/
+  does:
+    learninggroups
+    workshops
+    learnersmeetup
+    itlabs
