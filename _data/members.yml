@@ -29,6 +29,13 @@ Berlin:
   - name: Stephan Klinger
     email: staeff@opentechschool.org
     img: stephan.jpg
+Bristol:
+  - name: Katja Durrani
+    img: katja.jpg
+  - name: Gicela Morales
+    img: gicela.jpg
+  - name: Robert Thumpston
+    img: rob.jpg
 Brussels:
   - name: Roman Miletitch
     img: roman.jpg
