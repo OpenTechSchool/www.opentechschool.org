@@ -1,0 +1,155 @@
+---
+layout: simple
+title: <span class="chapter"></span> Dashboard
+---
+
+<style>
+#dashboard {
+  clear: after;
+  margin: 1em 0;
+}
+#dashboard ul li:before {
+  display: none;
+  clear: both;
+}
+#dashboard ul li {
+  display: table;
+  border: 1px solid #888;
+  width: 30%;
+  height: 4em;
+  margin: 3px;
+  background-color: lime;
+  text-align: center;
+  float: left;
+}
+#dashboard ul li.recent {
+  background-color: lightgreen;
+}
+#dashboard ul li.minor {
+  background-color: yellow;
+}
+#dashboard ul li.major {
+  background-color: orange;
+}
+#dashboard ul li.critical {
+  background-color: red;
+}
+#dashboard ul li.never {
+  background-color: lightgray;
+}
+#dashboard ul li .title {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+#dashboard ul li .occur {
+  display: table-cell;
+  font-size: 2em;
+  background-color: white;
+  opacity: 0.4;
+  width: 2em;
+  vertical-align: middle;
+}
+</style>
+
+<h2>Workshops</h1>
+
+<div id="dashboard" class="clearfix">
+</div>
+
+<small>
+The information is automatically generated from <a id="pastlink">past Meetup
+events</a> in <span class="chapter"></span>.  It uses keyword search in the
+event names to determine which workshop material was used;  this is, of
+course, prone to error.
+</small>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(function() {
+var chapter = window.location.search.replace(/^\?/, '');
+if (!chapter) return;
+var meetup = "opentechschool-" + chapter;
+$("#pastlink").attr("href",
+  "https://www.meetup.com/" + meetup + "/events/past/");
+$(".chapter").text(chapter.replace(/\w\S*/g, function(t) {
+    return t.charAt(0).toUpperCase() + t.substr(1).toLowerCase(); }));
+React.renderComponent(
+  OTS.Widgets.EventsCurricula({
+    params: {
+      group_urlname: 'opentechschool-' + chapter,
+      status: 'past,upcoming',
+    },
+    ages: [
+      [0, "second", "recent"],
+      [1, "month", "minor"],
+      [3, "month", "major"],
+      [1, "year", "critical"],
+    ],
+    curricula: {
+      "Python for beginners": {
+        url: "python.opentechschool.org/beginners",
+        matches: [
+          /intro(duction)? to programming w(\/|ith) python/,
+        ],
+      },
+      "Data Processing with Python": {
+        url: "http://opentechschool.github.io/python-data-intro/",
+        matches: [
+          /data processing/,
+        ],
+      },
+      "BioPython": {
+        url: "https://github.com/OpenTechSchool/biopython/tree/material",
+      },
+      "Websites with Python Flask": {
+        url: "http://opentechschool.github.io/python-flask/",
+        matches: [
+          /flask/,
+        ],
+      },
+      "Web Development with Django": {
+        url: "http://opentechschool.github.io/django-101/",
+        matches: [
+          /django/,
+        ],
+      },
+      "Social Coding with Git and Github": {
+        url: "http://opentechschool.github.io/social-coding/",
+        matches: [
+          /social coding/,
+        ],
+      },
+      "Github from Scratch": {
+        url: "http://opentechschool.github.io/github-from-scratch/",
+      },
+      "HTML/CSS for beginners": {
+        url: "http://opentechschool.github.io/html-css-beginners/",
+      },
+      "Javascript for Absolute Beginners": {
+        url: "http://js.opentechschool.org/",
+        matches: [
+          /javascript/,
+        ],
+      },
+      "Physical Computing Club": {
+        url: "http://www.physicalcomputingclub.org/",
+      },
+      "Talk & Play": {
+      },
+      "Hackership": {
+        url: "http://hackership.org/",
+      },
+      "Organizers Meeting": {
+        matches: [
+          /organi[zs]er('?s)? (breakfast|meet(ing|up))/,
+          /drinks/,
+        ],
+      },
+    },
+  }),
+  document.getElementById("dashboard"));
+});
+</script>

@@ -349,4 +349,73 @@
         return React.DOM.span({}, this.state.members + " " + this.state.who);
       }
     });
+
+    OTS.Widgets.EventsCurricula = React.createClass({
+      mixins: [MeetupMixin],
+      getDefaultProps: function(){
+        return {
+          path: 'events',
+        };
+      },
+      getInitialState: function(){
+        var workshops = Object.keys(this.props.curricula).map(function(title) {
+          return OTS.Widgets.Curriculum(
+            $.extend(
+              {key: title, ages: this.props.ages},
+              this.props.curricula[title])
+          );
+        }.bind(this));
+        return {workshops: workshops};
+      },
+      render: function(){
+        return React.DOM.ul({}, this.state.workshops);
+      },
+      resultsReceived: function(data){
+        data.results.forEach(function(evt) {
+          this.state.workshops.forEach(function(workshop) {
+            if (workshop.matches(evt.name)) {
+              workshop.count(evt);
+            }
+          });
+        }.bind(this));
+      },
+    });
+
+    OTS.Widgets.Curriculum = React.createClass({
+      getInitialState: function(){
+        return {occurrences: 0, last: null};
+      },
+      matches: function(desc){
+        var title = this.props.key;
+        var matches = this.props.matches;
+        return desc.match(new RegExp(title, "i")) ||
+          (matches && matches.some(function(m){
+            return new RegExp(m.source, "i").test(desc); }));
+      },
+      count: function(evt){
+        this.setState({
+          occurrences: this.state.occurrences+1,
+          last: Math.max(evt.time, this.state.last),
+        });
+      },
+      render: function(){
+        // moment().subtract(1, "days")
+        var style = "never";
+        var tooltip = "never";
+
+        if (this.state.occurrences) {
+          var styles = this.props.ages.filter(function(age){
+            return moment().subtract(age[1]+'s', age[0]).valueOf() > this.state.last;
+          }.bind(this));
+          style = styles.length ? styles[styles.length-1][2] : "";
+          var last = moment(this.state.last);
+          tooltip = last.fromNow() + " (" + last.format("ddd, MMM Do YYYY") + ")";
+        }
+
+        return React.DOM.li({className: style, title: tooltip},
+          React.DOM.span({className: "title"}, this.props.key),
+          React.DOM.span({className: "occur"}, this.state.occurrences)
+        );
+      },
+    });
 })();
