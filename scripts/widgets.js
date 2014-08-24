@@ -81,7 +81,8 @@
               });
             }
             if (eventNodes.length == 0){
-              eventNodes = React.DOM.div({className:"empty"},"No events found :( ");
+              eventNodes = React.DOM.div({className:"empty"},
+                "No events scheduled.");
             }
             return React.DOM.div({className:"eventsList"}, eventNodes);
           }
