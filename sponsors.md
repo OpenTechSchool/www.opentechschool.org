@@ -13,7 +13,7 @@ sponsors:
     name: Google Apps for Education
     web: https://www.google.com/enterprise/apps/education/
     logo: images/sponsors/google_apps_edu.png
-    about: Working with a distrubted network of volunteers brings it's challanges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
+    about: Working with a distributed network of volunteers brings its challenges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
     blog_post: http://blog.opentechschool.org/2012/07/we-are-supported-by-google-apps-for-education.html
   paypal:
     name: PayPal
