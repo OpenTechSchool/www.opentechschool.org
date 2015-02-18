@@ -13,7 +13,7 @@ Before we can get started, there are a few things we need to ensure first. Those
   * It needs to be hands-on.
   * You are responsible for creating a welcoming learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory."
 
- 2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global).)
+ 2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](https://discourse.opentechschool.org/).)
 
  3. Have an idea of what you want your workshop/learning material to include -- the clearer the idea, the easier it becomes to recruit coaches.
 
