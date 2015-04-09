@@ -1,7 +1,4 @@
 Berlin:
-  - name: Aleks
-    email: aleks@opentechschool.org
-    img: aleks.jpg
   - name: Beatrice Martini
     email: beatrice@opentechschool.org
     img: beatrice.jpg
@@ -82,15 +79,6 @@ Istanbul:
   - name: Uğur Özyılmazel
     email: vigo@opentechschool.org
     img: ugur.jpg
-  - name: Fatih Kadir Akın
-    email: fatih@opentechschool.org
-    img: fatih.jpg
-  - name: Serdar Doğruyol
-    email: serdar@opentechschool.org
-    img: serdar.jpg
-  - name: İlter Cengiz
-    email: ilter@opentechschool.org
-    img: ilter.jpg
 Melbourne:
   - name: Steven Farlie
     email: steven@opentechschool.org

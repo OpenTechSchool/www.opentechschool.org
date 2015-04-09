@@ -45,7 +45,7 @@
     workshops
     learnersmeetup
 - title: Jerusalem
-  location: "Jerusalem, Isreal"
+  location: "Jerusalem, Israel"
   meetup_key: opentechschool-jerusalem
   meetup: http://www.meetup.com/opentechschool-jerusalem/
   does:
@@ -97,7 +97,7 @@
     workshops
 - title: Tel-Aviv
   meetup_key: opentechschool-tel-aviv
-  location: "Tel-Aviv, Isreal"
+  location: "Tel-Aviv, Israel"
   meetup: http://www.meetup.com/opentechschool-tel-aviv/
   does:
     workshops

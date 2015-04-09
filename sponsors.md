@@ -13,7 +13,7 @@ sponsors:
     name: Google Apps for Education
     web: https://www.google.com/enterprise/apps/education/
     logo: images/sponsors/google_apps_edu.png
-    about: Working with a distrubted network of volunteers brings it's challanges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
+    about: Working with a distributed network of volunteers brings its challenges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
     blog_post: http://blog.opentechschool.org/2012/07/we-are-supported-by-google-apps-for-education.html
   paypal:
     name: PayPal
@@ -21,6 +21,11 @@ sponsors:
     logo: images/sponsors/paypal.jpg
     blog_post: http://blog.opentechschool.org/2013/08/paypal-donations.html
     about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
+  slack:
+    name: Slack
+    web: https://www.slack.com
+    logo: images/sponsors/slack.png
+    about: Slack allows us to communicate in real-time and build our community.
 
 ---
 
