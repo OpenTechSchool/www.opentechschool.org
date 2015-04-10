@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Dortmund
 tagline: "Between currywurst, football and compilers."
 rss_feed: dortmund

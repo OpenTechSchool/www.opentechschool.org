@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Istanbul
 tagline: "Bridging two continents, and the people."
 rss_feed: istanbul

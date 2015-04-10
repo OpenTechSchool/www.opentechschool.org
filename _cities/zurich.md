@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Zürich
 class: zurich
 tagline: "The real Mountain View"

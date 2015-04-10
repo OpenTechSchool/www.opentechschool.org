@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Bristol
 tagline: "The start of a great adventure"
 rss_feed: bristol

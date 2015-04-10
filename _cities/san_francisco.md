@@ -1,5 +1,4 @@
 ---
-layout: city
 title: San Francisco
 tagline: "Greetings from Karl"
 rss_feed: san_francisco

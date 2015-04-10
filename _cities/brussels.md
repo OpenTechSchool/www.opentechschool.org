@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Brussels
 tagline: "Where knowledge is brewed"
 rss_feed: brussels

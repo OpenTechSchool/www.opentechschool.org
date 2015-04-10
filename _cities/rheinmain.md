@@ -1,5 +1,4 @@
 ---
-layout: city
 title: RheinMain
 tagline: "RheinMain rocks!"
 rss_feed: rheinmain

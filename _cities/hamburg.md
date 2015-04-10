@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Hamburg
 tagline: "Shipping is our tradition... and so are Franzbrötchen."
 rss_feed: hamburg

@@ -1,5 +1,4 @@
 ---
-layout: city
 title: Nairobi
 tagline: "When nature and tech had a baby, Nairobi was born"
 rss_feed: nairobi
