@@ -7,6 +7,9 @@ markdown: kramdown
 encoding: UTF-8
 exclude: ['sass', 'config.rb', 'Gemfile', 'Gemfile.lock', 'vendor']
 
+gems:
+  - jekyll-redirect-from
+
 collections:
   cities:
     output: true
