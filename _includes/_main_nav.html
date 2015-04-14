@@ -64,7 +64,7 @@
           <h3>Chapters <a href="{{site.baseurl}}locator/">⌖</a></h3>
           <div class="chapters_list">
             <ul>
-              {% for city in site.data.cities %}
+              {% for city in site.cities %}
                 {% if city.page %}
                   <li>
                     <a href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>

@@ -23,7 +23,7 @@
   <div class="container container_narrow">
     <h3>Currently run by</h3>
     <ul>
-        {% for city in site.data.cities %}
+        {% for city in site.cities %}
          {% if city.does contains page.indicator %}
             {% if city.page %}
                 <li>

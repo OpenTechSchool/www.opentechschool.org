@@ -1,10 +1,15 @@
 ---
 title: Nairobi
+location: "Nairobi, Kenya"
 tagline: "When nature and tech had a baby, Nairobi was born"
+page: nairobi/
 rss_feed: nairobi
 meetupcom_group: OpenTechSchool-Nairobi
+meetup_key: opentechschool-nairobi
 twitter: OTSNairobi
 widget_id: 394028430473170944
+does:
+  workshops
 ---
 
 ## About

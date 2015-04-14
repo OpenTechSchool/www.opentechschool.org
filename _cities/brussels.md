@@ -1,8 +1,13 @@
 ---
 title: Brussels
+location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
+page: brussels/
 rss_feed: brussels
 meetupcom_group: opentechschool-brussels
+meetup_key: opentechschool-brussels
+does:
+  workshops
 ---
 
 ## About
