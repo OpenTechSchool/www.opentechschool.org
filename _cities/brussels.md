@@ -2,8 +2,6 @@
 title: Brussels
 location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
-does:
-  workshops
 ---
 
 ## About

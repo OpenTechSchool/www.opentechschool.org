@@ -22,3 +22,5 @@ defaults:
       type: "cities"
     values:
       layout: "city"
+      does:
+        - workshops

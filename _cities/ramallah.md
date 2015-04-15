@@ -2,8 +2,6 @@
 title: Ramallah
 location: "Ramallah, West-Bank"
 tagline: "freedom is our dream .... learning is our passion"
-does:
-  workshops
 ---
 
 ## About

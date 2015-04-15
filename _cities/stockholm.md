@@ -5,8 +5,6 @@ tagline: "Where kanelbullar and köttbullar come from"
 mailing_list: discuss.stockholm
 twitter: OTS_STHLM
 widget_id: 276335914828046338
-does:
-  workshops
 ---
 
 ## About
