@@ -65,8 +65,9 @@
           <div class="chapters_list">
             <ul>
               {% for city in site.cities %}
+                {% include _metadata doc=city %}
                 <li>
-                  <a href="{{site.baseurl}}{{city.key}}" title="{{city.location}}">{{city.title}}</a>
+                  <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">{{city.title}}</a>
                 </li>
               {% endfor %}
             </ul>

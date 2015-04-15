@@ -2,8 +2,6 @@
 title: Dortmund
 location: "Dortmund, Germany"
 tagline: "Between currywurst, football and compilers."
-key: dortmund
-meetup: opentechschool-dortmund
 twitter: OTS_DO
 widget_id: 428986685196480512
 does:

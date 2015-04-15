@@ -2,8 +2,6 @@
 title: Stockholm
 location: "Stockholm, Sweden"
 tagline: "Where kanelbullar and köttbullar come from"
-key: stockholm
-meetup: opentechschool-stockholm
 mailing_list: discuss.stockholm
 twitter: OTS_STHLM
 widget_id: 276335914828046338

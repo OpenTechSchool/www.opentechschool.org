@@ -2,8 +2,6 @@
 title: RheinMain
 location: "RheinMain, Germany"
 tagline: "RheinMain rocks!"
-key: rheinmain
-meetup: opentechschool-rheinmain
 twitter: OTS_RM
 does:
   workshops

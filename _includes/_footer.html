@@ -6,9 +6,12 @@
           <h3>Chapters <a href="{{site.baseurl}}locator/">⌖</a></h3>
           <ul>
             {% for city in site.cities %}
-            <li>
-              <a href="{{site.baseurl}}{{city.key}}" title="{{city.location}}">{{city.title}}</a>
-            </li>
+              {% include _metadata doc=city %}
+              <li>
+                <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
+                  {{city.title}}
+                </a>
+              </li>
             {% endfor %}
             <li>&nbsp;</li>
             <li>

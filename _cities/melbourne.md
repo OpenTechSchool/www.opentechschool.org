@@ -2,8 +2,6 @@
 title: Melbourne
 location: "Melbourne, Australia"
 tagline: "Great learning is achieved with great coffee!"
-key: melbourne
-meetup: OpenTechSchool-Melbourne
 twitter: OTS_AU
 widget_id: 393411216825016320
 mailing_list: discuss.australia

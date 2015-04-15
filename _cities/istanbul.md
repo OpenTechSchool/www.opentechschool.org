@@ -2,8 +2,6 @@
 title: Istanbul
 location: "İstanbul, Turkey"
 tagline: "Bridging two continents, and the people."
-key: istanbul
-meetup: opentechschool-istanbul
 twitter: OTS_IST
 widget_id: 472455816394469377
 does:

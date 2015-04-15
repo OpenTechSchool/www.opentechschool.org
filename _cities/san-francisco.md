@@ -2,8 +2,6 @@
 title: San Francisco
 location: "San Francisco, CA, USA"
 tagline: "Greetings from Karl"
-key: san-francisco
-meetup: opentechschool-san-francisco
 twitter: ots_sf
 widget_id: 427569983241998336
 does:
