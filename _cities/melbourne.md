@@ -4,8 +4,7 @@ location: "Melbourne, Australia"
 tagline: "Great learning is achieved with great coffee!"
 page: melbourne/
 rss_feed: melbourne
-meetupcom_group: OpenTechSchool-Melbourne
-meetup_key: opentechschool-melbourne
+meetup: OpenTechSchool-Melbourne
 twitter: OTS_AU
 widget_id: 393411216825016320
 mailing_list: discuss.australia

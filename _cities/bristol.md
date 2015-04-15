@@ -4,8 +4,7 @@ location: "Bristol, UK"
 tagline: "The start of a great adventure"
 page: bristol/
 rss_feed: bristol
-meetupcom_group: codehub-bristol
-meetup_key: CodeHub-Bristol
+meetup: CodeHub-Bristol
 twitter: CodeHubBs
 widget_id: 487546567449010176
 does:

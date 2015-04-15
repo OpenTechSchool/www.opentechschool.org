@@ -4,8 +4,7 @@ location: "Dortmund, Germany"
 tagline: "Between currywurst, football and compilers."
 page: dortmund/
 rss_feed: dortmund
-meetupcom_group: opentechschool-dortmund
-meetup_key: opentechschool-dortmund
+meetup: opentechschool-dortmund
 twitter: OTS_DO
 widget_id: 428986685196480512
 does:

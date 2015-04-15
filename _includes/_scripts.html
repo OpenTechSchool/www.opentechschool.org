@@ -14,9 +14,9 @@
 
   OTS.config = {
     chapters: {
-    {% for city in site.cities %}{% if city.meetup_key %}
+    {% for city in site.cities %}{% if city.meetup %}
     {%comment%} city|jsonify does not work with collections. :( {%endcomment%}
-    "{{city.meetup_key}}": {
+    "{{city.meetup}}": {
       page: {{city.page | jsonify}},
     }{% unless forloop.last %},{% endunless %}
     {% endif %}{% endfor %}

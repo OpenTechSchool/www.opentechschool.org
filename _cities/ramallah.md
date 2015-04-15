@@ -4,8 +4,7 @@ location: "Ramallah, West-Bank"
 tagline: "freedom is our dream .... learning is our passion"
 page: ramallah/
 rss_feed: ramallah
-meetupcom_group: opentechschool-ramallah
-meetup_key: opentechschool-ramallah
+meetup: opentechschool-ramallah
 does:
   workshops
 ---

@@ -14,7 +14,7 @@
     </div>
 
     <div class="city_cta">
-      <a class="ots_action ots_action_city ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">
+      <a class="ots_action ots_action_city ots_action_highlight" href="http://www.meetup.com/{{page.meetup}}/join">
         Join now
         <span class="member_count" id="membersCount"></span>
       </a>
@@ -34,13 +34,13 @@
       <section>
         <h3 class="head">
           Upcoming events
-          <a href="webcal://www.meetup.com/{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
+          <a href="webcal://www.meetup.com/{{page.meetup}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
         </h3>
         {% if page.custom_events %}
           {{page.custom_events}}
         {% endif %}
         <div id="upcomingEvents"></div>
-        <a href="http://www.meetup.com/{{page.meetupcom_group}}/suggestion">Suggest one!</a>
+        <a href="http://www.meetup.com/{{page.meetup}}/suggestion">Suggest one!</a>
       </section>
     </div>
 
@@ -99,7 +99,7 @@
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     {% endif %}
-    <a href="/dashboard?{{page.meetupcom_group | remove_first: "opentechschool-" }}" class="tiny_button">&raquo;admin</a>
+    <a href="/dashboard?{{ page.meetup }}" class="tiny_button">&raquo;admin</a>
   </div>
 </section>
 
@@ -107,11 +107,11 @@
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('upcomingEvents'));
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{page.meetup}}'}}), document.getElementById('upcomingEvents'));
 
     React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.rss_feed}}.json"}), document.getElementById('chapterConversations'));
 
-    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('membersCount'));
+    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{page.meetup}}'}}), document.getElementById('membersCount'));
    });
 </script>
 

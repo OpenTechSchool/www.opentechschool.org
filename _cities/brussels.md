@@ -4,8 +4,7 @@ location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
 page: brussels/
 rss_feed: brussels
-meetupcom_group: opentechschool-brussels
-meetup_key: opentechschool-brussels
+meetup: opentechschool-brussels
 does:
   workshops
 ---

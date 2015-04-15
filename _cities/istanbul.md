@@ -4,8 +4,7 @@ location: "İstanbul, Turkey"
 tagline: "Bridging two continents, and the people."
 page: istanbul/
 rss_feed: istanbul
-meetupcom_group: opentechschool-istanbul
-meetup_key: opentechschool-istanbul
+meetup: opentechschool-istanbul
 twitter: OTS_IST
 widget_id: 472455816394469377
 does:

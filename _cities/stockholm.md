@@ -4,8 +4,7 @@ location: "Stockholm, Sweden"
 tagline: "Where kanelbullar and köttbullar come from"
 page: stockholm/
 rss_feed: stockholm
-meetupcom_group: opentechschool-stockholm
-meetup_key: opentechschool-stockholm
+meetup: opentechschool-stockholm
 mailing_list: discuss.stockholm
 twitter: OTS_STHLM
 widget_id: 276335914828046338

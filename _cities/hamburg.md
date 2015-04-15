@@ -4,8 +4,7 @@ location: "Hamburg, Germany"
 tagline: "Shipping is our tradition... and so are Franzbrötchen."
 page: hamburg/
 rss_feed: hamburg
-meetupcom_group: opentechschool-hamburg
-meetup_key: opentechschool-hamburg
+meetup: opentechschool-hamburg
 custom_events: ""
 twitter: false
 does:

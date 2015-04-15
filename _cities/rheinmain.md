@@ -4,8 +4,7 @@ location: "RheinMain, Germany"
 tagline: "RheinMain rocks!"
 page: rheinmain/
 rss_feed: rheinmain
-meetupcom_group: opentechschool-rheinmain
-meetup_key: opentechschool-rheinmain
+meetup: opentechschool-rheinmain
 twitter: OTS_RM
 does:
   workshops
