@@ -17,7 +17,7 @@
     {% for city in site.cities %}{% if city.meetup %}
     {%comment%} city|jsonify does not work with collections. :( {%endcomment%}
     "{{city.meetup}}": {
-      page: {{city.page | jsonify}},
+      page: {{city.key | jsonify}},
     }{% unless forloop.last %},{% endunless %}
     {% endif %}{% endfor %}
     }

@@ -2,8 +2,7 @@
 title: Ramallah
 location: "Ramallah, West-Bank"
 tagline: "freedom is our dream .... learning is our passion"
-page: ramallah/
-rss_feed: ramallah
+key: ramallah
 meetup: opentechschool-ramallah
 does:
   workshops

@@ -2,8 +2,7 @@
 title: Brussels
 location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
-page: brussels/
-rss_feed: brussels
+key: brussels
 meetup: opentechschool-brussels
 does:
   workshops

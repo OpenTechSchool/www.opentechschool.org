@@ -2,8 +2,7 @@
 title: RheinMain
 location: "RheinMain, Germany"
 tagline: "RheinMain rocks!"
-page: rheinmain/
-rss_feed: rheinmain
+key: rheinmain
 meetup: opentechschool-rheinmain
 twitter: OTS_RM
 does:

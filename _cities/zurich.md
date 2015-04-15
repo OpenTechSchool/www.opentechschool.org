@@ -2,9 +2,7 @@
 title: Zürich
 location: "Zürich, Switzerland"
 tagline: "The real Mountain View"
-page: zurich/
-class: zurich
-rss_feed: zurich
+key: zurich
 mailing_list: team.zurich
 meetupcom: opentechschool-zurich
 custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Techup</a>."

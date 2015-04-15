@@ -1,10 +1,10 @@
 {% include _head.html %}
 {% include _main_nav.html %}
-<header class="site_header site_header_img site_header_{% if page.class %}{{ page.class }}{% else %}{{page.title | downcase | replace: ' ', '_'}}{% endif %}">
+<header class="site_header site_header_img site_header_{{ page.key | replace: '-', '_' }}">
   <div class="container">
     <div class="city_title">
       <h1>
-        <a href="{{site.baseurl}}{{page.rss_feed | downcase}}/">{{page.title}}</a>
+        <a href="{{site.baseurl}}{{page.key}}/">{{page.title}}</a>
       </h1>
       {% if page.tagline %}
         <h2 class="tagline">
@@ -48,7 +48,7 @@
       <section>
         <h3 class="head">
           Latest news
-          <a href="http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a>
+          <a href="http://{{site.blog_domain}}/feeds/{{page.key}}.xml" class="tiny_button">&raquo;rss</a>
         </h3>
 
         <div id="js-blog-posts-list"></div>
@@ -109,7 +109,7 @@
    $(function() {
     React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{page.meetup}}'}}), document.getElementById('upcomingEvents'));
 
-    React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.rss_feed}}.json"}), document.getElementById('chapterConversations'));
+    React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.key}}.json"}), document.getElementById('chapterConversations'));
 
     React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{page.meetup}}'}}), document.getElementById('membersCount'));
    });
@@ -117,5 +117,5 @@
 
 {% include _footer.html %}
 {% include _scripts.html %}
-{% include _load_blog_feed.html %}
+{% include _load_blog_feed.html feed=page.key %}
 {% include _end.html %}

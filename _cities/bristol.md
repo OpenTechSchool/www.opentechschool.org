@@ -2,8 +2,7 @@
 title: Bristol
 location: "Bristol, UK"
 tagline: "The start of a great adventure"
-page: bristol/
-rss_feed: bristol
+key: bristol
 meetup: CodeHub-Bristol
 twitter: CodeHubBs
 widget_id: 487546567449010176
