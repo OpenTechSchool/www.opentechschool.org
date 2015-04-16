@@ -25,7 +25,7 @@ Berlin:
     img: rachel.jpg
   - name: Stephan Klinger
     email: staeff@opentechschool.org
-    img: stephan.jpg
+    img: staeff.jpg
 Bristol:
   - name: Katja Durrani
     img: katja.jpg
@@ -58,7 +58,7 @@ Dortmund:
     img: ola.jpg
   - name: Tobias
     email: tobi@opentechschool.org
-    img: tobias.jpg
+    img: tobi.jpg
   - name: Dennis
     email: dennis@opentechschool.org
     img: dennis.jpg
@@ -71,14 +71,14 @@ Hamburg:
     img: marie.jpg
   - name: Philipp
     email: phil@opentechschool.org
-    img: philipp.jpg
+    img: phil.jpg
   - name: Fabian
     email: fabian@opentechschool.org
     img: fabian.jpg
 Istanbul:
   - name: Uğur Özyılmazel
     email: vigo@opentechschool.org
-    img: ugur.jpg
+    img: vigo.jpg
 Melbourne:
   - name: Steven Farlie
     email: steven@opentechschool.org
