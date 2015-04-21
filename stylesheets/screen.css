@@ -262,6 +262,10 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .sg_textarea { width: 90%; font-size: .625em; color: #888; border: 1px solid #888; padding: .5em; font-family: Consolas, "Liberation Mono", Courier, monospace; border-radius: 4px; }
 
+/* call to action boxes */
+.call-to-action section { background: #085987; color: white; padding: 25px 15px; border-radius: 4px; text-align: center; float: left; max-width: 210px; margin: 100px 50px; height: 300px; }
+.call-to-action section a { background: white; padding: 4px 11px; border-radius: 2px; }
+
 /* testimonials */
 .testimonials_teaser { overflow: hidden; text-align: center; }
 .testimonials_teaser img { width: 100%; height: auto; position: relative; display: inline-block; margin: 0 auto .666em; }
