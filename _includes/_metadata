@@ -2,5 +2,5 @@
 {% if include.doc.meetup %}
   {% assign meetup = include.doc.meetup %}
 {% else %}
-  {% assign meetup = 'opentechschool-' + key %}
+  {% capture meetup %}opentechschool-{{key}}{% endcapture %}
 {% endif %}
