@@ -32,10 +32,16 @@
   color: $ots_blue;
   background-size: 768px;
   background-repeat: no-repeat;
+  padding-top: 30em;
 }
 
 .site_header_berlin {
   background-image: url(../images/bg_berlin.jpg);
+  background-position: 40% 60%;
+}
+
+.site_header_bristol {
+  background-image: url(../images/bg_bristol.jpg);
   background-position: 40% 60%;
 }
 

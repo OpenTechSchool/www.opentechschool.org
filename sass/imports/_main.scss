@@ -293,9 +293,42 @@ ul.switch_lang {
   text-shadow: 0px 0px 1px;
 }
 
-.menu_ots_logo {
+a.menu_ots_logo {
   font-size: 2em;
-  margin: 0.5em;
+  margin: 0 3px 0 0.5em;
+  background: $ots_blue;
+  color: $white;
+  padding: 8px 13px;
+}
+
+.top_bar.affix {
+   a.menu_ots_logo {
+    font-size: 1em;
+    top: -5px;
+    position: relative;
+    margin: 0 3px 0 1.5em;
+  } 
+
+  a.quick_nav_btn {
+    font-size: 1.5em;
+    &.open span:before {
+      font-size: 1.2em;
+    }
+  }
+
+}
+
+a.quick_nav_btn {
+  font-size: 2em;
+  padding: 5px;
+  color: $ots_blue;
+  span:before {
+    content: "\25BE";
+  }
+  &.open span:before {
+    content: "\25B4";
+    font-size: 1.4em;
+  }
 }
 
 .quick_nav_btn {
@@ -308,6 +341,10 @@ ul.switch_lang {
   &.open span:before {
     content: "\25B4";
   }
+}
+
+ul.nav {
+  margin-right: 7px;
 }
 
 
@@ -326,27 +363,21 @@ ul.switch_lang {
   }
 }
 
-.site_header {
-  padding: 4.5em 0 3em 0;
-  text-align: center;
-  font-size: 1.5em;
-  h1 {
-    text-shadow: 0px 0px 6px #99A;
-  }
-  p {
-    text-shadow: 0px 0px 10px #BBB;
-  }
-}
-
 .intro {
   background-color: #FFF;
   margin-bottom: 2em;
   opacity: 0.8;
-  padding: 1em 2em;
+  padding: 1em 4em 1em 1em;
   font-size: 0.9em;
+  width: 91%;
+
 
   .action-wrap {
-    text-align: center;
+    text-align: right;
+    margin-top: 2.7em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    
     .ots_action {
       font-size: 1.2em;
       line-height: 2.5em;
@@ -357,16 +388,28 @@ ul.switch_lang {
 .site_header_landing {
   background-image: url(../images/header.jpg);
   padding-bottom: 2em;
+  padding-top: 30em;
   .site_header {
     color: #000;
   }
   .intro {
     color: #000;
     font-size: 1em;
-    text-shadow: 1px 1px 10px #AAA;
+    width: 100%;
+    max-width: 92%;
+    margin: 0;
     em {
       font-weight: bold;
     }
+    h2 {
+        margin: 0.5em 0 1em;
+    }
+  }
+  .action-wrap {
+    margin-bottom: 1em;
+    position: relative;
+    text-align: right;
+    left: -72px;
   }
 }
 
