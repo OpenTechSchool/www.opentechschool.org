@@ -1,22 +1,16 @@
 Berlin:
-  - name: Beatrice Martini
-    email: beatrice@opentechschool.org
-    img: beatrice.jpg
   - name: Amélie Anglade
     email: amelie@opentechschool.org
     img: amelie.jpg
   - name: Duana Stanley
     email: duana@opentechschool.org
     img: duana.jpg
+  - name: Ellen König
+    email: ellen@opentechschool.org
+    img: ellen.jpg
   - name: Giorgia Sambrotta
     email: giorgia@opentechschool.org
     img: giorgia.jpg
-  - name: Simon Jockers
-    email: simon@opentechschool.org
-    img: simon.jpg
-  - name: Karla Schönicke
-    email: karla@opentechschool.org
-    img: karla.jpg
   - name: Martin Stadler
     email: martin@opentechschool.org
     img: martin.jpg
