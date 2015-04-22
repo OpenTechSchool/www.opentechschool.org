@@ -10,6 +10,16 @@ does:
   workshops
   learnersmeetup
   itlabs
+members:
+  - beatrice
+  - amelie
+  - duana
+  - giorgia
+  - simon
+  - karla
+  - martin
+  - rachel
+  - staeff
 ---
 
 ## About

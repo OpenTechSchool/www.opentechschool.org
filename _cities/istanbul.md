@@ -7,6 +7,8 @@ widget_id: 472455816394469377
 does:
   workshops
   learnersmeetup
+members:
+  - vigo
 ---
 
 ## About

@@ -1,0 +1,23 @@
+{% comment %}
+  This template loads the corresponding metadata for a member no matter if it
+  is a mapping {img => name} (anonymous members) or just an email string
+  (members with an opentechschool.org account.)
+  Caveat:  It currently does not allow for usernames which contain only 1
+  character.  That's the tradeoff for mixing anonymous and regular members in a
+  single collection.
+{% endcomment %}
+{% if include.member.size == 1 %}
+    {% for member in include.member %}
+    {% assign img = member[0] %}
+    {% assign name = member[1] %}
+    {% assign email = "" %}
+    {% endfor %}
+{% else %}
+    {% assign img = include.member %}
+    {% capture email %}{{include.member}}@opentechschool.org{% endcapture%}
+    {% if site.data.names contains include.member %}
+        {% assign name = site.data.names[include.member] %}
+    {% else %}
+        {% assign name = include.member | capitalize %}
+    {% endif %}
+{% endif %}

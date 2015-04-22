@@ -71,12 +71,16 @@
   <div class="container container_wide">
     <h2 class="team_title">Team {{page.title}}</h2>
     <ul class="float_list float_list_4 team_list">
-      {% for member in site.data.members[page.title] %}
+      {% for member in page.members %}
+      {% include _member member=member %}
       <li class="member">
-        <img src="{{site.baseurl}}images/team/{{member.img}}"
-        alt="{{member.name}}">
-        <h3>{{member.name}}</h3>
-        <p>{{member.email}}</p>
+        <img src="{{site.baseurl}}images/team/{{img}}.jpg">
+        <h3>
+          {{ name }}
+        </h3>
+        {% if email %}
+          <p>{{ email }}</p>
+        {% endif %}
       </li>
       {% endfor %}
       {% if page.mailing_list %}

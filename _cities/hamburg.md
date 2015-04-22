@@ -8,6 +8,11 @@ does:
   workshops
   appsummercamps
   learnersmeetup
+members:
+  - diana
+  - marie
+  - phil
+  - fabian
 ---
 
 ## About

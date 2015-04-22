@@ -7,6 +7,12 @@ custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Te
 does:
   workshops
   itlabs
+members:
+  - robert
+  - ale
+  - alan
+  - marc
+  - lars
 ---
 
 ## About

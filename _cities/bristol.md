@@ -8,6 +8,11 @@ widget_id: 487546567449010176
 does:
   workshops
   learninggroups
+members:
+  - katja: Katja Durrani
+  - gicela: Gicela Morales
+  - rob: Robert Thumpston
+  - carl: Carl Sargunar
 ---
 
 ## About

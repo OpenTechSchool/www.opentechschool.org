@@ -6,6 +6,9 @@ twitter: OTS_RM
 does:
   workshops
   learnersmeetup
+members:
+  - darren
+  - christoph
 ---
 
 ## About

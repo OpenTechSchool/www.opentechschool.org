@@ -8,6 +8,11 @@ mailing_list: discuss.australia
 does:
   workshops
   learnersmeetup
+members:
+  - steven
+  - matthew
+  - angus
+  - lilly
 ---
 
 ## About

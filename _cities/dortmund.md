@@ -8,6 +8,13 @@ does:
   workshops
   appsummercamps
   learnersmeetup
+members:
+  - carsten
+  - hendrik
+  - leif
+  - ola
+  - tobi
+  - dennis
 ---
 
 ## About OpenTechSchool

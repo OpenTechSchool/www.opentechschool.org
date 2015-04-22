@@ -2,6 +2,11 @@
 title: Brussels
 location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
+members:
+  - roman: Roman Miletitch
+  - hugo: Hugo Herter
+  - friedger: Friedger Müffke
+  - nino: Nino Bosteels
 ---
 
 ## About
