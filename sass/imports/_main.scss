@@ -310,23 +310,6 @@ ul.switch_lang {
   }
 }
 
-.more-nav {
-  margin-top: 2em;
-  padding-top: 2em;
-  border-top: $ots_blue_h solid 1px;
-  .chapters_list {
-    -moz-columns: 2;
-    -webkit-columns: 2;
-    columns: 2;
-  }
-  .main {
-    li {
-      display: inline-block;
-      padding-right: 2em;
-    }
-  }
-}
-
 
 .menu_ots_logo,
 .ots_logo a {
