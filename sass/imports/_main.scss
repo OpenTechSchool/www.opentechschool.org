@@ -805,15 +805,30 @@ footer a:focus {
     max-width: 210px;
     margin: 100px 50px;
     height: 300px;
+    
 
     a {
-      background: white;
-      padding: 4px 11px;
-      border-radius: 2px;
+		padding: 4px 11px;    
+		border-width: 1px;
+		border-color: #fffffff;
+		border-radius: 2px;
+		border-style: solid;
+		color: #ffffff;
+		background-color: transparent;
+		transition: all ease-in 0.3s;
+		
+		&:hover{
+			border-color: $white;
+			color: $ots_blue;
+			background-color: $white;
+		}
+
     }
   }
 
 }
+
+
 
 
 /* testimonials */
