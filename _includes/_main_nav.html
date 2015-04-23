@@ -1,34 +1,8 @@
-<script>
-  $(function() {
-    $(".quick_nav_btn, .menu_ots_logo").click(function() {
-      var opened = $(".quick_nav_btn").data("opened");
-      if (opened !== true){
-        var curH = $(".top_bar").height();
-        $(".top_bar").height("auto");
-        var nextH = $(".top_bar").height();
-        $(".top_bar").height(curH);
-        $(".top_bar").animate({height: nextH}, 500);
-        $(".quick_nav_btn").data("opened", true).addClass("open");
-      } else {
-        $(".top_bar").animate({height: "2.5em"}, 500);
-        $(".quick_nav_btn").data("opened", false).removeClass("open");
-      }
-      return false;
-    });
-  });
-</script>
-
 <nav class="top_bar" data-spy="affix" data-offset-top="40">
   <div class="container container_wide">
-    <button type="button" class="btn_navbar" data-toggle="collapse" data-target=".nav_internal">
-      <span class="icon_bar"></span>
-      <span class="icon_bar"></span>
-      <span class="icon_bar icon_bar_last"></span>
-    </button>
     
-    <a href="#" class="menu_ots_logo">OpenTechSchool</a>
-    <a href="#" class="quick_nav_btn"><span></span></a>
-    <ul class="nav nav_internal collapse">
+    <a href="{{site.baseurl}}" class="menu_ots_logo">OpenTechSchool</a>
+    <ul class="nav nav_internal">
       <li>
         <a href="{{site.baseurl}}about.html">About</a>
       </li>
@@ -58,61 +32,5 @@
         </ul>
       </li>
     </ul>
-    <div class="more-nav">
-      <div class="container">
-        <div class="two-third">
-          <h3>Chapters <a href="{{site.baseurl}}locator/">⌖</a></h3>
-          <div class="chapters_list">
-            <ul>
-              {% for city in site.data.cities %}
-                {% if city.page %}
-                  <li>
-                    <a href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-
-        <div class="a-third">
-          <h3>Projects</h3>
-          <ul>
-            <li>
-              <a href="/projects/workshops/">Workshops</a>
-            </li>
-            <li>
-              <a href="/projects/app-summer-camps/">App Summer Camps</a>
-            </li>
-            <li>
-              <a href="/projects/continuous-learning-groups/">Continuous Learning Groups</a>
-            </li>
-            <li>
-              <a href="/projects/hackership/">Hackership</a>
-            </li>
-            <li>
-              <a href="/projects/it-labs/">IT Labs</a>
-            </li>
-            <li>
-              <a href="/projects/learners-meetup/">Learners Meetup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="clearfix big-data"></div>
-      <div class="container">
-          <h3>Main</h3>
-          <div>
-            <ul class="main">
-              <li><a href="{{site.baseurl}}">Home</a></li>
-              <li><a href="{{site.baseurl}}foundation/">Foundation</a> </li>
-              <li><a href="http://learn.opentechschool.org">Learning Materials</a></li>
-              <li><a href="http://discourse.opentechschool.org/category/how-to">Handbooks</a></li>
-              <li><a href="{{site.baseurl}}contact.html">Contact</a> </li>
-              <li><a href="{{site.baseurl}}imprint.html">Imprint</a> </li>
-              </ul>
-          </div>
-      </div>
-    </div>
   </div>
 </nav>

@@ -8,6 +8,13 @@
     workshops
     learnersmeetup
     itlabs
+- title: Bristol
+  meetup_key: CodeHub-Bristol
+  location: "Bristol, UK"
+  page: bristol/
+  does:
+    workshops
+    learninggroups
 - title: Brussels
   meetup_key: opentechschool-brussels
   location: "Brussels, Belgium"
