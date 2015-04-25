@@ -367,6 +367,8 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 
 .site_header_nairobi { background-image: url(../images/bg_nairobi.jpg); background-position: 50% 34%; background-size: 105%; }
 
+.site_header_nyc { background-image: url(../images/bg_nyc.jpg); background-position: 50% 34%; }
+
 .site_header_about { height: 600px; background-size: 1300px; background-image: url(../images/bg_about.jpg); background-position: 50% 50%; }
 
 .nav { text-transform: uppercase; clear: both; }
