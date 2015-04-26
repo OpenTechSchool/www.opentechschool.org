@@ -611,28 +611,7 @@ ul.nav {
   > p, > div, > section {
     padding: 0.5em;
   }
-
-
-  &.green {
-    border-color: lime;
-    .head {
-      border-color: lime;
-    }
-  }
-
-  &.orange {
-    border-color: orange;
-    .head {
-      border-color: orange;
-    }
-  }
-
-  &.violet {
-    border-color: violet;
-    .head {
-      border-color: violet;
-    }
-  }
+  
 }
 
 // on-off-switch for locator
@@ -832,8 +811,18 @@ footer a:focus {
     margin: 100px 50px;
     height: 300px;
     
+    .ca-icons {
+      width: 80px;
+      height: 73px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
 
     a {
+    font-size: 0.8em;
 		padding: 4px 11px;    
 		border-width: 1px;
 		border-color: #fffffff;
