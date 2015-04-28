@@ -807,9 +807,10 @@ footer a:focus {
     border-radius: 4px;
     text-align: center;
     float: left;
-    max-width: 210px;
-    margin: 100px 50px;
-    height: 300px;
+    max-width: 250px;
+    margin: 100px 30px;
+    height: 425px;
+    position: relative;
     
     .ca-icons {
       width: 80px;
@@ -819,9 +820,23 @@ footer a:focus {
 
     h3 {
       text-transform: uppercase;
+      padding-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 19px;
+      text-align: justify;
     }
 
     a {
+      color: #c1d5e1;
+      &:hover {
+        color: #FFF;
+      }
+    }
+
+    .start-now {
     font-size: 0.8em;
 		padding: 4px 11px;    
 		border-width: 1px;
@@ -831,6 +846,10 @@ footer a:focus {
 		color: #ffffff;
 		background-color: transparent;
 		transition: all ease-in 0.3s;
+    position: absolute;
+    bottom: 23px;
+    margin: 0 auto;
+    right: 90px;
 		
 		&:hover{
 			border-color: $white;
