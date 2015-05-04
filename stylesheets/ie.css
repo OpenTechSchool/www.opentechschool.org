@@ -26,13 +26,13 @@ body { font-size: 87.5%; }
 
 .top_bar { position: absolute; height: 2.5em; overflow: hidden; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
 
-.top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
+.top_bar.affix { position: fixed; padding: 10px 0; }
 
 .logo_top_bar { width: auto; }
 
-.col_left { width: 46%; float: left; margin: 0 3.75% 1.5em 0; }
+.col_left { width: 44%; float: left; margin: 0 1.75% 1.5em 0; }
 
-.col_right { width: 46%; float: right; margin: 0 0 1.5em 3.75%; }
+.col_right { width: 44%; float: right; margin: 0 0 1.5em 1.75%; }
 
 .two-third { width: 60%; margin-right: 6.4%; float: left; }
 
