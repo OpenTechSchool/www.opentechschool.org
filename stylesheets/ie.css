@@ -26,7 +26,7 @@ body { font-size: 87.5%; }
 
 .top_bar { position: absolute; height: 2.5em; overflow: hidden; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
 
-.top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
+.top_bar.affix { position: fixed; padding: 10px 0; }
 
 .logo_top_bar { width: auto; }
 
