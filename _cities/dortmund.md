@@ -14,7 +14,6 @@ members:
   - leif
   - ola
   - tobi
-  - dennis
 ---
 
 ## About OpenTechSchool
