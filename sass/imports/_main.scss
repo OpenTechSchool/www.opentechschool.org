@@ -606,14 +606,23 @@ ul.nav {
 
 
 .blocky {
-  border-left: 2px $ots_blue solid;
   overflow: display;
   min-height: 130px;
   margin-bottom: 1em;
+  
   .head {
     border-bottom: 2px $ots_blue solid;
-    padding-left: 25px;
-    margin-left: -10px;
+    padding-left: 2px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    
+    a {
+      font-size: 0.7em;
+      text-transform: capitalize;
+      padding-left: 12px;
+    }
+
   }
   > p, > div, > section {
     padding: 0.5em;
