@@ -1,9 +1,10 @@
 ---
-layout: city
 title: Ramallah
+location: "Ramallah, West-Bank"
 tagline: "freedom is our dream .... learning is our passion"
-rss_feed: ramallah
-meetupcom_group: opentechschool-ramallah
+members:
+  - hosam
+  - maymoona
 ---
 
 ## About

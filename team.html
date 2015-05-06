@@ -6,17 +6,22 @@ title: Team
 <section class="bg_full">
   <div class="container container_wide">
 
-   <ul class="float_list float_list_4 team_list">
-   {% for city in site.data.members %}
-     {% for member in city[1] %}
-     <li class="member">
-       <img src="{{site.baseurl}}images/team/{{member.img}}" alt="{{member.name}}">
-       <h3>{{member.name}}</h3>
-       <p>{{member.email}}</p>
-     </li>
-     {% endfor %}
-   {% endfor %}
-   </ul>
+    <ul class="float_list float_list_4 team_list">
+    {% for city in site.cities %}
+      {% for member in city.members %}
+        {% include _member member=member %}
+        <li class="member">
+          <img src="{{site.baseurl}}images/team/{{img}}.jpg">
+          <h3>
+            {{ name }}
+          </h3>
+          {% if email %}
+            <p>{{ email }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
 
   </div>
 </section>

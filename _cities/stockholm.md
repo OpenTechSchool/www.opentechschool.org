@@ -1,12 +1,15 @@
 ---
-layout: city
 title: Stockholm
+location: "Stockholm, Sweden"
 tagline: "Where kanelbullar and köttbullar come from"
-rss_feed: stockholm
-meetupcom_group: opentechschool-stockholm
+mailing_list: discuss.stockholm
 twitter: OTS_STHLM
 widget_id: 276335914828046338
-mailing_list: discuss.stockholm
+members:
+  - hanna
+  - liga
+  - nader
+  - soares
 ---
 
 ## About

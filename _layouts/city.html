@@ -1,10 +1,16 @@
+{% comment %}
+  The ordering of the includes is important!  The _metadata template globally
+  sets some variables such as `key` and `meetup`, which might be (and are)
+  overridden  in _head.html and _main_nav.html as well.
+{% endcomment %}
 {% include _head.html %}
 {% include _main_nav.html %}
-<header class="site_header site_header_img site_header_{% if page.class %}{{ page.class }}{% else %}{{page.title | downcase | replace: ' ', '_'}}{% endif %}">
+{% include _metadata doc=page %}
+<header class="site_header site_header_img site_header_{{ key | replace: '-', '_' }}">
   <div class="container">
     <div class="city_title">
       <h1>
-        <a href="{{site.baseurl}}{{page.rss_feed | downcase}}/">{{page.title}}</a>
+        <a href="{{site.baseurl}}{{key}}/">{{page.title}}</a>
       </h1>
       {% if page.tagline %}
         <h2 class="tagline">
@@ -14,7 +20,7 @@
     </div>
 
     <div class="city_cta">
-      <a class="ots_action ots_action_city ots_action_highlight" href="http://www.meetup.com/{{page.meetupcom_group}}/join">
+      <a class="ots_action ots_action_city ots_action_highlight" href="http://www.meetup.com/{{meetup}}/join">
         Join now
         <span class="member_count" id="membersCount"></span>
       </a>
@@ -34,13 +40,13 @@
       <section>
         <h3 class="head">
           Upcoming events
-          <a href="webcal://www.meetup.com/{{page.meetupcom_group}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
+          <a href="webcal://www.meetup.com/{{meetup}}/events/ical/OpenTechSchool+{{page.title}}/" class="tiny_button">&raquo;cal</a>
         </h3>
         {% if page.custom_events %}
           {{page.custom_events}}
         {% endif %}
         <div id="upcomingEvents"></div>
-        <a href="http://www.meetup.com/{{page.meetupcom_group}}/suggestion">Suggest one!</a>
+        <a href="http://www.meetup.com/{{meetup}}/suggestion">Suggest one!</a>
       </section>
     </div>
 
@@ -48,7 +54,7 @@
       <section>
         <h3 class="head">
           Latest news
-          <a href="http://{{site.blog_domain}}/feeds/{{page.rss_feed}}.xml" class="tiny_button">&raquo;rss</a>
+          <a href="http://{{site.blog_domain}}/feeds/{{key}}.xml" class="tiny_button">&raquo;rss</a>
         </h3>
 
         <div id="js-blog-posts-list"></div>
@@ -70,26 +76,32 @@
   <div class="container container_wide">
     <h2 class="team_title">Team {{page.title}}</h2>
     <ul class="float_list float_list_4 team_list">
-      {% for member in site.data.members[page.title] %}
+      {% for member in page.members %}
+      {% include _member member=member %}
       <li class="member">
-        <img src="{{site.baseurl}}images/team/{{member.img}}"
-        alt="{{member.name}}">
-        <h3>{{member.name}}</h3>
-        <p>{{member.email}}</p>
+        <img src="{{site.baseurl}}images/team/{{img}}.jpg">
+        <h3>
+          {{ name }}
+        </h3>
+        {% if email %}
+          <p>{{ email }}</p>
+        {% endif %}
       </li>
       {% endfor %}
-      {% if page.mailing_list %}
       <li class="join">
         <div>
+          {% if page.mailing_list %}
           <form action="https://groups.google.com/a/opentechschool.org/group/{{ page.mailing_list }}/boxsubscribe">
             <input type="text" class="subscribe_email" name="email" placeholder="your@email">
             <input type="submit" name="sub" value="Subscribe">
           </form>
+          {% endif %}
         </div>
         <h3>You?</h3>
+      {% if page.mailing_list %}
         <p>{{ page.mailing_list }}@opentechschool.org</p>
-      </li>
       {% endif %}
+      </li>
     </ul>
     {% if page.twitter %}
     <div class="team_twitter">
@@ -99,7 +111,7 @@
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     {% endif %}
-    <a href="/dashboard?{{page.meetupcom_group | remove_first: "opentechschool-" }}" class="tiny_button">&raquo;admin</a>
+    <a href="/dashboard?{{ meetup }}" class="tiny_button">&raquo;admin</a>
   </div>
 </section>
 
@@ -107,15 +119,16 @@
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('upcomingEvents'));
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{meetup}}'}}), document.getElementById('upcomingEvents'));
 
-    React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{page.rss_feed}}.json"}), document.getElementById('chapterConversations'));
+    React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{key}}.json"}), document.getElementById('chapterConversations'));
 
-    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{page.meetupcom_group}}'}}), document.getElementById('membersCount'));
+    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{meetup}}'}}), document.getElementById('membersCount'));
    });
 </script>
 
 {% include _footer.html %}
 {% include _scripts.html %}
-{% include _load_blog_feed.html %}
+{% include _metadata doc=page %}
+{% include _load_blog_feed.html feed=key %}
 {% include _end.html %}

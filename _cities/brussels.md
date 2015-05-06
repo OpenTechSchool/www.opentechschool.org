@@ -1,9 +1,12 @@
 ---
-layout: city
 title: Brussels
+location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
-rss_feed: brussels
-meetupcom_group: opentechschool-brussels
+members:
+  - roman: Roman Miletitch
+  - hugo: Hugo Herter
+  - friedger: Friedger Müffke
+  - nino: Nino Bosteels
 ---
 
 ## About

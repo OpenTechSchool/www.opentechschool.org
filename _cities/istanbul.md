@@ -1,11 +1,14 @@
 ---
-layout: city
 title: Istanbul
+location: "İstanbul, Turkey"
 tagline: "Bridging two continents, and the people."
-rss_feed: istanbul
-meetupcom_group: opentechschool-istanbul
 twitter: OTS_IST
 widget_id: 472455816394469377
+does:
+  workshops
+  learnersmeetup
+members:
+  - vigo
 ---
 
 ## About

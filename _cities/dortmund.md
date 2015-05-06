@@ -1,11 +1,19 @@
 ---
-layout: city
 title: Dortmund
+location: "Dortmund, Germany"
 tagline: "Between currywurst, football and compilers."
-rss_feed: dortmund
-meetupcom_group: opentechschool-dortmund
 twitter: OTS_DO
 widget_id: 428986685196480512
+does:
+  workshops
+  appsummercamps
+  learnersmeetup
+members:
+  - carsten
+  - hendrik
+  - leif
+  - ola
+  - tobi
 ---
 
 ## About OpenTechSchool
