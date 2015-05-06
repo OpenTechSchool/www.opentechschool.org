@@ -1,10 +1,14 @@
 ---
-layout: city
 title: RheinMain
+location: "RheinMain, Germany"
 tagline: "RheinMain rocks!"
-rss_feed: rheinmain
-meetupcom_group: opentechschool-rheinmain
 twitter: OTS_RM
+does:
+  workshops
+  learnersmeetup
+members:
+  - darren
+  - christoph
 ---
 
 ## About

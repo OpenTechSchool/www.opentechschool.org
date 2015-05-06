@@ -1,11 +1,18 @@
 ---
-layout: city
 title: Bristol
+location: "Bristol, UK"
 tagline: "The start of a great adventure"
-rss_feed: bristol
-meetupcom_group: codehub-bristol
+meetup: CodeHub-Bristol
 twitter: CodeHubBs
 widget_id: 487546567449010176
+does:
+  workshops
+  learninggroups
+members:
+  - katja: Katja Durrani
+  - gicela: Gicela Morales
+  - rob: Robert Thumpston
+  - carl: Carl Sargunar
 ---
 
 ## About

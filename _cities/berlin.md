@@ -1,11 +1,25 @@
 ---
-layout: city
 title: Berlin
+location: "Berlin, Germany"
 tagline: "Where everything started... and you can take a ride in a rotating TV tower"
-rss_feed: berlin
-meetupcom_group: opentechschool-berlin
 twitter: OTS_BLN
 widget_id: 276335676528672768
+does:
+  hackership
+  learninggroups
+  workshops
+  learnersmeetup
+  itlabs
+members:
+  - beatrice
+  - amelie
+  - duana
+  - giorgia
+  - simon
+  - karla
+  - martin
+  - rachel
+  - staeff
 ---
 
 ## About

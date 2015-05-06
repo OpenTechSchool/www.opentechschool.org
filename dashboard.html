@@ -69,9 +69,10 @@ course, prone to error.
 
 <script type="text/javascript" charset="utf-8">
 $(function() {
-var chapter = window.location.search.replace(/^\?/, '');
-if (!chapter) return;
-var meetup = "opentechschool-" + chapter;
+var meetup = window.location.search.replace(/^\?/, '');
+if (!meetup) return;
+// split prefix such as "opentechschool-" from meetup
+var chapter = meetup.split("-").slice(1).join("-");
 $("#pastlink").attr("href",
   "https://www.meetup.com/" + meetup + "/events/past/");
 $(".chapter").text(chapter.replace(/\w\S*/g, function(t) {

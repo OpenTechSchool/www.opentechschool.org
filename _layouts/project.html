@@ -23,16 +23,15 @@
   <div class="container container_narrow">
     <h3>Currently run by</h3>
     <ul>
-        {% for city in site.data.cities %}
-         {% if city.does contains page.indicator %}
-            {% if city.page %}
-                <li>
-                  <a href="{{site.baseurl}}{{city.page}}" title="{{city.location}}">{{city.title}}</a>
-                </li>{% else if city.meetup %}<li>
-                  <a href="{{city.meetup}}" title="{{city.location}}">{{city.title}}</a>
-                </li>
-            {% endif %}
-         {% endif %}
+        {% for city in site.cities %}
+          {% if city.does contains page.indicator %}
+            {% include _metadata doc=city %}
+            <li>
+              <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
+                {{city.title}}
+              </a>
+            </li>
+          {% endif %}
         {% endfor %}
     </ul>
   </div>

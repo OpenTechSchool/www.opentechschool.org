@@ -1,0 +1,6 @@
+{% assign key = include.doc.relative_path|split:'/'|last|split:'.'|first %}
+{% if include.doc.meetup %}
+  {% assign meetup = include.doc.meetup %}
+{% else %}
+  {% capture meetup %}opentechschool-{{key}}{% endcapture %}
+{% endif %}

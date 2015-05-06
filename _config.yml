@@ -7,3 +7,20 @@ markdown: kramdown
 encoding: UTF-8
 exclude: ['sass', 'config.rb', 'Gemfile', 'Gemfile.lock', 'vendor']
 
+gems:
+  - jekyll-redirect-from
+
+collections:
+  cities:
+    output: true
+    permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "cities"
+    values:
+      layout: "city"
+      does:
+        - workshops
