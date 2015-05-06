@@ -35,10 +35,10 @@ If you want to add a new city to the site, follow these steps:
 
 * Add a preamble, looking like this, to the top of the file:
 
-    ---
-    title: My City
-    location: City, Country
-    ---
+      ---
+      title: My City
+      location: City, Country
+      ---
 
   `title` and `location` are the name and the geographic context of your city,
   respectively, in your preferred locale used for formatting only.  That means
@@ -50,9 +50,9 @@ If you want to add a new city to the site, follow these steps:
   * Add the `members` key to your preamble and have its value be a bullet list
     with all your members' opentechschool.org usernames, for example:
 
-      members:
-        - alice
-	- bob
+        members:
+          - alice
+          - bob
 
     (See below for members without an opentechschool.org account.)
 
@@ -61,8 +61,8 @@ If you want to add a new city to the site, follow these steps:
     user, if they knew her real name.)  It is a simple mapping between username
     and real name, such as:
 
-      alice: Alice Smith
-      bob: Bob Johnson
+        alice: Alice Smith
+        bob: Bob Johnson
 
   * Put images into `images/team/`, named like their opentechschool.org
     account and ending in `.jpg`.
@@ -71,8 +71,8 @@ If you want to add a new city to the site, follow these steps:
     members to your chapter which do not yet have an opentechschool.org
     account, you can use an alternative syntax:
     
-      members:
-        - charlie: Charlie Jones
+        members:
+          - charlie: Charlie Jones
 
     The first value acts as an image key, the second as a name.  It is not
     possible to add emails for non-opentechschool.org accounts for privacy
@@ -105,10 +105,10 @@ to your Meetup page, do the following:
   Redirects to *not* work with files ending in `.md`.
 * Add a preamble:
 
-    ---
-    title: My City
-    location: City, Country
-    redirect_to: "http://meetup.com/opentechschool-city"
-    ---
+      ---
+      title: My City
+      location: City, Country
+      redirect_to: "http://meetup.com/opentechschool-city"
+      ---
 
   (See above for a description of the values.)
