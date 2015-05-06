@@ -20,6 +20,7 @@ members:
   - martin
   - rachel
   - staeff
+  - bastian
 ---
 
 ## About
