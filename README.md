@@ -35,14 +35,21 @@ If you want to add a new city to the site, follow these steps:
 
 * Add a preamble, looking like this, to the top of the file:
 
-  <!-- Ignore the backslashes when reading this file's source.  These are
-       supposed to make Markdown happy.
+  <!-- To people reading this file's source, it's actually:
+
+    ---
+    title: ...
+    ...
+    ---
+
   -->
 
-      \---
-      title: My City
-      location: City, Country
-      \---
+  <pre>
+  &#45;&#45;&#45;
+  title: My City
+  location: City, Country
+  &#45;&#45;&#45;
+  </pre>
 
   `title` and `location` are the name and the geographic context of your city,
   respectively, in your preferred locale used for formatting only.  That means
@@ -109,14 +116,12 @@ to your Meetup page, do the following:
   Redirects to *not* work with files ending in `.md`.
 * Add a preamble:
 
-  <!-- Ignore the backslashes when reading this file's source.  These are
-       supposed to make Markdown happy.
-  -->
-
-      \---
-      title: My City
-      location: City, Country
-      redirect_to: "http://meetup.com/opentechschool-city"
-      \---
+  <pre>
+  &#45;&#45;&#45;
+  title: My City
+  location: City, Country
+  redirect_to: "http://meetup.com/opentechschool-city"
+  &#45;&#45;&#45;
+  </pre>
 
   (See above for a description of the values.)
