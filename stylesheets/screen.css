@@ -131,31 +131,35 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 
 .ots_logo { margin: 1em auto 0.25em auto; font-size: 4.25em; text-shadow: 0px 0px 1px; }
 
-.menu_ots_logo { font-size: 2em; margin: 0.5em; }
+a.menu_ots_logo { font-size: 2em; margin: 0 3px 0 0.5em; background: #085987; color: white; padding: 8px 13px; }
+
+.top_bar.affix a.menu_ots_logo { font-size: 1em; top: -5px; position: relative; margin: 0 3px 0 1.5em; }
+.top_bar.affix a.quick_nav_btn { font-size: 1.5em; }
+.top_bar.affix a.quick_nav_btn.open span:before { font-size: 1.2em; }
+
+a.quick_nav_btn { font-size: 2em; padding: 5px; color: #085987; }
+a.quick_nav_btn span:before { content: "\25BE"; }
+a.quick_nav_btn.open span:before { content: "\25B4"; font-size: 1.4em; }
 
 .quick_nav_btn { font-size: 2em; padding: 5px; color: white; }
 .quick_nav_btn span:before { content: "\25BE"; }
 .quick_nav_btn.open span:before { content: "\25B4"; }
 
-.more-nav { margin-top: 2em; padding-top: 2em; border-top: #2fb0d5 solid 1px; }
-.more-nav .chapters_list { -moz-columns: 2; -webkit-columns: 2; columns: 2; }
-.more-nav .main li { display: inline-block; padding-right: 2em; }
+ul.nav { margin-right: 7px; }
 
 .menu_ots_logo, .ots_logo a { margin-bottom: 0; text-indent: 100%; white-space: nowrap; color: #085987; font-family: "Montserrat"; font-style: normal; font-weight: 300; }
 .menu_ots_logo:focus, .menu_ots_logo:hover, .menu_ots_logo:active, .ots_logo a:focus, .ots_logo a:hover, .ots_logo a:active { outline: none; outline: none; }
-
-.site_header { padding: 4.5em 0 3em 0; text-align: center; font-size: 1.5em; }
-.site_header h1 { text-shadow: 0px 0px 6px #99A; }
-.site_header p { text-shadow: 0px 0px 10px #BBB; }
 
 .intro { background-color: #FFF; margin-bottom: 2em; opacity: 0.8; padding: 1em 4em 1em 1em; font-size: 0.9em; width: 91%; }
 .intro .action-wrap { text-align: right; margin-top: 2.7em; margin-bottom: 0.5em; margin-right: 1em; }
 .intro .action-wrap .ots_action { font-size: 1.2em; line-height: 2.5em; }
 
-.site_header_landing { background-image: url(../images/header.jpg); padding-bottom: 2em; }
+.site_header_landing { background-image: url(../images/header.jpg); padding-bottom: 2em; padding-top: 30em; }
 .site_header_landing .site_header { color: #000; }
-.site_header_landing .intro { color: #000; font-size: 1em; text-shadow: 1px 1px 10px #AAA; }
+.site_header_landing .intro { color: #000; font-size: 1em; width: 100%; max-width: 92%; margin: 0; }
 .site_header_landing .intro em { font-weight: bold; }
+.site_header_landing .intro h2 { margin: 0.5em 0 1em; }
+.site_header_landing .action-wrap { margin-bottom: 1em; position: relative; text-align: right; left: -72px; }
 
 .site_header_core img { max-width: 1300px; width: 100%; }
 
@@ -199,8 +203,9 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 .team_list h3 { font-size: 1em; }
 .team_list p { font-size: .714em; min-height: 6em; height: auto !important; height: 6em; }
 
-.blocky { border-left: 2px #085987 solid; overflow: display; min-height: 130px; margin-bottom: 1em; }
-.blocky .head { border-bottom: 2px #085987 solid; padding-left: 25px; margin-left: -10px; }
+.blocky { overflow: display; min-height: 130px; margin-bottom: 1em; }
+.blocky .head { border-bottom: 2px #085987 solid; padding-left: 2px; margin-left: 10px; text-transform: uppercase; margin-bottom: 12px; }
+.blocky .head a { font-size: 0.7em; text-transform: capitalize; padding-left: 12px; }
 .blocky > p, .blocky > div, .blocky > section { padding: 0.5em; }
 .blocky.green { border-color: lime; }
 .blocky.green .head { border-color: lime; }
@@ -449,10 +454,10 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
   .collapse { display: block; }
   .container_narrow { width: 100%; padding: 0; }
   .top_bar { position: absolute; height: 2.5em; overflow: hidden; padding: 30px 0; -webkit-transition: padding-bottom .25s ease-in; -moz-transition: padding-bottom .25s ease-in; -o-transition: padding-bottom .25s ease-in; transition: padding-bottom .25s ease-in; }
-  .top_bar.affix { position: fixed; border-bottom: 1px solid #085987; padding: 10px 0; }
+  .top_bar.affix { position: fixed; padding: 10px 0; }
   .logo_top_bar { width: auto; }
-  .col_left { width: 46%; float: left; margin: 0 3.75% 1.5em 0; }
-  .col_right { width: 46%; float: right; margin: 0 0 1.5em 3.75%; }
+  .col_left { width: 44%; float: left; margin: 0 1.75% 1.5em 0; }
+  .col_right { width: 44%; float: right; margin: 0 0 1.5em 1.75%; }
   .two-third { width: 60%; margin-right: 6.4%; float: left; }
   .a-third { width: 30%; margin-right: 3.1%; float: left; }
   .float_list_4 > li { width: 21%; }
