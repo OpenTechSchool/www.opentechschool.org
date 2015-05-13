@@ -282,6 +282,8 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 
 .question { color: #085987; }
 
+.claim-title { text-align: center; color: #ffffff; background-color: #085987; padding: 2% 0; }
+
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
