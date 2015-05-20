@@ -2,7 +2,6 @@
 title: Milan
 location: "Milan, Italy"
 tagline: "Pizza, code and fine wine!"
-mailing_list: team.milan
 does:
   workshops
 members:
