@@ -6,9 +6,9 @@ mailing_list: team.milan
 does:
   workshops
 members:
-  - alberto
+  - alberto: Alberto Massa
   - giorgia
-  - giorgio
+  - giorgio: Giorgio Mazzucchelli
   - pietro909
 ---
 
