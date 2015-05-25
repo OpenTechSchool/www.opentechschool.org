@@ -8,9 +8,10 @@ members:
   - alberto: Alberto Massa
   - giorgia
   - giorgio: Giorgio Mazzucchelli
-  - pietro909
+  - pietro
 ---
 
 ## About
 
-Started as a little learners' group about WebGL, ready to grow up and rock!
+Milan is not just about fashion and design! Plenty of Tech events are popping up all over the city and is on this scenario we offer free workshops about new technologies for everyone.
+Started as small WebGL enthusiast group, we are ready to grow up and rock!
