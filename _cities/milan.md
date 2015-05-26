@@ -4,6 +4,8 @@ location: "Milan, Italy"
 tagline: "Pizza, code and fine wine!"
 does:
   workshops
+meetup:
+  Khronos-Milano-Chapter	
 members:
   - alberto: Alberto Massa
   - giorgia
