@@ -8,9 +8,9 @@ meetup:
   Khronos-Milano-Chapter	
 members:
   - alessandro
-  - alberto: Alberto Massa
+  - alberto
   - giorgia
-  - giorgio: Giorgio Mazzucchelli
+  - giorgio
   - pietro
 ---
 
