@@ -7,6 +7,7 @@ does:
 meetup:
   Khronos-Milano-Chapter	
 members:
+  - alessandro
   - alberto: Alberto Massa
   - giorgia
   - giorgio: Giorgio Mazzucchelli
