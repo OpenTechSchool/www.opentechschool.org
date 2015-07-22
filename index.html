@@ -18,7 +18,7 @@ rss_feed: full
   <div class="container clearfix">
     <div class="a-third blocky green">
       <h3 class="head">More about OTS</h3>
-      <p>Go to <a href="/about.html">about</a> to learn more about what OpenTechSchool is, what we do, the values and the history of the movement. 
+      <p>Go to <a href="/about.html">about</a> to learn more about what OpenTechSchool is, what we do, the values and the history of the movement.
       </p>
       <p>You might also want to learn more about <a href="/foundation/">the foundation</a> behind it and what some of the learners, coaches and organisers <a href="testimonials.html">say about OpenTechSchool</a>.</p>
 
@@ -32,7 +32,7 @@ rss_feed: full
     <div class="a-third blocky orange">
       <h3 class="head">Join the movement</h3>
       <p>Just reach out to the <a href="/locator/">next chapter close to you</a> and help organising, coaching or with general support.</p>
- 
+
       <p>You might also want to join the <a href="/foundation/">Foundation as a Member</a> and <a href="http://discourse.opentechschool.org">join our online community</a> of coaches, organisers and volunteers and generally <a href="#stay-connected" class="stay-connected">stay connected</a>.</p>
     </div>
 
@@ -61,7 +61,12 @@ rss_feed: full
     </div>
 
   </div>
-  
+
+  <div class="blocky discussion">
+    <h3 class="head">Discussion <a href="http://discourse.opentechschool.org/latest/" class="tiny_button">&raquo; latest topics</a></h3>
+    <div id="currentTopics"></div>
+  </div>
+
 </div>
 
 
@@ -93,7 +98,7 @@ rss_feed: full
           <h4>Follow us on</h4>
           <div class="clearfix">
             <a href="https://www.twitter.com/OpenTechSchool" class="btn"><span class="ots_icon twitter"></span> Twitter</a>
-            <a href="http://www.facebook.com/OpenTechSchool" class="btn"><span class="ots_icon facebook"></span> Facebook</a> 
+            <a href="http://www.facebook.com/OpenTechSchool" class="btn"><span class="ots_icon facebook"></span> Facebook</a>
             <a href="https://plus.google.com/b/114834784518588736271/114834784518588736271/posts" class="btn">Google+</a>
           </div>
           <h4>and</h4>
@@ -108,23 +113,36 @@ rss_feed: full
   </div>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react.js" type="text/javascript" charset="utf-8"></script>
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, page: 5, params: {text: 'opentechschool'}}), document.getElementById('upcomingEvents'));
-
-    React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
+    React.renderComponent(
+      OTS.Widgets.UpcomingEventsPreview({
+        teams: OTS.config.chapters,
+        page: 5,
+        params: {
+          text: 'opentechschool'
+        }
+      }),
+      document.getElementById('upcomingEvents')
+    );
+    React.renderComponent(
+      OTS.Widgets.LatestConversations({
+        path: "/latest.json"
+      }),
+      document.getElementById('currentTopics')
+    );
 
     $(".stay-connected").click(function() {
       $('body').addClass("show-modal");
     });
     $(".modal .close").click(function() {
-      $('body').removeClass("show-modal"); 
+      $('body').removeClass("show-modal");
     });
     $(document).keypress(function(ev){
       if (ev.keyCode === 27){ // ESCAPE
-       $('body').removeClass("show-modal"); 
+       $('body').removeClass("show-modal");
       }
     });
    });
