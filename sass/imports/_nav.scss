@@ -39,7 +39,7 @@
   &.facebook:focus {
     background-position: 0 -140px;
   }
-  
+
   &.discourse {
     background-position: -28px 0;
   }
@@ -48,6 +48,74 @@
   &.discourse:focus {
     background-position: -28px -83px;
   }
+}
+
+.nav_internal {
+  margin-right: 7px;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#shownav {
+  visibility: hidden;
+  position: absolute;
+  left: -1000px;
+}
+#shownav + label {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#shownav + label div {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 2px;
+  background-color: #cccccc;
+  width: 30px;
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  &:nth-of-type(1) {
+    -ms-transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+  &:nth-of-type(3) {
+    -ms-transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 10px, 0);
+    -moz-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+}
+#shownav:checked + label div {
+  &:nth-of-type(1) {
+    -ms-transform: translate3d(0, 0, 0) rotate(45deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+    -moz-transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  &:nth-of-type(2) {
+    opacity: 0;
+  }
+  &:nth-of-type(3) {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+    -moz-transform: translate3d(0, 0, 0) rotate(-45deg);
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+  }
+}
+#shownav:checked ~ .nav_internal {
+  max-height: 1000px;
 }
 
 .nav_external {
@@ -63,7 +131,7 @@
       padding: 0px;
     }
   }
-  
+
 }
 
 .btn_navbar {
