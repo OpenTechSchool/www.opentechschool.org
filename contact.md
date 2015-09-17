@@ -36,5 +36,5 @@ You can connect in a browser [here](http://webchat.freenode.net/?channels=#OpenT
 
 ## In person
 
-You are always very welcome to come talk with us after any meetup or workshop. Some of our members are very active at [co.up](http://co-up.de) so this could be a also a good opportunity to get in touch outside of events! If you're unsure whom to talk to, just ask the first person you see!
+You are always very welcome to come talk with us after any meetup or workshop. Some of our members are very active at [co.up](http://co-up.de) so this could also be a good opportunity to get in touch outside of events! If you're unsure whom to talk to, just ask the first person you see!
 
