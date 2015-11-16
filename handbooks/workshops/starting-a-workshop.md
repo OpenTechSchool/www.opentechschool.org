@@ -48,5 +48,6 @@ _Note_: We recommend meeting on a weekday evening after work hours. Monday to Th
  * Start discussing!
 
 The usual targets for the first meeting are:
+
  * Getting to know the interests, motivation, goals, and availability of the coaches.
  * Creating a plan for the next steps -- this could be anything from a second meeting to talk more, setting up plans for creating/assembling learning materials, to the date and time for the workshop to take place.

@@ -94,6 +94,7 @@ title: Press
 ## Wording and Styling
 
 Quoting from the [Style guide]({{site.baseurl}}handbooks/styles.html):
+
 > OpenTechSchool is spelled as one word, in CamelCase.
 
 > The logo comes in two versions: in one line or in two. Ideally the logo is used in OTS blue&nbsp;(``#085987``), or in black for b/w printing. Another option is to invert the colors. Please always allow some whitespace around the logo to make it stand out from other elements.
