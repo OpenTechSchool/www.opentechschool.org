@@ -57,7 +57,7 @@
         render: function() {
           return React.DOM.div({className: this.props.showNonMatching ? "onoffswitch checked" : "onoffswitch", onClick: function(){
               this.props.toggleFilter();
-            }.bind(this)}, 
+            }.bind(this)},
               React.DOM.div({className: "onoffswitch-label"},
                 React.DOM.div({className: "onoffswitch-inner"}),
                 React.DOM.div({className: "onoffswitch-switch"})
@@ -201,7 +201,7 @@
       getInitialState: function() {
         return {events: []};
       },
-	
+
       teamClicked: function(team){
       	var url_name = team.urlname.toLowerCase(),
       		team_config = this.props.teams[url_name];
@@ -244,7 +244,7 @@
                     React.DOM.h3({className: "topic_title"},
                         React.DOM.a({href: this.get_url()}, topic.fancy_title)
                         ),
-                    React.DOM.div({className: "metadata"}, [ 
+                    React.DOM.div({className: "metadata"}, [
                     	React.DOM.div({className: "posters"}, topic.posters.slice(0, 5).map(function(poster){
                     			var poster = users[poster.user_id];
                     			return React.DOM.img({
@@ -253,7 +253,7 @@
                     				title: poster.username,
                     				alt: poster.username});
                     			})
-                    		), 
+                    		),
                     	React.DOM.span({className: "bumped"},
                     		bumped.fromNow())
                     	])
@@ -341,7 +341,7 @@
       resultsReceived: function(data){
         var group = data.results[0];
         this.setState({members: group.members, who: group.who});
-      }, 
+      },
       getInitialState: function() {
         return {members: "", who: ""};
       },
@@ -418,4 +418,55 @@
         );
       },
     });
+
+
+		OTS.Widgets.TeamList = React.createClass({
+      componentWillMount: function() {
+        var team = this.props.team || 'opentechschool';
+        $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json').
+          then(function(data){
+						// resort items depending on last seen
+						// prefer last active users
+						var members = data.members;
+						members.sort(function(a, b){
+							if (a.last_seen_at > b.last_seen_at){
+								return -1;
+							}
+							return 1;
+						})
+            this.setState({
+							loading: false,
+							members: members
+						});
+          }.bind(this)
+        );
+      },
+
+			getInitialState: function(){
+				return {loading: true, members: null}
+			},
+
+			render: function(){
+				if (this.state.loading){
+					return OTS.Widgets.Loading();
+				}
+
+				var users = [];
+				for (var i = 0; i < this.state.members.length; i++) {
+					var member = this.state.members[i];
+					users.push(
+						React.DOM.li({className: "member", title: member.name},
+							React.DOM.img({src: "//discourse.opentechschool.org/" + member.avatar_template.replace("{size}", "256"), alt: member.username}),
+		          React.DOM.h3({className: "title"},
+								React.DOM.span({}, member.name),
+								React.DOM.a({href: "//discourse.opentechschool.org/u/" + member.username, target:"_blank", className: "username"}, "@" + member.username)
+							),
+		          React.DOM.span({className: "title"}, member.title)
+		        )
+					);
+				}
+
+				return React.DOM.ul({className: "float_list float_list_4 team_list"}, users);
+			}
+		})
 })();

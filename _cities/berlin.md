@@ -4,7 +4,7 @@ location: "Berlin, Germany"
 tagline: "Where everything started... and you can take a ride in a rotating TV tower"
 twitter: OTS_BLN
 widget_id: 276335676528672768
-mailing_list: team.berlin
+discourse_group: TeamBerlin
 does:
   hackership
   learninggroups
