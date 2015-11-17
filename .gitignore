@@ -9,3 +9,4 @@ coverage
 _site
 .sass-cache
 vendor/bundle
+.vagrant
