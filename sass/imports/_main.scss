@@ -307,7 +307,7 @@ a.menu_ots_logo {
     top: -5px;
     position: relative;
     margin: 0 3px 0 1.5em;
-  } 
+  }
 
   a.quick_nav_btn {
     font-size: 1.5em;
@@ -384,7 +384,7 @@ ul.nav {
     margin-top: 2.7em;
     margin-bottom: 0.5em;
     margin-right: 1em;
-    
+
     .ots_action {
       font-size: 1.2em;
       line-height: 2.5em;
@@ -556,7 +556,7 @@ ul.nav {
     @include min-height(8em);
     text-align: center;
     &.member {
-      @include min-height(240px);
+      height: 240px;
     }
   }
   > li.join {
@@ -592,6 +592,15 @@ ul.nav {
     max-width: 200px;
     height: auto;
     border-radius: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    &:hover {
+      transition: 0.6s;
+      filter: none;
+    }
   }
   h3 {
     font-size: 1em;
@@ -609,14 +618,14 @@ ul.nav {
   overflow: display;
   min-height: 130px;
   margin-bottom: 1em;
-  
+
   .head {
     border-bottom: 2px $ots_blue solid;
     padding-left: 2px;
     margin-left: 10px;
     text-transform: uppercase;
     margin-bottom: 12px;
-    
+
     a {
       font-size: 0.7em;
       text-transform: capitalize;
@@ -923,7 +932,7 @@ footer a:focus {
 	background-color: $ots_blue;
 	padding: 2% 0;
 }
-	
+
 
 
 

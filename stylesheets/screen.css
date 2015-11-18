@@ -196,12 +196,13 @@ ul.nav { margin-right: 7px; }
 
 /* List of OTS members, extends float list. Includes image and links. */
 .team_list > li { min-height: 8em; text-align: center; }
-.team_list > li.member { min-height: 240px; }
+.team_list > li.member { height: 240px; }
 .team_list > li.join div { display: inline-block; border: 5px solid #eee; border-radius: 100%; width: 190px; height: 190px; position: relative; }
 .team_list > li.join div form { position: absolute; top: 50%; margin-top: -13px; font-size: 90%; }
 .team_list > li.join div form input.subscribe_email { width: 180px; height: 22px; padding: 2px; margin-bottom: 3px; border: 1px solid gray; }
 .team_list > li:before { display: none !important; }
-.team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; }
+.team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); }
+.team_list img:hover { transition: 0.6s; filter: none; }
 .team_list h3 { font-size: 1em; }
 .team_list p { font-size: .714em; min-height: 6em; }
 

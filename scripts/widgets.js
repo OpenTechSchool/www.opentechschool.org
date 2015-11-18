@@ -453,13 +453,16 @@
 
 				var users = [];
 				for (var i = 0; i < this.state.members.length; i++) {
-					var member = this.state.members[i];
+					var member = this.state.members[i],
+							thumbnail = member.avatar_template.replace("{size}", "256");
+					if (thumbnail.slice(0, 4) != 'http')
+						thumbnail = "//discourse.opentechschool.org/" + thumbnail;
 					users.push(
 						React.DOM.li({className: "member", title: member.name},
-							React.DOM.img({src: "//discourse.opentechschool.org/" + member.avatar_template.replace("{size}", "256"), alt: member.username}),
+							React.DOM.img({src: thumbnail, alt: member.username}),
 		          React.DOM.h3({className: "title"},
 								React.DOM.span({}, member.name),
-								React.DOM.a({href: "//discourse.opentechschool.org/u/" + member.username, target:"_blank", className: "username"}, "@" + member.username)
+								React.DOM.a({href: "//discourse.opentechschool.org/users/" + member.username, target:"_blank", className: "username"}, "@" + member.username)
 							),
 		          React.DOM.span({className: "title"}, member.title)
 		        )
