@@ -27,7 +27,8 @@ Learn'n'Tell is inspired by [Hack'n'Tell](http://hackandtell.org/) (taking place
 
 OR
 
-3. Mini barcamp
+Mini barcamp
+
 A barcamp is an "unconference", where the participants come up with the sessions themselves. There is a brainstorming phase where all participants write down on a sticky a question they have or topic they are interested in learning or talking about. Sticky notes are collected and stuck on the wall to form a "question cloud". The host reads out each question and asks for clarification if necessary. The host, with the help of the group, categorizes the stickies into related topics. Then the host calls out each topic group and asks who is interested in talking about it. The people who put up there hands form an informal discussion group.
 
 If people want to be involved in multiple groups, they can join at the half way mark. After 20 mins, give people a reminder that they can change groups if they are interested in other topics. To close (after 40 mins or earlier depending on the activity of the groups), bring everyone back together in a circle and nominate someone from each group to summarize what was discussed or learned.
@@ -91,12 +92,12 @@ People, venue, drinks, a projector: the organizer's checklist!
  * Be sure to get to the venue at least one hour in advance and with at least another co-organizer, in order to set up the space and the projector, put signs up outside, as well as meet the speakers in advance.
  * When the attendees start to arrive, someone from the organizational team should greet them and ask them to create and wear their nametags (stickers or simply tape to write on are both great for this).
  * Have a member of the OTS team moderate the event. When everybody is sitting, they should do a quick introduciton covering:
- - what is OTS?
- - what is the Learners Meetup?
- - explain that the event is meant to be especially welcoming for beginners
- - the meetup's format and timetable
- - point out the other organizers and coaches
- - welcome the speakers on stage and lead the question time, encouraging everyone to feel at ease with sharing their questions.
+   * what is OTS?
+   * what is the Learners Meetup?
+   * explain that the event is meant to be especially welcoming for beginners
+   * the meetup's format and timetable
+   * point out the other organizers and coaches
+   * welcome the speakers on stage and lead the question time, encouraging everyone to feel at ease with sharing their questions.
 
 ## After the meetup
 
