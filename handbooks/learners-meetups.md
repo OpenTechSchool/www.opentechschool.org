@@ -29,9 +29,11 @@ OR
 
 Mini barcamp
 
-A barcamp is an "unconference", where the participants come up with the sessions themselves. There is a brainstorming phase where all participants write down on a sticky a question they have or topic they are interested in learning or talking about. Sticky notes are collected and stuck on the wall to form a "question cloud". The host reads out each question and asks for clarification if necessary. The host, with the help of the group, categorizes the stickies into related topics. Then the host calls out each topic group and asks who is interested in talking about it. The people who put up there hands form an informal discussion group.
+A barcamp is an "unconference", where the participants come up with the sessions themselves. There is a brainstorming phase where all participants write on a sticky note a question they have or a topic they are interested hearing or talking about. Sticky notes are collected and stuck on the wall to form a "question cloud". The host reads out each question and asks for clarification if necessary. The host, with the help of the group, categorizes the stickies into related topics. Then the host calls out each topic group and asks who is interested in talking about it. The people who put up their hands form an informal discussion group. 
 
-If people want to be involved in multiple groups, they can join at the half way mark. After 20 mins, give people a reminder that they can change groups if they are interested in other topics. To close (after 40 mins or earlier depending on the activity of the groups), bring everyone back together in a circle and nominate someone from each group to summarize what was discussed or learned.
+Reassure the group that it's totally fine and normal if no groups form around a topic. It's still interesting to surface all the topics. The purpose is to connect, share perspectives and learn something new.
+
+If people want to be involved in multiple groups, they can join at the half way mark. After 20 mins, give people a reminder that they can change groups if they are interested in other topics. To close (after 40 mins or earlier depending on the activity of the groups), bring everyone back together in a circle and ask each group to share their learnings via a representative.
 
 
 # Pre-requirements
