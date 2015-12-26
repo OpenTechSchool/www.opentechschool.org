@@ -11,42 +11,53 @@ Alright. You're still reading this, so that means you are really interested in g
 
 
 # Teaming up
+
 Get a team together. Good team members?
+
  * Someone who's excited about organizing tech events
  * Someone who's already organizing (or organized) some tech events (e.g. meetups, usergroups)
  * Someone who knows how to code and is enthusiast about coaching at a beginner level
 
 Something very helpful in getting people to get in touch with each other is a mailing list.
 OTS can help you out! We will:
+
  * provide a city mailing list;
  * promote that mailinglist via our social media channels, spread it in our mailinglists, user groups and communities.
+
 But we also need to you to spread the word and convince people to join - after all, it is your cause!
 
 You have a team? Great. Now: meet. In person.
 
 # Meeting – in person
+
 Team building is important. And meeting is essential!
+
  * We suggest you to meet with your team regularly. How about meeting every second week over breakfast, in a place that leaves you room to gather together, talk and plan upcoming events? Easier than finding time to meet after work and early enough to get to the office in time.
-* The very first meeting (and any time a new face joins): invite the newcomer to introduce her/himself and talk about her/his interest in joining the team.
-* Every meeting: start with a round of EFT. Everyone on turn will talk quickly about what makes her/him Excited, Frustrated, Thankful about the ongoing team projects. Thank yous have to be directed to individuals – say my name, as Beyoncé says!
+ * The very first meeting (and any time a new face joins): invite the newcomer to introduce her/himself and talk about her/his interest in joining the team.
+ * Every meeting: start with a round of EFT. Everyone on turn will talk quickly about what makes her/him Excited, Frustrated, Thankful about the ongoing team projects. Thank yous have to be directed to individuals – say my name, as Beyoncé says!
 
 # Know your city
+
 Get the widest possible overview of the tech scene in town. Places, people, institutions you might want to reach out. Make a list of all:
+
  * co-working spaces, hacker spaces, start-ups, tech universities and research centres;
  * tech-related usergroups, movements, meetups.
 
 Map them out. On a real map. This will help you to define the character of the tech buzz of the city and identify where its (geographical) core is. Precious information when it will come to networking and finding the right partners and places to organize you events.
 
 # Network is key
+
 You have a list of people and places, you'd like to get in contact but you don't know any of them. That's not a problem.
+
  * Start contacting people who are already interested in organizing tech events or maybe are already organizing (or organized) some (e.g. meetups, usergroups). Talk with them about your ideas – they might want to join and organize or coach!
  * Go to meetups fitting yours and OTS' interests and values. E.g. JavaScript, Python and Ruby on Rails meetups to find coaches for the workshops; programming and design related usergroups to find speakers for talks nights.
  * If you're not a programmer and you're looking for coaches – ask a programmer team member to join you. This will make the conversation way more clear for both sides.
  * Join meetups as a speaker yourself and give a presentation about what OTS is (just contact us and we'll provide you presentations and slides we use for this purpose).
 
+# Social networking is social key
 
-# Social network is social key
 Social networks are a great tool to promote your events and get in touch with more tech enthusiasts every day.
+
  * OTS has its own (global) Facebook and Twitter profiles and in addition to this, we'll provide a localized OTS Twitter account for your city.
  * Our blog is your blog. Write posts about your events and announcement and we'll be happy to publish them!
  * Document everything: pictures can be tweeted, posted on Facebook (new event, new album!) and uploaded to your Meetup page.
