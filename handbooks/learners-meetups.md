@@ -9,7 +9,7 @@ The other purpose of this event is to help build a community around OTS and keep
 
 # How does a Learners Meetup work?
 
-It's a 2-hour event, in three parts: two talks, a break, and a Learn'n'Tell session.
+It's a 2-hour event, in three parts: two talks, a break, and either a Learn'n'Tell session or a Mini Barcamp.
 
 1. Talks.
 Talks shouldn't be longer than 25 minutes, including taking questions during the last 5 minutes.
@@ -24,6 +24,17 @@ Plus, a couple of things should be on the wall during the break:
 
 3. Learn'n'Tell session.
 Learn'n'Tell is inspired by [Hack'n'Tell](http://hackandtell.org/) (taking place in New York and Berlin), an event during which hackers can present their projects and get feedback from the audience. During our Learn'n'Tell session, beginners have 5 minutes to ask tech questions or show what they're working on (live coding is more than welcome!) and 5 minutes to receive feedback from the audience (experienced developers also come to the meetup to support the discussion). Important: have someone moderate the session and keep an eye on the time!
+
+OR
+
+Mini barcamp
+
+A barcamp is an "unconference", where the participants come up with the sessions themselves. There is a brainstorming phase where all participants write on a sticky note a question they have or a topic they are interested hearing or talking about. Sticky notes are collected and stuck on the wall to form a "question cloud". The host reads out each question and asks for clarification if necessary. The host, with the help of the group, categorizes the stickies into related topics. Then the host calls out each topic group and asks who is interested in talking about it. The people who put up their hands form an informal discussion group. 
+
+Reassure the group that it's totally fine and normal if no groups form around a topic. It's still interesting to surface all the topics. The purpose is to connect, share perspectives and learn something new.
+
+If people want to be involved in multiple groups, they can join at the half way mark. After 20 mins, give people a reminder that they can change groups if they are interested in other topics. To close (after 40 mins or earlier depending on the activity of the groups), bring everyone back together in a circle and ask each group to share their learnings via a representative.
+
 
 # Pre-requirements
 
@@ -52,7 +63,7 @@ E.g. "Amsterdam. Call for speakers for the upcoming Learners Meetup in May"
 
 Still, we also need to you to spread the word and convince people to join yourself - after all, it is your cause!
 
-## Scheduling the first meeting
+## Scheduling the first organizers meeting
 Once there are enough people who want to help organize the event (we suggest at least 2-3), you can set up a first meeting in order to get to know each other as well as figure out how to actually get things done.
 
  * Create a [Doodle poll](http://www.doodle.com/) with potential dates in the next 2-4 weeks
@@ -60,7 +71,7 @@ Once there are enough people who want to help organize the event (we suggest at 
 
 _Note_: We recommend meeting on a weekday evening after work hours. Monday to Thursday work best in our experience.
 
-## At the meeting
+## At the organizers meeting
 
  * The meeting is moderated by the organizer and the co-host. This means you make sure the conversation does not get off track or lose productivity. You can ask for suggestions for the agenda at the beginning of the meeting to give it structure. Asking participants to raise their hands and wait for you to call on them before talking will help maintain order, too.
  * Start with a short introduction round to hear everyone's name and interests/skills, as well as their motivation to be a co-organizer. You will find the information about this last point useful when trying to hammer out the goal/learning purposes of the meetup.
@@ -80,9 +91,15 @@ People, venue, drinks, a projector: the organizer's checklist!
  * Find attendees. We can help! If it doesn't already exist, we will set up an OTS Meetup account for your city (e.g. meetup.com/opentechschool-yourcity) and you'll be able to use it to communicate about the meetup and have people join the event. Furthermore, we'll promote the event page through our social media channels, mailing lists, user groups, and communities. Of course we also need _you_ to spread the word and get people to join! A couple of days before the event, write all the attendees a reminder e-mail asking them to update their RSVP status (if they are unable to join, by changing their RSVP to "not coming," there will be seats freed for people who might be on the waiting list).
 
 ## At the meetup
- * Be sure to get to the venue at least one hour in advance and with at least another co-organizer, in order to set up the space and the projector, as well as meet the speakers in advance.
+ * Be sure to get to the venue at least one hour in advance and with at least another co-organizer, in order to set up the space and the projector, put signs up outside, as well as meet the speakers in advance.
  * When the attendees start to arrive, someone from the organizational team should greet them and ask them to create and wear their nametags (stickers or simply tape to write on are both great for this).
- * Have a member of the OTS team moderate the event. When everybody is sitting, they should quickly introduce OTS, the meetup's structure and timetable, welcome the speakers on stage and lead the question time, encouraging everyone to feel at ease with sharing their questions. This person should also announce the beginning and end of the break, as well as moderate the Learn'n'Tell session.
+ * Have a member of the OTS team moderate the event. When everybody is sitting, they should do a quick introduction covering:
+   * what is OTS?
+   * what is the Learners Meetup?
+   * explain that the event is meant to be especially welcoming for beginners
+   * the meetup's format and timetable
+   * point out the other organizers and coaches
+   * welcome the speakers on stage and lead the question time, encouraging everyone to feel at ease with sharing their questions.
 
 ## After the meetup
 
