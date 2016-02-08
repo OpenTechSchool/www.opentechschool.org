@@ -5,6 +5,7 @@
 .ruby-version
 coverage
 .DS_Store
+.vagrant
 
 _site
 .sass-cache
