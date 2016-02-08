@@ -36,5 +36,5 @@ You can connect in a browser [here](http://webchat.freenode.net/?channels=#OpenT
 
 ## In person
 
-You are always very welcome to come talk with us after any meetup or workshop. Please also feel free to join our bi-weekly OpenTechSchool breakfast at [co.up](http://co-up.de)! If you're unsure whom to talk to, just ask the first person you see!
+You are always very welcome to come talk with us after any meetup or workshop. If you're unsure whom to talk to, just ask the first person you see!
 
