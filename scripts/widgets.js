@@ -423,8 +423,8 @@
 		OTS.Widgets.TeamList = React.createClass({
       componentWillMount: function() {
         var team = this.props.team || 'opentechschool';
-        $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json').
-          then(function(data){
+        $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json')
+          .then(function(data){
 						// resort items depending on last seen
 						// prefer last active users
 						var members = data.members;
@@ -438,8 +438,10 @@
 							loading: false,
 							members: members
 						});
-          }.bind(this)
-        );
+          }.bind(this))
+          .fail(function(){
+            console.error('could not load discourse members');
+          });
       },
 
 			getInitialState: function(){
