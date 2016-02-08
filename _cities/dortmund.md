@@ -4,6 +4,7 @@ location: "Dortmund, Germany"
 tagline: "Between currywurst, football and compilers."
 twitter: OTS_DO
 widget_id: 428986685196480512
+discourse_group: TeamDortmund
 does:
   workshops
   appsummercamps
