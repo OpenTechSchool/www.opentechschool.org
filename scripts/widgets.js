@@ -463,7 +463,7 @@
 						React.DOM.li({className: "member", title: member.name},
 							React.DOM.img({src: thumbnail, alt: member.username}),
 		          React.DOM.h3({className: "title"},
-								React.DOM.span({}, member.name),
+								React.DOM.span({}, member.name), ' ',
 								React.DOM.a({href: "//discourse.opentechschool.org/users/" + member.username, target:"_blank", className: "username"}, "@" + member.username)
 							),
 		          React.DOM.span({className: "title"}, member.title)
