@@ -93,7 +93,7 @@ People, venue, drinks, a projector: the organizer's checklist!
 ## At the meetup
  * Be sure to get to the venue at least one hour in advance and with at least another co-organizer, in order to set up the space and the projector, put signs up outside, as well as meet the speakers in advance.
  * When the attendees start to arrive, someone from the organizational team should greet them and ask them to create and wear their nametags (stickers or simply tape to write on are both great for this).
- * Have a member of the OTS team moderate the event. When everybody is sitting, they should do a quick introduciton covering:
+ * Have a member of the OTS team moderate the event. When everybody is sitting, they should do a quick introduction covering:
    * what is OTS?
    * what is the Learners Meetup?
    * explain that the event is meant to be especially welcoming for beginners
