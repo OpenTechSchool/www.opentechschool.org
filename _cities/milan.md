@@ -5,7 +5,8 @@ tagline: "Pizza, code and fine wine!"
 does:
   workshops
 meetup:
-  Khronos-Milano-Chapter	
+  Khronos-Milano-Chapter
+discourse_group: TeamMilan
 members:
   - alessandro
   - alberto

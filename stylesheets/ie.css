@@ -15,6 +15,12 @@
 
 body { font-size: 87.5%; }
 
+#shownav + label div { display: none; }
+
+#shownav + label div:nth-of-type(1) { display: none; }
+
+.nav_internal { max-height: 1000px; }
+
 .nav { float: right; clear: none; }
 .nav li { float: left; border: none; }
 

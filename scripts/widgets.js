@@ -432,4 +432,60 @@
         );
       },
     });
+
+
+		OTS.Widgets.TeamList = React.createClass({
+      componentWillMount: function() {
+        var team = this.props.team || 'opentechschool';
+        $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json')
+          .then(function(data){
+						// resort items depending on last seen
+						// prefer last active users
+						var members = data.members;
+						members.sort(function(a, b){
+							if (a.last_seen_at > b.last_seen_at){
+								return -1;
+							}
+							return 1;
+						})
+            this.setState({
+							loading: false,
+							members: members
+						});
+          }.bind(this))
+          .fail(function(){
+            console.error('could not load discourse members');
+          });
+      },
+
+			getInitialState: function(){
+				return {loading: true, members: null}
+			},
+
+			render: function(){
+				if (this.state.loading){
+					return OTS.Widgets.Loading();
+				}
+
+				var users = [];
+				for (var i = 0; i < this.state.members.length; i++) {
+					var member = this.state.members[i],
+							thumbnail = member.avatar_template.replace("{size}", "256");
+					if (thumbnail.slice(0, 4) != 'http')
+						thumbnail = "//discourse.opentechschool.org/" + thumbnail;
+					users.push(
+						React.DOM.li({className: "member", title: member.name},
+							React.DOM.img({src: thumbnail, alt: member.username}),
+		          React.DOM.h3({className: "title"},
+								React.DOM.span({}, member.name), ' ',
+								React.DOM.a({href: "//discourse.opentechschool.org/users/" + member.username, target:"_blank", className: "username"}, "@" + member.username)
+							),
+		          React.DOM.span({className: "title"}, member.title)
+		        )
+					);
+				}
+
+				return React.DOM.ul({className: "float_list float_list_4 team_list"}, users);
+			}
+		})
 })();

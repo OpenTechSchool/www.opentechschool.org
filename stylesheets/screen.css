@@ -198,12 +198,13 @@ ul.nav { margin-right: 7px; }
 
 /* List of OTS members, extends float list. Includes image and links. */
 .team_list > li { min-height: 8em; text-align: center; }
-.team_list > li.member { min-height: 240px; }
+.team_list > li.member { height: 240px; }
 .team_list > li.join div { display: inline-block; border: 5px solid #eee; border-radius: 100%; width: 190px; height: 190px; position: relative; }
 .team_list > li.join div form { position: absolute; top: 50%; margin-top: -13px; font-size: 90%; }
 .team_list > li.join div form input.subscribe_email { width: 180px; height: 22px; padding: 2px; margin-bottom: 3px; border: 1px solid gray; }
 .team_list > li:before { display: none !important; }
-.team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; }
+.team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); }
+.team_list img:hover { transition: 0.6s; filter: none; }
 .team_list h3 { font-size: 1em; }
 .team_list p { font-size: .714em; min-height: 6em; }
 
@@ -396,6 +397,22 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 .ots_icon.discourse { background-position: -28px 0; }
 .ots_icon.discourse:hover, .ots_icon.discourse:focus { background-position: -28px -83px; }
 
+.nav_internal { margin-right: 7px; overflow: hidden; max-height: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+#shownav { visibility: hidden; position: absolute; left: -1000px; }
+
+#shownav + label { position: absolute; right: 10px; top: 5px; bottom: 0; width: 30px; height: 30px; cursor: pointer; }
+
+#shownav + label div { position: absolute; top: 15px; left: 0; height: 2px; background-color: #cccccc; width: 30px; display: block; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
+#shownav + label div:nth-of-type(1) { -ms-transform: translate3d(0, -10px, 0); -webkit-transform: translate3d(0, -10px, 0); -moz-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0); }
+#shownav + label div:nth-of-type(3) { -ms-transform: translate3d(0, 10px, 0); -webkit-transform: translate3d(0, 10px, 0); -moz-transform: translate3d(0, 10px, 0); transform: translate3d(0, 10px, 0); }
+
+#shownav:checked + label div:nth-of-type(1) { -ms-transform: translate3d(0, 0, 0) rotate(45deg); -webkit-transform: translate3d(0, 0, 0) rotate(45deg); -moz-transform: translate3d(0, 0, 0) rotate(45deg); transform: translate3d(0, 0, 0) rotate(45deg); }
+#shownav:checked + label div:nth-of-type(2) { opacity: 0; }
+#shownav:checked + label div:nth-of-type(3) { -webkit-transform: translate3d(0, 0, 0) rotate(-45deg); -moz-transform: translate3d(0, 0, 0) rotate(-45deg); transform: translate3d(0, 0, 0) rotate(-45deg); }
+
+#shownav:checked ~ .nav_internal { max-height: 1000px; }
+
 .nav_external { padding-top: .65em; }
 .nav_external li { margin: 0 .25em; border-top: none; }
 .nav_external a { border: 0; }
@@ -457,6 +474,9 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
 @media screen and (min-width: 440px) { .float_list > li { float: left; }
   .float_list_4 > li { width: 46%; } }
 @media screen and (min-width: 768px) { body { font-size: 87.5%; }
+  #shownav + label div { display: none; }
+  #shownav + label div:nth-of-type(1) { display: none; }
+  .nav_internal { max-height: 1000px; }
   .nav { float: right; clear: none; }
   .nav li { float: left; border: none; }
   .btn_navbar { display: none; }
