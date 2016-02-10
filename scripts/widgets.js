@@ -235,6 +235,15 @@
         var topic = this.props.topic;
         var users = this.props.users;
         var bumped = moment(topic.bumped_at);
+
+        function getAvatarUrl(template) {
+          var url = template.replace("{size}", "25");
+          if (url.indexOf('https://avatars.discourse.org/') !== 0) {
+            url = 'http://discourse.opentechschool.org' + url;
+          }
+          return url;
+        }
+
         return React.DOM.div({
         				className: this.state.highlight ? "topic highlight" : "topic",
         				onMouseEnter: this.mouseEnter, onMouseLeave: this.mouseLeave}, [
@@ -243,11 +252,10 @@
                   ),
                   React.DOM.div({className: "metadata"}, [
                   	React.DOM.div({className: "posters"}, topic.posters.slice(0, 5).map(function(poster){
-												var origin = 'http://discourse.opentechschool.org';
                   			var poster = users[poster.user_id];
                   			return React.DOM.img({
                   				className: poster.extras === "latest" ? "avatar latest" : "avatar",
-                  				src: origin + poster.avatar_template.replace("{size}", "25"),
+                  				src: getAvatarUrl(poster.avatar_template),
                   				title: poster.username,
                   				alt: poster.username
 												});
