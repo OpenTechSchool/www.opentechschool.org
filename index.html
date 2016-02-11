@@ -97,6 +97,11 @@ rss_feed: full
 
   </div>
 
+  <div class="blocky discussion">
+    <h3 class="head">Discussion <a href="http://discourse.opentechschool.org/latest/" class="tiny_button">&raquo; latest topics</a></h3>
+    <div id="currentTopics"></div>
+  </div>
+
 </div>
 
 
@@ -143,13 +148,26 @@ rss_feed: full
   </div>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react.js" type="text/javascript" charset="utf-8"></script>
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, page: 5, params: {text: 'opentechschool'}}), document.getElementById('upcomingEvents'));
-
-    React.renderComponent(OTS.Widgets.LatestConversations({path: "/latest.json"}), document.getElementById('currentTopics'));
+    React.renderComponent(
+      OTS.Widgets.UpcomingEventsPreview({
+        teams: OTS.config.chapters,
+        page: 5,
+        params: {
+          text: 'opentechschool'
+        }
+      }),
+      document.getElementById('upcomingEvents')
+    );
+    React.renderComponent(
+      OTS.Widgets.LatestConversations({
+        path: "/latest.json"
+      }),
+      document.getElementById('currentTopics')
+    );
 
     $(".stay-connected").click(function() {
       $('body').addClass("show-modal");

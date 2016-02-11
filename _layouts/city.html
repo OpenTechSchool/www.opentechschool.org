@@ -74,35 +74,43 @@
 
 <section class="bg_full bg_full_white">
   <div class="container container_wide">
-    <h2 class="team_title">Team {{page.title}}</h2>
-    <ul class="float_list float_list_4 team_list">
-      {% for member in page.members %}
-      {% include _member member=member %}
-      <li class="member">
-        <img src="{{site.baseurl}}images/team/{{img}}.jpg">
-        <h3>
-          {{ name }}
-        </h3>
-        {% if email %}
-          <p>{{ email }}</p>
-        {% endif %}
-      </li>
-      {% endfor %}
-      <li class="join">
-        <div>
-          {% if page.mailing_list %}
-          <form action="https://groups.google.com/a/opentechschool.org/group/{{ page.mailing_list }}/boxsubscribe">
-            <input type="text" class="subscribe_email" name="email" placeholder="your@email">
-            <input type="submit" name="sub" value="Subscribe">
-          </form>
+    {% if page.discourse_group %}
+
+      <h2 class="team_title">Team {{page.title}} (<a href="//discourse.opentechschool.org/groups/{{page.discourse_group}}/members">@{{page.discourse_group}}</a>)</h2>
+      <div id="teamList">
+        loading ...
+      </div>
+    {% else %}
+      <h2 class="team_title">Team {{page.title}}</h2>
+      <ul class="float_list float_list_4 team_list">
+        {% for member in page.members %}
+        {% include _member member=member %}
+        <li class="member">
+          <img src="{{site.baseurl}}images/team/{{img}}.jpg">
+          <h3>
+            {{ name }}
+          </h3>
+          {% if email %}
+            <p>{{ email }}</p>
           {% endif %}
-        </div>
-        <h3>You?</h3>
-      {% if page.mailing_list %}
-        <p>{{ page.mailing_list }}@opentechschool.org</p>
-      {% endif %}
-      </li>
-    </ul>
+        </li>
+        {% endfor %}
+        <li class="join">
+          <div>
+            {% if page.mailing_list %}
+            <form action="https://groups.google.com/a/opentechschool.org/group/{{ page.mailing_list }}/boxsubscribe">
+              <input type="text" class="subscribe_email" name="email" placeholder="your@email">
+              <input type="submit" name="sub" value="Subscribe">
+            </form>
+            {% endif %}
+          </div>
+          <h3>You?</h3>
+        {% if page.mailing_list %}
+          <p>{{ page.mailing_list }}@opentechschool.org</p>
+        {% endif %}
+        </li>
+      </ul>
+    {% endif %}
     {% if page.twitter %}
     <div class="team_twitter">
       <a class="twitter-timeline"
@@ -115,7 +123,7 @@
   </div>
 </section>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react.js" type="text/javascript" charset="utf-8"></script>
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
@@ -124,7 +132,13 @@
     React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{key}}.json"}), document.getElementById('chapterConversations'));
 
     React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{meetup}}'}}), document.getElementById('membersCount'));
+
+
+  {% if page.discourse_group %}
+    React.renderComponent(OTS.Widgets.TeamList({team: '{{page.discourse_group}}'}), document.getElementById('teamList'));
+  {% endif %}
    });
+
 </script>
 
 {% include _footer.html %}
