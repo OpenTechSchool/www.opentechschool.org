@@ -497,3 +497,10 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
   .site_header_img { background-size: 100%; }
   .name .close-up { margin-right: 1.5em; float: left; }
   .name strong { margin-top: 2.4em; } }
+#mc_embed_signup .button { float: right; margin: 0 25px 10px 0 !important; background-color: #085987 !important; }
+
+#mc_embed_signup_scroll { clear: both; display: inline-block; width: 100%; font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+#mc_embed_signup div.mce_inline_error { background-color: #d40000  !important; font-weight: lighter; }
+
+#mc_embed_signup .mc-field-group input { border-radius: 3px; border-color: #085987 !important; }
