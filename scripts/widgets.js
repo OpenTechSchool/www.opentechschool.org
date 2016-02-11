@@ -220,59 +220,71 @@
     OTS.Widgets.Topic = React.createClass({
     	get_url: function() {
     		var topic = this.props.topic;
-    		return ["http://discourse.opentechschool.org/t",
-    				topic.slug, topic.id].join("/");
+    		return ["http://discourse.opentechschool.org/t", topic.slug, topic.id].join("/");
     	},
-      	getInitialState: function() {
-        	return {highlight: false};
-      	},
-      	mouseEnter: function() {
-      		this.setState({"highlight": true});
-      	},
-      	mouseLeave: function() {
-      		this.setState({"highlight": false});
-      	},
-        render: function() {
-          var topic = this.props.topic,
-              users = this.props.users,
-              bumped = moment(topic.bumped_at);
+    	getInitialState: function() {
+      	return {highlight: false};
+    	},
+    	mouseEnter: function() {
+    		this.setState({"highlight": true});
+    	},
+    	mouseLeave: function() {
+    		this.setState({"highlight": false});
+    	},
+      render: function() {
+        var topic = this.props.topic;
+        var users = this.props.users;
+        var bumped = moment(topic.bumped_at);
 
+        function getAvatarUrl(template) {
+          var url = template.replace("{size}", "25");
+          if (url.indexOf('https://avatars.discourse.org/') !== 0) {
+            url = 'http://discourse.opentechschool.org' + url;
+          }
+          return url;
+        }
 
-          return React.DOM.div({
-          				className: this.state.highlight ? "topic highlight" : "topic",
-          				onMouseEnter: this.mouseEnter, onMouseLeave: this.mouseLeave}, [
-                    React.DOM.h3({className: "topic_title"},
-                        React.DOM.a({href: this.get_url()}, topic.fancy_title)
-                        ),
-                    React.DOM.div({className: "metadata"}, [
-                    	React.DOM.div({className: "posters"}, topic.posters.slice(0, 5).map(function(poster){
-                    			var poster = users[poster.user_id];
-                    			return React.DOM.img({
-                    				className: poster.extras === "latest" ? "avatar latest" : "avatar",
-                    				src: poster.avatar_template.replace("{size}", "25"),
-                    				title: poster.username,
-                    				alt: poster.username});
-                    			})
-                    		),
-                    	React.DOM.span({className: "bumped"},
-                    		bumped.fromNow())
-                    	])
-                    ]);
+        return React.DOM.div({
+        				className: this.state.highlight ? "topic highlight" : "topic",
+        				onMouseEnter: this.mouseEnter, onMouseLeave: this.mouseLeave}, [
+                  React.DOM.h3({className: "topic_title"},
+                      React.DOM.a({href: this.get_url()}, topic.fancy_title)
+                  ),
+                  React.DOM.div({className: "metadata"}, [
+                  	React.DOM.div({className: "posters"}, topic.posters.slice(0, 5).map(function(poster){
+                  			var poster = users[poster.user_id];
+                  			return React.DOM.img({
+                  				className: poster.extras === "latest" ? "avatar latest" : "avatar",
+                  				src: getAvatarUrl(poster.avatar_template),
+                  				title: poster.username,
+                  				alt: poster.username
+												});
+                  			})
+                  		),
+                  	React.DOM.span({className: "bumped"},
+                  		bumped.fromNow())
+                  	])
+                  ]);
         }
     });
 
     OTS.Widgets.TopicList = React.createClass({
-
-          render: function() {
-            if (!this.props.topics) {return;}
-            var topicNodes = this.props.topics.slice(0,5).map(function (topic) {
-              	return OTS.Widgets.Topic({topic: topic, users: this.props.users});
-            	}.bind(this));
-            if (topicNodes.length == 0){
-              topicNodes = React.DOM.div({className:"empty"},"No topics found :( ");
-            }
-            return React.DOM.div({className:"topicsList"}, topicNodes);
-          }
+      render: function() {
+        if (!this.props.topics) {
+					return null;
+				}
+				var entryMax = 4; // cut length
+        var topicNodes = this.props.topics.slice(0, entryMax).map(function (topic) {
+          	return OTS.Widgets.Topic({
+							topic: topic,
+							users: this.props.users
+						});
+        	}.bind(this));
+        if (topicNodes.length == 0){
+          topicNodes = React.DOM.div({className:"empty"},"No topics found :(");
+        }
+        return React.DOM.div({className:"topicsList"}, topicNodes);
+      }
     });
 
     var DiscourseMixin = {
@@ -304,11 +316,14 @@
     OTS.Widgets.LatestConversations = React.createClass({
       mixins: [DiscourseMixin],
       render: function(){
-        if (!this.state.loading) {
+        if (this.state.loading === true) {
           return OTS.Widgets.Loading();
+					// return null;
         }
-      	return OTS.Widgets.TopicList({topics: this.state.topics,
-                        users: this.state.users});
+      	return OTS.Widgets.TopicList({
+					topics: this.state.topics,
+          users: this.state.users
+				});
       }
     });
 
@@ -316,22 +331,29 @@
       mixins: [DiscourseMixin],
 
       render: function() {
-          if (!this.state.loading) {
+          if (this.state.loading === true) {
             return OTS.Widgets.Loading();
+						// return null;
           }
 
           if (this.state.topics.length === 0){
+						return null;
             // in case we are empty, don't show anything
-            return React.DOM.div();
+            // return React.DOM.div();
           }
 
           return React.DOM.div({className:"blocky"},
               React.DOM.h3({className:"head"},
                   "Latest Conversations ",
-                  React.DOM.a({href:this.get_discourse_path().replace(".json", ""), className: "tiny_button"}, "join")
-                  ),
-              OTS.Widgets.TopicList({topics: this.state.topics,
-                            users: this.state.users})
+                  React.DOM.a({
+										href:this.get_discourse_path().replace(".json", ""),
+										className: "tiny_button"
+									}, "join")
+              ),
+              OTS.Widgets.TopicList({
+								topics: this.state.topics,
+                users: this.state.users
+							})
             );
       }
     });

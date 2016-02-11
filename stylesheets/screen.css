@@ -179,9 +179,11 @@ ul.nav { margin-right: 7px; }
 .eventsList .event .details { padding: 5px; }
 .eventsList .event .details .team { cursor: pointer; }
 
-.topic { padding: 15px 10px; clear: both; }
+.discussion { width: 75%; margin: 0 auto; margin-bottom: 0; }
+
+.topic { padding: 15px 0; width: 50%; display: inline-block; }
 .topic .metadata { opacity: 0.6; width: 100%; line-height: 30px; }
-.topic .posters { width: 150px; display: block; float: left; }
+.topic .posters { width: 150px; display: block; float: right; }
 .topic .posters .avatar { border-radius: 2px; vertical-align: middle; margin: 2px; }
 .topic.highlight .metadata { opacity: 1; }
 
