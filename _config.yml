@@ -5,7 +5,7 @@ css_version: 6
 markdown: kramdown
 
 encoding: UTF-8
-exclude: ['sass', 'config.rb', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 
 gems:
   - jekyll-redirect-from
