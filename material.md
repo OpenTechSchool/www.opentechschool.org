@@ -37,6 +37,7 @@ Want more JavaScript and have an idea for a Workshop? Join the [javascript coach
 ### Git
  * [Social coding with GitHub][social-git]
  * [GitHub from Scratch](http://opentechschool.github.io/github-from-scratch/)
+
 ### Ruby
  * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further material](http://railsgirls.com/materials)
 
