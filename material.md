@@ -20,16 +20,16 @@ Check out our new portal for all our newest workshops -
 
 ### Python
 
-**See our [Python portal] for all material,** or [discuss it][python-discuss] online. 
+**See our [Python portal] for all material,** or [discuss it][python-discuss] online.
 
 Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
-### Javascript
+### JavaScript
  * Weekend Workshop
-   - Day 1: [English](http://opentechschool.github.io/js-beginners-4h-workshop-1/), [Deutsch](http://opentechschool.github.io/js-beginners-4h-workshop-1/index_de.html)
-   - Day 2: [English](http://opentechschool.github.io/js-beginners-day2/), [Deutsch](http://opentechschool.github.io/js-beginners-day2/index_de.html)
+   - Part 1: [English](http://opentechschool.github.io/js-beginners-1/), [Deutsch](http://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language)
+   - Part 2: [English](http://opentechschool.github.io/js-beginners-2/), [Deutsch](http://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
 
-Want more Javascript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
+Want more JavaScript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
 ### Web Development
  * [Intro to HTML & CSS][HTMLCSS]
