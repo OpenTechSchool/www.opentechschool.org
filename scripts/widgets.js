@@ -360,7 +360,9 @@
         // return null;
       }
       return OTS.Widgets.TopicList({
-        topics: this.state.topics,
+        topics: this.state.topics.filter(function(topic) {
+          return topic.pinned_globally !== true;
+        }),
         users: this.state.users
       });
     }
