@@ -5,22 +5,20 @@
 
 The source code behind OTS' main web site.
 
-This project is built with the help of 
+This project is built with the help of
 
  * bootstrap
- * compass
  * jekyll
 
-In order to be able to compile the site on your own computer, you can install 
+In order to be able to compile the site on your own computer, you can install
 the two ruby dependencies with `bundle install` if you have bundler.
 
 ## Building the site
 
 1. run `bundle install` to grab ruby dependencies
 2. clean up jekyll's build directory: `rm -rf _site/*`
-3. compile styles: `compass clean; compass compile` (you can leave compass running while editing styles with `compass watch`)
-4. build and serve the site: `jekyll serve -w`
-5. Navigate to http://localhost:4000
+3. build and serve the site: `jekyll serve`
+4. Navigate to http://localhost:4000
 
 
 ## Adding a city
@@ -81,7 +79,7 @@ If you want to add a new city to the site, follow these steps:
   * ***Caveat for non-opentechschool.org accounts:***  If you are adding
     members to your chapter which do not yet have an opentechschool.org
     account, you can use an alternative syntax:
-    
+
         members:
           - charlie: Charlie Jones
 
