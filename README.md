@@ -16,7 +16,7 @@ the two ruby dependencies with `bundle install` if you have bundler.
 ## Building the site
 
 1. run `bundle install` to grab ruby dependencies
-2. clean up jekyll's build directory: `rm -rf _site/*`
+2. clean up jekyll's build directory: `rm -r _site/*`
 3. build and serve the site: `jekyll serve`
 4. Navigate to http://localhost:4000
 
