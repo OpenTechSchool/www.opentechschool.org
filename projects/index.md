@@ -7,7 +7,7 @@ OpenTechSchool also acts as a lab to experiement with new and interesting tech l
 
 # Overview
 
-At the moment the OpenTechSchool pursuits multiple formats and endavors. Some of them are listed and described here.
+At the moment the OpenTechSchool pursues multiple formats and endeavors. Some of them are listed and described here.
 
 
 ## App Summer Camps
@@ -18,7 +18,7 @@ App Summer Camps are an offer to the younger audience. For teens of ages 11-16 A
 
 ## Workshops
 
-The classic and all time favorite, the coding workshops. With a strong focus on friendly and welcoming environment, these self-learning, peer-driven workshops try to get people together and get into or better at coding. While the introduction workshops often take place on weekends, a lot smaller workshops also happen during the week. Though initially created for adults, many of these workshops can and are also run with a younger audience.
+The classic and all time favorite, the coding workshops. With a strong focus on friendly and welcoming environment, these self-learning, peer-driven workshops try to get people together and get into or better at coding. While the introduction workshops often take place on weekends, a lot of smaller workshops also happen during the week. Though initially created for adults, many of these workshops can and are also run with a younger audience.
 
 [Learn more about our "Workshops" here](/projects/workshops/)
 
@@ -30,7 +30,7 @@ But what after you've gotten yourself into coding through our workshops? How do 
 
 ## Hackership
 
-After working in the industry for some time, you might get tired of your field and want to learn something new or switch into a different field. That's exactly what Hackership wants to help you with. Consider it like the Continuous Learning Group for experienced Developers. Over the course of three month, this peer-learning, self-driven format wants to get you from being a good developer to becoming a great Hacker.
+After working in the industry for some time, you might get tired of your field and want to learn something new or switch into a different field. That's exactly what Hackership wants to help you with. Consider it like the Continuous Learning Group for experienced Developers. Over the course of three months, this peer-learning, self-driven format wants to get you from being a good developer to becoming a great Hacker.
 
 [Learn more about "Hackership" here](/projects/hackership/)
 
