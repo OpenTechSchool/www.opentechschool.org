@@ -18,7 +18,7 @@ App Summer Camps are an offer to the younger audience. For teens of ages 11-16 A
 
 ## Workshops
 
-The classic and all time favorite, the coding workshops. With a strong focus on friendly and welcoming environment, these self-learning, peer-driven workshops try to get people together and get into or better at coding. While the introduction workshops often take place on weekends, a lot of smaller workshops also happen during the week. Though initially created for adults, many of these workshops can and are also run with a younger audience.
+The classic and all time favorite, the coding workshops. With a strong focus on friendly and welcoming environment, these self-learning, peer-driven workshops try to get people together and get into or better at coding. While the introduction workshops often take place on weekends, many smaller workshops also happen during the week. Though initially created for adults, many of these workshops can and are also run with a younger audience.
 
 [Learn more about our "Workshops" here](/projects/workshops/)
 
