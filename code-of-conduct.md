@@ -7,7 +7,7 @@ permalink: /code-of-conduct/
 Purpose
 -------
 
-A primary goal of all the conferences and user groups that refer to this Code of Conduct is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status and religion (or lack thereof).
+A primary goal of all the conferences and user groups organised or affiliated with the OpenTechSchool is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status and religion (or lack thereof).
 
 This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 
@@ -76,4 +76,4 @@ We expect all community participants (contributors, paid or otherwise; sponsors;
 License and attribution
 -----------------------
 
-This Code of Conduct is based on the [Berlin Code of Conduct](http://berlincodeofconduct.org/). Both are distributed under the [Creative Commons Attribution-ShareAlike license in its latest version](http://creativecommons.org/licenses/by-sa/3.0/). 
+This Code of Conduct is based on the [Berlin Code of Conduct](http://berlincodeofconduct.org/). Both are distributed under the [Creative Commons Attribution-ShareAlike license in its latest version](http://creativecommons.org/licenses/by-sa/3.0/).
