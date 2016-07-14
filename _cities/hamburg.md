@@ -4,6 +4,7 @@ location: "Hamburg, Germany"
 tagline: "Shipping is our tradition... and so are Franzbrötchen."
 custom_events: ""
 twitter: false
+discourse_group: TeamHamburg
 does:
   workshops
   appsummercamps
