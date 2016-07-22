@@ -15,7 +15,7 @@ Before we can get started, there are a few things we need to ensure first. Those
 
  2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](http://discourse.opentechschool.org/).)
 
- 3. Have an idea of what you want your workshop/learning material to include -- the clearer the idea, the easier it becomes to recruit coaches.
+ 3. Have an idea of what you want your workshop/learning materials to include -- the clearer the idea, the easier it becomes to recruit coaches.
 
  4. Get in touch with OpenTechSchool members (which you might have already done via the mailinglist) and discuss your idea. Someone may already be working on something similar, so it makes sense to join forces.
 
@@ -23,7 +23,7 @@ In order to make the organization easier, once you've contacted the OpenTechScho
 
 # Starting to organize
 
-Even if you already have a pretty clear idea of what you want to do and may even have some learning material ready, we strongly believe that more people working together yield better results. In any case, you want to have some other people helping you coach, so the next things OTS is going to do are:
+Even if you already have a pretty clear idea of what you want to do and may even have some learning materials ready, we strongly believe that more people working together yield better results. In any case, you want to have some other people helping you coach, so the next things OTS is going to do are:
 
  * Create a mailing list for this topic.  Inquire with team.tech@ for that.
  * Promote that mailinglist via our social media channels, existing lists (global.discuss@), user groups and communities.

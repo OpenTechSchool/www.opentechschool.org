@@ -1,15 +1,11 @@
 ---
 published: true
 layout: simple
-title: Material
+title: Learning Materials
 ---
 
-## About the Material
-
-All OpenTechSchool Material is open sourced under the
+All OpenTechSchool Materials are open-source under the
 [Creative Commons ShareAlike Attribution][CC-SA] as described in our [values].
-
-## Learning Material
 
 Check out our new portal for all our newest workshops -
 **[learn.opentechschool.org]**!
@@ -18,41 +14,33 @@ Check out our new portal for all our newest workshops -
 [values]: {{site.baseurl}}about.html#core_values
 [learn.opentechschool.org]: http://learn.opentechschool.org
 
-### Python
+## Python
 
-**See our [Python portal] for all material,** or [discuss it][python-discuss] online.
+**See our [Python portal] for all materials,** or [discuss it][python-discuss] online.
 
 Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
-### JavaScript
+## JavaScript
  * Weekend Workshop
    - Part 1: [English](http://opentechschool.github.io/js-beginners-1/), [Deutsch](http://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language)
    - Part 2: [English](http://opentechschool.github.io/js-beginners-2/), [Deutsch](http://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
 
 Want more JavaScript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
-### Web Development
+## Web Development
  * [Intro to HTML & CSS][HTMLCSS]
 
-### Git
+## Git
  * [Social coding with GitHub][social-git]
  * [GitHub from Scratch](http://opentechschool.github.io/github-from-scratch/)
 
-### Ruby
- * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further material](http://railsgirls.com/materials)
+## Ruby
+ * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further materials](http://railsgirls.com/materials)
 
-### Arduino
+## Arduino
  * [Material for the introduction workshop](https://github.com/OpenTechSchool/arduino-workshop-01)
 
 Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
-
-## Upcoming
-
-### Web Development {#upcoming_web_development}
- * Advanced CSS
-
-### Git {#upcoming_git}
- * Advanced Git
 
 [Python portal]: http://python.opentechschool.org
 [python-discuss]: https://github.com/OpenTechSchool/python/wiki

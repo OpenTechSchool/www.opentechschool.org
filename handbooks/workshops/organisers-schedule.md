@@ -39,17 +39,17 @@ Lacking coaches?  Send out a "Call for Coaches" to your Meetup group or local te
 ## Two days before signups close
 - You might have more coaches now. Raise the number of signups accordingly.
 - Send email via the Meetup form to the participants who signed up so far, telling them there are more seats available, you are looking forward to seeing you there and to update their RSVP if they can't make it to give others a chance to participate instead. You can find an almost [copy-pasteable example online](/handbooks/workshops/example-before-closing.html).
-- Send an email to your coaches confirming time and place, containing a link to the [Coaches Guide](http://opentechschool.github.io/slides/presentations/coaching/) as well as the learning material. You can find an [example online](/handbooks/workshops/example-coaches-mail.html).
+- Send an email to your coaches confirming time and place, containing a link to the [Coaches Guide](http://opentechschool.github.io/slides/presentations/coaching/) as well as the learning materials. You can find an [example online](/handbooks/workshops/example-coaches-mail.html).
 - You might want to promote the workshop once more, stating you have more open slots now.
 
 ## After signups are closed
-- Send the confirmation email to the participants through the Meetup interface. Make sure it contains at least: the place and time, any requirements needed (like "bring a laptop", "install X") and how to get in touch in case they are unable to fulfill those.  Any more specific directions on the venue if needed and other useful material. But keep it short. [An example for you is provided online](/handbooks/workshops/example-after-closing.html).
+- Send the confirmation email to the participants through the Meetup interface. Make sure it contains at least: the place and time, any requirements needed (like "bring a laptop", "install X") and how to get in touch in case they are unable to fulfill those.  Any more specific directions on the venue if needed and other useful materials. But keep it short. [An example for you is provided online](/handbooks/workshops/example-after-closing.html).
 
 ## Things to prepare
 - It is always nice to have some good coverage of the event.  If you know someone with a camera or fairly new smartphone, ask them to take some photos.
 - Name badges are useful.  Make sure there is tape, post-its, sticky notes, or some such available at the venue.
-- Bring some paper and pens.  It's almost universally useful to create signs on the fly (wifi credentials, afterparty plans, directions and whatnot.)
-- An offline version of editors, the material and other common material like installers (in case the wifi goes down.)
+- Bring some paper and pens.  It's almost universally useful to create signs on the fly (wifi credentials, afterparty plans, directions and whatnot).
+- An offline version of editors, the lerning materials and other common tools like installers (in case the wifi goes down).
 - A few extenders if needed.
 
 ## The Workshop itself
@@ -76,7 +76,7 @@ Have a quick chat with the coaches, quickly re-iterate how this is going to work
   * where to find the toilets, for all genders
   * where to get something to drink, when the food will be delivered, that kinda stuff
 - Tell them to take breaks whenever they want. It is important to take breaks. We -- developers -- do breaks all the time.
-- Show the URL to the learners material again. Let them know, that they should work at their own pace and if they are not able to get finished that day that is fine, too, the material is available online all the time. Tell them to get started.
+- Show the URL to the learning materials again. Let them know, that they should work at their own pace and if they are not able to get finished that day that is fine, too, the materials are available online all the time. Tell them to get started.
 - And mention that they are very much invited to the next Learners Meetup to show what they've done in this workshop, find other learners, connect and socialise.  Bonus points if you can already share a date.
 
 ### Demo session (optional, but encouraged)

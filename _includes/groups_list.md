@@ -19,7 +19,7 @@ Official Post to the Members of the OpenTechSchool Foundation.
 
 #### [Library](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/library)
 
-The Library project is around compiling good, existing learning material, curate it and make it available online and offline.
+The Library project is around compiling good, existing learning materials, curate it and make it available online and offline.
 
 #### [New Education Network](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/new.edu.network)
 
@@ -67,7 +67,7 @@ Arduino Coaches meet and discuss here
 
 #### [Design Coaches](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.design)
 
-This is where design coaches discuss the learner materials and organise themselves and upcoming events
+This is where design coaches discuss the learning materials and organise themselves and upcoming events
 
 #### [Git Coaches](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.git)
 
