@@ -49,7 +49,7 @@ Lacking coaches?  Send out a "Call for Coaches" to your Meetup group or local te
 - It is always nice to have some good coverage of the event.  If you know someone with a camera or fairly new smartphone, ask them to take some photos.
 - Name badges are useful.  Make sure there is tape, post-its, sticky notes, or some such available at the venue.
 - Bring some paper and pens.  It's almost universally useful to create signs on the fly (wifi credentials, afterparty plans, directions and whatnot).
-- An offline version of editors, the lerning materials and other common tools like installers (in case the wifi goes down).
+- An offline version of editors, the learning materials and other common tools like installers (in case the wifi goes down).
 - A few extenders if needed.
 
 ## The Workshop itself
