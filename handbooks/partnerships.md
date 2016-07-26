@@ -16,7 +16,7 @@ There are quite a few things that OpenTechSchool can help with - promoting an ev
 ### Coaches
 We have a huge network of coaches for various topics and in many fields all around the globe. If you can not scale up your event because you are missing more people helping you to coach others, give us a poke.
 
-### Material
+### Materials
 We also have a growing directory of [learners material](/material.html) ready and available as open source. Feel free to use that without any further communication (although we would love to know where and when it gets used!). It is all licenced under [Creative Commons Share-Alike](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US) and are happy for any feedback and/or pull-requests on our content.
 
 ### Organisational Help
@@ -39,7 +39,7 @@ Sometimes we may come to the conclusion that an event doesn't follow our guideli
 Aside from the official naming, make sure the partner is aware of the following:
 
  * We are still free to promote or not promote this or any other event and the support-and-sponsorship rules still apply to them, too
- * Any material created for or within workshops must be released as Open Source to the public
+ * Any materials created for or within workshops must be released as open-source to the public
  * We are free call ourselves supporters of the event (stating what we contribute)
 
 If it is a co-partnered event also make sure that:

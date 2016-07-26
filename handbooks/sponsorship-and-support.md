@@ -48,7 +48,7 @@ If you want to support us more generally and globally or by providing infrastruc
 There is often a wrong assumption on what one can expect for supporting us. Let us be clear: **It is more important to us to provide the best learning experience in a safe learning environment, than garnering conditional support, and we have no problem declining such, if we believe it would have a negative impact on those and our values**. That said, here are a few things you can be sure, won't happen because of your support:
 
  * we will not send emails to our community on your request,
- * we will not change the name of any event, include your brand in it or temper with the learning material to make it a fit for you
+ * we will not change the name of any event, include your brand in it or temper with the learning materials to make it a fit for you
  * you do not have the right to review any material before it gets published
  * your support will not annul our [promotion guidelines](/handbooks/promotion.html) for your event and what you do
  * you do not have the right to call it "yours", not that workshop, programme or OpenTechSchool in general 
