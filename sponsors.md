@@ -21,11 +21,6 @@ sponsors:
     logo: images/sponsors/paypal.jpg
     blog_post: http://blog.opentechschool.org/2013/08/paypal-donations.html
     about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
-  slack:
-    name: Slack
-    web: https://www.slack.com
-    logo: images/sponsors/slack.png
-    about: Slack allows us to communicate in real-time and build our community.
 
 ---
 
