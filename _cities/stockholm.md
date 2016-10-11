@@ -1,6 +1,7 @@
 ---
 title: Stockholm
 location: "Stockholm, Sweden"
+is_inactive: true
 tagline: "Where kanelbullar and köttbullar come from"
 mailing_list: discuss.stockholm
 twitter: OTS_STHLM

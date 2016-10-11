@@ -7,11 +7,26 @@
           <ul>
             {% for city in site.cities %}
               {% include _metadata doc=city %}
+              {% unless city.is_inactive %}
               <li>
                 <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
                   {{city.title}}
                 </a>
               </li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+          Inactive:
+          <ul>
+            {% for city in site.cities %}
+              {% include _metadata doc=city %}
+              {% if city.is_inactive %}
+              <li>
+                <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
+                  {{city.title}}
+                </a>
+              </li>
+              {% endif %}
             {% endfor %}
             <li>&nbsp;</li>
             <li>

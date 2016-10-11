@@ -1,6 +1,7 @@
 ---
 title: San Francisco
 location: "San Francisco, CA, USA"
+is_inactive: true
 tagline: "Greetings from Karl"
 twitter: ots_sf
 widget_id: 427569983241998336
