@@ -1,6 +1,7 @@
 ---
 title: Milan
 location: "Milan, Italy"
+is_inactive: true
 tagline: "Pizza, code and fine wine!"
 does:
   workshops

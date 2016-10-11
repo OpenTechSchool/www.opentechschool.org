@@ -372,39 +372,33 @@ ul.nav {
 
 
 .intro {
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2em;
-  opacity: 0.8;
-  padding: 1em 4em 1em 1em;
+  padding: 1em;
   font-size: 0.9em;
-  width: 91%;
+  text-align: center;
 
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-  .action-wrap {
-    text-align: right;
-    margin-top: 2.7em;
-    margin-bottom: 0.5em;
-    margin-right: 1em;
-
-    .ots_action {
-      font-size: 1.2em;
-      line-height: 2.5em;
+    li {
+      padding: 1em;
+      font-size: 1.25em;
     }
   }
 }
 
 .site_header_landing {
-  background-image: url(../images/header.jpg);
-  padding-bottom: 2em;
-  padding-top: 30em;
-  .site_header {
-    color: #000;
+  .site_header_landing_background {
+    width: 100%;
   }
+
   .intro {
     color: #000;
     font-size: 1em;
-    width: 100%;
-    max-width: 92%;
     margin: 0 auto;
     em {
       font-weight: bold;
@@ -412,12 +406,6 @@ ul.nav {
     h2 {
         margin: 0.5em 0 1em;
     }
-  }
-  .action-wrap {
-    margin-bottom: 1em;
-    position: relative;
-    text-align: right;
-    left: -72px;
   }
 }
 
