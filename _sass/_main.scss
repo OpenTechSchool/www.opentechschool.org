@@ -381,7 +381,7 @@ ul.nav {
   ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     li {
@@ -392,12 +392,10 @@ ul.nav {
 }
 
 .site_header_landing {
-  background-image: url(../images/header.jpg);
-  padding-bottom: 2em;
-  padding-top: 30em;
-  .site_header {
-    color: #000;
+  .site_header_landing_background {
+    width: 100%;
   }
+
   .intro {
     color: #000;
     font-size: 1em;
@@ -408,12 +406,6 @@ ul.nav {
     h2 {
         margin: 0.5em 0 1em;
     }
-  }
-  .action-wrap {
-    margin-bottom: 1em;
-    position: relative;
-    text-align: right;
-    left: -72px;
   }
 }
 
