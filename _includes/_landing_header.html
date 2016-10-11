@@ -5,9 +5,19 @@
     <h2>
       Tech Education how it is supposed to be: Hands-on, empowering, peer-driven.
     </h2>
-    <p class="action-wrap">
-        <a class="ots_action" href="{{site.baseurl}}locator/">⌖ Find your Chapter</a>
-    </p>
+
+    <ul>
+      {% for city in site.cities %}
+        {% include _metadata doc=city %}
+        {% unless city.is_inactive %}
+        <li>
+          <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
+            {{city.title}}
+          </a>
+        </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
 
   </div>
 </div>
