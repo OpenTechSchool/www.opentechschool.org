@@ -525,7 +525,7 @@ ul.nav {
   }
 
   h3 {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   p {
@@ -538,6 +538,9 @@ ul.nav {
     img {
       float:left;
     }
+    div {
+      margin-left: 220px;
+    }
   }
 
   .right {
@@ -545,7 +548,36 @@ ul.nav {
     img {
       float:right;
     }
+    div {
+      margin-right: 220px;
+    }
   }
+}
+
+@media screen and (max-width: 500px) {
+  .sponsor_list {
+    img {
+      max-width: 140px;
+      margin: 10px;
+    }
+
+    h3 {
+      padding-top: 5px;
+    }
+
+    .left {
+      div {
+        margin-left: 160px;
+      }
+    }
+
+    .right {
+      div {
+        margin-right: 160px;
+      }
+    }
+  }
+
 }
 
 /* List of OTS members, extends float list. Includes image and links. */
