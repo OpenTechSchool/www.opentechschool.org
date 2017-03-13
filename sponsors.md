@@ -21,6 +21,11 @@ sponsors:
     logo: images/sponsors/paypal.jpg
     blog_post: http://blog.opentechschool.org/2013/08/paypal-donations.html
     about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
+  wenzelmann:
+    name: Wenzelmann
+    web: https://www.wenzelmann.de
+    logo: images/sponsors/wenzelmann.png
+    about: Ernst Wenzelmann Schilderfabrik GmbH generously printed over 5000 of our beautiful stickers in extraordinary quality as a donation.
 
 ---
 
