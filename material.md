@@ -28,6 +28,7 @@ Have a good idea about a Python Workshop? Join the [python coaches group](https:
 Want more JavaScript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
 ## Web Development
+ * [CSSClasses](http://cssclass.es/materials/)
  * [Intro to HTML & CSS][HTMLCSS]
 
 ## Git
