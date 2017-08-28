@@ -7,7 +7,7 @@ markdown: kramdown
 encoding: UTF-8
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 collections:
