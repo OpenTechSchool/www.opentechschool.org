@@ -40,7 +40,7 @@ sponsors:
 		{% assign sponsor = sponsor_data[1] %}
 		<div class="{% cycle 'left', 'right' %}">
 		    {% if sponsor.logo %}
-				<a href="{{sponsor.web}}"><img src="{{site.baseurl}}{{sponsor.logo}}" alt="{{sponsor.name}} Logo" ></a>
+				<a href="{{sponsor.web}}"><img src="{{site.baseurl}}/{{sponsor.logo}}" alt="{{sponsor.name}} Logo" ></a>
 		    {% endif %}
 
 			<div>
@@ -55,4 +55,4 @@ sponsors:
 	{% endfor %}
 </div>
 
-<h4 style="text-align: center">You like what we do and want to sponsor us?<br/> <a href="{{site.baseurl}}handbooks/sponsorship-and-support.html">Learn here how.</a></h4>
+<h4 style="text-align: center">You like what we do and want to sponsor us?<br/> <a href="{{site.baseurl}}/handbooks/sponsorship-and-support.html">Learn here how.</a></h4>

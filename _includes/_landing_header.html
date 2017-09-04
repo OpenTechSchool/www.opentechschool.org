@@ -1,6 +1,6 @@
 <div class="site_header_landing">
 
-  <img class="site_header_landing_background" src="{{site.baseurl}}images/header.jpg">
+  <img class="site_header_landing_background" src="{{site.baseurl}}/images/header.jpg">
 
   <div class="intro">
 
@@ -13,7 +13,7 @@
         {% include _metadata doc=city %}
         {% unless city.is_inactive %}
         <li>
-          <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
+          <a href="{{site.baseurl}}/{{key}}" title="{{city.location}}">
             {{city.title}}
           </a>
         </li>

@@ -19,7 +19,7 @@ Our teams mailing lists are:
 
  * [Team communications](mailto:team.communications@opentechschool.org) takes care of all online and offline OTS communication. Whether you have something you think OTS would like to tweet or facebook, or you are interested in having one of us speak at your event/conference, send your emails here.
 
- * [Team blueprint](mailto:team.blueprint@opentechschool.org) is in charge of the [handbooks]({{site.baseurl}}handbooks/). If you find any mistakes, have feedback or want more information about a specific part, send your email here.
+ * [Team blueprint](mailto:team.blueprint@opentechschool.org) is in charge of the [handbooks]({{site.baseurl}}/handbooks/). If you find any mistakes, have feedback or want more information about a specific part, send your email here.
 
  * [Team tech](mailto:team.tech@opentechschool.org) organises the tech parts of OTS, such as the GitHub accounts, email adresses, domains, etc. If you need help setting up a mailing list or any of the aforementioned points, send your email here.
 

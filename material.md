@@ -11,7 +11,7 @@ Check out our new portal for all our newest workshops -
 **[learn.opentechschool.org]**!
 
 [CC-SA]: http://creativecommons.org/licenses/by-sa/3.0/
-[values]: {{site.baseurl}}about.html#core_values
+[values]: {{site.baseurl}}/about.html#core_values
 [learn.opentechschool.org]: http://learn.opentechschool.org
 
 ## Python
