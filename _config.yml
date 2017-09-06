@@ -1,5 +1,5 @@
 url: www.opentechschool.org
-baseurl: /
+baseurl: ""
 blog_domain: blog.opentechschool.org
 css_version: 6
 markdown: kramdown
