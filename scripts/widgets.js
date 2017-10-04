@@ -502,7 +502,7 @@
   OTS.Widgets.TeamList = React.createClass({
     componentWillMount: function() {
       var team = this.props.team || 'opentechschool';
-      $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json')
+      $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json?limit=100')
         .then(function(data){
           // resort items depending on last seen
           // prefer last active users
