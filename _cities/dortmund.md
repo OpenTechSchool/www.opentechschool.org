@@ -1,6 +1,7 @@
 ---
 title: Dortmund
 location: "Dortmund, Germany"
+is_inactive: true
 tagline: "Between currywurst, football and compilers."
 twitter: OTS_DO
 widget_id: 428986685196480512
