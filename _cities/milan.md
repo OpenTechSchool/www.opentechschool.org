@@ -1,12 +1,11 @@
 ---
 title: Milan
 location: "Milan, Italy"
-is_inactive: true
 tagline: "Pizza, code and fine wine!"
 does:
   workshops
 meetup:
-  Khronos-Milano-Chapter
+  OpenTechSchool-Milano
 discourse_group: TeamMilan
 members:
   - alessandro

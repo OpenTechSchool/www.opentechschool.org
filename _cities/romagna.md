@@ -1,11 +1,12 @@
 ---
 title: Romagna
 location: "Cesena, Italy"
-tagline: "Code, piadina and sangiovese"
+tagline: "Code, Piadina and Sangiovese"
 discourse_group: TeamRomagna
 does:
   learninggroups
 discourse_group: TeamRomagna
+redirect_to: "https://www.meetup.com/OpenTechSchool-Romagna/"
 members:
   - manuele
   - elena

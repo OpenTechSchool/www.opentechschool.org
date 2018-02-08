@@ -21,9 +21,8 @@ Check out our new portal for all our newest workshops -
 Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
 ## JavaScript
- * Weekend Workshop
-   - Part 1: [English](http://opentechschool.github.io/js-beginners-1/), [Deutsch](http://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language)
-   - Part 2: [English](http://opentechschool.github.io/js-beginners-2/), [Deutsch](http://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
+ * **JavaScript for Absolute Beginners:** [English](http://opentechschool.github.io/js-beginners-1/), [German](http://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language with rotating smileys 😀)
+ * **JavaScript for Web Pages (outdated):** [English](http://opentechschool.github.io/js-beginners-2/), [German](http://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
 
 Want more JavaScript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
