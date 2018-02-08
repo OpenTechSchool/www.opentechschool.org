@@ -1,11 +1,19 @@
 ---
 title: Romagna
 location: "Cesena, Italy"
+tagline: "Code, piadina and sangiovese"
 discourse_group: TeamRomagna
 does:
   learninggroups
+discourse_group: TeamRomagna
+members:
+  - manuele
+  - elena
+  - saverio
 ---
 
 ## About
 
-Romagna is an Italian historical region that approximately corresponds to the south-eastern portion of present-day Emilia-Romagna. Traditionally, it is limited by the Apennines to the south-west, the Adriatic to the east, and the rivers Reno and Sillaro to the north and west. The region's major cities include Cesena, Faenza, Forlì, Imola, Ravenna, Rimini and City of San Marino.
+Romagna is an Italian historical region that is famous for its nature, food, beaches, nightlife and clubs. And for the spirit of people living there! Cesena is right in the middle of all of this, placed as a strategical point of connection for all the other main centers around.
+Cesena has always been also a center for cutlure and studies. The picture you see is from the City's ancient library, the Europe first civic library build in 1447.
+We organize free learning groups to be both an opportunity for partecipants to meet like-minded people and to promote code and technology as a mean of expression.
