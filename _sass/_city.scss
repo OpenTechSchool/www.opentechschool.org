@@ -70,6 +70,14 @@
   background-position: 0% 50%;
 }
 
+.site_header_leipzig {
+  background-image: url(../images/bg_leipzig.jpg);
+  background-position: 50% 50%;
+  @media screen and (max-width:800px) {
+    background-position: top center;
+  }
+}
+
 .site_header_melbourne {
   background-image: url(../images/bg_melbourne.jpg);
   background-position: 45% 0%;
