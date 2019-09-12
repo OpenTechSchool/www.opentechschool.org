@@ -120,13 +120,17 @@ rss_feed: full
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
+    var eventChapterNames = [];
+    for (var name in OTS.config.chapters) {
+      if (OTS.config.chapters[name].isActive) {
+        eventChapterNames.push(name);
+      }
+    }
     React.renderComponent(
       OTS.Widgets.UpcomingEventsPreview({
         teams: OTS.config.chapters,
-        page: 5,
-        params: {
-          text: 'opentechschool'
-        }
+        chapterNames: eventChapterNames,
+        page: 5
       }),
       document.getElementById('upcomingEvents')
     );

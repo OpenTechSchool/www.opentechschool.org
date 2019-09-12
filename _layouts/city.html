@@ -127,11 +127,11 @@
 <script src="/scripts/widgets.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
    $(function() {
-    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, path:"events", page: 5, hideTeams: true, params: {group_urlname: '{{meetup}}'}}), document.getElementById('upcomingEvents'));
+    React.renderComponent(OTS.Widgets.UpcomingEventsPreview({teams: OTS.config.chapters, chapterNames: ['{{meetup}}'], page: 5, hideTeams: true}), document.getElementById('upcomingEvents'));
 
     React.renderComponent(OTS.Widgets.ChapterConversations({teams: OTS.config.chapters, path:"/category/chapters/{{key}}.json"}), document.getElementById('chapterConversations'));
 
-    React.renderComponent(OTS.Widgets.MembersCounter({path:"groups", params: {group_urlname: '{{meetup}}'}}), document.getElementById('membersCount'));
+    React.renderComponent(OTS.Widgets.MembersCounter({chapterName: '{{meetup}}'}), document.getElementById('membersCount'));
 
 
   {% if page.discourse_group %}

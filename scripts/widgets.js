@@ -45,7 +45,7 @@
         ]),
         React.DOM.div({className: "details"}, [
           React.DOM.h3({className: "title"},
-            React.DOM.a({href: cal_event.event_url}, cal_event.name)
+            React.DOM.a({href: cal_event.link}, cal_event.name)
           ),
           React.DOM.span({className: "venue"}, cal_event.venue ? cal_event.venue.name : "TBA"),
           this.props.hideTeams ? React.DOM.span() : React.DOM.span({className: "team", onClick: this.teamClicked}, cal_event.group.name.replace("OpenTechSchool", ""))
@@ -208,22 +208,35 @@
 
   var MeetupMixin = {
     componentWillMount: function() {
-      var params = $.extend({}, { key: meetupcom_key, sign: true, page: 200}, this.props.params ),
+      var params = $.extend({key: meetupcom_key, sign: true, page: 200}, this.props.params),
           path = this.props.path || 'open_events';
-      $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params).
-        then(function(data){
-          this.resultsReceived(data);
-        }.bind(this)
-      );
+      $.getJSON('https://api.meetup.com/2/' + path + '?callback=?', params)
+      .then(function(data){
+        this.resultsReceived(data);
+      }.bind(this));
     }
   };
 
 
   OTS.Widgets.UpcomingEventsPreview = React.createClass({
-    mixins: [MeetupMixin],
-
-    resultsReceived: function(data){
-      this.setState({events: this.props.page ? data.results.splice(0, this.props.page) : data.results});
+    componentWillMount: function() {
+      var requests = this.props.chapterNames.map(function (chapterName) {
+        return $.getJSON('https://api.meetup.com/' + chapterName + '/events?callback=?', {page: this.props.page});
+      }.bind(this));
+      Promise.all(requests)
+      .then(function(results) {
+        var events = [];
+        for (var i = 0; i < results.length; ++i) {
+          events = events.concat(results[i].data);
+        }
+        events.sort(function(a, b) {
+          return a.time < b.time ? -1 : 1;
+        });
+        if (this.props.page) {
+          events =  events.splice(0, this.props.page);
+        }
+        this.setState({events: events});
+      }.bind(this));
     },
 
     getInitialState: function() {
@@ -402,11 +415,12 @@
 
 
   OTS.Widgets.MembersCounter = React.createClass({
-    mixins: [MeetupMixin],
-
-    resultsReceived: function(data){
-      var group = data.results[0];
-      this.setState({members: group.members, who: group.who});
+    componentWillMount: function() {
+      $.getJSON('https://api.meetup.com/' + this.props.chapterName + '?callback=?')
+      .then(function(data) {
+        var group = data.data;
+        this.setState({members: group.members, who: group.who});
+      }.bind(this));
     },
 
     getInitialState: function() {

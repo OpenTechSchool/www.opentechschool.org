@@ -19,6 +19,7 @@
     {%comment%} city|jsonify does not work with collections. :( {%endcomment%}
     "{{meetup}}": {
       page: {{key | jsonify}},
+      isActive: !{{city.is_inactive | jsonify}}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
     }
