@@ -266,7 +266,7 @@
   OTS.Widgets.Topic = React.createClass({
     get_url: function() {
       var topic = this.props.topic;
-      return ["http://discourse.opentechschool.org/t", topic.slug, topic.id].join("/");
+      return ["https://discourse.opentechschool.org/t", topic.slug, topic.id].join("/");
     },
 
     getInitialState: function() {
@@ -289,7 +289,7 @@
       function getAvatarUrl(template) {
         var url = template.replace("{size}", "25");
         if (url.indexOf('https://avatars.discourse.org/') !== 0) {
-          url = 'http://discourse.opentechschool.org' + url;
+          url = 'https://discourse.opentechschool.org' + url;
         }
         return url;
       }
@@ -340,7 +340,7 @@
 
   var DiscourseMixin = {
     get_discourse_path: function() {
-      return 'http://discourse.opentechschool.org' + this.props.path;
+      return 'https://discourse.opentechschool.org' + this.props.path;
     },
 
     loadTopicsFromServer: function() {
@@ -516,7 +516,7 @@
   OTS.Widgets.TeamList = React.createClass({
     componentWillMount: function() {
       var team = this.props.team || 'opentechschool';
-      $.getJSON('http://discourse.opentechschool.org/groups/' + team + '/members.json?limit=100')
+      $.getJSON('https://discourse.opentechschool.org/groups/' + team + '/members.json?limit=100')
         .then(function(data){
           // resort items depending on last seen
           // prefer last active users
