@@ -4,11 +4,11 @@ location: Leipzig, Germany
 tagline: Coding without the hype
 twitter: ots_le
 members:
-  - alexa: Alexa
   - christina: Christina
   - daniel: Daniel
   - krissi: Krissi
   - norma: Norma
+  - markus: Markus
 ---
 
 ## About
