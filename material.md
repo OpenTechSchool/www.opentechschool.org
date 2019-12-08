@@ -12,7 +12,7 @@ Check out our new portal for all our newest workshops -
 
 [CC-SA]: http://creativecommons.org/licenses/by-sa/3.0/
 [values]: {{site.baseurl}}/about.html#core_values
-[learn.opentechschool.org]: http://learn.opentechschool.org
+[learn.opentechschool.org]: https://learn.opentechschool.org
 
 ## Python
 
@@ -21,18 +21,18 @@ Check out our new portal for all our newest workshops -
 Have a good idea about a Python Workshop? Join the [python coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.python) and get to it.
 
 ## JavaScript
- * **JavaScript for Absolute Beginners:** [English](http://opentechschool.github.io/js-beginners-1/), [German](http://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language with rotating smileys 😀)
- * **JavaScript for Web Pages (outdated):** [English](http://opentechschool.github.io/js-beginners-2/), [German](http://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
+ * **JavaScript for Absolute Beginners:** [English](https://opentechschool.github.io/js-beginners-1/), [German](https://opentechschool.github.io/js-beginners-1/index_de.html) (basics of the JavaScript programming language with rotating smileys 😀)
+ * **JavaScript for Web Pages (outdated):** [English](https://opentechschool.github.io/js-beginners-2/), [German](https://opentechschool.github.io/js-beginners-2/index_de.html) (build a slide show in the browser)
 
 Want more JavaScript and have an idea for a Workshop? Join the [javascript coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.javascript) and get started.
 
 ## Web Development
- * [CSSClasses](http://cssclass.es/materials/)
+ * [CSSClasses](https://cssclass.es/materials/)
  * [Intro to HTML & CSS][HTMLCSS]
 
 ## Git
  * [Social coding with GitHub][social-git]
- * [GitHub from Scratch](http://opentechschool.github.io/github-from-scratch/)
+ * [GitHub from Scratch](https://opentechschool.github.io/github-from-scratch/)
 
 ## Ruby
  * [Rails Girls App Tutorial](http://guides.railsgirls.com/app/), [further materials](http://railsgirls.com/materials)
@@ -42,7 +42,7 @@ Want more JavaScript and have an idea for a Workshop? Join the [javascript coach
 
 Arduino wants your love and help in developing further materials. Join the [ardunio coaches group](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/coaches.ardunio) to help.
 
-[Python portal]: http://python.opentechschool.org
+[Python portal]: https://python.opentechschool.org
 [python-discuss]: https://github.com/OpenTechSchool/python/wiki
-[HTMLCSS]: http://opentechschool.github.io/html-css-beginners/
-[social-git]: http://opentechschool.github.io/social-coding/
+[HTMLCSS]: https://opentechschool.github.io/html-css-beginners/
+[social-git]: https://opentechschool.github.io/social-coding/

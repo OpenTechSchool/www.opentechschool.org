@@ -13,7 +13,7 @@ Before we can get started, there are a few things we need to ensure first. Those
   * It needs to be hands-on.
   * You are responsible for creating a welcoming learning environment where learners are encouraged to ask questions and nothing is assumed to be "self-explanatory."
 
- 2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](http://discourse.opentechschool.org/).)
+ 2. Show us there is a demand for your workshop (e.g. by posting it on our [global discussion groups](https://discourse.opentechschool.org/).)
 
  3. Have an idea of what you want your workshop/learning materials to include -- the clearer the idea, the easier it becomes to recruit coaches.
 
@@ -34,7 +34,7 @@ But we also need to you to spread the word and convince people to join -- after 
 ## Scheduling the first meeting
 Once there are enough people in the mailing list (we usually wait until there are 15+), we try to set up a first meeting in order to get to know each other as well as to figure out how to actually get things done.
 
- * We create a [Doodle poll](http://www.doodle.com/) with potential dates in the next 2-4 weeks.
+ * We create a [Doodle poll](https://www.doodle.com/) with potential dates in the next 2-4 weeks.
  * The poll is sent to the coaches list, asking everyone to mark their availability.
  * The poll is also shared on social media channels to find more coaches.
  * Once there are enough coaches available for a date (8-10 at least), the meeting is set and a notice about it is sent to the mailinglist.

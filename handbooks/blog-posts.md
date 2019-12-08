@@ -6,7 +6,7 @@ title: Contributing to the blog
 So you want to contribute to the blog? That's great! Here's how you can do it:
 
 ## Introduction
-Our blog is hosted on [GitHub Pages](http://pages.github.com), a static HTML hosting provider from GitHub. We use the normal GithHb Tools, like Issues, Markdown, and Pull-Requests to manage our blog as well. The process is as usual: either via Fork, Write, Pull-Request (for git/github users), or the Wiki, Issues, and emails. If you do not know what Forking means, you probably want to skip right to the [second way of doing it](#via_wiki_and_issues)
+Our blog is hosted on [GitHub Pages](https://pages.github.com), a static HTML hosting provider from GitHub. We use the normal GithHb Tools, like Issues, Markdown, and Pull-Requests to manage our blog as well. The process is as usual: either via Fork, Write, Pull-Request (for git/github users), or the Wiki, Issues, and emails. If you do not know what Forking means, you probably want to skip right to the [second way of doing it](#via_wiki_and_issues)
 
 ## Fork &raquo; Write &raquo; Pull-Reqest
 The source of the blog can found in the [blog.opentechschool.org repository](https://github.com/OpenTechSchool/blog.opentechschool.org) of the OpenTechSchool account. Simply fork the repository by clicking on the "Fork" on the top right.
@@ -37,13 +37,13 @@ Once you open that newly created file, you'll find that there is a header sectio
     ---
     {% raw %}{% include JB/setup %}{% endraw %}
 
-This top part is metadata information in the [YAML](http://en.wikipedia.org/wiki/YAML)-Format. We generally do not use the description and category, so feel free to removes those lines. Instead you can add an author (with your name as the value), an image (if you provide a nice teaser picture with your post), and a teaser, which would be shown on the index-page instead of the whole content. On top, we have build-in support for google-groups-signup forms.
+This top part is metadata information in the [YAML](https://en.wikipedia.org/wiki/YAML)-Format. We generally do not use the description and category, so feel free to removes those lines. Instead you can add an author (with your name as the value), an image (if you provide a nice teaser picture with your post), and a teaser, which would be shown on the index-page instead of the whole content. On top, we have build-in support for google-groups-signup forms.
 
 A great example on how to use all of those is in the blog post ``_posts/2012-09-26-stockholm-calling.md``. Take a peek there if you are unsure whether you are doing it right.
 
 ### The content
 
-Everything under these lines is published as the content of the blog post. You can simply write it down as you feel appropriate and if you want to do some formatting, please look how to do this via [markdown](http://daringfireball.net/projects/markdown/syntax), which is the syntax we are using. Again, peeking at any other blog post that makes it look the way you want it to, will probably help.
+Everything under these lines is published as the content of the blog post. You can simply write it down as you feel appropriate and if you want to do some formatting, please look how to do this via [markdown](https://daringfireball.net/projects/markdown/syntax), which is the syntax we are using. Again, peeking at any other blog post that makes it look the way you want it to, will probably help.
 
 ### Commit, push, Pull-Request
 

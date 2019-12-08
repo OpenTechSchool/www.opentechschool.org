@@ -19,7 +19,7 @@ The list of all the [learning materials can be found here](/material.html).
 
 
 ## Organisational guidelines and policies
- * [Coaching guidelines](http://opentechschool.github.com/slides/presentations/coaching/)
+ * [Coaching guidelines](https://opentechschool.github.com/slides/presentations/coaching/)
  * [Promoting others content](/handbooks/promotion.html)
  * [Partnering with others](/handbooks/partnerships.html)
  * [Becoming an OTS Sponsor](/handbooks/sponsorship-and-support.html)

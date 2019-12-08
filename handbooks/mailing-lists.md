@@ -13,7 +13,7 @@ To find all lists, please go to our [Google Groups index page](https://groups.go
 
 {% include groups_list.md %}
 
-> **Note**: Please note that some groups are not visible to you if you don't have an <span style="color: #085987;">@opentechschool.org</span> account or you have to be a member to post. Becoming a member is easy: just come by to one of our [team breakfasts](http://blog.opentechschool.org/2012/08/ots-biweekly-team-breakfasts.html) or write an email to <span style="color: #085987;">Team Tech</span>.
+> **Note**: Please note that some groups are not visible to you if you don't have an <span style="color: #085987;">@opentechschool.org</span> account or you have to be a member to post. Becoming a member is easy: just come by to one of our [team breakfasts](https://blog.opentechschool.org/2012/08/ots-biweekly-team-breakfasts.html) or write an email to <span style="color: #085987;">Team Tech</span>.
 
 ## Changelog
 

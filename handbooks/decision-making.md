@@ -22,7 +22,7 @@ In some cases, that team might also include other teams affected by such a decis
 ### It's not that problematic of a topic
 Well, you probably want to take the discussion onto the [public mailinglist](https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global) then to get the discussion going.
 
-Once one or a few opinions emerge you might want to put them up for vote via a [Doodle poll](http://doodle.com) and send that link to the same list. Once there has been no addition to list for a few days, remind everyone via another email they can still vote. Once a few more days have passed, take a screenshot of the results and post that as the decision to the mailing list.
+Once one or a few opinions emerge you might want to put them up for vote via a [Doodle poll](https://doodle.com) and send that link to the same list. Once there has been no addition to list for a few days, remind everyone via another email they can still vote. Once a few more days have passed, take a screenshot of the results and post that as the decision to the mailing list.
 
 That's it. Happy voting!
 

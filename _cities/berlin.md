@@ -32,6 +32,6 @@ very beginning and where we host our events is the fantastic coworking space,
 [co.up].
 
 <a href="https://twitter.com/OTS_BLN" title="OTS Berlin Twitter" class="ots_icon twitter" style="float:left;">Twitter</a>
-<a href="http://www.facebook.com/opentechschool.berlin" title="OTS Berlin Facebook page" class="ots_icon facebook" style="float:left;">Facebook</a>
+<a href="https://www.facebook.com/opentechschool.berlin" title="OTS Berlin Facebook page" class="ots_icon facebook" style="float:left;">Facebook</a>
 
-[co.up]: http://co-up.de/
+[co.up]: https://co-up.de/

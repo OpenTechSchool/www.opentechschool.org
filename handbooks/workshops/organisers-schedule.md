@@ -11,7 +11,7 @@ In order to make the Workshop the most accessible and best experience for everyo
 
 ## Settle on a date
 
-While we aim to accommodate the learners as much as possible, coaches are critical for a workshop.  Usually, date decisions are driven by coach availability.  So set up a [Doodle](http://doodle.com/) and let your potential coaches pick between a couple of dates.  We call this a **Call for Coaches**.  As you will see below, these dates should be at least two weeks in the future to allow for enough preparation time.
+While we aim to accommodate the learners as much as possible, coaches are critical for a workshop.  Usually, date decisions are driven by coach availability.  So set up a [Doodle](https://doodle.com/) and let your potential coaches pick between a couple of dates.  We call this a **Call for Coaches**.  As you will see below, these dates should be at least two weeks in the future to allow for enough preparation time.
 
 Don't offer too many dates as only filling out the Doodle then already gets a chore.  If you cannot seem to find a quorum consensus you can still post another vote with alternative dates.
 
@@ -34,12 +34,12 @@ When scheduling the event, please keep in mind:
 
 When promoting, also make sure potential coaches know they are invited to come and who to talk to, if they want to. Usually that would be via answering on a public email or to you personally.
 
-Lacking coaches?  Send out a "Call for Coaches" to your Meetup group or local team mailing list, related user groups, relevant newsletters or message boards.  Examples: [blog post](http://blog.opentechschool.org/2013/04/call-for-coaches-hackathon-for-kids.html), [Meetup message](http://www.meetup.com/opentechschool-zurich/messages/boards/thread/34200822), [email](https://groups.google.com/a/opentechschool.org/d/msg/coaches.python/PUM1h_kThQE/uSOkqiDJJYUJ).
+Lacking coaches?  Send out a "Call for Coaches" to your Meetup group or local team mailing list, related user groups, relevant newsletters or message boards.  Examples: [blog post](https://blog.opentechschool.org/2013/04/call-for-coaches-hackathon-for-kids.html), [Meetup message](https://www.meetup.com/opentechschool-zurich/messages/boards/thread/34200822), [email](https://groups.google.com/a/opentechschool.org/d/msg/coaches.python/PUM1h_kThQE/uSOkqiDJJYUJ).
 
 ## Two days before signups close
 - You might have more coaches now. Raise the number of signups accordingly.
 - Send email via the Meetup form to the participants who signed up so far, telling them there are more seats available, you are looking forward to seeing you there and to update their RSVP if they can't make it to give others a chance to participate instead. You can find an almost [copy-pasteable example online](/handbooks/workshops/example-before-closing.html).
-- Send an email to your coaches confirming time and place, containing a link to the [Coaches Guide](http://opentechschool.github.io/slides/presentations/coaching/) as well as the learning materials. You can find an [example online](/handbooks/workshops/example-coaches-mail.html).
+- Send an email to your coaches confirming time and place, containing a link to the [Coaches Guide](https://opentechschool.github.io/slides/presentations/coaching/) as well as the learning materials. You can find an [example online](/handbooks/workshops/example-coaches-mail.html).
 - You might want to promote the workshop once more, stating you have more open slots now.
 
 ## After signups are closed
@@ -55,7 +55,7 @@ Lacking coaches?  Send out a "Call for Coaches" to your Meetup group or local te
 ## The Workshop itself
 
 ### Coaches meetup before
-Have a quick chat with the coaches, quickly re-iterate how this is going to work.  Feel free to go through the [Coaches Guide](http://opentechschool.github.io/slides/presentations/coaching/) quickly.  Get familiar with the space, tell them to be welcoming and inviting when people come in. Tell them to tell the learners to get comfortable and set up their environment. Tell the coaches to be standing while the learners arrive. That is more welcoming than sitting and working on your stuff.
+Have a quick chat with the coaches, quickly re-iterate how this is going to work.  Feel free to go through the [Coaches Guide](https://opentechschool.github.io/slides/presentations/coaching/) quickly.  Get familiar with the space, tell them to be welcoming and inviting when people come in. Tell them to tell the learners to get comfortable and set up their environment. Tell the coaches to be standing while the learners arrive. That is more welcoming than sitting and working on your stuff.
 
 ### Set up the space
  - Set up tables and chairs in the room for the expected audience.  We usually want to have a café style setup (groups of people gathering around a table.)
@@ -68,7 +68,7 @@ Have a quick chat with the coaches, quickly re-iterate how this is going to work
 ### Kickoff the event
 - Once the majority of learners is there and set up, do a short and quick welcome speech.
 - Ask how many people know the OpenTechSchool already and/or have been to other events before.  (Make them raise their hands. It sounds cheesy but sets an interactive mood.)
-  * If a bigger group doesn't know what OTS is and does, give a [quick introduction](http://opentechschool.github.io/slides/presentations/about-micro/) and tell them to check the website for more details.
+  * If a bigger group doesn't know what OTS is and does, give a [quick introduction](https://opentechschool.github.io/slides/presentations/about-micro/) and tell them to check the website for more details.
   * Promote any recurring events such as the Learners Meetup or Continuous Learning Groups.
 - (This is critical!)  Explain the schedule and how the workshop is going to happen:  They are working on their own with the material, the coaches standing around are there to assist, help and support, so instead of getting stuck, they should ask them for help.  If there will be a demo session at the end, tell them about that, too.
 - Make sure you explained the necessaries, like:
@@ -88,7 +88,7 @@ When the first people pack their stuff or after the Demo, ask for their attentio
 - Thank everybody for coming.
 - Ask them to provide feedback.  They'll receive an automatic email from Meetup (asking "how was it") a few days later.  That helps us to improve and build a track record.
 - Encourage them to upload any photos they took to the event page on Meetup.
-- Invite them again to show their hacks and awesome ideas at the next [Learners Meetup](http://www.opentechschool.org/handbooks/learners-meetups.html).
+- Invite them again to show their hacks and awesome ideas at the next [Learners Meetup](https://www.opentechschool.org/handbooks/learners-meetups.html).
 - Don't forget to thank the sponsor of the venue, food and drinks, if any.
 - Let them know what the rest of the days schedule is (for example if you need to be out at a certain time, but they are free to stick around, or if you are going for drinks or stuff.)
 - And eventually ask for a round of applause for the awesome group of coaches who helped them that day.

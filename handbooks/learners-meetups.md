@@ -23,7 +23,7 @@ Plus, a couple of things should be on the wall during the break:
     * a sheet of paper, entitled "Learn'n'Tell" and a list of available slots (no more than five) to talk at the upcoming Learn'n'Tell session. Anyone interested in doing so should write their name and the topic they'll be addressing.
 
 3. Learn'n'Tell session.
-Learn'n'Tell is inspired by [Hack'n'Tell](http://hackandtell.org/) (taking place in New York and Berlin), an event during which hackers can present their projects and get feedback from the audience. During our Learn'n'Tell session, beginners have 5 minutes to ask tech questions or show what they're working on (live coding is more than welcome!) and 5 minutes to receive feedback from the audience (experienced developers also come to the meetup to support the discussion). Important: have someone moderate the session and keep an eye on the time!
+Learn'n'Tell is inspired by [Hack'n'Tell](https://hackandtell.org/) (taking place in New York and Berlin), an event during which hackers can present their projects and get feedback from the audience. During our Learn'n'Tell session, beginners have 5 minutes to ask tech questions or show what they're working on (live coding is more than welcome!) and 5 minutes to receive feedback from the audience (experienced developers also come to the meetup to support the discussion). Important: have someone moderate the session and keep an eye on the time!
 
 OR
 
@@ -66,7 +66,7 @@ Still, we also need to you to spread the word and convince people to join yourse
 ## Scheduling the first organizers meeting
 Once there are enough people who want to help organize the event (we suggest at least 2-3), you can set up a first meeting in order to get to know each other as well as figure out how to actually get things done.
 
- * Create a [Doodle poll](http://www.doodle.com/) with potential dates in the next 2-4 weeks
+ * Create a [Doodle poll](https://www.doodle.com/) with potential dates in the next 2-4 weeks
  * Once the meeting is set, a notice about it is sent to the mailinglist.
 
 _Note_: We recommend meeting on a weekday evening after work hours. Monday to Thursday work best in our experience.

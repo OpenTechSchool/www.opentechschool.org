@@ -2,7 +2,7 @@
 layout: full
 title: OpenTechSchool Locator
 ---
- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+ <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
  <style type="text/css" media="screen">
    #map { height: 480px; }
    .event.hidden {
@@ -57,7 +57,7 @@ title: OpenTechSchool Locator
   <div id="eventsList"></div>
 </div>
 
-<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" type="text/javascript" charset="utf-8"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react.js" type="text/javascript" charset="utf-8"></script>
 
 <script type="text/x-template" data-template="marker-popup">
@@ -73,8 +73,8 @@ title: OpenTechSchool Locator
         meetupcom_key = '38406b383fa43605b6b234269316'
         markers = [],
         position_found = false,
-        tiles = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-                  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        tiles = L.tileLayer('//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                  attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
                   maxZoom: 16
                 }),
         blueIcon = L.icon({

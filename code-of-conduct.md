@@ -76,4 +76,4 @@ We expect all community participants (contributors, paid or otherwise; sponsors;
 License and attribution
 -----------------------
 
-This Code of Conduct is based on the [Berlin Code of Conduct](http://berlincodeofconduct.org/). Both are distributed under the [Creative Commons Attribution-ShareAlike license in its latest version](http://creativecommons.org/licenses/by-sa/3.0/).
+This Code of Conduct is based on the [Berlin Code of Conduct](https://berlincodeofconduct.org/). Both are distributed under the [Creative Commons Attribution-ShareAlike license in its latest version](https://creativecommons.org/licenses/by-sa/3.0/).

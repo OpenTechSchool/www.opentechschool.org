@@ -5,7 +5,7 @@ title: OpenTechSchool Sponsors
 sponsors:
   co_up:
     name: Co.Up Berlin Coworking Space
-    web: http://co-up.de
+    web: https://co-up.de
     logo: images/sponsors/coup.png
     blog_post:
     about: Co.Up is the coworking space where the roots of OpenTechSchool lie. There we had our first meetup leading up to the founding of the organisation. Many meetings and events followed until today and Co.Up provided us gratiously with space and all help possible. We are thankful to have them on our side.
@@ -14,12 +14,12 @@ sponsors:
     web: https://www.google.com/enterprise/apps/education/
     logo: images/sponsors/google_apps_edu.png
     about: Working with a distributed network of volunteers brings its challenges. Thanks to Google Apps we can offer Gmail, Docs, Drive and Groups to every supporter allowing us to act on a professional level of cloud-based collaboration.
-    blog_post: http://blog.opentechschool.org/2012/07/we-are-supported-by-google-apps-for-education.html
+    blog_post: https://blog.opentechschool.org/2012/07/we-are-supported-by-google-apps-for-education.html
   paypal:
     name: PayPal
     web: https://www.paypal.com
     logo: images/sponsors/paypal.jpg
-    blog_post: http://blog.opentechschool.org/2013/08/paypal-donations.html
+    blog_post: https://blog.opentechschool.org/2013/08/paypal-donations.html
     about: PayPal allows us to easily collect donations via electronic payments. Thanks to their support this service comes free of charges, so every cent donated reaches us. Through the personal level of support we never felt lost during the process and always know who to contact. Just perfect.
   wenzelmann:
     name: Wenzelmann

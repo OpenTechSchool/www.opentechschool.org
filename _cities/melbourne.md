@@ -23,4 +23,4 @@ has been holding awesome workshops ever since. Hosted by the awesome guys at
 [Electron Workshop], we're here to give you tips on python, javascript,
 and where a great cuppa is to be had!
 
-[Electron Workshop]: http://www.electronworkshop.com.au
+[Electron Workshop]: https://www.electronworkshop.com.au

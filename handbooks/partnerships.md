@@ -17,7 +17,7 @@ There are quite a few things that OpenTechSchool can help with - promoting an ev
 We have a huge network of coaches for various topics and in many fields all around the globe. If you can not scale up your event because you are missing more people helping you to coach others, give us a poke.
 
 ### Materials
-We also have a growing directory of [learners material](/material.html) ready and available as open source. Feel free to use that without any further communication (although we would love to know where and when it gets used!). It is all licenced under [Creative Commons Share-Alike](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US) and are happy for any feedback and/or pull-requests on our content.
+We also have a growing directory of [learners material](/material.html) ready and available as open source. Feel free to use that without any further communication (although we would love to know where and when it gets used!). It is all licenced under [Creative Commons Share-Alike](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US) and are happy for any feedback and/or pull-requests on our content.
 
 ### Organisational Help
 We are organising events all the time. We have experience and a huge network of supporters, especially when it comes to hands-on tech workshops. If you need help organising your event, we're available to help out with logistics as well.

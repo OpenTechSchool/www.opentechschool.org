@@ -100,7 +100,7 @@ All the following values can go into the preamble as well:
    your chapter/city in a playful way.
 * `twitter` is your chapter's Twitter account.
 * `meetup` is the group name on Meetup and would result in links to
-  `http://meetup.com/$meetup`.  It defaults to `opentechschool-$city`.
+  `https://meetup.com/$meetup`.  It defaults to `opentechschool-$city`.
 * `does` is the list of projects present in your chapter.  It defaults to
   `[workshops]`.
 * `mailing_list` is the mailing list potential coaches can write to.  It is
